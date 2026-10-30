@@ -1,0 +1,93 @@
+A CRUZ DE MONTGISARD
+  Criação e direção: Rodrigo Torquato Mazzoli.
+  Programação, modelagem e pesquisa com o auxílio de Claude (Anthropic).
+
+  Dedicatória: este jogo é uma homenagem à minha conversão, que começou estudando
+  as Cruzadas, caminhou junto com os estudos de filosofia e depois encontrou rumo
+  nas aulas do Padre Paulo Ricardo. — Rodrigo Torquato Mazzoli
+
+A CRUZ DE MONTGISARD — CRÉDITOS
+==============================
+
+ARTE DOS PERSONAGENS — assets/personagens/
+------------------------------------------
+Todas as camadas dos personagens (corpo, cabeças, roupas, armaduras, elmos,
+luvas, botas, armas e escudos), masculinas e femininas, foram renderizadas
+para este jogo a partir dos modelos 3D originais do herói e da heroína de
+Clint Bellanger, que estão no repositório do projeto Flare:
+
+   Flare — https://flarerpg.org
+   Modelos: https://github.com/flareteam/flare-game (pasta art_src/characters)
+   Licença: Creative Commons Atribuição-CompartilhaIgual 3.0 (CC-BY-SA 3.0)
+     https://creativecommons.org/licenses/by-sa/3.0/
+
+   Artistas do Flare (conforme o CREDITS.txt do projeto Flare):
+     Blarumyrran; Brandon Morris "Augmentality"; Clint Bellanger;
+     Holly Daniel; Justin Jacobs; Justin Nichol; Jessica "Zeldyn" Cox;
+     remaxim; rubberduck; Sarah Benalene; Scrittl; Stefan Beller.
+     Arte adicional reutilizada pelo Flare: Aare, Bart K, Blender
+     Foundation, Cori Samuel, D. Sharon Pruitt, Hythlodaeus, Iwan "qubodup"
+     Gabovitch, Lamoot, Lattice, Ljudbank, Lorc, MaximB, Michael Baradari,
+     Mike Koenig, Mikodrak, Misha, Mumu, Naraphim, p0ss, Renderwahn, Samuel
+     Moxham, Sindwiller, Spookymodem, Stephan, TiZiana, Vwolfdog, Yughues,
+     Zuendholz.
+
+O que foi modificado para o jogo:
+   - Materiais e luz refeitos para o renderizador Cycles do Blender 5
+     (os arquivos originais usavam o renderizador antigo do Blender 2.7).
+   - A corrida foi renderizada em 16 quadros, escolhidos para o pé apoiado
+     não escorregar; as outras animações ganharam quadros intermediários.
+   - Peças novas modeladas sobre o mesmo esqueleto: lança, besta, besta de
+     mão, elmo de nasal (cônico, normando), turbante, elmo pontudo turco,
+     máscara de prata e coroa do rei, escudo redondo.
+   - Roupas do Flare recoloridas para os personagens do Ato I (vestes do rei,
+     hábito da Irmã Inês, mantos beduínos, couraça turca, gibão egípcio etc.)
+     e uma pose "à vontade" para os NPCs.
+   - O chacal e a hiena foram modelados e animados para o jogo (não vêm do
+     Flare); por serem parte do mesmo conjunto, também ficam sob CC-BY-SA 3.0.
+   - Os quadros foram reduzidos e reorganizados em folhas novas.
+
+Pela licença CC-BY-SA, essas imagens e os modelos novos também ficam sob
+CC-BY-SA 3.0. Os scripts usados para modelar e renderizar estão na pasta
+ferramentas/. A licença da arte não se estende ao código do jogo.
+
+O resto (mapas, cenário em blocos, interface e código) foi feito para este
+projeto.
+
+TEXTURAS DO CENÁRIO (ferramentas/texturas)
+  ambientCG.com — licença CC0 (domínio público), crédito não obrigatório.
+  Bricks084 (muralhas de arenito), Plaster001 (reboco das casas), Planks039 (madeira),
+  Fabric061 (lona das tendas), Leather037 (couro), Ground080 (areia), Rock020 (pedra das cisternas).
+  Usadas nos modelos 3D do cenário renderizados no Blender.
+
+PINTURA DA TELA INICIAL (assets/tela)
+  Charles-Philippe Larivière, "Bataille de Montgisard, 25 novembre 1177" (1842),
+  Galerie des Croisades, Château de Versailles. Domínio público.
+
+
+ESTUDOS SOBRE AS CRUZADAS
+  Com os professores Thiago Braga, Lucas Lancaster e Guilherme Freire.
+
+FONTES
+  Pirata One — Rodrigo Fuenzalida e Nicolás Massi (SIL Open Font License 1.1)
+  Alegreya e Alegreya SC — Juan Pablo del Peral, Huerta Tipográfica (SIL Open Font License 1.1)
+  Arquivos em assets/fontes (vindos do pacote Fontsource).
+
+
+SOM — assets/som/
+-----------------
+Música (assets/som/musica/), do jogo Flare (https://github.com/flareteam/flare-game):
+   remaxim — town, overworld, dungeon, safe_room, battle, boss (CC-BY-SA 3.0)
+   Brandon Morris "Augmentality" — title, unrest (CC-BY-SA 3.0); forest (CC-BY 3.0)
+   Originais: opengameart.org (battle-theme, boss-theme, dungeon-theme, overworld-theme,
+   safe-room-theme, town-theme, osare-song-1, flare-main, creepy-forest-f).
+
+Efeitos e ambientes (assets/som/efeitos/, assets/som/ambiente/), do Flare, com a
+atribuição por arquivo em https://github.com/flareteam/flare-game/wiki/Credits:
+   Ljudbank (CC0), remaxim (CC0), Iwan "qubodup" Gabovitch (CC-BY-SA 3.0),
+   Brandon Morris (CC-BY-SA 3.0), Bart K (CC0), Mike Koenig, Cori Samuel,
+   artisticdude, Stephan, Michel Baradari, MaximB, Chris Castiglione "alienistcog" (CC0),
+   spookymodem (CC-BY 3.0), Justin Jacobs, Blender Foundation, e demais
+   colaboradores do Flare (CC-BY-SA 3.0).
+   Convertidos de OGG para MP3; alguns tocados com o tom alterado no jogo.
+   Sintetizados para este jogo: sino.mp3, aco.mp3, baque.mp3.

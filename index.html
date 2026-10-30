@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>A Cruz de Montgisard</title>
+  <style>
+  /* Fontes do jogo (SIL Open Font License, em assets/fontes): Pirata One nos títulos, Alegreya no texto */
+  @font-face { font-family: 'Pirata One'; src: url('assets/fontes/pirata-one.woff2') format('woff2'); font-display: swap; }
+  @font-face { font-family: 'Alegreya'; src: url('assets/fontes/alegreya-400-normal.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+  @font-face { font-family: 'Alegreya'; src: url('assets/fontes/alegreya-700-normal.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+  @font-face { font-family: 'Alegreya'; src: url('assets/fontes/alegreya-400-italic.woff2') format('woff2'); font-style: italic; font-display: swap; }
+  @font-face { font-family: 'Alegreya SC'; src: url('assets/fontes/alegreya-sc-400-normal.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+  @font-face { font-family: 'Alegreya SC'; src: url('assets/fontes/alegreya-sc-700-normal.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+</style>
+<style>
+  :root { --fundo: #0d0b09; --texto: #efe7d6; --ouro: #e8b931; --ouro-escuro: #b8892a; --caixa: rgba(20, 17, 14, 0.94); --borda: #8c7a55; color-scheme: dark; }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); overflow: hidden; font-family: 'Alegreya', Georgia, serif;
+         -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  #jogo { position: fixed; inset: 0; display: block; cursor: crosshair; touch-action: none; }
+
+  /* ---------- Tela inicial ---------- */
+  /* Abertura do estúdio: o selo In Hoc Signo Ludimus (some sozinho; clique pula) */
+  #selo { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2.2vh;
+    background: radial-gradient(ellipse at 50% 45%, #e8dcc3 0%, #d9c8a6 60%, #a88d64 100%); font-family: 'Alegreya SC', Georgia, serif;
+    animation: seloSome 0.9s ease 4.6s forwards; cursor: pointer; }
+  #selo.pular { animation: seloSome 0.35s ease forwards; }
+  #selo svg { width: min(46vh, 70vw); height: auto; filter: drop-shadow(0.6vh 1.2vh 1.4vh rgba(40, 20, 8, 0.45));
+    transform-origin: 50% 50%; animation: seloCai 0.9s cubic-bezier(.2,.8,.3,1.1) 0.3s both; }
+  #selo .nome { font-size: min(6vh, 8vw); letter-spacing: 0.12em; color: #2a1f16; line-height: 1; animation: seloTexto 0.8s ease 1.2s both; }
+  #selo .sub { font-size: min(2.4vh, 3.6vw); letter-spacing: 0.55em; color: #7a1f1a; animation: seloTexto 0.8s ease 1.5s both; }
+  #selo .apresenta { font-family: 'Alegreya', Georgia, serif; font-style: italic; font-size: min(2.4vh, 3.6vw); color: #6b5a44; animation: seloTexto 0.8s ease 2.3s both; }
+  @keyframes seloCai { 0% { opacity: 0; transform: scale(1.5) rotate(-8deg); } 60% { opacity: 1; transform: scale(0.94) rotate(1deg); } 100% { opacity: 1; transform: scale(1) rotate(0); } }
+  @keyframes seloTexto { from { opacity: 0; transform: translateY(1vh); } to { opacity: 1; transform: none; } }
+  @keyframes seloSome { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+  @media (prefers-reduced-motion: reduce) { #selo, #selo * { animation-duration: 0.01s !important; animation-delay: 0s !important; } #selo { animation: seloSome 0.4s ease 2.5s forwards !important; } }
+  #inicio { position: fixed; inset: 0; z-index: 10; overflow-y: auto; background: var(--fundo); }
+  #inicio .fundo { position: fixed; inset: 0;
+    background:
+      linear-gradient(270deg, rgba(13, 11, 9, 0.96) 0%, rgba(13, 11, 9, 0.86) 30%, rgba(13, 11, 9, 0.3) 58%, rgba(13, 11, 9, 0.05) 100%),
+      linear-gradient(0deg, rgba(13, 11, 9, 0.75) 0%, rgba(13, 11, 9, 0) 25%),
+      image-set(url('assets/tela/montgisard.webp') 1x) left center / cover no-repeat,
+      radial-gradient(ellipse at 70% 40%, #4a3520 0%, #1c140d 55%, #0d0b09 100%); }
+  #inicio .capa { position: relative; box-sizing: border-box; min-height: 100%; max-width: 540px; margin-left: auto; padding: clamp(16px, 5vh, 64px) clamp(16px, 5vw, 64px) 20px 16px;
+    display: flex; flex-direction: column; justify-content: center; gap: 14px; }
+  #inicio .ano { margin: 0; font-family: 'Alegreya SC', Georgia, serif; letter-spacing: 0.18em; text-transform: uppercase; font-size: 13px; color: var(--ouro-escuro); }
+  #inicio h1 { margin: 0; font-family: 'Pirata One', Georgia, serif; font-weight: 400; letter-spacing: 0.01em; font-size: clamp(28px, min(7vw, 10vh), 64px); line-height: 1.02;
+    color: var(--ouro); text-shadow: 0 2px 0 #3a2508, 0 0 24px rgba(0, 0, 0, 0.8); }
+  #inicio .resumo { margin: 0; font-size: clamp(15px, 2vw, 18px); line-height: 1.5; color: #e4dac4; text-wrap: pretty; max-width: 46ch; }
+  /* telas baixas (celular deitado): texto mais compacto, com fundo escuro atrás para ler bem */
+  @media (max-height: 520px) {
+    #inicio .capa { gap: 6px; max-width: 470px; padding-top: 12px; padding-bottom: 10px; background: rgba(13, 11, 9, 0.72); }
+    #inicio .ano { font-size: 11px; }
+    #inicio .resumo { font-size: 13.5px; line-height: 1.35; }
+    #inicio .escolha { margin-top: 2px; gap: 8px; }
+    .partida button { padding: 5px 10px; } .partida button strong { font-size: 13px; } .partida button span { font-size: 12px; }
+    .jogar { padding: 8px 10px; } .jogar strong { font-size: 14px; } .jogar span { font-size: 12px; }
+    #inicio .rodape { font-size: 13px; }
+  }
+  /* telas estreitas (celular em pé): o texto ocupa a largura toda, sobre a pintura escurecida */
+  @media (max-width: 600px) { #inicio .capa { max-width: none; background: rgba(13, 11, 9, 0.6); } }
+  @media (max-width: 700px) { #inicio .fundo { background-position: 0 0, 0 0, 30% center, 0 0; } }
+  #inicio .escolha { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
+  /* Personagens salvos (js/personagens.js) */
+  #inicio.com-personagens .resumo + .resumo { display: none; }
+  @media (max-height: 780px) { #inicio.com-personagens .resumo { display: none; } }
+  #inicio .personagens { margin-top: 6px; }
+  #inicio .personagens[hidden] { display: none; }
+  #inicio .personagens .rotulo { margin: 0 0 3px; font-family: 'Alegreya SC', Georgia, serif; font-size: 13px; letter-spacing: 0.08em; color: var(--ouro-escuro); }
+  #inicio .personagens .lista { display: grid; gap: 0; border: 1px solid #6a5a3e; max-height: 158px; overflow-y: auto; overscroll-behavior: contain; }
+    .personagens .linha { position: relative; display: grid; }
+  .personagens .linha + .linha { border-top: 1px solid #4a3f2c; }
+  .personagens .pers { font-family: inherit; text-align: left; color: #b9ad94; background: rgba(20, 16, 12, 0.85); border: none; padding: 6px 40px 6px 12px;
+    cursor: pointer; display: grid; gap: 0; }
+  .personagens .pers strong { font-family: 'Alegreya SC', Georgia, serif; font-size: 14px; font-weight: 400; color: #d8cdb5; }
+  .personagens .pers span.info { font-size: 12.5px; }
+  .personagens .pers.ativo { background: rgba(70, 52, 24, 0.95); color: #efe0b8; box-shadow: inset 3px 0 0 var(--ouro); }
+  .personagens .pers.ativo strong { color: var(--ouro); }
+  .personagens .pers.novo strong { color: #a8c48a; }
+  .personagens .apagar { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font: inherit; font-size: 12px; color: #9a8b70; background: none;
+    border: 1px solid transparent; padding: 3px 6px; cursor: pointer; }
+  .personagens .apagar:hover, .personagens .apagar:focus-visible { color: #e07a5f; border-color: #6a3a2e; outline: none; }
+  .personagens .apagar.confirmar { color: #fff; background: #8a2f22; }
+  @media (max-height: 520px) { #inicio .personagens .lista { max-height: 92px; } .personagens .pers { padding: 3px 40px 3px 10px; } .personagens .pers strong { font-size: 13px; } .personagens .pers span.info { font-size: 11.5px; } #inicio .personagens .rotulo { display: none; } }
+  .partida button[aria-disabled="true"] { opacity: 0.45; cursor: default; }
+  /* Campanha ou Liça (só aparece com um personagem salvo) */
+  #inicio .partida { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 6px; border: 1px solid #6a5a3e; }
+  #inicio .partida[hidden] { display: none; }
+  .partida button { font-family: inherit; text-align: left; color: #b9ad94; background: rgba(20, 16, 12, 0.85); border: none; padding: 9px 12px; cursor: pointer;
+    display: grid; gap: 1px; }
+  .partida button + button { border-left: 1px solid #6a5a3e; }
+  .partida button strong { font-family: 'Alegreya SC', Georgia, serif; font-size: 14px; color: #d8cdb5; }
+  .partida button span { font-size: 13px; }
+  .partida button.ativo { background: rgba(70, 52, 24, 0.95); color: #efe0b8; box-shadow: inset 0 -2px 0 var(--ouro); }
+  .partida button.ativo strong { color: var(--ouro); }
+  #inicio .aviso-novo { margin: 0; font-size: 14px; color: #e8a06a; }
+  #inicio .aviso-novo[hidden] { display: none; }
+  @media (max-width: 480px) { #inicio .escolha { grid-template-columns: 1fr; } }
+  .jogar { display: grid; gap: 2px; text-align: left; font-family: inherit; color: var(--texto); cursor: pointer;
+    background: rgba(30, 24, 17, 0.85); border: 1px solid #6a5a3e; padding: 12px 14px; transition: border-color .15s, background .15s; }
+  .jogar strong { font-family: 'Alegreya SC', Georgia, serif; font-size: 16px; color: #f4e8c8; }
+  .jogar span { font-size: 14px; color: #b9ad94; }
+  .jogar:hover, .jogar:focus-visible { border-color: var(--ouro); background: rgba(60, 44, 22, 0.9); outline: none; }
+  .jogar.sugerido { border-color: var(--ouro); box-shadow: 0 0 0 1px var(--ouro) inset; }
+  .jogar.sugerido span::after { content: ' · sugerido'; color: var(--ouro); }
+  #inicio .rodape { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; font-size: 14px; color: #a39a86; margin-top: 4px; }
+  .vis { font-family: inherit; font-size: 13px; color: #c9bfa8; background: transparent; border: 1px solid #4d4232; padding: 3px 9px; cursor: pointer; }
+  .vis.ativo { border-color: var(--ouro); color: var(--ouro); }
+  .link { font-family: inherit; font-size: 14px; color: #c9bfa8; background: none; border: none; padding: 2px 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  .link:hover { color: var(--ouro); }
+  #inicio .painel { position: fixed; inset: 0 0 0 auto; z-index: 2; box-sizing: border-box; overflow-y: auto; display: flex; flex-direction: column; justify-content: center;
+    gap: 10px; padding: 24px clamp(16px, 5vw, 64px) 24px 24px; width: min(640px, 100%); background: rgb(13, 11, 9); }
+  #inicio .painel[hidden] { display: none; }
+  #inicio .painel h2 { margin: 0; font-family: 'Pirata One', Georgia, serif; font-weight: 400; color: var(--ouro); font-size: 26px; }
+  #inicio .painel p { margin: 0; line-height: 1.5; font-size: 16px; color: #e4dac4; }
+  #inicio .painel a { color: var(--ouro); }
+  #inicio .dedicatoria { margin-top: 8px; padding: 12px 0 0 14px; border-left: 2px solid var(--ouro-escuro); }
+  #inicio .dedicatoria p { font-style: italic; color: #f1e6c8; }
+  #inicio .dedicatoria .assinatura { font-style: normal; color: var(--ouro); margin-top: 4px; }
+  #inicio .painel .fechar { align-self: flex-start; margin-top: 6px; }
+  .admin-campo { display: flex; flex-direction: column; gap: 6px; color: #e4dac4; font-size: 15px; }
+  .admin-campo input { font: inherit; padding: 10px 12px; background: #1c1814; color: #f2e8d2; border: 1px solid #8c7a55; border-radius: 4px; max-width: 320px; }
+  .admin-erro { color: #e0574a !important; }
+  .admin-caminhos { display: flex; flex-wrap: wrap; gap: 8px; }
+  .admin-caminhos button { font: inherit; font-size: 14px; padding: 8px 12px; background: #221d17; color: #d9cfbb; border: 1px solid #5e5243; border-radius: 4px; cursor: pointer; }
+  .admin-caminhos button.ativo { border-color: var(--ouro); color: var(--ouro); }
+  .admin-entrar { display: flex; flex-wrap: wrap; gap: 10px; }
+
+
+
+  /* ---------- Abertura: a página da Crônica antes de entrar no jogo ---------- */
+  #abertura { position: fixed; inset: 0; z-index: 12; display: flex; justify-content: flex-end; align-items: stretch;
+    background: linear-gradient(270deg, rgba(13, 11, 9, 0.97) 0%, rgba(13, 11, 9, 0.88) 34%, rgba(13, 11, 9, 0.25) 62%, rgba(13, 11, 9, 0) 100%),
+                url('assets/tela/abertura.webp') left center / cover no-repeat, var(--fundo);
+    opacity: 1; transition: opacity 0.6s ease; }
+  #abertura[hidden] { display: none; }
+  #abertura.saindo { opacity: 0; pointer-events: none; }
+  #abertura .folha { box-sizing: border-box; width: min(560px, 100%); display: flex; flex-direction: column; justify-content: center; gap: 10px;
+    padding: clamp(14px, 5vh, 56px) clamp(16px, 4vw, 52px) clamp(12px, 3vh, 28px) 20px; }
+  #abertura .livro { margin: 0; font-family: 'Alegreya SC', Georgia, serif; letter-spacing: 0.16em; text-transform: uppercase; font-size: 13px; color: var(--ouro-escuro); }
+  #abertura h2 { margin: 0; font-family: 'Pirata One', Georgia, serif; font-weight: 400; font-size: clamp(26px, min(5vw, 8vh), 46px); line-height: 1.05;
+    color: var(--ouro); text-shadow: 0 2px 0 #3a2508; }
+  #abertura .data { margin: 0; font-style: italic; color: #a08a5c; font-size: 15px; }
+  #abertura .texto { flex: 0 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain;
+    padding-right: 10px; mask-image: linear-gradient(180deg, #000 calc(100% - 28px), transparent); scrollbar-color: #8c7a55 transparent; }
+  #abertura .texto p { margin: 0 0 0.8em; font-size: clamp(16px, 1.6vw, 18px); line-height: 1.55; color: #e8dfc8; text-wrap: pretty; }
+  #abertura .texto p.tomas { font-style: italic; color: #d4ae64; }
+  #abertura .texto p.agora { color: #efe7d6; border-left: 3px solid var(--ouro); padding-left: 10px; }
+  #abertura .texto p.agora b { display: block; font-family: 'Alegreya SC', Georgia, serif; font-weight: 400; color: var(--ouro); font-size: 14px; letter-spacing: 0.08em; }
+  #abertura .texto p.fonte { font-size: 13px; color: #8f846c; }
+  #abertura .seguir { align-self: flex-start; font-family: 'Alegreya SC', Georgia, serif; font-size: 18px; color: #1a1208; background: var(--ouro);
+    border: none; padding: 12px 26px; cursor: pointer; }
+  #abertura .seguir:hover, #abertura .seguir:focus-visible { background: #ffd35a; outline: none; }
+  @media (max-height: 520px) {
+    #abertura .folha { gap: 5px; padding-top: 10px; padding-bottom: 10px; }
+    #abertura .livro { font-size: 11px; }
+    #abertura h2 { font-size: 26px; }
+    #abertura .data { font-size: 13px; }
+    #abertura .texto p { font-size: 15.5px; line-height: 1.45; }
+    #abertura .seguir { font-size: 16px; padding: 9px 20px; }
+  }
+  @media (max-width: 600px) { #abertura { background-position: 0 0, 30% center, 0 0; } #abertura .folha { background: rgba(13, 11, 9, 0.7); } }
+
+
+  /* ---------- Som: volume da música e dos efeitos (js/som.js) ---------- */
+  #painelSom { position: fixed; z-index: 25; right: 16px; bottom: 124px; width: 250px; box-sizing: border-box; padding: 12px 14px 10px;
+    background: rgba(20, 15, 10, .95); border: 1px solid #8c7a55; box-shadow: 0 4px 16px rgba(0,0,0,.7); font-family: 'Alegreya SC', Georgia, serif; color: #e8d9b0; }
+  #painelSom[hidden] { display: none; }
+  body.modo-toque #painelSom { right: 56px; top: 172px; bottom: auto; }
+  #painelSom h3 { margin: 0 0 8px; font-size: 15px; color: var(--ouro); font-weight: 700; }
+  #painelSom label { display: grid; grid-template-columns: 70px 1fr; align-items: center; gap: 8px; font-size: 14px; margin: 6px 0; }
+  #painelSom input[type=range] { width: 100%; accent-color: #c9a24a; height: 28px; }
+  #painelSom .fechar { position: absolute; right: 6px; top: 4px; background: none; border: none; color: #8f846c; font-size: 20px; cursor: pointer; width: 32px; height: 32px; }
+
+  /* ---------- Escolha do caminho ---------- */
+  #caminho { position: fixed; inset: 0; z-index: 11; overflow-y: auto; background:
+      radial-gradient(ellipse at 50% 0%, rgba(74, 53, 32, 0.55) 0%, rgba(13, 11, 9, 0) 60%), var(--fundo); }
+  #caminho[hidden] { display: none; }
+  #caminho .dentro { box-sizing: border-box; max-width: 1180px; margin: 0 auto; padding: clamp(14px, 3vh, 36px) 16px 20px;
+    display: flex; flex-direction: column; gap: clamp(8px, 2vh, 18px); min-height: 100%; }
+  #caminho h2 { margin: 0; font-family: 'Pirata One', Georgia, serif; font-weight: 400; color: var(--ouro); font-size: clamp(22px, 4vw, 36px); text-align: center; }
+  #caminho .sub { margin: 0; text-align: center; color: #c9bfa8; font-size: clamp(14px, 1.8vw, 17px); text-wrap: pretty; }
+  #caminho .cartas { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(8px, 1.4vw, 16px); }
+  @media (max-width: 640px) { #caminho .cartas { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .carta { position: relative; display: flex; flex-direction: column; text-align: left; font-family: inherit; color: var(--texto); cursor: pointer;
+    padding: 0 0 12px; background: linear-gradient(180deg, rgba(40, 31, 21, 0.9), rgba(20, 16, 12, 0.95)); border: 1px solid #4d4232; overflow: hidden;
+    transition: border-color .15s, transform .15s; }
+  .carta:hover, .carta:focus-visible { border-color: #8c7a55; outline: none; }
+  .carta.escolhida { border-color: var(--ouro); box-shadow: 0 0 0 1px var(--ouro) inset, 0 0 24px rgba(232, 185, 49, 0.18); }
+  .carta .retrato { position: relative; height: clamp(150px, 34vh, 330px); background: radial-gradient(ellipse at 50% 85%, rgba(232, 185, 49, 0.16), rgba(0,0,0,0) 65%); }
+  .carta .retrato img { position: absolute; inset: 6px 0 0; width: 100%; height: calc(100% - 6px); object-fit: contain; object-position: center bottom;
+    filter: drop-shadow(0 8px 10px rgba(0,0,0,0.6)); }
+  .carta .fim { position: absolute; left: 8px; top: 8px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #a39a86;
+    background: rgba(13, 11, 9, 0.7); padding: 2px 6px; }
+  .carta h3 { margin: 8px 12px 0; font-family: 'Alegreya SC', Georgia, serif; font-size: clamp(15px, 1.7vw, 19px); color: #f4e8c8; }
+  .carta .arma { margin: 0 12px; font-size: 13px; color: var(--ouro-escuro); }
+  .carta .desc { margin: 6px 12px 0; font-size: clamp(13px, 1.4vw, 15px); line-height: 1.35; color: #d8cdb5; text-wrap: pretty; }
+  .carta .barras { margin: 8px 12px 0; display: grid; grid-template-columns: auto 1fr; gap: 3px 8px; align-items: center; font-size: 12px; color: #a39a86; }
+  .carta .barra { height: 6px; background: rgba(255,255,255,0.07); position: relative; }
+  .carta .barra i { position: absolute; inset: 0 auto 0 0; background: linear-gradient(90deg, #8c6a2a, var(--ouro)); }
+  #caminho .acoes { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: center;
+    position: sticky; bottom: 0; padding: 10px 0 6px; background: linear-gradient(180deg, rgba(13, 11, 9, 0), var(--fundo) 40%); }
+  #caminho .comecar { font-family: 'Alegreya SC', Georgia, serif; font-size: 17px; color: #1a1208; background: var(--ouro); border: none; padding: 12px 22px; cursor: pointer; }
+  #caminho .comecar:disabled { background: #4d4232; color: #8f846c; cursor: default; }
+  #caminho .nota { font-size: 13px; color: #8f846c; text-align: center; margin: 0; }
+  /* celular deitado: cartas mais baixas, sem a descrição longa */
+  @media (max-height: 520px) {
+    #caminho .carta .retrato { height: 34vh; }
+    #caminho .nota { display: none; }
+    #caminho .dentro { gap: 6px; padding-top: 8px; }
+    #caminho .carta .barras { gap: 1px 6px; font-size: 11px; }
+    #caminho .carta .desc { display: none; }
+    #caminho h2 { font-size: 20px; }
+    #caminho .sub { font-size: 13px; }
+    #caminho .comecar { padding: 8px 16px; font-size: 15px; }
+  }
+
+  /* ---------- Atlas ---------- */
+  #atlas { position: fixed; inset: 0; z-index: 8; display: flex; align-items: center; justify-content: center; background: rgba(8, 6, 4, 0.82); }
+  #atlas[hidden] { display: none; }
+  #atlas .folha { position: relative; box-sizing: border-box; width: min(1100px, 100vw - 16px); height: min(760px, 100vh - 16px); display: flex;
+    background: #e3d2aa; overflow: hidden; box-shadow: 0 0 0 1px #6b5532, 0 0 0 6px #2a2015, 0 0 0 7px #8c7a55, 0 20px 60px rgba(0,0,0,0.7); }
+  #atlas svg { flex: 1; min-width: 0; height: 100%; display: block; }
+  #atlas .lado { width: clamp(180px, 26%, 290px); box-sizing: border-box; padding: 14px 14px 10px; overflow-y: auto; background: rgba(60, 42, 20, 0.12);
+    border-left: 1px solid rgba(80, 55, 25, 0.5); color: #3a2a14; font-family: 'Alegreya', Georgia, serif; }
+  #atlas .lado h3 { margin: 0 0 2px; font-family: 'Alegreya SC', Georgia, serif; font-size: 17px; color: #5a1a10; }
+  #atlas .lado .aqui { margin: 0 0 10px; font-size: 14px; font-style: italic; }
+  #atlas .lado ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+  #atlas .lado li button { width: 100%; text-align: left; font: inherit; color: inherit; background: rgba(255, 250, 235, 0.35); border: 1px solid rgba(90, 60, 25, 0.35);
+    padding: 6px 8px; cursor: pointer; display: grid; grid-template-columns: 22px 1fr; gap: 0 6px; align-items: start; }
+  #atlas .lado li button:hover, #atlas .lado li button.ativo { background: rgba(255, 250, 235, 0.7); border-color: #7a2414; }
+  #atlas .lado .selo { width: 20px; height: 20px; border-radius: 50%; background: #8c2418; color: #f4e2c0; font: bold 12px Georgia, serif;
+    display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+  #atlas .lado .selo.sec { background: #3d5a7a; }
+  #atlas .lado strong { font-size: 15px; display: block; line-height: 1.2; }
+  #atlas .lado small { font-size: 13.5px; color: #5a4628; line-height: 1.25; display: block; }
+  #atlas .lado .vazio { font-style: italic; font-size: 14px; color: #6b5532; }
+  #atlas .fechar { position: absolute; right: 8px; top: 6px; z-index: 2; font: bold 22px Georgia, serif; color: #5a1a10; background: rgba(217, 199, 159, 0.85);
+    border: 1px solid rgba(90, 60, 25, 0.5); width: 36px; height: 36px; cursor: pointer; }
+  #atlas .dica { position: absolute; left: 12px; bottom: 8px; font: italic 13px Georgia, serif; color: #6b5532; pointer-events: none; }
+  @media (max-width: 700px), (max-height: 480px) {
+    #atlas .lado { width: 38%; padding: 10px 8px; }
+    #atlas .lado h3 { font-size: 14px; }
+    #atlas .lado strong { font-size: 13px; }
+    #atlas .lado small { font-size: 12px; }
+    #atlas .dica { display: none; }
+  }
+
+  /* ---------- Painéis abertos no celular: os controles saem da frente ---------- */
+  /* ---------- Controles de toque (estilo Diablo Immortal; modelo de 13/out) ---------- */
+  /* com uma janela aberta, os controles saem da frente (as janelas têm o próprio ×) */
+  body.modo-toque.painel-aberto #controles > :not(#fecharAtlas) { display: none; }
+  #controles { display: none; }
+  body.modo-toque #controles { display: block; }
+  #controles button { font-family: 'Alegreya SC', Georgia, serif; color: #f1e2b8; padding: 0; touch-action: none; -webkit-tap-highlight-color: transparent;
+    display: flex; align-items: center; justify-content: center; position: absolute; cursor: pointer;
+    background: radial-gradient(circle at 35% 30%, #4a3f33 0%, #2a231c 60%, #17120e 100%); border: 2px solid #8c7a55;
+    box-shadow: 0 2px 6px rgba(0,0,0,.6), inset 0 0 0 1px rgba(0,0,0,.6); }
+  #controles button svg { pointer-events: none; }
+  #controles button.apertado { background: radial-gradient(circle at 35% 30%, #7a6040 0%, #4a3a22 70%); border-color: var(--ouro); }
+  #controles .quadro { border-radius: 8px; width: 36px; height: 36px; }
+  #controles .redondo { border-radius: 50%; }
+  #controles .marca { position: absolute; right: -4px; top: -4px; width: 10px; height: 10px; border-radius: 50%; background: #d9473a; border: 1px solid #2a1d10; display: none; }
+  #controles .novo .marca { display: block; }
+  #toqueTomas .marca { width: 15px; height: 15px; background: #c9a24a; color: #2a1d10; font: 700 11px/15px 'Alegreya SC', Georgia, serif; text-align: center; }
+  #menusEsq { position: fixed; left: 16px; top: 92px; width: 36px; height: 160px; z-index: 5; }
+  #menusEsq button { left: 0; }
+  #menusDir { position: fixed; right: 12px; top: 10px; width: 36px; height: 122px; z-index: 5; }
+  /* Pausa (js/pausa.js) */
+  #btnPausa { position: fixed; left: 12px; top: 10px; z-index: 6; width: 34px; height: 34px; display: none; align-items: center; justify-content: center;
+    color: #f1e2b8; background: rgba(26, 20, 14, 0.82); border: 1px solid #6a5a3e; border-radius: 6px; cursor: pointer; padding: 0; }
+  #btnPausa:hover, #btnPausa:focus-visible { border-color: var(--ouro); color: var(--ouro); outline: none; }
+  body.jogando #btnPausa { display: flex; }
+  body.modo-toque #btnPausa { display: none; }
+  #pausa { position: fixed; inset: 0; z-index: 40; display: flex; align-items: center; justify-content: center; background: rgba(8, 6, 4, 0.72); }
+  #pausa[hidden] { display: none; }
+  #pausa .caixa { box-sizing: border-box; width: min(360px, calc(100vw - 32px)); padding: 20px 22px 16px; display: grid; gap: 10px;
+    background: #1c1610; border: 1px solid #6a5a3e; box-shadow: 0 10px 40px rgba(0,0,0,0.6); }
+  #pausa h2 { margin: 0 0 4px; font-family: 'Pirata One', Georgia, serif; font-weight: 400; color: var(--ouro); font-size: 32px; text-align: center; }
+  #pausa button { font-family: 'Alegreya SC', Georgia, serif; font-size: 16px; color: #e8dfc8; background: #2a2118; border: 1px solid #5e5243; padding: 10px 14px; cursor: pointer; }
+  #pausa button:hover, #pausa button:focus-visible { border-color: var(--ouro); color: var(--ouro); outline: none; }
+  #pausa button.principal { background: var(--ouro); color: #1a1208; border-color: var(--ouro); }
+  #pausa button.principal:hover, #pausa button.principal:focus-visible { background: #ffd35a; color: #1a1208; }
+  #pausa button:disabled { opacity: 0.45; cursor: default; }
+  #pausa .nota { margin: 0; font-size: 13px; color: #9a8f78; text-align: center; }
+  #menusDir button { left: 0; }
+  #menuZoom { position: fixed; right: 56px; top: 122px; z-index: 6; display: flex; gap: 6px; padding: 6px; background: rgba(20, 15, 10, .9); border: 1px solid #6b5532; border-radius: 8px; }
+  #menuZoom[hidden] { display: none !important; }
+  #menuZoom button { position: static; width: auto; height: 36px; padding: 0 12px; border-radius: 6px; font-size: 14px; }
+  #fecharAtlas { display: none !important; }
+  body.modo-toque.atlas-aberto #fecharAtlas { display: flex !important; position: fixed; right: 12px; top: 10px; width: 40px; height: 40px; border-radius: 8px; z-index: 30; font-size: 22px; }
+  #joy { position: fixed; left: 38px; bottom: 22px; width: 116px; height: 116px; border-radius: 50%; z-index: 5; touch-action: none;
+    background: rgba(20, 15, 10, .35); border: 2px solid rgba(201, 162, 74, .55); box-shadow: inset 0 0 18px rgba(0,0,0,.6); }
+  #joyPino { position: absolute; left: 31px; top: 31px; width: 50px; height: 50px; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(circle at 40% 35%, #8e2a1e, #4a140d); border: 2px solid #c9a24a; box-shadow: 0 3px 8px rgba(0,0,0,.7); }
+  #acoes { position: fixed; right: 0; bottom: 0; width: 280px; height: 240px; z-index: 5; pointer-events: none; }
+  #acoes button { pointer-events: auto; }
+  #acoes .atacar { right: 32px; bottom: 22px; width: 104px; height: 104px; border: 3px solid #c9a24a;
+    background: radial-gradient(circle at 38% 32%, #b0452c 0%, #6b1d12 55%, #2c0b06 100%);
+    box-shadow: 0 0 0 2px #2a1d10, 0 4px 14px rgba(0,0,0,.8), inset 0 0 16px rgba(255, 190, 90, .35); }
+  #acoes .especial { right: 145px; bottom: 33px; width: 54px; height: 54px; }
+  #acoes .especialG { right: 128px; bottom: 100px; width: 50px; height: 50px; }
+  #acoes .especialH { right: 72px; bottom: 140px; width: 50px; height: 50px; }
+  #acoes .virtude { right: 140px; bottom: 178px; width: 42px; height: 42px; }
+  #acoes .rezar { right: 196px; bottom: 134px; width: 42px; height: 42px; }
+  #acoes .trocar { right: 8px; bottom: 138px; width: 40px; height: 40px; }
+  #acoes .remedio { right: 216px; bottom: 18px; width: 44px; height: 44px; }
+  #acoes .rolar { right: 205px; bottom: 78px; width: 46px; height: 46px; }
+  #acoes .falar { right: 24px; bottom: 196px; height: 34px; padding: 0 14px; border-radius: 17px; font-size: 14px; display: none; }
+  body.perto-de-alguem #acoes .falar { display: flex; }
+  #acoes .qtd { position: absolute; right: -3px; bottom: -5px; font: 700 13px 'Alegreya SC', Georgia, serif; color: #fff; text-shadow: 0 1px 0 #000, 0 0 4px #000; }
+  #acoes .custo { position: absolute; left: 50%; bottom: -14px; transform: translateX(-50%); font: 600 11px 'Alegreya SC', Georgia, serif; color: #bcd0f7; text-shadow: 0 1px 2px #000; white-space: nowrap; }
+  #acoes button.sem { filter: grayscale(.8) brightness(.6); }
+  </style>
+</head>
+<body>
+  <canvas id="jogo"></canvas>
+<div id="selo" role="img" aria-label="In Hoc Signo Ludimus apresenta">
+  <svg viewBox="0 0 200 200" aria-hidden="true">
+    <defs>
+      <filter id="sBorda" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="turbulence" baseFrequency="0.028" numOctaves="2" seed="11" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="9" xChannelSelector="R" yChannelSelector="G"/></filter>
+      <filter id="sBrilho" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="3" seed="2" result="n"/><feSpecularLighting in="n" surfaceScale="2.2" specularConstant="0.9" specularExponent="22" lighting-color="#ffe6dc" result="sp"><fePointLight x="40" y="20" z="90"/></feSpecularLighting><feComposite in="sp" in2="SourceAlpha" operator="in"/></filter>
+      <filter id="sDesf"><feGaussianBlur stdDeviation="0.9"/></filter>
+      <radialGradient id="sCera" cx="36%" cy="30%" r="78%"><stop offset="0" stop-color="#c9483c"/><stop offset="0.5" stop-color="#9e2a22"/><stop offset="1" stop-color="#4e0f0b"/></radialGradient>
+      <radialGradient id="sPrens" cx="62%" cy="66%" r="70%"><stop offset="0" stop-color="#c9483c"/><stop offset="0.7" stop-color="#9e2a22"/><stop offset="1" stop-color="#5c130e"/></radialGradient>
+      <linearGradient id="sAro" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2e0705" stop-opacity="0.9"/><stop offset="0.5" stop-color="#2e0705" stop-opacity="0.15"/><stop offset="1" stop-color="#f0a090" stop-opacity="0.7"/></linearGradient>
+      <clipPath id="sDentro"><circle cx="100" cy="100" r="81"/></clipPath>
+      <path id="sAnel" d="M100 100 m-71 0 a71 71 0 1 1 142 0 a71 71 0 1 1 -142 0"/>
+      <g id="sCruz"><rect x="43" y="14" width="14" height="72"/><rect x="14" y="43" width="72" height="14"/><rect x="33" y="14" width="34" height="9"/><rect x="33" y="77" width="34" height="9"/><rect x="14" y="33" width="9" height="34"/><rect x="77" y="33" width="9" height="34"/><rect x="19" y="23" width="12" height="4"/><rect x="23" y="19" width="4" height="12"/><rect x="69" y="23" width="12" height="4"/><rect x="73" y="19" width="4" height="12"/><rect x="19" y="73" width="12" height="4"/><rect x="23" y="69" width="4" height="12"/><rect x="69" y="73" width="12" height="4"/><rect x="73" y="69" width="4" height="12"/></g>
+      <g id="sLetreiro"><text font-family="Cinzel, 'Alegreya SC', Georgia, serif" font-weight="700" font-size="10.6" letter-spacing="1.6"><textPath href="#sAnel">IN HOC SIGNO LUDIMUS · ANNO DOMINI MMXXVI ·</textPath></text><circle cx="100" cy="100" r="62" fill="none" stroke-width="1.6"/><circle cx="100" cy="100" r="58.5" fill="none" stroke-width="0.6"/></g>
+    </defs>
+    <g filter="url(#sBorda)">
+      <path d="M100 3 C122 3 138 9 152 19 C170 31 183 46 190 66 C196 84 197 104 193 122 C188 144 176 162 158 176 C140 190 120 197 98 197 C76 197 57 190 41 177 C24 163 10 145 5 123 C1 103 3 83 10 65 C18 45 31 30 49 18 C64 8 80 3 100 3 Z" fill="url(#sCera)"/>
+      <ellipse cx="184" cy="150" rx="9" ry="6" fill="url(#sCera)" transform="rotate(30 184 150)"/>
+      <ellipse cx="22" cy="40" rx="7" ry="5" fill="url(#sCera)" transform="rotate(-35 22 40)"/>
+    </g>
+    <circle cx="100" cy="100" r="81" fill="url(#sPrens)"/>
+    <circle cx="100" cy="100" r="81" fill="none" stroke="url(#sAro)" stroke-width="3.2" filter="url(#sDesf)"/>
+    <g clip-path="url(#sDentro)">
+      <use href="#sLetreiro" fill="#f2a593" stroke="#f2a593" opacity="0.55" transform="translate(0.7 0.8)"/>
+      <use href="#sLetreiro" fill="#2a0604" stroke="#2a0604" opacity="0.75" transform="translate(-0.5 -0.6)"/>
+      <use href="#sLetreiro" fill="#6e1712" stroke="#6e1712"/>
+      <g transform="translate(58 58) scale(0.84)">
+        <use href="#sCruz" fill="#f2a593" opacity="0.55" transform="translate(1 1.1)"/>
+        <use href="#sCruz" fill="#2a0604" opacity="0.8" transform="translate(-0.8 -0.9)"/>
+        <use href="#sCruz" fill="#6e1712"/>
+      </g>
+    </g>
+    <rect width="200" height="200" fill="#fff" opacity="0.32" filter="url(#sBrilho)" clip-path="url(#sDentro)"/>
+    <ellipse cx="66" cy="48" rx="22" ry="9" fill="#ffd9cf" opacity="0.16" transform="rotate(-32 66 48)" filter="url(#sDesf)"/>
+  </svg>
+  <div class="nome">IN HOC SIGNO</div>
+  <div class="sub">LUDIMUS</div>
+  <div class="apresenta">apresenta</div>
+</div>
+<div id="inicio">
+  <div class="fundo" aria-hidden="true"></div>
+  <main class="capa">
+    <p class="ano">Ascalão · Novembro de 1177</p>
+    <h1>A Cruz de<br>Montgisard</h1>
+    <p class="resumo">Saladino marcha do Egito com o maior exército que a Terra Santa já viu. O rei Balduíno IV, de dezesseis anos e já marcado pela lepra, se fecha em Ascalão com poucos cavaleiros, enquanto o sultão segue para o norte, rumo a Jerusalém.</p>
+    <p class="resumo">Você é Tomás, um homem de Ramla, sem título e sem terra. Nesta guerra de reis, não há magia: só o ferro, a coragem e a fé.</p>
+
+    <div class="personagens" id="personagens" hidden>
+      <p class="rotulo">Personagem</p>
+      <div class="lista" id="listaPersonagens" role="radiogroup" aria-label="Personagem"></div>
+    </div>
+    <div class="partida" id="modoJogo" hidden role="radiogroup" aria-label="Modo">
+      <button id="btnCampanha" class="ativo" role="radio" aria-checked="true"><strong>Campanha</strong><span>a história, de onde parou</span></button>
+      <button id="btnLica" role="radio" aria-checked="false"><strong>A Liça</strong><span>séries de ondas, à parte</span></button>
+    </div>
+
+    <div class="escolha">
+      <button id="btnPc" class="jogar"><strong>Jogar no computador</strong><span>Mouse e teclado</span></button>
+      <button id="btnToque" class="jogar"><strong>Jogar no celular</strong><span>Toque na tela, aparelho deitado</span></button>
+    </div>
+
+    <div class="rodape">
+      <button id="btnControles" class="link">Controles</button>
+      <button id="btnCreditos" class="link">Créditos</button>
+      <button id="btnAdmin" class="link">Admin</button>
+    </div>
+  </main>
+
+  <section id="painelAdmin" class="painel" hidden>
+    <h2>Modo admin</h2>
+    <p>Versão de teste: todos os oratórios abertos, Tomás no nível máximo, com todas as habilidades, o melhor equipamento e ouro de sobra. Salva à parte; o seu jogo normal não é tocado.</p>
+    <label class="admin-campo">Senha <input id="senhaAdmin" type="password" autocomplete="off"></label>
+    <p id="erroAdmin" class="admin-erro" hidden>Senha errada.</p>
+    <div class="admin-caminhos">
+      <button data-caminho="espada" class="ativo">Espada e escudo</button>
+      <button data-caminho="lanca">Lanceiro</button>
+      <button data-caminho="duasmaos">Machado</button>
+      <button data-caminho="besta">Besteiro</button>
+    </div>
+    <div class="admin-entrar">
+      <button id="adminPc" class="jogar"><strong>Entrar no computador</strong></button>
+      <button id="adminToque" class="jogar"><strong>Entrar no celular</strong></button>
+    </div>
+    <button class="fechar link">Voltar</button>
+  </section>
+
+  <section id="painelControles" class="painel" hidden>
+    <h2>Controles</h2>
+    <p><strong>Computador:</strong> clique para andar, falar e atacar · botão direito: a habilidade escolhida para ele (ou ataca) · Espaço ataca · WASD anda · Shift rola (esquiva) · F, G e H habilidades · Alt mostra os nomes dos itens no chão · T Tomás (atributos, habilidades e virtudes) · V troca a virtude · R reza · 1 a 4 remédios · Q troca de arma · E fala · I equipamento · J missões · C Crônica · M mapa · Esc pausa · roda do mouse: zoom · Shift+N recomeça (ou Novo jogo na tela inicial).</p>
+    <p><strong>Celular:</strong> joystick à esquerda anda · tocar na tela vale como clique · segurar o dedo no chão faz o Tomás seguir o dedo · botões à direita atacam, rolam, falam, trocam de arma e rezam · em cima ficam o equipamento, as missões, o mapa e a Crônica · dois dedos dão zoom · no equipamento, toque num item para ver as opções (equipar, usar, largar, vender).</p>
+    <button class="fechar link">Voltar</button>
+  </section>
+
+  <section id="painelCreditos" class="painel" hidden>
+    <h2>Créditos</h2>
+    <p><strong>Criação e direção:</strong> Rodrigo Torquato Mazzoli.</p>
+    <p><strong>Programação, modelagem e pesquisa:</strong> com o auxílio de Claude (Anthropic).</p>
+    <p><strong>Pintura da capa:</strong> Charles-Philippe Larivière, <em>A batalha de Montgisard, 25 de novembro de 1177</em> (1842), Galeria das Cruzadas, Palácio de Versalhes. Domínio público.</p>
+    <p><strong>Personagens:</strong> renderizados a partir dos modelos 3D do <a href="https://flarerpg.org" target="_blank" rel="noopener">Flare</a>, de Clint Bellanger e colaboradores (CC-BY-SA 3.0).</p>
+    <p><strong>Música:</strong> remaxim (CC-BY-SA 3.0 e CC-BY 3.0) e Brandon Morris (CC-BY-SA 3.0), do <a href="https://flarerpg.org" target="_blank" rel="noopener">Flare</a>. <strong>Efeitos sonoros:</strong> artistas do Flare (Ljudbank, qubodup, Brandon Morris, Bart K, Mike Koenig, Cori Samuel, artisticdude, Stephan, Michel Baradari, MaximB, alienistcog e outros; CC0, CC-BY e CC-BY-SA 3.0); sino e choque de aço sintetizados para o jogo.</p>
+    <p><strong>Fontes:</strong> Pirata One, de Rodrigo Fuenzalida e Nicolás Massi, e Alegreya, de Juan Pablo del Peral (Huerta Tipográfica). Licença SIL Open Font.</p>
+    <p><strong>Texturas do cenário:</strong> <a href="https://ambientcg.com" target="_blank" rel="noopener">ambientCG</a> (CC0). Cenário modelado e renderizado no Blender.</p>
+    <p><strong>Estudos sobre as Cruzadas:</strong> com os professores Thiago Braga, Lucas Lancaster e Guilherme Freire, a quem o autor agradece.</p>
+    <p><strong>História:</strong> baseada na <em>Crônica</em> de Guilherme de Tiro e em estudos sobre a campanha de 1177. Personagens e falas inventados são marcados como ficção dentro do jogo.</p>
+    <div class="dedicatoria">
+      <p>Este jogo é uma homenagem à minha conversão, que começou estudando as Cruzadas, caminhou junto com os estudos de filosofia e depois encontrou rumo nas aulas do Padre Paulo Ricardo.</p>
+      <p class="assinatura">— Rodrigo Torquato Mazzoli</p>
+    </div>
+    <button class="fechar link">Voltar</button>
+  </section>
+</div>
+
+
+<section id="caminho" hidden aria-label="Escolha do caminho">
+  <div class="dentro">
+    <h2>Que homem Tomás vai ser?</h2>
+    <p class="sub">Escolha o caminho. A imagem mostra como ele pode chegar ao fim da campanha, com o melhor equipamento do seu estilo. Dá para usar outras armas depois, mas a maestria do caminho escolhido começa na frente.</p>
+    <div class="cartas" id="cartasCaminho"></div>
+    <div class="acoes">
+      <button class="comecar" id="btnComecar" disabled>Escolha um caminho</button>
+    </div>
+    <p class="nota">Toque ou clique numa carta para ver e depois em Começar.</p>
+  </div>
+</section>
+
+<div id="atlas" hidden>
+  <div class="folha">
+    <button class="fechar" aria-label="Fechar o mapa">×</button>
+    <svg id="atlasSvg" viewBox="0 0 1000 860" preserveAspectRatio="xMidYMid meet" aria-label="Mapa da Terra Santa"></svg>
+    <aside class="lado">
+      <h3>Missões em andamento</h3>
+      <p class="aqui" id="atlasAqui"></p>
+      <ol id="atlasLista"></ol>
+    </aside>
+    <span class="dica">M ou Esc fecha o mapa</span>
+  </div>
+</div>
+
+<div id="abertura" hidden role="dialog" aria-labelledby="aberturaTitulo">
+  <article class="folha">
+    <p class="livro">Crônica de 1177</p>
+    <h2 id="aberturaTitulo"></h2>
+    <p class="data" id="aberturaData"></p>
+    <div class="texto" id="aberturaTexto" tabindex="0"></div>
+    <button class="seguir" id="aberturaSeguir">Começar</button>
+  </article>
+</div>
+
+<div id="painelSom" hidden role="dialog" aria-label="Som">
+  <h3>Som</h3>
+  <button class="fechar" id="fecharSom" aria-label="Fechar">×</button>
+  <label for="volMusica">Música <input type="range" id="volMusica" min="0" max="100"></label>
+  <label for="volEfeitos">Efeitos <input type="range" id="volEfeitos" min="0" max="100"></label>
+</div>
+
+<button id="btnPausa" aria-label="Pausa (Esc)" title="Pausa (Esc)"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></button>
+<div id="pausa" hidden role="dialog" aria-labelledby="pausaTitulo">
+  <div class="caixa">
+    <h2 id="pausaTitulo">Pausa</h2>
+    <button id="pausaContinuar" class="principal">Continuar</button>
+    <button id="pausaSalvar">Salvar e voltar ao menu principal</button>
+    <button id="pausaSair">Voltar ao menu sem salvar</button>
+    <p id="pausaOratorio" class="nota"></p>
+    <p class="nota">Esc também pausa e continua.</p>
+  </div>
+</div>
+
+<div id="controles">
+  <div id="joy" aria-hidden="true"><div id="joyPino"></div></div>
+  <div id="menusEsq">
+    <button class="quadro" style="top:0" data-acao="missoes" id="toqueMissoes" aria-label="Missões"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h11v13a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-1h11M8 8h6M8 12h6"/></svg><span class="marca"></span></button>
+    <button class="quadro" style="top:42px" data-acao="cronica" id="toqueCronica" aria-label="Crônica"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5c3-1 5-1 8 1 3-2 5-2 8-1v14c-3-1-5-1-8 1-3-2-5-2-8-1zM12 6v14"/></svg><span class="marca"></span></button>
+    <button class="quadro" style="top:84px" data-acao="equip" aria-label="Equipamento"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7zM9 8a3 3 0 0 1 6 0"/></svg></button>
+    <button class="quadro" style="top:126px" data-acao="tomas" id="toqueTomas" aria-label="Tomás: atributos e habilidades"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 20v-9a6 6 0 0 1 12 0v9zM6 13h12M12 13v4"/></svg><span class="marca">+</span></button>
+  </div>
+  <div id="menusDir">
+    <button class="quadro" style="top:0" data-acao="menu" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14"/></svg></button>
+    <button class="quadro" style="top:84px" data-acao="pausa" aria-label="Pausa"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></button>
+    <button class="quadro" style="top:42px" data-acao="atlas" aria-label="Mapa da Terra Santa"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/></svg></button>
+  </div>
+  <div id="menuZoom" hidden>
+    <button data-acao="zoomMenos">− Afastar</button>
+    <button data-acao="zoomMais">+ Aproximar</button>
+  </div>
+  <button id="fecharAtlas" data-acao="voltar" aria-label="Fechar o mapa">×</button>
+  <div id="acoes">
+    <button class="falar" data-acao="falar">Falar</button>
+    <button class="remedio redondo" data-acao="remedio" id="toqueRemedio" aria-label="Usar remédio"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#efe7d6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a5 5 0 0 1 5-5h6a5 5 0 0 1 0 10H9a5 5 0 0 1-5-5zM9 7v10M15 7v10"/></svg><span class="qtd" id="toqueRemedioQtd">0</span></button>
+    <button class="especial redondo" data-acao="especial" id="toqueEspecial" aria-label="Habilidade especial"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f1e2b8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4a8 8 0 1 0 8 8M20 4v8h-8"/></svg><span class="custo" id="toqueEspecialCusto"></span></button>
+    <button class="especialG redondo" data-acao="especialG" id="toqueEspecialG" aria-label="Habilidade G"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f1e2b8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4a8 8 0 1 0 8 8M20 4v8h-8"/></svg><span class="custo" id="toqueEspecialGCusto"></span></button>
+    <button class="especialH redondo" data-acao="especialH" id="toqueEspecialH" aria-label="Habilidade H"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f1e2b8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4a8 8 0 1 0 8 8M20 4v8h-8"/></svg><span class="custo" id="toqueEspecialHCusto"></span></button>
+    <button class="virtude redondo" data-acao="virtude" id="toqueVirtude" aria-label="Trocar de virtude"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffd76a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M15.5 12a3.5 3.5 0 1 1-7 0a3.5 3.5 0 1 1 7 0"/></svg></button>
+    <button class="rezar redondo" data-acao="rezar" aria-label="Rezar"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f1e2b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 8h10"/></svg></button>
+    <button class="rolar redondo" data-acao="rolar" aria-label="Rolar"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f1e2b8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a8 8 0 1 0 3-7.5M4 4v5h5"/></svg></button>
+    <button class="trocar redondo" data-acao="trocar" aria-label="Trocar de arma"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f1e2b8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h11l-3-3M17 17H6l3 3"/></svg></button>
+    <button class="atacar redondo" data-acao="atacar" aria-label="Atacar"><svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#ffe9b8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18.5 3.5h2v2L10 16l-2-2zM6.5 12.5l5 5M7.5 16.5l-3 3"/></svg></button>
+  </div>
+</div>
+
+
+  <!--
+    COMO O PROJETO ESTÁ ORGANIZADO
+    Cada arquivo cuida de um assunto. Eles são carregados NESTA ORDEM,
+    porque cada um usa coisas criadas pelos anteriores:
+
+      js/config.js      tela (canvas), tamanhos, escala em metros
+      js/tiles.js       o que cada letra dos mapas significa
+      js/mapas/*.js     um arquivo por mapa (Ascalão, Dunas, Cisternas...)
+      js/isometria.js   conversão entre mundo e tela
+      js/mundo.js       mapa atual, colisão, passagens
+      js/entrada.js     teclado, mouse e zoom
+      js/transicao.js   tela escurecendo ao trocar de mapa
+      js/armas.js       armas e escudos (medidas reais), raridades, afixos e lendários
+      js/equipamento.js elmo, armadura, luvas, botas, colar, anéis e conjuntos
+      js/durabilidade.js desgaste das armas e armaduras, e o conserto
+      js/gemas.js       gemas e engastes (a gema fica presa no item)
+      js/jogador.js     o jogador: atributos, movimento, ataque e desenho
+      js/dialogos/*.js  as falas de cada ato (texto, escolhas e efeitos)
+      js/dialogo.js     a caixa de conversa na parte de baixo da tela
+      js/npcs.js        personagens com quem se conversa
+      js/inimigos.js    tipos de inimigo, onde aparecem e como agem
+      js/combate.js     golpes, virotes, dano, maestria e vida
+      js/companheiro.js o companheiro contratado (como os mercenários do D2)
+      js/itens.js       itens no chão, alforje e painel de equipamento
+      js/remedios.js    o cinto de remédios (as "poções"), teclas 1 a 4
+      js/comercio.js    ouro, preços e as lojas da Irmã Inês e do Martim
+      js/devocao.js     devoção (a "mana"), oração, Bênção e golpes especiais
+      js/oratorios.js   os "waypoints": rezar, salvar e viajar
+      js/salvar.js      salvar e carregar o jogo no navegador
+      js/personagens.js vários personagens salvos (vagas) e a escolha na tela inicial
+      js/missoes.js     o diário de missões (botão Missões ou tecla J)
+      js/cronica.js     a Crônica de 1177: a história real, página a página (tecla C)
+      js/sprites_dados.js  quadros de cada camada dos personagens (gerado; não editar)
+      js/sprites.js     personagens desenhados em camadas (corpo, roupa, arma...)
+      js/desenho.js     desenho do mundo a cada quadro
+      js/toque.js       tela inicial (computador ou celular) e controles de toque
+      js/main.js        o loop do jogo, que junta tudo
+
+    A arte dos personagens (assets/personagens/) foi renderizada para o jogo a
+    partir dos modelos 3D do Flare (CC-BY-SA 3.0): veja CREDITOS.txt e a pasta
+    ferramentas/ (como renderizar de novo).
+
+    Para criar um mapa novo: copie um arquivo de js/mapas/, mude o nome
+    e adicione uma linha <script> para ele junto dos outros mapas.
+  -->
+  <script src="js/jogo.js?v=7a361874"></script>
+</body>
+</html>
