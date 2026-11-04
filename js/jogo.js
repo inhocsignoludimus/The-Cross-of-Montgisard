@@ -2310,7 +2310,7 @@ const PADROES_EN = [
   [new RegExp("^(.+?)( · maestria \\d+)(.*)$"), "$1$2$3"],
   [new RegExp("^(.+?)(.+?)(.+?)$"), "$1$2$3"]
 ];
-const NOMES_ITENS_EN = {"SUFIXOS": {"do Cruzado Devoto": "of the Devout Crusader", "do Naftador": "of the Naphtha Thrower", "do Envenenador": "of the Poisoner", "da Salamandra": "of the Salamander", "do Unicórnio": "of the Unicorn", "do Peregrino Provado": "of the Tried Pilgrim", "da Víbora": "of the Viper", "do Mestre de Esgrima": "of the Fencing Master", "do Quebra-Escudos": "of the Shieldbreaker", "do Lanceiro": "of the Spearman", "do Varegue": "of the Varangian", "do Besteiro": "of the Crossbowman", "do Escudeiro": "of the Squire", "de São Jorge": "of Saint George", "de aço damasco": "of Damascus Steel", "bem temperada": "of Fine Temper", "bem temperado": "of Fine Temper", "do Veterano": "of the Veteran", "de Gênova": "of Genoa", "de carvalho": "of Oak", "com bossa de ferro": "with Iron Boss", "do Sobrevivente": "of the Survivor", "do Peregrino": "of the Pilgrim", "do Corredor": "of the Runner", "do Esgrimista": "of the Fencer", "do Cruzado": "of the Crusader", "do Mestre": "of the Master", "do Convalescente": "of the Convalescent", "do Penitente": "of the Penitent", "do Santo": "of the Saint"}, "PREFIXOS": {"Untada de piche": "Pitch-smeared", "Untado de piche": "Pitch-smeared", "Ardente": "Burning", "Ardentes": "Burning", "Envenenada": "Poisoned", "Envenenado": "Poisoned", "Peçonhento": "Venomous", "Peçonhenta": "Venomous", "Peçonhentos": "Venomous", "Peçonhentas": "Venomous", "Afiada": "Sharp", "Afiado": "Sharp", "Reforçada": "Reinforced", "Reforçado": "Reinforced", "Reforçados": "Reinforced", "Reforçadas": "Reinforced", "Equilibrada": "Balanced", "Equilibrado": "Balanced", "Benta": "Blessed", "Bento": "Blessed", "Longa": "Long", "Longo": "Long", "Leve": "Light", "Leves": "Light"}, "BASES": {"Faca": "Knife", "Espada": "Sword", "Acha": "Hand Axe", "Maça de armas": "Mace", "Lança": "Spear", "Machado dinamarquês": "Dane Axe", "Besta": "Crossbow", "Besta de mão": "Hand Crossbow", "Escudo de amêndoa": "Kite Shield", "Broquel": "Buckler", "Punhos": "Fists", "Capuz de couro": "Leather Hood", "Capelo de malha": "Mail Coif", "Elmo de nasal": "Nasal Helm", "Gambesão": "Gambeson", "Loriga": "Haubergeon", "Lorigão": "Hauberk", "Cota de malha": "Mail Shirt", "Hábito de peregrino": "Pilgrim's Habit", "Lamelar turco": "Turkish Lamellar", "Cazagante": "Kazaghand", "Luvas de couro": "Leather Gloves", "Manoplas de malha": "Mail Mittens", "Botas de couro": "Leather Boots", "Botas de cano alto": "Riding Boots", "Cruz de peregrino": "Pilgrim's Cross", "Relicário": "Reliquary", "Anel de sinete": "Signet Ring", "Anel de prata": "Silver Ring", "Cinto de couro": "Leather Belt", "Cinturão de soldado": "Soldier's Girdle", "Cinto de cavaleiro": "Knight's Belt", "Sobreveste de cruzado": "Crusader's Surcoat", "Elmo de rosto": "Face-plate Helm", "Elmo fechado": "Face-plate Helm", "Escudo de Ibelin": "Shield of Ibelin", "Martelo de guerra": "War Hammer", "Arco composto": "Composite Bow", "Escudo redondo": "Round Shield", "Keffiyeh": "Keffiyeh", "Turbante sobre capelo": "Turban over Coif", "Elmo turco": "Turkish Helm", "Jaque de couro": "Leather Jack", "Gibão egípcio": "Egyptian Gambeson", "Couraça de couro cozido": "Boiled Leather Cuirass", "Cota sem mangas": "Sleeveless Mail", "Couraça turca": "Turkish Scale Cuirass"}, "RAROS1": {"Mordida": "Bite", "Juramento": "Oath", "Fúria": "Fury", "Vigília": "Vigil", "Sombra": "Shadow", "Presa": "Fang", "Promessa": "Promise", "Ira": "Wrath"}, "RAROS2": {"do Deserto": "of the Desert", "de Gaza": "of Gaza", "da Costa": "of the Coast", "do Peregrino": "of the Pilgrim", "de Ascalão": "of Ascalon", "da Areia": "of the Sand", "do Cerco": "of the Siege", "de Ramla": "of Ramla"}};
+const NOMES_ITENS_EN = {"SUFIXOS": {"do Cruzado Devoto": "of the Devout Crusader", "do Naftador": "of the Naphtha Thrower", "do Envenenador": "of the Poisoner", "da Salamandra": "of the Salamander", "do Unicórnio": "of the Unicorn", "do Peregrino Provado": "of the Tried Pilgrim", "da Víbora": "of the Viper", "do Mestre de Esgrima": "of the Fencing Master", "do Quebra-Escudos": "of the Shieldbreaker", "do Lanceiro": "of the Spearman", "do Varegue": "of the Varangian", "do Besteiro": "of the Crossbowman", "do Escudeiro": "of the Squire", "de São Jorge": "of Saint George", "de aço damasco": "of Damascus Steel", "bem temperada": "of Fine Temper", "bem temperado": "of Fine Temper", "do Veterano": "of the Veteran", "de Gênova": "of Genoa", "de carvalho": "of Oak", "com bossa de ferro": "with Iron Boss", "do Sobrevivente": "of the Survivor", "do Peregrino": "of the Pilgrim", "do Corredor": "of the Runner", "do Esgrimista": "of the Fencer", "do Cruzado": "of the Crusader", "do Mestre": "of the Master", "do Convalescente": "of the Convalescent", "do Penitente": "of the Penitent", "do Santo": "of the Saint"}, "PREFIXOS": {"Untada de piche": "Pitch-smeared", "Untado de piche": "Pitch-smeared", "Ardente": "Burning", "Ardentes": "Burning", "Envenenada": "Poisoned", "Envenenado": "Poisoned", "Peçonhento": "Venomous", "Peçonhenta": "Venomous", "Peçonhentos": "Venomous", "Peçonhentas": "Venomous", "Afiada": "Sharp", "Afiado": "Sharp", "Reforçada": "Reinforced", "Reforçado": "Reinforced", "Reforçados": "Reinforced", "Reforçadas": "Reinforced", "Equilibrada": "Balanced", "Equilibrado": "Balanced", "Benta": "Blessed", "Bento": "Blessed", "Longa": "Long", "Longo": "Long", "Leve": "Light", "Leves": "Light"}, "BASES": {"Faca": "Knife", "Espada": "Sword", "Acha": "Hand Axe", "Maça de armas": "Mace", "Lança": "Spear", "Machado dinamarquês": "Dane Axe", "Besta": "Crossbow", "Besta de mão": "Hand Crossbow", "Escudo de amêndoa": "Kite Shield", "Broquel": "Buckler", "Punhos": "Fists", "Capuz de couro": "Leather Hood", "Capelo de malha": "Mail Coif", "Elmo de nasal": "Nasal Helm", "Gambesão": "Gambeson", "Loriga": "Haubergeon", "Lorigão": "Hauberk", "Cota de malha": "Mail Shirt", "Hábito de peregrino": "Pilgrim's Habit", "Lamelar turco": "Turkish Lamellar", "Cazagante": "Kazaghand", "Luvas de couro": "Leather Gloves", "Manoplas de malha": "Mail Mittens", "Botas de couro": "Leather Boots", "Botas de cano alto": "Riding Boots", "Cruz de peregrino": "Pilgrim's Cross", "Relicário": "Reliquary", "Anel de sinete": "Signet Ring", "Anel de prata": "Silver Ring", "Cinto de couro": "Leather Belt", "Cinturão de soldado": "Soldier's Girdle", "Cinto de cavaleiro": "Knight's Belt", "Sobreveste de cruzado": "Crusader's Surcoat", "Elmo de rosto": "Face-plate Helm", "Elmo fechado": "Face-plate Helm", "Escudo de Ibelin": "Shield of Ibelin", "Martelo de guerra": "War Hammer", "Arco composto": "Composite Bow", "Escudo redondo": "Round Shield", "Keffiyeh": "Keffiyeh", "Turbante sobre capelo": "Turban over Coif", "Elmo turco": "Turkish Helm", "Jaque de couro": "Leather Jack", "Gibão egípcio": "Egyptian Gambeson", "Couraça de couro cozido": "Boiled Leather Cuirass", "Cota sem mangas": "Sleeveless Mail", "Couraça turca": "Turkish Scale Cuirass", "Cimitarra": "Scimitar"}, "RAROS1": {"Mordida": "Bite", "Juramento": "Oath", "Fúria": "Fury", "Vigília": "Vigil", "Sombra": "Shadow", "Presa": "Fang", "Promessa": "Promise", "Ira": "Wrath"}, "RAROS2": {"do Deserto": "of the Desert", "de Gaza": "of Gaza", "da Costa": "of the Coast", "do Peregrino": "of the Pilgrim", "de Ascalão": "of Ascalon", "da Areia": "of the Sand", "do Cerco": "of the Siege", "de Ramla": "of Ramla"}};
 // --- nomes de itens montados em português (base + prefixo + sufixo) -> inglês ---
 // "Espada Afiada de Gênova" -> "Sharp Sword of Genoa"; raros "Fúria do Deserto" -> "Fury of the Desert";
 // gemas "Rubi lascado" -> "Chipped Ruby"
@@ -2335,6 +2335,110 @@ for (const k of Object.keys(TRADUCAO_EN)) {
   const K = k.toUpperCase();
   if (K !== k && TRADUCAO_EN[K] === undefined && k.length < 60) TRADUCAO_EN[K] = TRADUCAO_EN[k].toUpperCase();
 }
+
+;
+// ===== js/i18n_en_extra.js =====
+// Textos em inglês do que entrou em 31/out (atlas do reino, companheiro,
+// oratórios, lendários do sultão). Passar depois para ferramentas/traducao/*.py.
+Object.assign(TRADUCAO_EN, {
+  'Judeia · 1177': 'Judaea · 1177', 'O Reino': 'The Kingdom',
+  'de Ascalão a Tiro · 1177–1192': 'from Ascalon to Tyre · 1177–1192', '25 km · cinco léguas': '25 km · five leagues',
+  'Banias': 'Banias', 'Séforis': 'Sephoria', 'Estrada da costa': 'Coast road', 'Samaria': 'Samaria', 'Galileia': 'Galilee',
+  'Monte Hermon': 'Mount Hermon', 'Mar da Galileia': 'Sea of Galilee', 'Mar Morto': 'Dead Sea', 'Rio Jordão': 'River Jordan',
+  'Terra do sultão': "The sultan's lands", 'Cesareia': 'Caesarea', 'Haifa': 'Haifa', 'Nazaré': 'Nazareth', 'Tiberíades': 'Tiberias',
+  'Nablus': 'Nablus', 'Sídon': 'Sidon', 'Damasco': 'Damascus', 'Kerak': 'Kerak',
+  'Não foi possível salvar o jogo agora.': 'The game could not be saved right now.',
+  'Jogo salvo (sem o mapa descoberto: o navegador está sem espaço).': 'Game saved (without the explored map: the browser is out of space).',
+  'O jogo salvo tinha um problema; parte dele pode não ter sido carregada.': 'The saved game had a problem; part of it may not have loaded.',
+  'K · equipar': 'K · equip', 'Tela cheia': 'Full screen', 'Neste aparelho, use Compartilhar → Adicionar à Tela de Início para jogar em tela cheia.': 'On this device, use Share → Add to Home Screen to play full screen.', 'O navegador não deixou entrar em tela cheia aqui. Abra o jogo numa aba própria e tente de novo.': 'The browser did not allow full screen here. Open the game in its own tab and try again.', 'O navegador não deixou entrar em tela cheia aqui.': 'The browser did not allow full screen here.', 'Dar ao companheiro': 'Give to companion', 'Tirar': 'Remove', 'Do alforje de Tomás': "From Tomás's saddlebag", 'uma mão': 'one-handed',
+  'a arma dele (sem bônus)': 'his own weapon (no bonus)', 'a besta dele (sem bônus)': 'his own crossbow (no bonus)',
+  'Ele caiu. A Irmã Inês (ou o boticário do lugar) pode cuidar dele.': 'He has fallen. Sister Inês (or the local apothecary) can tend to him.',
+  'K ou Esc fecha': 'K or Esc closes', 'Ele usa bestas e arcos.': 'He uses crossbows and bows.',
+  'Ele usa armas de corpo a corpo e escudo.': 'He uses melee weapons and a shield.',
+  'Nenhuma besta, arco, elmo ou armadura no alforje.': 'No crossbow, bow, helm or armour in the saddlebag.',
+  'Nenhuma arma de corpo a corpo, escudo, elmo ou armadura no alforje.': 'No melee weapon, shield, helm or armour in the saddlebag.',
+  'Você ainda não tem um companheiro.': "You don't have a companion yet.", 'Essa peça não serve para ele.': "That piece doesn't fit him.",
+  'Cimitarra': 'Scimitar',
+  'Cimitarra, sabre curvo dos turcos, bom para cortar de cima do cavalo': 'Scimitar, the curved Turkish sabre, good for cutting from the saddle',
+  'Cimitarra de Sunqur': "Sunqur's Scimitar", 'Elmo de Arslan, o vigia': 'Helm of Arslan the Watchman', 'Maça de Qutlugh': "Qutlugh's Mace",
+  'Lança do Xeque Fadl': "Sheikh Fadl's Spear", 'Escudo de Farrukh-Shah': "Farrukh-Shah's Shield", 'Lança do Litani': 'Spear of the Litani',
+  'Martelo do sapador Yaqut': 'Hammer of Yaqut the Sapper', 'Arco de Gökböri': "Gökböri's Bow", 'Cimitarra de Taqi al-Din': "Taqi al-Din's Scimitar",
+  'Couraça de Abd al-Salam': "Abd al-Salam's Cuirass", 'Lamelar de Jawali': "Jawali's Lamellar", 'Cimitarra da guarda de Saladino': "Scimitar of Saladin's Guard",
+  'Sunqur saqueava por conta própria; a lâmina ainda cheira à fumaça de Ramla.': 'Sunqur plundered on his own account; the blade still smells of the smoke of Ramla.',
+  'De cima da ruína, Arslan via o leproso chegar. Não viu Tomás.': 'From the top of the ruin Arslan watched the leper king coming. He did not see Tomás.',
+  'O capitão da guarda caiu em Montgisard com ela na mão.': 'The captain of the guard fell at Montgisard with it in his hand.',
+  'A ponta era untada com o mesmo veneno das flechas dos salteadores.': "The point was smeared with the same poison as the raiders' arrows.",
+  'Farrukh-Shah, sobrinho do sultão, deu-o a Kurtay depois de Banias.': "Farrukh-Shah, the sultan's nephew, gave it to Kurtay after Banias.",
+  'Bozan segurou com ela o vau do Litani contra os que fugiam de Marj Ayyun.': 'With it Bozan held the ford of the Litani against those fleeing Marj Ayyun.',
+  'Escorou a mina do Chastellet. Ainda tem piche no cabo.': 'It propped up the mine under the Chastellet. There is still pitch on the haft.',
+  'Presente de Gökböri, senhor de Harran, ao capitão que mandou a Cresson.': 'A gift from Gökböri, lord of Harran, to the captain he sent to Cresson.',
+  'Taqi al-Din, sobrinho de Saladino, comandava a ala direita em Hattin. O porta-estandarte levava a lâmina dele.': "Taqi al-Din, Saladin's nephew, led the right wing at Hattin. His standard-bearer carried his blade.",
+  'Escamas de ferro sobre couro, feitas em Damasco para o capitão que cercou Tiro.': 'Iron scales on leather, made in Damascus for the captain who besieged Tyre.',
+  'Dois anos de cerco em Acre. O fogo grego dos francos nunca a atravessou.': "Two years of siege at Acre. The Franks' Greek fire never went through it.",
+  'Só os homens da halqa, a guarda pessoal do sultão, levavam estas lâminas. Aybak não a entregou em Arsuf.': "Only the men of the halqa, the sultan's own guard, carried these blades. Aybak did not give his up at Arsuf.",
+  'Panóplia da halqa': 'Panoply of the Halqa', 'Cimitarra da halqa': 'Scimitar of the Halqa', 'Elmo turco da halqa': 'Turkish Helm of the Halqa',
+  'Couraça da halqa': 'Cuirass of the Halqa', 'Escudo redondo da halqa': 'Round Shield of the Halqa',
+  'Arreios do arqueiro turcomano': "The Turcoman Archer's Harness", 'Arco do turcomano': "Turcoman's Bow", 'Turbante do turcomano': "Turcoman's Turban",
+  'Gibão do turcomano': "Turcoman's Gambeson", 'Luvas do turcomano': "Turcoman's Gloves",
+  'Ruínas de Bethgibelin': 'Ruins of Bethgibelin', 'RUÍNAS DE BETHGIBELIN': 'RUINS OF BETHGIBELIN', 'A Liça de Bethgibelin': 'The Lists of Bethgibelin',
+  'Roger de Mirabel, o cavaleiro sem senhor': 'Roger of Mirabel, the Lordless Knight', 'Ilghazi, campeão turcomano': 'Ilghazi, Turcoman Champion',
+  'Qaymaz, emir da halqa': 'Qaymaz, Emir of the Halqa',
+  'Esta liça fica em Bethgibelin, a antiga Eleuterópolis. O rei Fulco ergueu aqui um castelo e o deu aos Hospitalários; ao lado ficaram as ruínas de um anfiteatro romano, com as colunas de pé no meio da areia. Perto daqui, há quinhentos anos, os árabes venceram os bizantinos em Ajnadayn.':
+    'These lists are at Bethgibelin, the old Eleutheropolis. King Fulk built a castle here and gave it to the Hospitallers; beside it lie the ruins of a Roman amphitheatre, its columns still standing in the sand. Near here, five hundred years ago, the Arabs defeated the Byzantines at Ajnadayn.',
+  'Fato: o castelo de Bethgibelin (1136, Guilherme de Tiro, livro XIV) e o anfiteatro romano de Eleuterópolis (século II). A batalha de Ajnadayn (634) é posta perto dali por vários historiadores':
+    'Fact: the castle of Bethgibelin (1136, William of Tyre, book XIV) and the Roman amphitheatre of Eleutheropolis (2nd century). Several historians place the battle of Ajnadayn (634) nearby',
+  'Os irmãos do Hospital mantêm a areia limpa para que os homens do rei não percam a mão. Contra eles vêm mercenários, desertores e campeões turcomanos, pagos a peso de prata, em séries de dez ondas, cada uma mais dura que a outra.':
+    "The brothers of the Hospital keep the sand clear so the king's men do not lose their edge. Against them come mercenaries, deserters and Turcoman champions, paid in silver, in series of ten waves, each harder than the last.",
+  'Aqui ninguém despoja os caídos: só se recolhem as ataduras e o oximel deles. Na quinta onda vem um campeão, e tu ergues um estandarte. Na décima, o campeão da Liça; quem o derruba leva a bolsa e o que ele trouxer, às vezes uma peça lendária. Quem cai leva o ouro do que venceu, e ninguém aqui morre sem confissão.':
+    'Here no one strips the fallen: only their bandages and oxymel are gathered. On the fifth wave a champion comes, and you raise a standard. On the tenth, the champion of the Lists; whoever brings him down takes the purse and whatever he carried, sometimes a legendary piece. Whoever falls keeps the gold of what he won, and no one here dies unshriven.'
+});
+Object.assign(TRADUCAO_EN, {
+  "A Cruz de Montgisard · Epílogo": "The Cross of Montgisard · Epilogue",
+  "Diante do túmulo vazio": "Before the Empty Tomb",
+  "Jerusalém, outubro de 1192": "Jerusalem, October 1192",
+  "Tomás ficou de joelhos até as lâmpadas de azeite baixarem. Não pediu nada. Quinze anos antes, em Ascalão, era o filho de um ferreiro com uma espada emprestada; agora não tinha mais nada para defender, nenhuma ordem para cumprir, nenhum rei para seguir.": "Tomás stayed on his knees until the oil lamps burned low. He asked for nothing. Fifteen years before, at Ascalon, he had been a blacksmith's son with a borrowed sword; now he had nothing left to defend, no order to obey, no king to follow.",
+  "E foi ali, no silêncio da Rotunda, que entendeu que isso não era vazio. O túmulo também estava vazio, e era por isso que os homens vinham de tão longe. Lembrou do rei leproso, de Godofredo, de Onofre, dos que ficaram em Hattin. Não tinha sobrevivido por acaso.": "And there, in the silence of the Rotunda, he understood that this was not emptiness. The tomb was empty too, and that was why men came from so far away. He remembered the leper king, Godfrey, Humphrey, those who stayed at Hattin. He had not survived by chance.",
+  "\"Senhor, não sei por que me guardaste. Mas daqui em diante a minha vida é tua.\"": "\"Lord, I do not know why You kept me. But from now on my life is Yours.\"",
+  "Ficção. Fato: pela trégua de 1192, os cristãos podiam visitar o Sepulcro desarmados": "Fiction. Fact: under the truce of 1192, Christians could visit the Sepulchre unarmed",
+  "Caymont, ao pé do Carmelo": "Caymont, at the Foot of Carmel",
+  "Na trégua, Balião de Ibelin recebeu o senhorio de Caymont, nas encostas do monte Carmelo, perto de Acre. Tomás foi com ele. Balião morreu no ano seguinte, e Tomás ficou a serviço da viúva, a rainha Maria, e do filho João.": "In the truce, Balian of Ibelin received the lordship of Caymont, on the slopes of Mount Carmel, near Acre. Tomás went with him. Balian died the following year, and Tomás stayed in the service of his widow, Queen Maria, and of his son John.",
+  "Numa aldeia do vale conheceu Marta, filha de um oleiro cristão da Síria, que cantava os salmos em siríaco na igrejinha da encosta. Casaram-se na Páscoa de 1194. Guilherme, o pai, já velho, veio de Acre para a festa com Isabel e Alice. Era a primeira vez em sete anos que a família inteira sentava à mesma mesa.": "In a village in the valley he met Marta, the daughter of a Syrian Christian potter, who sang the psalms in Syriac in the little church on the hillside. They were married at Easter 1194. Guilherme, his father, now old, came from Acre for the feast with Isabel and Alice. It was the first time in seven years that the whole family sat at the same table.",
+  "Fato: Balião recebeu Caymont em 1192 e morreu em 1193; o filho João seria depois senhor de Beirute. Ficção: Marta e a vida de Tomás": "Fact: Balian received Caymont in 1192 and died in 1193; his son John would later be lord of Beirut. Fiction: Marta and the life of Tomás",
+  "A bigorna nova": "The New Anvil",
+  "Os anos de paz": "The Years of Peace",
+  "O avô de Tomás tinha deixado uma bigorna em Ramla, e o pai não conseguiu trazê-la. Tomás forjou outra, à beira do rio Quisom, e voltou ao ofício da família: ferraduras, pregos, relhas de arado e, de vez em quando, uma espada para os homens de Acre.": "Tomás's grandfather had left an anvil in Ramla, and his father could not bring it away. Tomás forged another, on the banks of the river Kishon, and went back to the family trade: horseshoes, nails, ploughshares and, now and then, a sword for the men of Acre.",
+  "Teve três filhos: Guilherme, como o avô; Isabel, como a avó; e Jorge, por causa de Lida. A trégua foi renovada outras vezes, e por muitos anos as caravanas e os peregrinos passaram pela estrada de Acre sem medo. Toda Páscoa, Tomás subia a Jerusalém com a família, desarmado, como tinha prometido diante do túmulo.": "He had three children: Guilherme, like his grandfather; Isabel, like his grandmother; and Jorge, because of Lydda. The truce was renewed again and again, and for many years the caravans and the pilgrims travelled the Acre road without fear. Every Easter Tomás went up to Jerusalem with his family, unarmed, as he had promised before the tomb.",
+  "Ficção. Fato: as tréguas com os aiúbidas foram renovadas várias vezes depois de 1192": "Fiction. Fact: the truces with the Ayyubids were renewed several times after 1192",
+  "In hoc signo": "In hoc signo",
+  "Tomás de Ramla morreu velho, em Caymont, com os netos em volta. Na pedra do túmulo os filhos gravaram uma cruz e as palavras que ele repetia quando lhe perguntavam por Montgisard:": "Tomás of Ramla died an old man, at Caymont, with his grandchildren around him. On his gravestone his children carved a cross and the words he used to repeat when asked about Montgisard:",
+  "\"Não fui eu que venci. Fui guardado.\"": "\"It was not I who won. I was kept.\"",
+  "Fim de A Cruz de Montgisard. Obrigado por jogar.": "The end of The Cross of Montgisard. Thank you for playing.",
+  "Criação e direção: Rodrigo Torquato Mazzoli · In Hoc Signo Ludimus": "Created and directed by Rodrigo Torquato Mazzoli · In Hoc Signo Ludimus",
+  "Continuar": "Continue",
+  "Fim": "The End",
+  "(Tomás tira o manto de peregrino e se ajoelha diante do túmulo vazio.)": "(Tomás takes off his pilgrim cloak and kneels before the empty tomb.)",
+  "Mais uma vez até aqui, filho, e pelo caminho mais duro. Ainda pesa? Então volta a Ascalão: o caminho continua lá.": "Here once more, my son, and by the harder road. Does it still weigh on you? Then go back to Ascalon: the road is still there.",
+  "Levanta-te, Messire Tomás. Muitos dos que chegam aqui querem ainda pagar por alguma coisa. Se o peso dos que ficaram para trás não te deixa, há uma penitência: voltar a Ascalão e refazer o caminho inteiro, com tudo o que tens, contra inimigos mais duros.": "Rise, Messire Tomás. Many who come here still wish to pay for something. If the weight of those left behind will not leave you, there is a penance: go back to Ascalon and walk the whole road again, with all you have, against harder enemies.",
+  "Quero fazer a penitência. (Recomeçar desde Ascalão, mais difícil, com tudo o que tenho)": "I want to do penance. (Start again from Ascalon, harder, with everything I have)",
+  "Ver de novo a história de Tomás.": "See Tomás's story again.",
+  "Fico em paz. (Continuar em Jerusalém)": "I will stay in peace. (Remain in Jerusalem)",
+  "Vai com Deus, peregrino. O túmulo te espera aqui no fim.": "Go with God, pilgrim. The tomb awaits you here at the end.",
+  "Senta-te, então. Há histórias que fazem bem ouvir duas vezes.": "Sit down, then. Some stories are good to hear twice."
+});
+PADROES_EN.unshift(
+  [/^Onda (\d+) de (\d+) · o campeão da Liça · inimigos de pé: (\d+)$/, 'Wave $1 of $2 · the champion of the Lists · enemies standing: $3'],
+  [/^A bolsa: (\d+) de ouro e (.+?)( \(lendária!\))? · Voltar$/, (o, n, l) => `The purse: ${o} gold and ${n}${l ? ' (legendary!)' : ''} · Return`],
+  [/^A bolsa: (\d+) de ouro · Voltar$/, 'The purse: $1 gold · Return'],
+  [/^(.+) caiu!$/, '$1 has fallen!'],
+  [/^Você caiu\. Os seus o levaram até (.+)\.$/, 'You fell. Your comrades carried you to $1.'],
+  [/^Dano (\d+) a (\d+) \(\+(\d+) a (\d+) sagrado\)$/, 'Damage $1 to $2 (+$3 to $4 holy)'],
+  [/^Dano (\d+) a (\d+)$/, 'Damage $1 to $2'],
+  [/^Golpe a cada (\S+) s$/, 'Strikes every $1 s'],
+  [/^Defesa (\d+) \(−(\d+)%\)$/, 'Defence $1 (−$2%)'],
+  [/^Bloqueio (\d+)%$/, 'Block $1%'],
+  [/^Dar \((arma|elmo|armadura|escudo)\)$/, (e) => `Give (${({ arma: 'weapon', elmo: 'helm', armadura: 'armour', escudo: 'shield' })[e] || e})`]
+);
+if (typeof NOMES_ITENS_EN !== 'undefined') NOMES_ITENS_EN.BASES.Cimitarra = 'Scimitar';
 
 ;
 // ===== js/tiles.js =====
@@ -3901,66 +4005,120 @@ MAPAS.hattin = {
 ;
 // ===== js/mapas/jerusalem.js =====
 // =====================================================================
-// MAPA: Jerusalém
+// MAPA: Jerusalém (a cidade inteira dentro das muralhas)
 // =====================================================================
-// O trecho norte de Jerusalém, perto do portão de Santo Estêvão, onde Saladino
-// abriu a brecha em setembro de 1187. Ao sul, a igreja do Santo Sepulcro.
-// Gerado por ferramentas/mapas_ato5.py (mude lá e gere de novo).
+// Gerado por ferramentas/jerusalem/gen_mapa.py; o cenário foi renderizado no Blender
+// por ferramentas/jerusalem/render.py e empacotado por empacotar.py (assets/cenario/jerusalem).
+// Ao norte, o portão de Santo Estêvão (por onde Saladino atacou em 1187) e as brechas;
+// a oeste a Cidadela e a Torre de Davi; no meio o Santo Sepulcro, o Hospital e o mercado;
+// a leste o monte do Templo (Templum Domini e Templum Salomonis); ao sul o portão de Sião.
 MAPAS.jerusalem = {
   nome: 'Jerusalém',
   defesas: [
-    { id: 'muro1', nome: 'Brecha do oeste', x: 16.5, y: 11, texto: 'A brecha do oeste aguenta. Os burgueses jogam pedras do alto.',
+    { id: 'muro1', nome: 'Brecha do oeste', x: 21.5, y: 14.5, texto: 'A brecha do oeste aguenta. Os burgueses jogam pedras do alto.',
       onda: [['mameluco6', 0, -5], ['mameluco6', -2, -6], ['infante6', 2, -5], ['arqueiro6', -4, -7], ['arqueiro6', 4, -7], ['lanceiro6', 0, -7]] },
-    { id: 'muro2', nome: 'Brecha do leste', x: 32.5, y: 11, texto: 'A brecha do leste aguenta. Mas a muralha já não tem quem a segure.',
+    { id: 'muro2', nome: 'Brecha do leste', x: 58.5, y: 14.5, texto: 'A brecha do leste aguenta. Mas a muralha já não tem quem a segure.',
       onda: [['mameluco6', 0, -5], ['infante6', -2, -6], ['infante6', 2, -6], ['lanceiro6', 0, -7], ['arqueiro6', -4, -7], ['arqueiro6', 4, -7], ['guardaTaqi', 1, -8]] },
-    { id: 'muro3', nome: 'Portão de Santo Estêvão', x: 24.5, y: 11, ativa: () => !!flags.def_muro1 && !!flags.def_muro2,
+    { id: 'muro3', nome: 'Brecha junto ao portão', x: 29.5, y: 14.5, ativa: () => !!flags.def_muro1 && !!flags.def_muro2,
       texto: 'Os sapadores derrubaram um pedaço da muralha perto do portão. Não há mais como segurar a cidade.',
       onda: [['mameluco6', -4, -3], ['mameluco6', 4, -3], ['guardaTaqi', 0, -5], ['lanceiro6', -6, -4], ['lanceiro6', 6, -4], ['arqueiro6', -2, -7], ['arqueiro6', 2, -7]] }
   ],
   linhas: [
-    '#rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr#',
-    '#,,,,,,.,,,,,,,..,,,,,,,.,,.,,,,,,,.,,,,,.,#',
-    '#,,,AA,,,,,,,,.,,,,,,,.,.,,,,,AA....,.,,.,.#',
-    '#,,,AA,,,,AA,,,,,,.,,,,,,.,,.,AA,,,,AA,,,,,#',
-    '#.,,,,,,,.AA,,,,,,F,,.,,,,,,,,,,,,,,AA,,,,,#',
-    '#,,,,,,,,,,,,,,,,,.,,,,,,,F.,,,.,,.,,..,.,,#',
-    '#,.,.,,,,,,,,,,,,,,,...,,.,.,,,.,,,,.,.,.,,#',
-    '#,,,,,,,,,,,,,,,,.,.,,,,,,,,,,.,,,,,,.,,,,,#',
-    '#,,,,,,,,,,,,,,,,..,,.,,,,,,,,,,,,,,,,.,,,,#',
-    '#####t#######t##,,###t##G####t##,,###t######',
-    '#==============k==k============k==k========#',
-    '#==========================================#',
-    '#=hhhhhh==hhhhh====hhhh===hhhhh====hhhhhhh=#',
-    '#=hhhhhh==hhhhh====hhhh===hhhhh====hhhhhhh=#',
-    '#=hhhhhh==hhhhh====hhhh===hhhhh====hhhhhhh=#',
-    '#=hhhhhh==hhhhh====hhhh===hhhhh====hhhhhhh=#',
-    '#=hhhhhh==================hhhhh============#',
-    '#==========================================#',
-    '#==========================================#',
-    '#========hhhhh======================hhhhhh=#',
-    '#=hhhhh==hhhhh==============hhhhh===hhhhhh=#',
-    '#=hhhhh==hhhhh==============hhhhh===hhhhhh=#',
-    '#=hhhhh==hhhhh==============hhhhh===hhhhhh=#',
-    '#=hhhhh==hhhhh==============hhhhh===hhhhhh=#',
-    '#=hhhhh=====================hhhhh===hhhhhh=#',
-    '#=hhhhh====================================#',
-    '#==============cccccccccccc================#',
-    '#===========F==cccccccccccc===F============#',
-    '#==============cccccccccccc=======hhhhhhhh=#',
-    '#=hhhhhh=======cccccccccccc=======hhhhhhhh=#',
-    '#=hhhhhh=======cccccccccccc=======hhhhhhhh=#',
-    '#=hhhhhh=======cccccccccccc=======hhhhhhhh=#',
-    '#=hhhhhh=======cccccccccccc=======hhhhhhhh=#',
-    '#=hhhhhh=======cccccccccccc=======hhhhhhhh=#',
-    '#=hhhhhh==========================hhhhhhhh=#',
-    '############################################'
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    '................B..............................................T............T.......',
+    '.....................T......T......................T........B.......................',
+    '.........T........................................................T....T............',
+    '.......................................................T...............T.........B..',
+    '....T......................T...................................................T....',
+    '.................B.....T..........................................T.........T.......',
+    '.....ttt......ttt......ttt......ttt......ttt......ttt......ttt......ttt.............',
+    '.....ttt......ttt......ttt......ttttt...tttt......ttt......ttt......ttt.............',
+    'rrrr.ttt######ttt###...ttt##...#tttttGGGtttt######ttt####...tt######ttt#######rrrrrr',
+    'rrrr..##############...#####...###tttGGGttt##############...##################rrrrrr',
+    'rrrr..##=================================hhhh=h=============h===============##rrrrrr',
+    'rrrr..##hhhhT============================hhhh=h=~~~~~~======h=ccccccccc=hhhh##rrrrrr',
+    'rrrr..##hhhh===========T==ccccc==========hhhh=h=~~~~~~======h=ccccccccc=hhhh##rrrrrr',
+    'rrrr..##hhhh==============ccccc=================RRRRRR========ccccccccc=hhhh##rrrrrr',
+    'rrrr..##hhhh=====ccccc=ccccccccccc=======hhhh=h=~~~~~~========ccccccccc=hhhh##rrrrrr',
+    'rrrr..##========cccccccccccccccccc=======hhhh=h=~~~~~~========ccccccccc=====##rrrrrr',
+    'rrrrttt#hh=hh==ccccccccccccccccccccc==========================ccccccccc=hh==#tttrrrr',
+    'rrrrttt#hh=hh==ccccccccccccccccccccc==========h==========hhhh===========hh=tttttrrrr',
+    'rrrrttt#=======ccccccccccccccccccccc==========h==========hhhh==============tttttrrrr',
+    'rrrr..##hhhhh==ccccccccccccccccccccc=======================================tttrrrrrr',
+    'rrrr..##hhhhh==ccccccccccccccccccccc========================================GGrrrrrr',
+    'rrrr..##hhhhh===cccccccccccccccccc================T=========================GGrrrrrr',
+    'rrrr..##=========ccccc=ccccccccccc==========================================GGrrrrrr',
+    'rrrr..##hhhhh=======ttt==================hh=hh=hh=hhh======================tttrrrrrr',
+    'rrrr..##hhhhh=======ttt==================hh=hh=hh=hhh======================tttrrrrrr',
+    'rrrrttt#hhhhh=======ttt==================hh=hh=hh=hhh======================tttttrrrr',
+    'rrrrtttt==============================================RRRRRRMMRRRRRRRRMMRRRR#tttrrrr',
+    'rrrrtttt=================================hhhhh=hhhhh==RMMMMMMMMMMMMMMMMMMMMM#tttrrrr',
+    'rrrr.ttt==============================================RMMMMMMMMMMMMMMMMMMMMM##rrrrrr',
+    'rrrr..GG==============================================MMMMMMMMMMMMMMMMMMMMMM##rrrrrr',
+    'rrrr..GG==============================================MMMTMMMMMMMMTMMMMMMMMM##rrrrrr',
+    'rrrr..GG==============================================MMMMMMMMMMMMMMMMMMMMMM##rrrrrr',
+    'rrrr.tttOOOOOOO=======================================RMMMMMMMMMMMMMMMMMMTMM##rrrrrr',
+    'rrrr.tttOOtttOO=======hhhhhhhhhhhhhh=====cccccc=======RMMMMMMMMMMMMMMMMMMMMM##rrrrrr',
+    'rrrrttttOOtttOO==hhhh=hhhhhhhhhhhhhh=====cccccc=======RMMMMMMMMMMMMMMMMMMMMM#tttrrrr',
+    'rrrrttt#OOtttOO==hhhh=hhhhhhhhhhhhhh=====cccccc=======RMMMMMMMMMMMMMMMMMMMMM#tttrrrr',
+    'rrrrttt#OOOOOOO==hhhh=hhhh======hhhh=====cccccc=======RMMMTMMMMMMMMMMMMMMMMM#tttrrrr',
+    'rrrr..##OO===OO==hhhh=hhhh======hhhhs===scccccc=======RMMMMMMMMccccMMMMMMMMM##rrrrrr',
+    'rrrr..##OO===OO=======hhhh======hhhh=====cccccc=======RMMMMMMMccccccMMMMMMMM##rrrrrr',
+    'rrrr..##OO===OO==hhhhhhhhh======hhhhs===s=============RMMMMMMccccccccMMMMMMM##rrrrrr',
+    'rrrr..##=========hhhhhhhhhhhhhhhhhhh=====hhhh=hhhhh=h=RMMMMMccccccccccMMMMMM##rrrrrr',
+    'rrrr..##=========hhhhhhhhhhhhhhhhhhhs===shhhh=hhhhh=h=RMMMMMccccccccccccMMMM##rrrrrr',
+    'rrrr..##hh=hh=========hhhhhhhhhhhhhh==================MMMMMMccccccccccccMMMM##rrrrrr',
+    'rrrrttt#hh=hh====hhhhh=hh=hhhh=hhhh=s===shhh=hhhh=====MMMMMMccccccccccMMMMMM#tttrrrr',
+    'rrrrttt#=========hhhhh=hh=hhhh=hhhh======hhh=hhhh=====RMMMMMMccccccccMMMMMMM#tttrrrr',
+    'rrrrttt#hhhh=====hhhhh=hh=hhhh=hhhh=s===s=============RMMMMMMMccccccMMMMMMMM#tttrrrr',
+    'rrrr..##hhhh=====hhhhh=hh=hhhh=hhhh======hhh=hh=hhhh==RMMMMMMMMccccMMMMMMMMM##rrrrrr',
+    'rrrr..##hhhh========================s===shhh=hh=hhhh==RMMMMMMMMMMMMMMMMMTMMM##rrrrrr',
+    'rrrr..##hhhh=============================hhh=hh=hhhh==RMMMMMTMMMMMMMMMMMMMMM##rrrrrr',
+    'rrrr..##===============hhhhh=hh=hhhh==================RMMMMMMMMMMMMMMMMMMMMM##rrrrrr',
+    'rrrr..##======cccccccc=hhhhh=hh=hhhh=====hh=hh=hh=hhh=RMMTMMMMMMMMMMMMMMMMMM##rrrrrr',
+    'rrrr..##======cccccccc=hhhhh=hh=hhhh=====hh=hh=hh=hhh=RMMMMMMMMMMMMMMMMMMTMM##rrrrrr',
+    'rrrrttt#======cccccccc=hhhhh=hh=hhhh=====hh=hh=hh=hhh=RMMMMMMMMMMMMMMMMMMMMM#tttrrrr',
+    'rrrrttt#======cccccccc================================RMMMMMMMMMMMMMMMMMMMMM#tttrrrr',
+    'rrrrttt#======cccccccc=hhh=hhhh=hhh======hhh=hhh======MMMMMMccccccccccMMMMMM#tttrrrr',
+    'rrrr..##======cccccccc=hhh=hhhh=hhh======hhh=hhh======RMMMMMccccccccccMMMMMM##rrrrrr',
+    'rrrr..##======cccccccc=hhh=hhhh=hhh======hhh=hhh======RMMMMMccccccccccMMMMMM##rrrrrr',
+    'rrrr..##hhhhh=hhhhh=hh=hhh=hhhh=hhh======hhh=hhh======RMMMMMccccccccccMMMMMM##rrrrrr',
+    'rrrr..##hhhhh=hhhhh=hh================================RMMMMMccccccccccMMMMMM##rrrrrr',
+    'rrrr..##=====================hhhhh=h=====hhhh=hhhh=hh=RMMMMMccccccccccMMMMMM##rrrrrr',
+    'rrrr..##hh=hhh=hhhh=hhh======hhhhh=h=====hhhh=hhhh=hh=RMMMMMccccccccccMMMMMM##rrrrrr',
+    'rrrrttt#hh=hhh=hhhh=hhh===============================RMMMMMccccccccccMMMMMM#tttrrrr',
+    'rrrrttt#hh=hhh=hhhh=hhhhhhhh=hhhh=hh=====hh=hh===T====RMMMMMMMMMMMMMMMMMMMMM#tttrrrr',
+    'rrrrttt#hh=hhh=hhhh=hhhhhhhh=hhhh=hh=====hh=hh==============================#tttrrrr',
+    'rrrr..##====================================================================##rrrrrr',
+    'rrrr..##===================ttt===ttt========================================##rrrrrr',
+    'rrrr..#####################tttGGGttt##########################################rrrrrr',
+    'rrrr.ttt######ttt######ttt#tttGGGttt#####ttt######ttt######ttt######ttt#######rrrrrr',
+    'rrrrrtttrrrrrrtttrrrrrrtttrrrrrrtttrrrrrrtttrrrrrrtttrrrrrrtttrrrrrrtttrrrrrrrrrrrrr',
+    'rrrrrtttrrrrrrtttrrrrrrtttrrrrrrtttrrrrrrtttrrrrrrtttrrrrrrtttrrrrrrtttrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr'
   ],
-  portais: {
-
-  },
+  portais: {},
   rotulos: [
-    { x: 20, y: 30, texto: 'Santo Sepulcro', altura: 8 },
-    { x: 24, y: 9, texto: 'Portão de Santo Estêvão', altura: 9 }
+    { x: 28, y: 26.5, texto: 'Santo Sepulcro', altura: 16 },
+    { x: 38, y: 12, texto: 'Portão de Santo Estêvão', altura: 11 },
+    { x: 64.5, y: 45.5, texto: 'Templum Domini', altura: 22 },
+    { x: 64.5, y: 61, texto: 'Templum Salomonis', altura: 15 },
+    { x: 28.5, y: 41.5, texto: 'Hospital de São João', altura: 10 },
+    { x: 11, y: 38, texto: 'Torre de Davi', altura: 15 },
+    { x: 66, y: 17.5, texto: 'Santa Ana', altura: 13 },
+    { x: 50.5, y: 17, texto: 'Piscina de Betesda', altura: 3 },
+    { x: 17.5, y: 57, texto: 'São Tiago dos Armênios', altura: 13 },
+    { x: 43.5, y: 39.5, texto: 'Santa Maria Latina', altura: 13 },
+    { x: 38, y: 46, texto: 'Mercado', altura: 4 },
+    { x: 6.5, y: 34, texto: 'Porta de Davi', altura: 11 },
+    { x: 76.5, y: 25, texto: 'Porta de Josafá', altura: 11 },
+    { x: 31, y: 70.5, texto: 'Porta de Sião', altura: 11 }
   ]
 };
 
@@ -8700,9 +8858,20 @@ function morrerJogador() {
   ataque = null; alvoInimigo = null; destino = null;
   const atoAqui = typeof atoDoMapa === 'function' ? atoDoMapa(nomeDoMapaAtual()) : 1;
   const ato2 = atoAqui === 2, ato3 = atoAqui === 3;
-  avisar(ato3 ? 'Você caiu. Os seus o levaram ao acampamento do rei.'
+  if (atoAqui < 4) avisar(ato3 ? 'Você caiu. Os seus o levaram ao acampamento do rei.'
     : ato2 ? 'Você caiu. Os seus o levaram para Ibelin.' : 'Você caiu. Os seus o levaram de volta a Ascalão.');
   perderOuroAoCair();
+  if (atoAqui >= 4) {
+    // Atos IV a VI: os seus o levam ao último oratório deste ato (antes ia para Ascalão)
+    const doAto = (o) => o && MAPAS[o.mapa] && atoDoMapa(o.mapa) === atoAqui;
+    const ultimo = typeof ultimoOratorioId !== 'undefined' ? ORATORIOS.find((x) => x.id === ultimoOratorioId) : null;
+    const o = doAto(ultimo) ? ultimo : ORATORIOS.find((x) => doAto(x) && descobertos[x.id]) || ORATORIOS.find(doAto);
+    if (o) {
+      avisar(`Você caiu. Os seus o levaram até ${o.nome}.`);
+      iniciarTransicao({ destino: o.mapa, chegada: o.chegada, renascer: true });
+      return;
+    }
+  }
   iniciarTransicao(ato3 ? { destino: 'campoReal', chegada: { x: 20, y: 18.5 }, renascer: true }
                  : ato2 ? { destino: 'ibelin', chegada: { x: 19, y: 26 }, renascer: true }
                         : { destino: 'ascalao', chegada: { x: 23, y: 77 }, renascer: true });
@@ -8947,7 +9116,7 @@ function contratarCompanheiro(tipo) {
   if (companheiro && companheiro.tipo === tipo) { avisar(`${t.nome} já está com você.`); return; }
   if (jogador.ouro < t.preco) { avisar(`Contratar custa ${t.preco} de ouro.`); return; }
   // Um companheiro por vez: quem estava com você volta para a guarda dele
-  if (companheiro) avisar(`${TIPOS_COMPANHEIRO[companheiro.tipo].nome} voltou para os seus.`);
+  if (companheiro) { devolverEquipDoCompanheiro(); avisar(`${statsDoCompanheiro().nome} voltou para os seus.`); }
   jogador.ouro -= t.preco;
   companheiro = { tipo, x: jogador.x + 0.8, y: jogador.y + 0.4, vida: t.vidaMax, morto: false, preparo: 0, recarga: 0, angulo: 0,
                   mapa: nomeDoMapaAtual() };
@@ -8959,9 +9128,9 @@ function tratarCompanheiro() {
   if (jogador.ouro < PRECO_TRATAR) { avisar(`Cuidar dele custa ${PRECO_TRATAR} de ouro.`); return; }
   jogador.ouro -= PRECO_TRATAR;
   companheiro.morto = false;
-  companheiro.vida = TIPOS_COMPANHEIRO[companheiro.tipo].vidaMax;
+  companheiro.vida = statsDoCompanheiro().vidaMax;
   companheiro.x = jogador.x + 0.8; companheiro.y = jogador.y + 0.4; companheiro.mapa = nomeDoMapaAtual();
-  avisar(`${TIPOS_COMPANHEIRO[companheiro.tipo].nome} está de pé de novo.`);
+  avisar(`${statsDoCompanheiro().nome} está de pé de novo.`);
 }
 
 const companheiroAtivo = () => companheiro && !companheiro.morto;
@@ -8977,8 +9146,8 @@ function trazerCompanheiro() {
 }
 
 function ferirCompanheiro(dano) {
-  const t = TIPOS_COMPANHEIRO[companheiro.tipo];
-  dano = Math.max(1, Math.round(dano * (1 - (t.defesa || 0))));
+  const t = statsDoCompanheiro();
+  dano = Math.max(1, Math.round(dano * (1 - (t.defesa || 0)) * (1 - (t.reducao || 0))));
   companheiro.vida -= dano;
   companheiro.flash = 0.15;
   numeros.push({ x: companheiro.x, y: companheiro.y, altura: t.altura, texto: String(dano), cor: '#f0a080', tempo: 0.8 });
@@ -9017,10 +9186,10 @@ function moverCompanheiro(alvoX, alvoY, vel, dt) {
 function atualizarCompanheiro(dt) {
   if (!companheiroNoMapa()) return;
   if (companheiro.morto) { companheiro.tempoMorto += dt; return; }
-  const t = TIPOS_COMPANHEIRO[companheiro.tipo];
+  const t = statsDoCompanheiro();
   companheiro.flash = Math.max(0, (companheiro.flash || 0) - dt);
   companheiro.recarga = Math.max(0, companheiro.recarga - dt);
-  companheiro.vida = Math.min(t.vidaMax, companheiro.vida + 0.8 * dt);   // se recupera devagar
+  companheiro.vida = Math.min(t.vidaMax, companheiro.vida + (t.regen || 0.8) * dt);   // se recupera devagar
 
   // Muito longe (o jogador correu ou viajou): alcança o jogador
   const dj = Math.hypot(jogador.x - companheiro.x, jogador.y - companheiro.y);
@@ -9036,10 +9205,10 @@ function atualizarCompanheiro(dt) {
       if (t.distancia) {
         const a = Math.atan2(alvo.y - companheiro.y, alvo.x - companheiro.x) + (Math.random() - 0.5) * 0.08;
         projeteis.push({ x: companheiro.x, y: companheiro.y, dx: Math.cos(a), dy: Math.sin(a), restante: 10,
-                         stats: { dano: t.dano }, doCompanheiro: true });
+                         stats: { dano: t.dano, sagrado: t.sagrado }, doCompanheiro: true });
       } else {
         const alcance = t.alcance / METROS_POR_TILE + RAIO_COMP + alvo.tipo.raio + 0.15;
-        if (Math.hypot(alvo.x - companheiro.x, alvo.y - companheiro.y) <= alcance) ferirInimigo(alvo, { dano: t.dano });
+        if (Math.hypot(alvo.x - companheiro.x, alvo.y - companheiro.y) <= alcance) ferirInimigo(alvo, { dano: t.dano, sagrado: t.sagrado });
       }
       companheiro.recarga = t.recarga;
     }
@@ -9073,7 +9242,7 @@ function atualizarCompanheiro(dt) {
 // --- Desenho -------------------------------------------------------------
 
 function desenharCompanheiro(cx, cy) {
-  const t = TIPOS_COMPANHEIRO[companheiro.tipo];
+  const t = statsDoCompanheiro();
   const andando = estaAndando(companheiro);
   let nome = 'stance', fracao, tempo;
   if (companheiro.morto) { nome = 'die'; tempo = companheiro.tempoMorto; }
@@ -9082,7 +9251,7 @@ function desenharCompanheiro(cx, cy) {
   const t2 = animar(companheiro, nome, performance.now());
   if (tempo === undefined) tempo = t2;
   if (companheiro.flash > 0) ctx.filter = 'brightness(1.8)';
-  const ok = desenharAvatar(APARENCIAS[t.visual], companheiro.angulo, nome, tempo, fracao, cx, cy, t.altura);
+  const ok = desenharAvatar(aparenciaDoCompanheiro(), companheiro.angulo, nome, tempo, fracao, cx, cy, t.altura);
   ctx.filter = 'none';
   if (!ok) desenharBlocoMetros(cx, cy, 0.6, t.altura, ['#6a8fb0', '#3f5a73', '#557590']);
 }
@@ -9091,7 +9260,7 @@ function desenharCompanheiro(cx, cy) {
 function desenharVidaCompanheiro() {
   if (!companheiro) return;
   ctx.textAlign = 'left';
-  const t = TIPOS_COMPANHEIRO[companheiro.tipo];
+  const t = statsDoCompanheiro();
   const x = 16, y = 86;
   ctx.fillStyle = 'rgba(0,0,0,0.6)'; ctx.fillRect(x - 2, y - 14, 154, 30);
   ctx.font = '11px Alegreya, Georgia, serif'; ctx.fillStyle = companheiro.morto ? '#e0574a' : '#d9cfbb';
@@ -9429,7 +9598,12 @@ function desenharIcone(item, cx, cy, s) {
     const base = item.base;
     const cat = categoriaDe(item);
     if (cat === 'arma') {
-      if (base === 'espada' || base === 'faca') {
+      if (base === 'cimitarra') {
+        ctx.strokeStyle = COR_ACO; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(-10, 10); ctx.quadraticCurveTo(4, 2, 15, -15); ctx.stroke();
+        ctx.strokeStyle = '#fff'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(-8, 7); ctx.quadraticCurveTo(5, 0, 15, -15); ctx.stroke();
+        linha(COR_OURO_IC, 3, [-14, 6], [-6, 14]);
+        linha(COR_COURO, 3.5, [-11, 11], [-16, 16]);
+      } else if (base === 'espada' || base === 'faca') {
         const L = base === 'faca' ? 10 : 15;
         linha(COR_ACO, 4, [-L * 0.8, L * 0.8], [L, -L]); linha('#fff', 1, [-L * 0.6, L * 0.6], [L, -L]);
         linha(COR_OURO_IC, 3, [-L * 0.9 + 4, L * 0.9 + 4 - 8], [-L * 0.9 - 4 + 8, L * 0.9 + 4]);
@@ -9539,6 +9713,9 @@ function abrirMenuItem(item, origem) {
          cinto[item.remedio] < maximoPorRemedio() ? '' : 'cinto cheio');
     }
     else op('Equipar', () => equipar(jogador.alforje.indexOf(item)));
+    // o companheiro também usa armas e armaduras (js/companheiro_equip.js)
+    if (!gema && !item.tipo && companheiro && typeof espacoNoCompanheiro === 'function' && espacoNoCompanheiro(item))
+      op('Dar ao companheiro', () => darAoCompanheiro(jogador.alforje.indexOf(item)));
   } else if (origem.reserva) {
     op('Usar este conjunto (Q)', () => trocarArma(), !ataque);
     op('Guardar no alforje', () => {
@@ -11185,11 +11362,12 @@ function desenharHudToque() {
   desenharEfeitosAtivos(bx, y0 + 58);
   // companheiro e desgaste, embaixo
   if (companheiro) {
-    const t = TIPOS_COMPANHEIRO[companheiro.tipo];
+    const t = statsDoCompanheiro();
     const cy = y0 + 92;
     ctx.font = '11px Alegreya, Georgia, serif';
     textoComSombra(companheiro.morto ? `${t.nome} (caído)` : t.nome, bx, cy, companheiro.morto ? '#e0574a' : '#d9cfbb');
     barraHud(bx, cy + 4, 110, 5, companheiro.vida / t.vidaMax, ['#c0392b', '#7a1a12'], '#1a120c', null);
+    retCompanheiroHud = { x: bx - 4, y: cy - 14, w: 170, h: 26 };
   }
   desenharAvisosDeDesgaste(bx, companheiro ? y0 + 120 : y0 + 96);
   // minimapa (os dois botões à direita dele são HTML)
@@ -11242,10 +11420,12 @@ function desenharHudPC() {
   desenharPlacaDoAlvo();
   // companheiro e desgaste no canto de cima
   if (companheiro) {
-    const t = TIPOS_COMPANHEIRO[companheiro.tipo];
+    const t = statsDoCompanheiro();
     ctx.font = FONTE_SC(12);
-    textoComSombra(companheiro.morto ? `${t.nome} (caído)` : t.nome, 16, 24, companheiro.morto ? '#e0574a' : '#e8d9b0');
-    barraHud(16, 30, 150, 7, companheiro.vida / t.vidaMax, ['#c0392b', '#7a1a12'], '#1a120c', '#6b5532');
+    textoComSombra(companheiro.morto ? `${t.nome} (caído)` : t.nome, 58, 24, companheiro.morto ? '#e0574a' : '#e8d9b0');
+    barraHud(58, 30, 150, 7, companheiro.vida / t.vidaMax, ['#c0392b', '#7a1a12'], '#1a120c', '#6b5532');
+    ctx.font = '10px Alegreya, Georgia, serif'; textoComSombra('K · equipar', 58, 50, '#8f846c');
+    retCompanheiroHud = { x: 52, y: 8, w: 165, h: 46 };
   }
   desenharAvisosDeDesgaste(16, companheiro ? 58 : 24);
 
@@ -12320,7 +12500,27 @@ const COR_DO_NOME_ELITE = { lider: '#e8b931', campeao: '#8fb0f0' };
 
 let CHAVE_SALVO = 'cruz-de-montgisard-salvo';   // o modo admin troca por outra (js/admin.js)
 
+// Para o JSON: tira funções e referências circulares (um objeto do mundo que
+// tenha entrado no jogador por engano não pode impedir o jogo de salvar)
+function replacerSeguro() {
+  const vistos = new WeakSet();
+  return (k, v) => {
+    if (typeof v === 'function') return undefined;
+    if (typeof v === 'number' && !Number.isFinite(v)) return 0;
+    if (v && typeof v === 'object') { if (vistos.has(v)) return undefined; vistos.add(v); }
+    return v;
+  };
+}
+
 function salvarJogo() {
+  try { salvarJogoSemProteger(); }
+  catch (e) {
+    console.error('Erro ao salvar', e);
+    avisar('Não foi possível salvar o jogo agora.');
+  }
+}
+
+function salvarJogoSemProteger() {
   const o = oratorioProximo();
   const dados = {
     versao: 1,
@@ -12337,13 +12537,22 @@ function salvarJogo() {
     },
     cinto, flags, descobertos,
     explorado: exploracaoParaSalvar(),          // névoa: o que já foi descoberto (js/nevoa.js)
-    companheiro: companheiro ? { tipo: companheiro.tipo, vida: companheiro.vida, morto: companheiro.morto } : null
+    companheiro: companheiro ? { tipo: companheiro.tipo, vida: companheiro.vida, morto: companheiro.morto, equip: companheiro.equip || null } : null
   };
+  let texto;
+  try { texto = JSON.stringify(dados); } catch (e) { texto = JSON.stringify(dados, replacerSeguro()); }
   try {
-    localStorage.setItem(CHAVE_SALVO, JSON.stringify(dados));
+    localStorage.setItem(CHAVE_SALVO, texto);
     avisar('Jogo salvo.');
   } catch (e) {
-    avisar('Não foi possível salvar neste navegador.');
+    // sem espaço no navegador: salva sem o mapa descoberto (a névoa)
+    try {
+      dados.explorado = {};
+      localStorage.setItem(CHAVE_SALVO, JSON.stringify(dados, replacerSeguro()));
+      avisar('Jogo salvo (sem o mapa descoberto: o navegador está sem espaço).');
+    } catch (e2) {
+      avisar('Não foi possível salvar neste navegador.');
+    }
   }
 }
 
@@ -12362,8 +12571,18 @@ function descreverJogoSalvo(d) {
   return [ato, pen, o ? o.nome : null, data].filter(Boolean).join(' · ');
 }
 
-// Devolve true se havia um jogo salvo e ele foi carregado
+// Devolve true se havia um jogo salvo e ele foi carregado.
+// Um jogo salvo com defeito não pode travar a abertura do jogo.
 function carregarJogo() {
+  try { return carregarJogoSemProteger(); }
+  catch (e) {
+    console.error('Erro ao carregar o jogo salvo', e);
+    if (!mapaAtual || !mapaAtual.linhas) mapaAtual = MAPAS.ascalao;
+    avisar('O jogo salvo tinha um problema; parte dele pode não ter sido carregada.');
+    return true;
+  }
+}
+function carregarJogoSemProteger() {
   let dados = null;
   try { dados = JSON.parse(localStorage.getItem(CHAVE_SALVO)); } catch (e) { return false; }
   if (!dados) return false;
@@ -12375,7 +12594,11 @@ function carregarJogo() {
   Object.assign(flags, dados.flags);
   Object.assign(descobertos, dados.descobertos);
   carregarExploracao(dados.explorado);
-  if (dados.companheiro) companheiro = { ...dados.companheiro, x: jogador.x, y: jogador.y, preparo: 0, recarga: 0, angulo: 0, mapa: null, tempoMorto: 9 };
+  if (dados.companheiro && TIPOS_COMPANHEIRO[dados.companheiro.tipo]) {
+    companheiro = { ...dados.companheiro, x: jogador.x, y: jogador.y, preparo: 0, recarga: 0, angulo: 0, mapa: null, tempoMorto: 9 };
+    if (!Number.isFinite(companheiro.vida)) companheiro.vida = statsDoCompanheiro().vidaMax;
+    for (const i of Object.values(companheiro.equip || {})) if (i) garantirDurabilidade(i);
+  }
   // Itens novos não podem repetir o número de itens antigos
   // Jogos salvos antes do escudo e do equipamento existirem
   if (!jogador.escudos) jogador.escudos = [null, null];
@@ -12392,16 +12615,18 @@ function carregarJogo() {
   delete jogador.maestria; delete jogador.habilidadeF;
   migrarHabilidades();
   recalcularAtributos();
-  const ids = [...jogador.armas, ...jogador.escudos, ...Object.values(jogador.equipamento), ...jogador.alforje, ...(jogador.bau || [])]
+  const ids = [...jogador.armas, ...jogador.escudos, ...Object.values(jogador.equipamento), ...jogador.alforje, ...(jogador.bau || []),
+               ...Object.values((companheiro && companheiro.equip) || {})]
     .filter(Boolean).map((i) => i.id);
   proximoIdItem = Math.max(proximoIdItem, ...ids, 0) + 1;
 
   const o = ORATORIOS.find((x) => x.id === dados.oratorio);
-  if (o) {
+  if (o && MAPAS[o.mapa]) {
     mapaAtual = MAPAS[o.mapa];
     jogador.x = o.chegada.x;
     jogador.y = o.chegada.y;
   }
+  if (!Number.isFinite(jogador.vida) || jogador.vida <= 0) jogador.vida = jogador.vidaMax;
   avisar('Jogo carregado do último oratório.');
   return true;
 }
@@ -12701,7 +12926,8 @@ MISSOES.push(
 const pontosRamla = () => ['viu_casa', 'viu_forja'].filter((f) => flags[f]).length;
 const carrocasAchadas = () => ['viu_carroca1', 'viu_carroca2', 'viu_carroca3'].filter((f) => flags[f]).length;
 
-const NOMES_ATOS = { 1: 'Ato I', 2: 'Ato II', 3: 'Ato III' };
+const NOMES_ATOS = { 1: 'Ato I', 2: 'Ato II', 3: 'Ato III', 4: 'Ato IV', 5: 'Ato V', 6: 'Ato VI' };
+const ROMANOS_ATOS = { 1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V', 6: 'VI' };
 
 let diarioAberto = false;
 let atoNoDiario = 1;
@@ -12846,9 +13072,14 @@ function desenharDiario() {
   ctx.fillText('×', fechar.x + 8, fechar.y + 20);
 
   // Abas dos atos
-  let ax = x + 140;
-  for (const ato of [1, 2, 3]) {
-    const aba = { x: ax, y: y + 14, w: 82, h: 28, acao: () => { atoNoDiario = ato; } };
+  // seis atos: as abas encolhem para caber (só o número romano se ficarem estreitas)
+  const atosDiario = [1, 2, 3, 4, 5, 6];
+  const ax0 = x + (w < 520 ? 104 : 140);
+  const passoAba = Math.min(90, Math.floor((x + w - 48 - ax0) / atosDiario.length));
+  const largAba = passoAba - 6;
+  let ax = ax0;
+  for (const ato of atosDiario) {
+    const aba = { x: ax, y: y + 14, w: largAba, h: 28, acao: () => { atoNoDiario = ato; } };
     areasDoDiario.push(aba);
     const ativa = atoNoDiario === ato;
     ctx.fillStyle = ativa ? 'rgba(232, 185, 49, 0.18)' : 'rgba(255,255,255,0.04)';
@@ -12857,8 +13088,9 @@ function desenharDiario() {
     ctx.strokeRect(aba.x + 0.5, aba.y + 0.5, aba.w - 1, aba.h - 1);
     ctx.font = (ativa ? 'bold ' : '') + '14px Alegreya, Georgia, serif';
     ctx.fillStyle = ativa ? '#ffe9a8' : '#a39a86';
-    ctx.fillText(NOMES_ATOS[ato], aba.x + 18, aba.y + 19);
-    ax += 90;
+    const rotAba = largAba >= 66 ? NOMES_ATOS[ato] : ROMANOS_ATOS[ato];
+    ctx.fillText(rotAba, aba.x + (aba.w - ctx.measureText(rotAba).width) / 2, aba.y + 19);
+    ax += passoAba;
   }
 
   const topo = y + 60;
@@ -15401,7 +15633,18 @@ function desenharAbaVirtudes(a) {
 let atlasAberto = false;
 
 // --- Projeção: longitude/latitude -> pontos do desenho (1000 x 860) ---
-const ATLAS_LON = [34.38, 35.30], ATLAS_LAT = [32.12, 31.45];
+let ATLAS_LON = [34.38, 35.30], ATLAS_LAT = [32.12, 31.45];
+// Duas folhas: a Judeia de 1177 (Atos I a III) e o reino inteiro, até Tiro e
+// Banias (Atos IV a VI). A folha muda as bordas da projeção.
+let folhaAtlas = 'sul';
+const FOLHAS_ATLAS = {
+  sul:   { aba: 'Judeia · 1177', lon: [34.38, 35.30], lat: [32.12, 31.45], titulo: 'TERRA SANCTA', sub: 'de Ascalão a Lida · Anno Domini 1177',
+           tituloX: 700, mar: [150, 330], escalaKm: 5 },
+  reino: { aba: 'O Reino', lon: [33.55, 36.52], lat: [33.62, 31.45], titulo: 'REGNUM HIEROSOLYMITANUM', sub: 'de Ascalão a Tiro · 1177–1192',
+           tituloX: 30, mar: [330, 470], escalaKm: 12.5 }
+};
+const dentroDaFolha = (f, lat, lon) => { const F = FOLHAS_ATLAS[f];
+  return lon >= F.lon[0] && lon <= F.lon[1] && lat <= F.lat[0] && lat >= F.lat[1]; };
 function atlasXY(lat, lon) {
   return [(lon - ATLAS_LON[0]) / (ATLAS_LON[1] - ATLAS_LON[0]) * 1000,
           (lat - ATLAS_LAT[0]) / (ATLAS_LAT[1] - ATLAS_LAT[0]) * 860];
@@ -15457,7 +15700,9 @@ const REFERENCIAS_ATLAS = [
 // Linha da costa, do sul para o norte (aproximada)
 const COSTA_ATLAS = [[30.60, 33.80], [31.20, 34.20], [31.43, 34.36], [31.48, 34.41], [31.53, 34.45], [31.58, 34.495], [31.62, 34.53], [31.66, 34.555],
   [31.70, 34.575], [31.75, 34.605], [31.80, 34.635], [31.85, 34.665], [31.90, 34.695], [31.95, 34.715], [32.00, 34.735],
-  [32.05, 34.745], [32.10, 34.76], [32.13, 34.77], [32.60, 34.86], [33.20, 34.95]];
+  [32.05, 34.745], [32.10, 34.76], [32.13, 34.77], [32.33, 34.85], [32.50, 34.885], [32.70, 34.94], [32.80, 34.955],
+  [32.83, 34.98], [32.84, 35.04], [32.88, 35.07], [32.927, 35.075], [33.05, 35.10], [33.17, 35.15], [33.271, 35.19],
+  [33.40, 35.26], [33.56, 35.37], [33.80, 35.48], [34.30, 35.65]];
 
 // Estradas da época (aproximadas): a da costa, a de Ramla e a de Jerusalém
 const ESTRADAS_ATLAS = [
@@ -15484,7 +15729,7 @@ function missoesNoAtlas() {
     const s = situacao(m);
     if (s.estado !== 'ativa') continue;
     const lugar = (LOCAIS_DAS_MISSOES[m.id] || [])[s.passo];
-    if (lugar) r.push({ m, lugar, texto: m.passos[s.passo].texto });
+    if (lugar && LUGARES_ATLAS[lugar]) r.push({ m, lugar, texto: m.passos[s.passo].texto });
   }
   return r;
 }
@@ -15523,11 +15768,32 @@ function montanhas(lat0, lat1, lon0, lon1, n, semente, tam = 1) {
   return out;
 }
 
+// O lugar aparece nesta folha? Devolve o rótulo a usar (ou null).
+// Na folha do reino, só as cidades grandes do sul aparecem (com o rótulo de L.reino).
+function lugarNaFolha(id, L, folha) {
+  if (L.ato && L.ato >= 4 && !lugarConhecido(id) && !atoComecou(L.ato)) return null;   // sem estragar a história
+  if (folha === 'sul') return dentroDaFolha('sul', L.lat, L.lon) && !L.soReino ? L : null;
+  if (!dentroDaFolha('sul', L.lat, L.lon) || L.soReino) return L;
+  return L.reino ? { ...L, ...L.reino } : null;
+}
+const atoComecou = (ato) => ato <= 3 || !!flags[['a4Inicio', 'a5Inicio', 'a6Inicio'][ato - 4]];
+const reinoNoAtlas = () => !!flags.a4Inicio;
+function folhaDoLugar(id) {
+  const L = LUGARES_ATLAS[id];
+  if (!L) return folhaAtlas;
+  return dentroDaFolha('sul', L.lat, L.lon) && !L.soReino ? 'sul' : 'reino';
+}
+
 function desenharAtlas() {
   const svg = document.getElementById('atlasSvg');
   const aqui = lugarDoMapa(nomeDoMapaAtual());
   const ativas = missoesNoAtlas();
   const TINTA = '#3a2a14', VERMELHO = '#8c2418';
+  if (!reinoNoAtlas()) folhaAtlas = 'sul';
+  const FOLHA = FOLHAS_ATLAS[folhaAtlas], REINO = folhaAtlas === 'reino';
+  ATLAS_LON = FOLHA.lon; ATLAS_LAT = FOLHA.lat;
+  const visiveis = {};
+  for (const [id, L] of Object.entries(LUGARES_ATLAS)) { const v = lugarNaFolha(id, L, folhaAtlas); if (v) visiveis[id] = v; }
 
   // costa e mar
   const costa = pontosSvg(COSTA_ATLAS);
@@ -15542,20 +15808,22 @@ function desenharAtlas() {
   }
 
   let lugares = '';
-  for (const [id, L] of Object.entries(LUGARES_ATLAS)) {
+  for (const [id, L] of Object.entries(visiveis)) {
     const [x, y] = atlasXY(L.lat, L.lon);
     const conhecido = lugarConhecido(id);
     const tinta = L.futuro ? '#8a7650' : conhecido ? TINTA : '#8a7650';
-    const k = L.tam || 1;
+    const k = (L.tam || 1) * (REINO ? 0.85 : 1);
     lugares += `<g class="lugar" data-id="${id}"${L.futuro ? ' opacity="0.65"' : ''}><title>${esc(L.nome)}${L.futuro ? ' (' + L.futuro + ')' : conhecido ? '' : ' (ainda não visitado)'}</title>`
       + simboloDoLugar(L.tipo, x, y, k, tinta)
       + `<text x="${(x + L.dx).toFixed(1)}" y="${(y + L.dy).toFixed(1)}" text-anchor="${L.ancora}" fill="${tinta}" `
-      + `font-family="Alegreya, Georgia, serif" font-size="${(id === 'ascalao' || id === 'ibelin' || id === 'ramla' ? 21 : 17)}" `
+      + `font-family="Alegreya, Georgia, serif" font-size="${L.fonte || (REINO ? (L.tipo === 'cidade' ? 17 : 15) : (id === 'ascalao' || id === 'ibelin' || id === 'ramla' ? 21 : 17))}" `
       + `font-style="${conhecido && !L.futuro ? 'normal' : 'italic'}" font-weight="${conhecido && !L.futuro ? 600 : 400}" `
       + `paint-order="stroke" stroke="#e6d6b0" stroke-width="4" stroke-linejoin="round">${esc(L.nome)}${L.futuro ? ` · ${L.futuro}` : ''}</text></g>`;
   }
   let refs = '';
-  for (const r of REFERENCIAS_ATLAS) {
+  const nomesVisiveis = new Set(Object.values(visiveis).map((L) => L.nome));
+  for (const r of (REINO ? REFERENCIAS_REINO : REFERENCIAS_ATLAS)) {
+    if (nomesVisiveis.has(r.nome) || !dentroDaFolha(folhaAtlas, r.lat, r.lon)) continue;
     const [x, y] = atlasXY(r.lat, r.lon);
     refs += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.grande ? 5 : 3}" fill="#6b5532"/>`
       + `<text x="${(x + 9).toFixed(1)}" y="${(y + 5).toFixed(1)}" fill="#6b5532" font-family="Alegreya, Georgia, serif" `
@@ -15567,7 +15835,8 @@ function desenharAtlas() {
   const porLugar = {};
   ativas.forEach((a, i) => { (porLugar[a.lugar] ||= []).push(i); });
   for (const [lugar, idx] of Object.entries(porLugar)) {
-    const L = LUGARES_ATLAS[lugar];
+    const L = visiveis[lugar];
+    if (!L) continue;                       // a missão está na outra folha
     const [x, y] = atlasXY(L.lat, L.lon);
     idx.forEach((i, j) => {
       const sx = x - 18 - j * 24, sy = y - 26;
@@ -15582,8 +15851,8 @@ function desenharAtlas() {
 
   // "você está aqui"
   let voce = '';
-  if (LUGARES_ATLAS[aqui]) {
-    const [x, y] = atlasXY(LUGARES_ATLAS[aqui].lat, LUGARES_ATLAS[aqui].lon);
+  if (visiveis[aqui]) {
+    const [x, y] = atlasXY(visiveis[aqui].lat, visiveis[aqui].lon);
     voce = `<g transform="translate(${x.toFixed(1)},${(y + 1).toFixed(1)})" pointer-events="none">`
       + `<circle r="16" fill="none" stroke="#b8892a" stroke-width="2.5"><animate attributeName="r" values="12;22;12" dur="2.2s" repeatCount="indefinite"/>`
       + `<animate attributeName="stroke-opacity" values="0.9;0.1;0.9" dur="2.2s" repeatCount="indefinite"/></circle></g>`;
@@ -15599,8 +15868,8 @@ function desenharAtlas() {
       <text y="-52" text-anchor="middle" stroke="none" font-family="'Alegreya SC', Georgia, serif" font-size="15">N</text></g>`;
   const pxKm = 1000 / ((ATLAS_LON[1] - ATLAS_LON[0]) * 94.5);
   const escala = `<g transform="translate(40,812)" fill="${TINTA}" font-family="Alegreya, Georgia, serif" font-size="14">
-      <rect width="${(5 * pxKm).toFixed(1)}" height="6" fill="${TINTA}"/><rect x="${(5 * pxKm).toFixed(1)}" width="${(5 * pxKm).toFixed(1)}" height="6" fill="none" stroke="${TINTA}"/>
-      <text y="22">0</text><text x="${(10 * pxKm).toFixed(1)}" y="22" text-anchor="middle">10 km · duas léguas</text></g>`;
+      <rect width="${(FOLHA.escalaKm * pxKm).toFixed(1)}" height="6" fill="${TINTA}"/><rect x="${(FOLHA.escalaKm * pxKm).toFixed(1)}" width="${(FOLHA.escalaKm * pxKm).toFixed(1)}" height="6" fill="none" stroke="${TINTA}"/>
+      <text y="22">0</text><text x="${(2 * FOLHA.escalaKm * pxKm).toFixed(1)}" y="22" text-anchor="middle">${REINO ? '25 km · cinco léguas' : '10 km · duas léguas'}</text></g>`;
 
   svg.innerHTML = `
     <defs>
@@ -15616,22 +15885,26 @@ function desenharAtlas() {
     <path d="${mar}" fill="#b7c2ae"/>
     ${ondas}
     <polyline points="${costa}" fill="none" stroke="${TINTA}" stroke-width="2.2"/>
-    <text x="150" y="330" fill="#3f5a60" font-family="'Alegreya SC', Georgia, serif" font-size="26" letter-spacing="6" transform="rotate(-62 150 330)" text-anchor="middle">MARE MAGNUM</text>
-    <g stroke="#6b5532" stroke-width="1.4" fill="none" stroke-linecap="round">${montanhas(31.55, 32.05, 35.02, 35.28, 70, 11, 1.1)}${montanhas(31.62, 32.0, 34.88, 35.0, 22, 29, 0.75)}</g>
-    <text x="${atlasXY(31.93, 35.15)[0].toFixed(0)}" y="${atlasXY(31.93, 35.15)[1].toFixed(0)}" fill="#6b5532" font-family="Alegreya, Georgia, serif" font-style="italic" font-size="17" text-anchor="middle" paint-order="stroke" stroke="#e3d2aa" stroke-width="4">Montes da Judeia</text>
-    <polyline points="${pontosSvg(RIO_ATLAS)}" fill="none" stroke="#4d6a72" stroke-width="2" stroke-opacity="0.75"/>
-    <g fill="none" stroke="#7a5a2a" stroke-width="1.8" stroke-dasharray="6 5" stroke-opacity="0.8">${ESTRADAS_ATLAS.map((e) => `<polyline points="${pontosSvg(e)}"/>`).join('')}</g>
+    <text x="${FOLHA.mar[0]}" y="${FOLHA.mar[1]}" fill="#3f5a60" font-family="'Alegreya SC', Georgia, serif" font-size="26" letter-spacing="6" transform="rotate(-62 ${FOLHA.mar[0]} ${FOLHA.mar[1]})" text-anchor="middle">MARE MAGNUM</text>
+    ${REINO ? AGUAS_REINO.map((a) => `<polygon points="${pontosSvg(a)}" fill="#b7c2ae" stroke="${TINTA}" stroke-width="1.6"/>`).join('') : ''}
+    <g stroke="#6b5532" stroke-width="1.4" fill="none" stroke-linecap="round">${REINO
+      ? MONTANHAS_REINO.map((a) => montanhas(...a)).join('')
+      : montanhas(31.55, 32.05, 35.02, 35.28, 70, 11, 1.1) + montanhas(31.62, 32.0, 34.88, 35.0, 22, 29, 0.75)}</g>
+    ${(REINO ? NOMES_REINO : [{ nome: 'Montes da Judeia', lat: 31.93, lon: 35.15 }]).map((n) => { const [nx, ny] = atlasXY(n.lat, n.lon);
+      return `<text x="${nx.toFixed(0)}" y="${ny.toFixed(0)}" fill="${n.agua ? '#3f5a60' : '#6b5532'}" font-family="Alegreya, Georgia, serif" font-style="italic" font-size="${n.tam || 17}" text-anchor="middle" paint-order="stroke" stroke="#e3d2aa" stroke-width="4"${n.rot ? ` transform="rotate(${n.rot} ${nx.toFixed(0)} ${ny.toFixed(0)})"` : ''}>${esc(n.nome)}</text>`; }).join('')}
+    ${(REINO ? RIOS_REINO : [RIO_ATLAS]).map((r) => `<polyline points="${pontosSvg(r)}" fill="none" stroke="#4d6a72" stroke-width="2" stroke-opacity="0.75"/>`).join('')}
+    <g fill="none" stroke="#7a5a2a" stroke-width="1.8" stroke-dasharray="6 5" stroke-opacity="0.8">${(REINO ? ESTRADAS_REINO : ESTRADAS_ATLAS).map((e) => `<polyline points="${pontosSvg(e)}"/>`).join('')}</g>
     ${refs}
     ${lugares}
     ${voce}
     ${selos}
     ${rosa}
     ${escala}
-    <g transform="translate(700,40)">
-      <rect width="270" height="78" fill="#e9dbb8" stroke="${TINTA}" stroke-width="1.5"/>
-      <rect x="5" y="5" width="260" height="68" fill="none" stroke="${TINTA}" stroke-width="0.8"/>
-      <text x="135" y="36" text-anchor="middle" fill="${VERMELHO}" font-family="'Pirata One', Georgia, serif" font-size="30" letter-spacing="3">TERRA SANCTA</text>
-      <text x="135" y="60" text-anchor="middle" fill="${TINTA}" font-family="Alegreya, Georgia, serif" font-style="italic" font-size="16">de Ascalão a Lida · Anno Domini 1177</text>
+    <g transform="translate(${FOLHA.tituloX},40)">
+      <rect width="${REINO ? 360 : 270}" height="78" fill="#e9dbb8" stroke="${TINTA}" stroke-width="1.5"/>
+      <rect x="5" y="5" width="${REINO ? 350 : 260}" height="68" fill="none" stroke="${TINTA}" stroke-width="0.8"/>
+      <text x="${REINO ? 180 : 135}" y="36" text-anchor="middle" fill="${VERMELHO}" font-family="'Pirata One', Georgia, serif" font-size="${REINO ? 21 : 30}" letter-spacing="${REINO ? 1.5 : 3}">${FOLHA.titulo}</text>
+      <text x="${REINO ? 180 : 135}" y="60" text-anchor="middle" fill="${TINTA}" font-family="Alegreya, Georgia, serif" font-style="italic" font-size="16">${FOLHA.sub}</text>
     </g>
     <rect x="-300" y="-200" width="1600" height="1260" fill="url(#manchas)" pointer-events="none"/>
     ${MODO.toque ? '' : '<rect x="-300" y="-200" width="1600" height="1260" filter="url(#papel)" pointer-events="none"/>'}`;
@@ -15639,6 +15912,20 @@ function desenharAtlas() {
   // lista ao lado
   const L = LUGARES_ATLAS[aqui];
   document.getElementById('atlasAqui').textContent = `Você está em: ${mapaAtual.nome}${L && L.nome !== mapaAtual.nome ? ` (${L.nome})` : ''}`;
+  let abas = document.getElementById('atlasFolhas');
+  if (!abas) {
+    abas = document.createElement('div'); abas.id = 'atlasFolhas';
+    document.querySelector('#atlas .lado').prepend(abas);
+  }
+  abas.hidden = !reinoNoAtlas();
+  abas.innerHTML = '';
+  for (const [f, F] of Object.entries(FOLHAS_ATLAS)) {
+    const b = document.createElement('button');
+    b.textContent = T(F.aba);
+    b.className = f === folhaAtlas ? 'ativa' : '';
+    b.addEventListener('click', () => { folhaAtlas = f; desenharAtlas(); });
+    abas.appendChild(b);
+  }
   const lista = document.getElementById('atlasLista');
   lista.innerHTML = ativas.length ? '' : '<li class="vazio">Nenhuma missão em andamento.</li>';
   ativas.forEach((a, i) => {
@@ -15647,7 +15934,11 @@ function desenharAtlas() {
     b.innerHTML = `<span class="selo${a.m.tipo !== 'Principal' ? ' sec' : ''}">${i + 1}</span><span><strong>${esc(a.m.nome)}</strong>`
       + `<small>${esc(LUGARES_ATLAS[a.lugar].nome)}${a.lugar === aqui ? ' · aqui' : ''}</small></span>`;
     b.title = a.texto;
-    b.addEventListener('click', () => destacarSelo(i, b));
+    b.addEventListener('click', () => {
+      const f = folhaDoLugar(a.lugar);
+      if (f !== folhaAtlas && reinoNoAtlas()) { folhaAtlas = f; desenharAtlas(); const nb = document.querySelectorAll('#atlasLista button')[i]; if (nb) destacarSelo(i, nb); return; }
+      destacarSelo(i, b);
+    });
     li.appendChild(b); lista.appendChild(li);
   });
 }
@@ -15665,6 +15956,7 @@ function abrirAtlas() {
   if (dialogo || transicao) return;
   atlasAberto = true;
   diarioAberto = false; cronicaAberta = false;
+  folhaAtlas = reinoNoAtlas() ? folhaDoLugar(lugarDoMapa(nomeDoMapaAtual())) : 'sul';
   desenharAtlas();
   document.getElementById('atlas').hidden = false;
 }
@@ -16192,6 +16484,7 @@ function escolherModo(toque, admin = false, paraLica = false) {
     document.getElementById('inicio').classList.add('com-personagens');
     document.getElementById('modoJogo').hidden = false;
     montarLista();
+    setTimeout(montarLista, 0);   // de novo quando os Atos IV a VI já carregaram (o ato e o oratório certos)
     document.getElementById('btnCampanha').addEventListener('click', () => marcarModo(false));
     document.getElementById('btnLica').addEventListener('click', () => marcarModo(true));
     marcarModo(false);
@@ -16325,13 +16618,15 @@ const ACOES_TOQUE = {
   tomas: () => teclaFalsa('t'),
   cronica: () => teclaFalsa('c'),
   voltar: () => teclaFalsa('Escape'),
+  telaCheia: () => alternarTelaCheia(),
   zoomMais: () => mudarZoom(1.15),
   zoomMenos: () => mudarZoom(1 / 1.15)
 };
 
 (function prepararBotoes() {
   for (const b of document.querySelectorAll('#controles [data-acao]')) {
-    const acao = ACOES_TOQUE[b.dataset.acao];
+    // procura a ação na hora do toque (a pausa, por exemplo, é ligada depois, em js/pausa.js)
+    const acao = () => { const f = ACOES_TOQUE[b.dataset.acao]; if (f) f(); };
     let repetir = null;
     b.addEventListener('touchstart', (e) => {
       e.preventDefault(); e.stopPropagation();
@@ -17017,6 +17312,7 @@ Object.assign(MORTOS, {
   poco: ['saqueador', 'aldeao1'], tunel: ['beduino', 'aldeao2']
 });
 if (typeof ORDEM_DOS_MAPAS !== 'undefined') ORDEM_DOS_MAPAS.push('catacumbas', 'sepulcro', 'cripta', 'galeria', 'poco', 'tunel');
+if (typeof ORDEM_DOS_MAPAS !== 'undefined') ORDEM_DOS_MAPAS.push('vau', 'pedreira', 'banias', 'marj', 'minas', 'cresson', 'turan', 'hattin', 'jerusalem', 'tiro', 'acre', 'costa', 'arsuf', 'jafa');
 
 // ---------------------------------------------------------------------
 // Passagens que só aparecem em certa parte da história (aparece: 'flag')
@@ -19723,7 +20019,7 @@ window.addEventListener('keydown', (e) => {
 function aliadosPerto() {
   const r = [];
   if (typeof companheiroNoMapa === 'function' && companheiroNoMapa() && !companheiro.morto &&
-      Math.hypot(companheiro.x - jogador.x, companheiro.y - jogador.y) < RAIO_VIRTUDE) r.push({ obj: companheiro, max: TIPOS_COMPANHEIRO[companheiro.tipo].vidaMax });
+      Math.hypot(companheiro.x - jogador.x, companheiro.y - jogador.y) < RAIO_VIRTUDE) r.push({ obj: companheiro, max: statsDoCompanheiro().vidaMax });
   if (typeof aliados !== 'undefined') for (const a of aliados)
     if (!a.morto && a.t && !a.t.naoLuta && Math.hypot(a.x - jogador.x, a.y - jogador.y) < RAIO_VIRTUDE) r.push({ obj: a, max: a.t.vida });
   return r;
@@ -21206,35 +21502,643 @@ PAGINAS_CRONICA.push(
 );
 
 ;
+// ===== js/atlas_reino.js =====
+// =====================================================================
+// ATLAS DO REINO: os lugares dos Atos IV a VI (a folha "O Reino" do atlas)
+// =====================================================================
+// A folha do sul (js/atlas.js) vai de Ascalão a Lida. Esta mostra o reino
+// inteiro, do sul até Tiro, Banias e a estrada de Damasco, com o Jordão, o
+// mar da Galileia e o mar Morto. Lugares de um ato que ainda não começou
+// não aparecem (para não estragar a história).
+
+Object.assign(LUGARES_ATLAS, {
+  vau:       { nome: 'Vau de Jacó', lat: 33.004, lon: 35.629, tipo: 'castelo', dx: 14, dy: 14, ancora: 'start', ato: 4, legado: () => flags.a4Rei },
+  pedreira:  { nome: 'Pedreira das colinas', lat: 32.965, lon: 35.545, tipo: 'ruina', dx: -12, dy: 16, ancora: 'end', ato: 4, legado: () => flags.foiAPedreira },
+  banias:    { nome: 'Banias', lat: 33.248, lon: 35.694, tipo: 'campo', dx: 14, dy: 6, ancora: 'start', ato: 4, legado: () => flags.foiABanias },
+  marj:      { nome: 'Marj Ayyun', lat: 33.36, lon: 35.58, tipo: 'campo', dx: -12, dy: -8, ancora: 'end', ato: 4, legado: () => flags.foiAMarj },
+  seforis:   { nome: 'Séforis', lat: 32.753, lon: 35.279, tipo: 'acampamento', dx: -14, dy: -4, ancora: 'end', ato: 5, legado: () => flags.a5Inicio },
+  cresson:   { nome: 'Fontes de Cresson', lat: 32.69, lon: 35.31, tipo: 'campo', dx: 0, dy: 24, ancora: 'middle', ato: 5, legado: () => flags.def_estandarte },
+  turan:     { nome: 'Turan', lat: 32.776, lon: 35.37, tipo: 'campo', dx: 0, dy: -14, ancora: 'middle', ato: 5, legado: () => flags.foiAHattin },
+  hattin:    { nome: 'Cornos de Hattin', lat: 32.803, lon: 35.448, tipo: 'campo', dx: 4, dy: 22, ancora: 'start', ato: 5, legado: () => flags.foiAHattin },
+  jerusalem: { nome: 'Jerusalém', lat: 31.778, lon: 35.232, tipo: 'cidade', dx: -16, dy: -12, ancora: 'end', tam: 1.2, ato: 5, legado: () => flags.saiuDeHattin,
+               reino: { dx: 14, dy: 6, ancora: 'start', fonte: 18 } },
+  tiro:      { nome: 'Tiro', lat: 33.271, lon: 35.196, tipo: 'cidade', dx: 14, dy: 6, ancora: 'start', tam: 1.1, ato: 5, legado: () => flags.def_refugiados },
+  acre:      { nome: 'Acre', lat: 32.927, lon: 35.082, tipo: 'cidade', dx: 14, dy: 6, ancora: 'start', tam: 1.1, ato: 6, legado: () => flags.a6Ricardo },
+  costa:     { nome: 'Estrada da costa', lat: 32.50, lon: 34.905, tipo: 'campo', dx: 14, dy: 6, ancora: 'start', ato: 6, legado: () => flags.foiACosta },
+  arsuf:     { nome: 'Arsuf', lat: 32.195, lon: 34.812, tipo: 'campo', dx: 14, dy: 6, ancora: 'start', ato: 6, legado: () => flags.foiAArsuf, soReino: true },
+  jafa:      { nome: 'Jafa', lat: 32.054, lon: 34.752, tipo: 'cidade', dx: -14, dy: -6, ancora: 'end', ato: 6, legado: () => flags.def_praia,
+               reino: { dx: 14, dy: 6, ancora: 'start' } }
+});
+// Na folha do reino, as cidades do sul aparecem como referência
+Object.assign(LUGARES_ATLAS.ascalao, { reino: { dx: 14, dy: 6, fonte: 17 } });
+Object.assign(LUGARES_ATLAS.ibelin, { reino: { dx: -12, dy: 6, ancora: 'end', fonte: 15 } });
+Object.assign(LUGARES_ATLAS.ramla, { reino: { dx: 12, dy: 2, ancora: 'start', fonte: 15 } });
+Object.assign(LUGARES_ATLAS.montgisard, { reino: { dx: 6, dy: 20, ancora: 'start', fonte: 14 } });
+// Séforis é o acampamento real do Ato V; a mina fica sob o Chastellet
+Object.defineProperty(LUGAR_DO_MAPA, 'campoReal', { get: () => (flags.a5Inicio ? 'seforis' : undefined), enumerable: true, configurable: true });
+LUGAR_DO_MAPA.minas = 'vau';
+
+Object.assign(LOCAIS_DAS_MISSOES, {
+  chastellet: ['campoReal', 'vau', 'vau'],
+  pedras: ['pedreira', 'pedreira', 'pedreira', 'vau'],
+  banias: ['vau', 'banias', 'banias', 'banias', 'vau'],
+  marj: ['vau', 'marj', 'marj', 'marj', 'vau'],
+  cercoChastellet: ['vau', 'vau', 'vau', 'vau', 'vau', 'campoReal'],
+  cresson: ['seforis', 'cresson', 'cresson', 'seforis'],
+  conselho: ['seforis', 'seforis', 'seforis'],
+  sede: ['turan', 'hattin'],
+  hattin: ['hattin', 'hattin', 'hattin', 'hattin'],
+  jerusalem: ['jerusalem', 'jerusalem', 'jerusalem'],
+  tiro: ['tiro', 'tiro', 'tiro'],
+  acre: ['acre', 'acre', 'acre', 'acre'],
+  costa: ['acre', 'costa', 'arsuf'],
+  arsuf: ['arsuf', 'arsuf', 'arsuf', 'arsuf'],
+  jafa: ['jafa', 'jafa', 'jafa'],
+  sepulcro: ['jerusalem']
+});
+
+// Geografia da folha do reino
+const AGUAS_REINO = [
+  // mar da Galileia
+  [[32.885, 35.585], [32.87, 35.635], [32.82, 35.65], [32.76, 35.64], [32.71, 35.60], [32.715, 35.565], [32.77, 35.53], [32.84, 35.535]],
+  // lago Hula
+  [[33.10, 35.595], [33.10, 35.625], [33.06, 35.63], [33.055, 35.60]],
+  // mar Morto
+  [[31.775, 35.50], [31.77, 35.56], [31.62, 35.585], [31.45, 35.58], [31.30, 35.56], [31.45, 35.46], [31.62, 35.47]]
+];
+const RIOS_REINO = [
+  [[33.248, 35.694], [33.17, 35.64], [33.10, 35.61]],                            // o Jordão desce de Banias ao Hula
+  [[33.055, 35.615], [33.004, 35.629], [32.93, 35.625], [32.885, 35.61]],       // e do Hula ao mar da Galileia (o vau)
+  [[32.712, 35.575], [32.60, 35.565], [32.45, 35.56], [32.25, 35.545], [32.05, 35.53], [31.90, 35.54], [31.775, 35.535]],
+  [[33.36, 35.58], [33.33, 35.50], [33.32, 35.38], [33.34, 35.26]],             // o Litani
+  [[31.935, 34.700], [31.92, 34.74], [31.88, 34.79], [31.85, 34.86], [31.82, 34.93], [31.79, 35.00]]   // o Sorek
+];
+const MONTANHAS_REINO = [
+  [31.55, 32.0, 35.02, 35.30, 26, 11, 0.8],     // Judeia
+  [32.05, 32.48, 35.12, 35.36, 22, 31, 0.8],    // Samaria
+  [32.60, 32.74, 34.99, 35.12, 6, 47, 0.7],     // Carmelo
+  [32.86, 33.22, 35.22, 35.48, 20, 53, 0.8],    // Galileia
+  [33.26, 33.46, 35.76, 35.98, 10, 67, 1.1],    // Hermon
+  [33.40, 33.62, 35.48, 35.78, 12, 71, 0.9],    // Líbano
+  [31.45, 31.95, 35.64, 35.86, 14, 83, 0.8]     // Moab
+];
+const NOMES_REINO = [
+  { nome: 'Montes da Judeia', lat: 31.86, lon: 35.06, tam: 15 },
+  { nome: 'Samaria', lat: 32.33, lon: 35.18, tam: 15 },
+  { nome: 'Galileia', lat: 33.07, lon: 35.33, tam: 16 },
+  { nome: 'Monte Hermon', lat: 33.47, lon: 35.92, tam: 15 },
+  { nome: 'Mar da Galileia', lat: 32.79, lon: 35.73, tam: 14, agua: true },
+  { nome: 'Mar Morto', lat: 31.56, lon: 35.70, tam: 15, agua: true },
+  { nome: 'Rio Jordão', lat: 32.36, lon: 35.60, tam: 14, agua: true, rot: -84 },
+  { nome: 'Terra do sultão', lat: 33.20, lon: 36.12, tam: 16 }
+];
+const REFERENCIAS_REINO = [
+  { nome: 'Gaza', lat: 31.505, lon: 34.462 },
+  { nome: 'Cesareia', lat: 32.50, lon: 34.89 },
+  { nome: 'Haifa', lat: 32.82, lon: 34.99 },
+  { nome: 'Nazaré', lat: 32.70, lon: 35.30 },
+  { nome: 'Tiberíades', lat: 32.79, lon: 35.53 },
+  { nome: 'Nablus', lat: 32.22, lon: 35.26 },
+  { nome: 'Sídon', lat: 33.56, lon: 35.37 },
+  { nome: 'Damasco', lat: 33.51, lon: 36.29, grande: true },
+  { nome: 'Kerak', lat: 31.18, lon: 35.70 }
+];
+const ESTRADAS_REINO = [
+  [[31.505, 34.462], [31.668, 34.566], [31.877, 34.739], [32.054, 34.752], [32.195, 34.812], [32.50, 34.905], [32.70, 34.95], [32.82, 34.99], [32.927, 35.082], [33.10, 35.13], [33.271, 35.196], [33.56, 35.37]],
+  [[32.927, 35.082], [32.85, 35.18], [32.753, 35.279], [32.776, 35.37], [32.803, 35.448], [32.79, 35.53]],
+  [[31.778, 35.232], [32.0, 35.25], [32.22, 35.26], [32.46, 35.30], [32.69, 35.31], [32.753, 35.279]],
+  [[32.054, 34.752], [31.928, 34.866], [31.84, 35.00], [31.778, 35.232]],
+  [[32.79, 35.53], [32.90, 35.58], [33.004, 35.629], [33.10, 35.80], [33.30, 36.05], [33.51, 36.29]],
+  [[33.004, 35.629], [33.10, 35.645], [33.248, 35.694], [33.36, 35.58]],
+  [[33.271, 35.196], [33.11, 35.42], [33.06, 35.55], [33.004, 35.629]]
+];
+
+;
+// ===== js/oratorios_revisao.js =====
+// =====================================================================
+// REVISÃO DOS ORATÓRIOS: a chegada de cada um fica num chão livre, ao lado
+// =====================================================================
+// Algumas chegadas caíam dentro de parede (Torre, Tiro) ou longe demais do
+// oratório para o menu abrir (Ibelin, Santo Sepulcro). Ao carregar o jogo,
+// cada chegada ruim é trocada pelo ponto livre mais perto, na mesma direção.
+(function ajustarChegadasDosOratorios() {
+  const anterior = mapaAtual;
+  for (const o of ORATORIOS) {
+    const M = MAPAS[o.mapa];
+    if (!M || !M.linhas) continue;
+    mapaAtual = M;
+    const livre = (x, y) => !colide(x, y, 0.3);
+    const d = Math.hypot(o.x - o.chegada.x, o.y - o.chegada.y);
+    if (d < DISTANCIA_ORATORIO - 0.08 && d > 0.6 && livre(o.chegada.x, o.chegada.y)) continue;
+    const a0 = Math.atan2(o.chegada.y - o.y, o.chegada.x - o.x) || Math.PI / 2;
+    let achou = null;
+    for (const r of [1.0, 1.12, 0.88, 1.24]) {
+      for (let k = 0; k <= 8 && !achou; k++) {
+        for (const sinal of k ? [1, -1] : [1]) {
+          const a = a0 + sinal * k * Math.PI / 8, x = o.x + Math.cos(a) * r, y = o.y + Math.sin(a) * r;
+          if (livre(x, y)) { achou = { x: +x.toFixed(2), y: +y.toFixed(2) }; break; }
+        }
+      }
+      if (achou) break;
+    }
+    if (achou) o.chegada = achou;
+  }
+  mapaAtual = anterior;
+})();
+
+;
+// ===== js/companheiro_equip.js =====
+// =====================================================================
+// EQUIPAR O COMPANHEIRO: arma, elmo, armadura e escudo (como o mercenário do D2)
+// =====================================================================
+// Tecla K (ou clique no nome dele, no canto de cima) abre o painel. Os itens
+// saem do alforje de Tomás e voltam para ele quando se tira a peça (ou quando
+// o companheiro é dispensado). O companheiro sobe de nível com Tomás; a arma
+// dá o dano e o tempo de golpe; elmo e armadura dão defesa; o escudo segura
+// parte dos golpes. Os bônus dos itens (dano %, dano sagrado, vida, recuperação,
+// defesa) valem para ele. As peças dele não se gastam.
+
+var retCompanheiroHud = null;
+var painelCompAberto = false;
+var _cacheComp = { chave: null, stats: null };
+
+const ESPACOS_COMP = [
+  { id: 'arma', nome: 'Arma' },
+  { id: 'elmo', nome: 'Elmo' },
+  { id: 'armadura', nome: 'Armadura' },
+  { id: 'escudo', nome: 'Escudo' }
+];
+const compAtiraDeLonge = () => !!(companheiro && TIPOS_COMPANHEIRO[companheiro.tipo].distancia);
+
+// A peça serve neste espaço do companheiro?
+function serveNoCompanheiro(item, espaco) {
+  if (!item || item.tipo || !companheiro) return false;
+  const longe = compAtiraDeLonge();
+  const eq = companheiro.equip || {};
+  if (espaco === 'arma') return longe ? BESTAS.includes(item.base) : CORPO_A_CORPO.includes(item.base);
+  if (espaco === 'escudo') {
+    if (longe || !BASES_ESCUDOS[item.base]) return false;
+    const arma = eq.arma;
+    return !arma || BASES_ARMAS[arma.base].maos === 1;
+  }
+  const b = BASES_EQUIP[item.base];
+  return !!b && b.cat === espaco;
+}
+function espacoNoCompanheiro(item) {
+  return ESPACOS_COMP.map((e) => e.id).find((id) => serveNoCompanheiro(item, id)) || null;
+}
+
+// Os números do companheiro: o tipo dele, o nível de Tomás e o equipamento
+function statsDoCompanheiro() {
+  const t = TIPOS_COMPANHEIRO[companheiro.tipo];
+  const eq = companheiro.equip || {};
+  const nivel = Math.max(1, jogador.nivel || 1);
+  const chave = companheiro.tipo + ':' + nivel + ':' + ['arma', 'elmo', 'armadura', 'escudo'].map((k) => eq[k] ? eq[k].id : '-').join(',');
+  if (_cacheComp.chave === chave) return _cacheComp.stats;
+
+  const fN = 1 + 0.07 * Math.max(0, nivel - 4);          // sobe com Tomás
+  const itens = Object.values(eq).filter(Boolean);
+  const soma = (k) => itens.reduce((a, i) => a + ((i.efeitos && i.efeitos[k]) || 0), 0);
+  const arma = eq.arma, escudo = eq.escudo;
+  const ea = (arma && arma.efeitos) || {};
+  const danoPctOutros = itens.filter((i) => i !== arma).reduce((a, i) => a + ((i.efeitos && i.efeitos.danoPct) || 0), 0);
+  const multDano = fN * (1 + ((ea.danoPct || 0) + danoPctOutros) / 100);
+  let dano, recarga = t.recarga, alcance = t.alcance;
+  if (arma) {
+    const wb = BASES_ARMAS[arma.base];
+    dano = [Math.round(wb.dano[0] * multDano + (ea.danoMin || 0)), Math.round(wb.dano[1] * multDano + (ea.danoMin || 0))];
+    const tempoPct = (ea.tempoPct || 0) + itens.filter((i) => i !== arma).reduce((a, i) => a + ((i.efeitos && i.efeitos.tempoPct) || 0), 0);
+    recarga = t.distancia ? Math.max(0.6, wb.tempo * 0.8 * (1 + tempoPct / 100))
+                          : Math.max(0.5, t.recarga * (wb.tempo / 0.75) * (1 + tempoPct / 100));
+    if (!t.distancia) alcance = wb.alcance * (1 + (ea.alcancePct || 0) / 100);
+  } else {
+    dano = [Math.round(t.dano[0] * multDano), Math.round(t.dano[1] * multDano)];
+  }
+  const sag = Math.round(soma('sagrado'));
+  const defesaPts = itens.reduce((a, i) => a + ((BASES_EQUIP[i.base] && BASES_EQUIP[i.base].defesa) || 0), 0) + soma('defesa');
+  const doisMaos = arma && BASES_ARMAS[arma.base].maos === 2;
+  const bloqueio = escudo ? Math.max(t.defesa || 0, bloqueioDoEscudo(escudo)) : doisMaos ? 0 : (t.defesa || 0);
+  const st = {
+    ...t,
+    nivel,
+    vidaMax: Math.round(t.vidaMax * fN + soma('vidaMax')),
+    dano, recarga, alcance,
+    sagrado: [Math.ceil(sag / 2), sag],
+    defesa: Math.min(0.6, bloqueio),
+    defesaPts,
+    reducao: defesaPts / (defesaPts + 40),
+    regen: 0.8 * fN + soma('regenVida')
+  };
+  _cacheComp = { chave, stats: st };
+  return st;
+}
+
+// Aparência: o tipo dele, com as peças que vestir por cima
+function aparenciaDoCompanheiro() {
+  const t = TIPOS_COMPANHEIRO[companheiro.tipo];
+  const ap = { ...(APARENCIAS[t.visual] || {}) };
+  const eq = companheiro.equip || {};
+  const vis = (i) => i && VISUAL_ITEM[i.base];
+  if (vis(eq.arma)) { ap.main = vis(eq.arma); if (BASES_ARMAS[eq.arma.base].maos === 2) ap.off = null; }
+  if (vis(eq.escudo)) ap.off = vis(eq.escudo);
+  if (vis(eq.elmo)) ap.cabeca = vis(eq.elmo);
+  if (vis(eq.armadura)) {
+    ap.tronco = vis(eq.armadura);
+    if (['cota', 'sobreveste', 'cazagante'].includes(eq.armadura.base)) ap.pernas = 'chain_greaves';
+    else if (['couracaTurca', 'gibao', 'lamelar'].includes(eq.armadura.base)) ap.pernas = 'calca_branca';
+    else if (!ap.pernas) ap.pernas = 'cloth_pants';
+  }
+  return ap;
+}
+
+// Dar, tirar e devolver
+function darAoCompanheiro(indiceAlforje, espaco) {
+  const item = jogador.alforje[indiceAlforje];
+  if (!companheiro || !item) return;
+  espaco = espaco || espacoNoCompanheiro(item);
+  if (!espaco || !serveNoCompanheiro(item, espaco)) { avisar('Essa peça não serve para ele.'); return; }
+  companheiro.equip = companheiro.equip || {};
+  const antes = companheiro.equip[espaco];
+  jogador.alforje.splice(indiceAlforje, 1);
+  if (antes) jogador.alforje.push(antes);
+  companheiro.equip[espaco] = item;
+  // arma de duas mãos: o escudo volta para o alforje
+  if (espaco === 'arma' && BASES_ARMAS[item.base].maos === 2 && companheiro.equip.escudo) {
+    jogador.alforje.push(companheiro.equip.escudo);
+    companheiro.equip.escudo = null;
+  }
+  const vidaAntes = companheiro.vida;
+  companheiro.vida = Math.min(statsDoCompanheiro().vidaMax, vidaAntes);
+  if (typeof tocar === 'function') tocar('malha', { vol: 0.5 });
+  avisar(`${statsDoCompanheiro().nome}: ${item.nome}`);
+}
+function tirarDoCompanheiro(espaco) {
+  if (!companheiro || !companheiro.equip || !companheiro.equip[espaco]) return;
+  if (jogador.alforje.length >= TAMANHO_ALFORJE) { avisar('O alforje está cheio.'); return; }
+  jogador.alforje.push(companheiro.equip[espaco]);
+  companheiro.equip[espaco] = null;
+  companheiro.vida = Math.min(statsDoCompanheiro().vidaMax, companheiro.vida);
+}
+// Quem é dispensado devolve tudo (o que não couber no alforje cai no chão)
+function devolverEquipDoCompanheiro() {
+  if (!companheiro || !companheiro.equip) return;
+  for (const i of Object.values(companheiro.equip)) {
+    if (!i) continue;
+    if (jogador.alforje.length < TAMANHO_ALFORJE) jogador.alforje.push(i);
+    else largarItem(i, jogador.x + 0.4, jogador.y + 0.3);
+  }
+  companheiro.equip = {};
+}
+
+// --- O painel (HTML, para funcionar igual no computador e no celular) ---
+function textoDoItemComp(item) {
+  const b = baseDe(item);
+  const partes = [];
+  if (BASES_ARMAS[item.base]) partes.push(`Dano ${b.dano[0]} a ${b.dano[1]}`, b.maos === 2 ? 'duas mãos' : 'uma mão');
+  else if (BASES_ESCUDOS[item.base]) partes.push(`Bloqueio ${Math.round(bloqueioDoEscudo(item) * 100)}%`);
+  else if (b.defesa) partes.push(`Defesa ${b.defesa}`);
+  for (const [k, v] of Object.entries(item.efeitos || {})) if (TEXTO_EFEITO[k]) partes.push(TEXTO_EFEITO[k](v));
+  return partes.join(' · ');
+}
+function abrirPainelComp() {
+  if (!companheiro) { avisar('Você ainda não tem um companheiro.'); return; }
+  if (typeof dialogo !== 'undefined' && dialogo) return;
+  painelCompAberto = true;
+  inventarioAberto = false; diarioAberto = false;
+  if (typeof atlasAberto !== 'undefined' && atlasAberto) fecharAtlas();
+  desenharPainelComp();
+  document.getElementById('painelComp').hidden = false;
+}
+function fecharPainelComp() {
+  painelCompAberto = false;
+  const el = document.getElementById('painelComp');
+  if (el) el.hidden = true;
+}
+function desenharPainelComp() {
+  const el = document.getElementById('painelComp');
+  if (!el || !companheiro) return;
+  const st = statsDoCompanheiro();
+  const eq = companheiro.equip || {};
+  const esc2 = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  const cor = (i) => corDoItem(i);
+  let html = `<button class="fechar" aria-label="Fechar">×</button>
+    <h2>${esc2(st.nome)}</h2>
+    <p class="sub">${esc2(st.texto)}</p>
+    <p class="numeros">Nível ${st.nivel} · Vida ${Math.ceil(companheiro.vida)} / ${st.vidaMax} · Dano ${st.dano[0]} a ${st.dano[1]}${st.sagrado[1] ? ` (+${st.sagrado[0]} a ${st.sagrado[1]} sagrado)` : ''} · Golpe a cada ${st.recarga.toFixed(2)} s · Defesa ${st.defesaPts} (−${Math.round(st.reducao * 100)}%)${st.defesa ? ` · Bloqueio ${Math.round(st.defesa * 100)}%` : ''}</p>
+    ${companheiro.morto ? '<p class="aviso">Ele caiu. A Irmã Inês (ou o boticário do lugar) pode cuidar dele.</p>' : ''}
+    <div class="espacos">`;
+  for (const e of ESPACOS_COMP) {
+    if (e.id === 'escudo' && compAtiraDeLonge()) continue;
+    const i = eq[e.id];
+    html += `<div class="espaco"><span class="rot">${e.nome}</span>`
+      + (i ? `<span class="item" style="color:${cor(i)}">${esc2(i.nome)}<small>${esc2(textoDoItemComp(i))}</small></span><button data-tirar="${e.id}">Tirar</button>`
+           : `<span class="item vazio">${e.id === 'arma' ? (compAtiraDeLonge() ? 'a besta dele (sem bônus)' : 'a arma dele (sem bônus)') : 'nada'}</span>`)
+      + `</div>`;
+  }
+  html += `</div><h3>Do alforje de Tomás</h3><ol class="lista">`;
+  let algum = false;
+  jogador.alforje.forEach((i, k) => {
+    const esp = espacoNoCompanheiro(i);
+    if (!esp) return;
+    algum = true;
+    const nomeEsp = ESPACOS_COMP.find((e) => e.id === esp).nome.toLowerCase();
+    html += `<li><span class="item" style="color:${cor(i)}">${esc2(i.nome)}<small>${esc2(textoDoItemComp(i))}</small></span><button data-dar="${k}">Dar (${nomeEsp})</button></li>`;
+  });
+  if (!algum) html += `<li class="vazio">${compAtiraDeLonge() ? 'Nenhuma besta, arco, elmo ou armadura no alforje.' : 'Nenhuma arma de corpo a corpo, escudo, elmo ou armadura no alforje.'}</li>`;
+  html += `</ol><p class="nota">K ou Esc fecha · ${compAtiraDeLonge() ? 'Ele usa bestas e arcos.' : 'Ele usa armas de corpo a corpo e escudo.'}</p>`;
+  el.querySelector('.caixa').innerHTML = html;
+  el.querySelector('.fechar').addEventListener('click', fecharPainelComp);
+  el.querySelectorAll('[data-tirar]').forEach((b) => b.addEventListener('click', () => { tirarDoCompanheiro(b.dataset.tirar); desenharPainelComp(); }));
+  el.querySelectorAll('[data-dar]').forEach((b) => b.addEventListener('click', () => { darAoCompanheiro(Number(b.dataset.dar)); desenharPainelComp(); }));
+}
+
+(function prepararPainelComp() {
+  const el = document.createElement('div');
+  el.id = 'painelComp'; el.hidden = true; el.setAttribute('role', 'dialog');
+  el.innerHTML = '<div class="caixa"></div>';
+  el.addEventListener('click', (e) => { if (e.target === el) fecharPainelComp(); });
+  document.body.appendChild(el);
+  window.addEventListener('keydown', (e) => {
+    if (painelCompAberto && e.key === 'Escape') { e.stopImmediatePropagation(); e.preventDefault(); fecharPainelComp(); return; }
+    if (e.key.toLowerCase() !== 'k' || e.ctrlKey || e.metaKey) return;
+    if (typeof dialogo !== 'undefined' && dialogo) return;
+    if (menuOratorio || (typeof jogoPausado !== 'undefined' && jogoPausado)) return;
+    painelCompAberto ? fecharPainelComp() : abrirPainelComp();
+  }, true);
+  canvas.addEventListener('mousedown', (e) => {
+    if (e.button !== 0 || !companheiro || !retCompanheiroHud || janelaAberta()) return;
+    const r = retCompanheiroHud;
+    if (e.clientX > r.x && e.clientX < r.x + r.w && e.clientY > r.y && e.clientY < r.y + r.h) {
+      e.stopImmediatePropagation();
+      abrirPainelComp();
+    }
+  }, true);
+})();
+
+// Com o painel aberto, o mundo espera (como no equipamento de Tomás)
+const _janelaAbertaOrigComp = janelaAberta;
+janelaAberta = function () { return painelCompAberto || _janelaAbertaOrigComp(); };
+const _atualizarOrigComp = atualizar;
+atualizar = function (dt) {
+  if (painelCompAberto) { if (!companheiro) fecharPainelComp(); return; }
+  _atualizarOrigComp(dt);
+};
+
+;
+// ===== js/lendarios_saladino.js =====
+// =====================================================================
+// LENDÁRIOS DO EXÉRCITO DE SALADINO: o que os chefes e a guarda do sultão carregam
+// =====================================================================
+// Cada emir e capitão do sultão tem uma peça própria (o "único" do D2): cai
+// sempre na primeira vez que ele cai nesta campanha, e com 30% de chance nas
+// outras (Penitência, Liça). Os soldados de elite da halqa (a guarda do sultão)
+// e os arqueiros turcomanos podem largar peças de dois conjuntos. E entra uma
+// arma nova, a cimitarra (o sabre curvo dos turcos), que cai dos mamelucos.
+// Os nomes dos donos são de gente da época quando existiu (Taqi al-Din,
+// Gökböri, Farrukh-Shah); as peças em si são ficção do jogo.
+
+// --- A cimitarra -----------------------------------------------------------
+// (usa o desenho da espada no boneco: sem animação nova; o ícone é curvo)
+BASES_ARMAS.cimitarra = {
+  nome: 'Cimitarra', genero: 'f', estilo: 'espada', maos: 1,
+  alcance: 1.0, arco: 115, dano: [7, 12], tempo: 0.6,
+  detalhe: 'sabre curvo dos turcos, bom para cortar de cima do cavalo'
+};
+if (!ARMAS.includes('cimitarra')) ARMAS.push('cimitarra');
+if (!CORPO_A_CORPO.includes('cimitarra')) CORPO_A_CORPO.push('cimitarra');
+Object.assign(VISUAL_ITEM, { cimitarra: 'longsword' });
+Object.assign(PRECO_BASE, { cimitarra: 160 });
+Object.assign(DUR_MAX, { cimitarra: 30 });
+Object.assign(NIVEL_DA_BASE, { cimitarra: 5 });
+if (typeof GUARDA_DA_ARMA !== 'undefined') GUARDA_DA_ARMA.cimitarra = 0.9;
+(function () {
+  const arv = ARVORES_ARMA.find((a) => a.id === 'espada');
+  if (arv && !arv.armas.includes('cimitarra')) arv.armas.push('cimitarra');
+  for (const a of AFIXOS) if (a.efeito === 'arv_espada' && a.so && !a.so.includes('cimitarra')) a.so.push('cimitarra');
+  // os mamelucos, a guarda e os emires carregam cimitarras
+  for (const t of Object.values(TIPOS_INIMIGO)) {
+    if (t.loot && t.loot.includes('espada') && ['mameluco', 'guardaSultao'].includes(t.visual) && !t.loot.includes('cimitarra')) t.loot = [...t.loot, 'cimitarra'];
+  }
+})();
+
+// --- As peças dos chefes -----------------------------------------------------
+const LENDARIOS_DO_SULTAO = [
+  { dono: 'sunqur', nome: 'Cimitarra de Sunqur', base: 'cimitarra',
+    efeitos: { danoPct: 35, tempoPct: -10, ouroPct: 25 },
+    texto: 'Sunqur saqueava por conta própria; a lâmina ainda cheira à fumaça de Ramla.' },
+  { dono: 'arslan', nome: 'Elmo de Arslan, o vigia', base: 'elmoPontudo',
+    efeitos: { defesa: 4, vidaMax: 20, velocidadePct: 8 },
+    texto: 'De cima da ruína, Arslan via o leproso chegar. Não viu Tomás.' },
+  { dono: 'qutlugh', nome: 'Maça de Qutlugh', base: 'maca',
+    efeitos: { danoPct: 45, tempoPct: -8, vidaMax: 15 },
+    texto: 'O capitão da guarda caiu em Montgisard com ela na mão.' },
+  { dono: 'xequeFadl', nome: 'Lança do Xeque Fadl', base: 'lanca',
+    efeitos: { danoPct: 40, alcancePct: 12, veneno: 5 },
+    texto: 'A ponta era untada com o mesmo veneno das flechas dos salteadores.' },
+  { dono: 'emirKurtay', nome: 'Escudo de Farrukh-Shah', base: 'escudoRedondo',
+    efeitos: { bloqueioPct: 12, resTodas: 15, vidaMax: 20 },
+    texto: 'Farrukh-Shah, sobrinho do sultão, deu-o a Kurtay depois de Banias.' },
+  { dono: 'emirBozan', nome: 'Lança do Litani', base: 'lanca',
+    efeitos: { danoPct: 45, alcancePct: 15, tempoPct: -10 },
+    texto: 'Bozan segurou com ela o vau do Litani contra os que fugiam de Marj Ayyun.' },
+  { dono: 'mestreSapador', nome: 'Martelo do sapador Yaqut', base: 'martelo',
+    efeitos: { danoPct: 40, fogo: 14, resFogo: 20 },
+    texto: 'Escorou a mina do Chastellet. Ainda tem piche no cabo.' },
+  { dono: 'sayf', nome: 'Arco de Gökböri', base: 'arco',
+    efeitos: { danoPct: 45, tempoPct: -15, veneno: 6 },
+    texto: 'Presente de Gökböri, senhor de Harran, ao capitão que mandou a Cresson.' },
+  { dono: 'qaraja', nome: 'Cimitarra de Taqi al-Din', base: 'cimitarra',
+    efeitos: { danoPct: 55, tempoPct: -12, fogo: 8, vidaMax: 20 },
+    texto: 'Taqi al-Din, sobrinho de Saladino, comandava a ala direita em Hattin. O porta-estandarte levava a lâmina dele.' },
+  { dono: 'almirante', nome: 'Couraça de Abd al-Salam', base: 'couracaTurca',
+    efeitos: { defesa: 8, vidaMax: 40, resTodas: 15 },
+    texto: 'Escamas de ferro sobre couro, feitas em Damasco para o capitão que cercou Tiro.' },
+  { dono: 'jawali', nome: 'Lamelar de Jawali', base: 'lamelar',
+    efeitos: { defesa: 10, vidaMax: 35, regenVida: 3, resFogo: 20 },
+    texto: 'Dois anos de cerco em Acre. O fogo grego dos francos nunca a atravessou.' },
+  { dono: 'aybak', nome: 'Cimitarra da guarda de Saladino', base: 'cimitarra',
+    efeitos: { danoPct: 65, tempoPct: -15, vidaMax: 30, resTodas: 10 },
+    texto: 'Só os homens da halqa, a guarda pessoal do sultão, levavam estas lâminas. Aybak não a entregou em Arsuf.' }
+];
+for (const l of LENDARIOS_DO_SULTAO) LENDARIOS.push({ ...l, unico: true });
+
+// --- Os dois conjuntos do exército do sultão ---------------------------------
+Object.assign(CONJUNTOS, {
+  halqa: {
+    nome: 'Panóplia da halqa', unico: true,
+    pecas: [
+      { nome: 'Cimitarra da halqa', base: 'cimitarra', efeitos: { danoPct: 20, tempoPct: -8 } },
+      { nome: 'Elmo turco da halqa', base: 'elmoPontudo', efeitos: { defesa: 3, vidaMax: 15 } },
+      { nome: 'Couraça da halqa', base: 'couracaTurca', efeitos: { vidaMax: 25, resTodas: 8 } },
+      { nome: 'Escudo redondo da halqa', base: 'escudoRedondo', efeitos: { bloqueioPct: 6, resFogo: 10 } }
+    ],
+    bonus: {
+      2: { vidaMax: 20, resTodas: 5 },
+      3: { defesa: 8, tempoPct: -10 },
+      4: { danoPct: 30, velocidadePct: 10 }
+    }
+  },
+  turcomano: {
+    nome: 'Arreios do arqueiro turcomano', unico: true,
+    pecas: [
+      { nome: 'Arco do turcomano', base: 'arco', efeitos: { danoPct: 20, tempoPct: -10 } },
+      { nome: 'Turbante do turcomano', base: 'turbante', efeitos: { defesa: 2, velocidadePct: 6 } },
+      { nome: 'Gibão do turcomano', base: 'gibao', efeitos: { vidaMax: 20, resVeneno: 15 } },
+      { nome: 'Luvas do turcomano', base: 'luvasCouro', efeitos: { tempoPct: -6, veneno: 3 } }
+    ],
+    bonus: {
+      2: { danoPct: 15 },
+      3: { velocidadePct: 12, resVeneno: 15 },
+      4: { tempoPct: -15, veneno: 6 }
+    }
+  }
+});
+
+// Quem é de qual tropa (as cópias dos tipos, como a Penitência e os campeões, herdam a marca)
+for (const [id, t] of Object.entries(TIPOS_INIMIGO)) {
+  const l = LENDARIOS_DO_SULTAO.find((x) => x.dono === id);
+  if (l) t.lendarioProprio = l.nome;
+  if (/^(mameluco|lanceiro|guarda)/.test(id) && t.visual !== 'templario') t.tropaDoSultao = 'halqa';
+  else if (/^(arqueiro|batedor)/.test(id) && !/Desertor/.test(id)) t.tropaDoSultao = 'turcomano';
+}
+
+// Monta a peça certa (criarItem só sabe sortear pela base)
+function criarPecaNomeada(base, raridade, dados, conjunto) {
+  const item = criarItem(base, 'comum');
+  Object.assign(item, { raridade, nome: dados.nome, afixos: [], efeitos: { ...dados.efeitos } });
+  if (dados.texto) item.texto = dados.texto;
+  if (conjunto) item.conjunto = conjunto;
+  return item;
+}
+function criarLendarioPeloNome(nome) {
+  const l = LENDARIOS.find((x) => x.nome === nome);
+  return l ? criarPecaNomeada(l.base, 'lendario', l) : null;
+}
+
+// Chance de uma peça de conjunto, por grau do soldado
+const CHANCE_PECA_DA_TROPA = { comum: 0.006, campeao: 0.03, lider: 0.07, chefe: 0.2 };
+
+const _matarInimigoOrigSultao = matarInimigo;
+matarInimigo = function (ini) {
+  if (ini.morto) return _matarInimigoOrigSultao(ini);
+  const r = _matarInimigoOrigSultao(ini);
+  try {
+    const t = ini.tipo;
+    // a peça do próprio chefe
+    if (t.lendarioProprio) {
+      const flag = 'lendDe_' + t.lendarioProprio;
+      if (!flags[flag] || Math.random() < 0.3) {
+        flags[flag] = true;
+        const item = criarLendarioPeloNome(t.lendarioProprio);
+        if (item) largarItem(item, ini.x - 0.3, ini.y + 0.25);
+      }
+    }
+    // peças de conjunto da tropa do sultão (só a partir do Ato III: nível 8)
+    if (t.tropaDoSultao && (t.nivel || 1) >= 8) {
+      const grau = t.flagAoMorrer ? 'chefe' : t.elite || 'comum';
+      if (Math.random() < CHANCE_PECA_DA_TROPA[grau]) {
+        const c = CONJUNTOS[t.tropaDoSultao];
+        const p = escolherUm(c.pecas);
+        largarItem(criarPecaNomeada(p.base, 'conjunto', p, t.tropaDoSultao), ini.x + 0.25, ini.y - 0.3);
+      }
+    }
+  } catch (e) { console.error(e); }
+  return r;
+};
+
+;
+// ===== js/mapas/lica.js =====
+// =====================================================================
+// MAPA: a Liça de Bethgibelin (as ruínas do anfiteatro romano de Eleuterópolis)
+// =====================================================================
+// Gerado por ferramentas/arena/gen_mapa.py; o cenário foi renderizado no Blender
+// por ferramentas/arena/render.py e empacotado por empacotar.py (assets/cenario/lica).
+// A arena (areia) no meio, lajes em círculo e quatro alamedas, a colunata (C),
+// tambores caídos e entulho (E), quatro braseiros (F), o pódio e os degraus da
+// cávea (R), mais altos ao fundo e desabados na frente; fora, a encosta (r).
+MAPAS.lica = {
+  nome: 'Ruínas de Bethgibelin',
+  linhas: [
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrRRRR...RRRRrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrRRRRRRR...RRRRRRRrrrrrrrrrrr',
+    'rrrrrrrrrrRRRRRRRRR...RRRRRRRRRrrrrrrrrr',
+    'rrrrrrrrrRRRRRRRRRR...RRRRRRRRRRrrrrrrrr',
+    'rrrrrrrRRRRRRRRRR,,,,,E,RRRRRRRRRRrrrrrr',
+    'rrrrrrRRRRRRRR,,,,,,=E,,B,,RRRRRRRRrrrrr',
+    'rrrrrRRRRRRR,,,,,C,,=,C,,,,,,RRRRRRRrrrr',
+    'rrrrrRRRRRR,,,,C,,E,=,,,C,,,,,RRRRRRrrrr',
+    'rrrrRRRRRR,,,C,,,,C,,,C,,EC,,,,RRRRRRrrr',
+    'rrrRRRRRR,,,,,,,,,,,=,,,,,,,C,,,RRRRRRrr',
+    'rrrRRRRR,,,C,,,,,,,,=,,,,,,,,,,,,RRRRRrr',
+    'rrrRRRRRB,CE,,,F,,C,=,C,,F,,,C,,,RRRRRrr',
+    'rrRRRRR,,,,,,,,,,,,,=,,,,,,,,E,,,,RRRRRr',
+    'rrRRRRR,BC,,,,,,,,,===,,,,,,,,,C,,RRRRRr',
+    'rrRRRRRE,,,,C,,C,,=====,,C,,C,,,,,RRRRRr',
+    'rr.....,,,,,,,,,,=======,,,,,,,,,,.....r',
+    'rr.....=,==,===,========,=====,,==.....r',
+    'rr.....,,,,,,,,,,=======,,,,,,,,,,.....r',
+    'rrRRRRR,,,,,C,,C,,=====,,C,,C,,,,,RRRRRr',
+    'rrRRRRR,,C,,,,,,,,,===,,,,,,,,EC,,RRRRRr',
+    'rrRRRRR,,,,E,,,,,,,,=,,,,,,,,,,,,,RRRRRr',
+    'rrrRRRRR,,,C,,,F,,C,=,C,,F,,,,C,,RRRRRrr',
+    'rrrRRRRR,,,,,,,,,,,,=,,,,,,E,C,,,RRRRRrr',
+    'rrrRRRRRRE,,C,,,,,,,=,,,,,,,,,,,RRRRRRrr',
+    'rrrrRRRRRR,,,,C,,,C,,,C,,,EC,E,RRRRRRrrr',
+    'rrrrrRRRRRR,,,,,C,,,=,,,,C,,,,RRRRRRrrrr',
+    'rrrrrRRRRRRR,,,,,,C,=,,C,,,B,RRRRRRRrrrr',
+    'rrrrrrRRRRRRRR,,,,,,=,,,,,,RRRRRRRRrrrrr',
+    'rrrrrrrRRRRRRRRRR,,,=,,,RRRRRRRRRRrrrrrr',
+    'rrrrrrrrrRRRRRRRRRR...RRRRRRRRRRrrrrrrrr',
+    'rrrrrrrrrrRRRRRRRRR...RRRRRRRRRrrrrrrrrr',
+    'rrrrrrrrrrrrRRRRRRR...RRRRRRRrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrRRRR...RRRRrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr'
+  ],
+  portais: {},
+  rotulos: []
+};
+MAPAS_SEM_NEVOA.add('lica');
+if (typeof MUSICA_DO_MAPA !== 'undefined') MUSICA_DO_MAPA.lica = 'battle';
+if (typeof AMBIENTE_DO_MAPA !== 'undefined') AMBIENTE_DO_MAPA.lica = ['vento', 0.3];
+if (typeof QUANTOS_ACHADOS !== 'undefined') QUANTOS_ACHADOS.lica = [0, 0];
+CENARIO_DADOS.lica = {"escala":2.0,"folhas":1,"fatias":{"7,6":[0,0,0,129,269,65.0,236.0],"10,4":[0,131,0,130,263,65.0,231.0],"3,11":[0,263,0,130,259,65.0,227.0],"12,3":[0,395,0,130,258,65.0,226.0],"6,7":[0,527,0,130,258,65.0,226.0],"16,27":[0,659,0,76,256,38.0,237.0],"14,26":[0,737,0,76,256,37.0,237.0],"12,25":[0,815,0,76,256,37.0,237.0],"11,23":[0,893,0,76,256,38.0,238.0],"9,15":[0,971,0,76,256,38.0,237.0],"11,12":[0,1049,0,76,256,38.0,238.0],"13,10":[0,1127,0,76,256,38.0,237.0],"22,8":[0,1205,0,76,256,38.0,237.0],"28,11":[0,1283,0,76,256,38.0,237.0],"29,13":[0,1361,0,76,256,37.0,237.0],"25,16":[0,1439,0,76,256,38.0,237.0],"25,20":[0,1517,0,76,256,38.0,237.0],"28,16":[0,1595,0,75,256,38.0,237.0],"18,23":[0,1672,0,76,256,38.0,237.0],"22,26":[0,1750,0,76,256,38.0,237.0],"18,13":[0,1828,0,76,256,37.0,237.0],"18,10":[0,1906,0,76,256,38.0,237.0],"15,20":[0,1984,0,76,255,38.0,236.0],"22,23":[0,2062,0,76,255,38.0,236.0],"6,29":[0,2140,0,130,252,65.0,220.0],"11,4":[0,2272,0,130,250,64.0,218.0],"5,28":[0,2404,0,130,250,65.0,218.0],"5,8":[0,2536,0,130,246,65.0,214.0],"2,14":[0,2668,0,129,246,65.0,214.0],"3,12":[0,2799,0,130,245,65.0,213.0],"23,2":[0,2931,0,130,242,64.0,209.0],"4,10":[0,3063,0,130,242,65.0,210.0],"3,25":[0,3195,0,130,240,65.0,208.0],"4,26":[0,3327,0,129,240,65.0,210.0],"9,5":[0,3458,0,130,237,65.0,205.0],"4,25":[0,3590,0,130,237,65.0,205.0],"10,5":[0,3722,0,130,234,64.0,202.0],"8,6":[0,3854,0,130,234,65.0,202.0],"6,8":[0,0,271,130,233,65.0,201.0],"25,2":[0,132,271,129,232,65.0,200.0],"4,11":[0,263,271,130,232,65.0,200.0],"7,7":[0,395,271,130,230,65.0,199.0],"2,15":[0,527,271,130,230,65.0,198.0],"24,2":[0,659,271,129,229,65.0,200.0],"5,9":[0,790,271,130,228,65.0,196.0],"3,14":[0,922,271,130,227,65.0,194.0],"5,26":[0,1054,271,128,227,64.0,194.0],"22,2":[0,1184,271,130,226,65.0,194.0],"7,8":[0,1316,271,130,226,65.0,194.0],"2,16":[0,1448,271,130,225,65.0,193.0],"2,22":[0,1580,271,130,225,65.0,196.0],"25,3":[0,1712,271,130,224,65.0,191.0],"13,4":[0,1844,271,130,224,65.0,191.0],"3,23":[0,1976,271,128,224,64.0,192.0],"3,13":[0,2106,271,130,223,65.0,193.0],"12,4":[0,2238,271,130,222,65.0,192.0],"8,7":[0,2370,271,130,222,65.0,190.0],"5,27":[0,2502,271,130,222,65.0,191.0],"6,28":[0,2634,271,130,221,64.0,189.0],"13,3":[0,2766,271,130,220,65.0,188.0],"14,3":[0,2898,271,129,220,65.0,188.0],"3,15":[0,3029,271,130,220,65.0,188.0],"11,5":[0,3161,271,130,219,65.0,187.0],"23,3":[0,3293,271,130,218,65.0,185.0],"4,12":[0,3425,271,129,215,64.0,183.0],"10,6":[0,3556,271,129,214,65.0,182.0],"7,28":[0,3687,271,130,214,65.0,182.0],"9,7":[0,3819,271,128,213,64.0,180.0],"3,16":[0,3949,271,130,213,65.0,181.0],"12,5":[0,0,506,129,212,65.0,180.0],"9,6":[0,131,506,130,212,65.0,180.0],"6,9":[0,263,506,130,212,65.0,179.0],"5,10":[0,395,506,129,212,65.0,179.0],"2,21":[0,526,506,129,212,65.0,180.0],"3,22":[0,657,506,130,211,65.0,180.0],"6,26":[0,789,506,130,210,65.0,178.0],"6,27":[0,921,506,130,210,65.0,178.0],"16,2":[0,1053,506,130,208,65.0,176.0],"5,11":[0,1185,506,130,207,65.0,175.0],"6,10":[0,1317,506,129,206,65.0,174.0],"27,3":[0,1448,506,129,205,65.0,173.0],"3,21":[0,1579,506,129,205,64.0,173.0],"3,24":[0,1710,506,130,205,65.0,173.0],"24,3":[0,1842,506,130,204,65.0,172.0],"28,3":[0,1974,506,130,204,65.0,172.0],"4,24":[0,2106,506,130,204,65.0,172.0],"15,2":[0,2238,506,129,202,65.0,170.0],"11,6":[0,2369,506,130,201,65.0,169.0],"4,13":[0,2501,506,130,201,65.0,169.0],"2,20":[0,2633,506,130,201,65.0,169.0],"5,25":[0,2765,506,129,201,65.0,169.0],"22,3":[0,2896,506,129,200,64.0,168.0],"5,12":[0,3027,506,130,200,65.0,168.0],"17,2":[0,3159,506,130,199,65.0,167.0],"4,16":[0,3291,506,129,199,63.0,166.0],"7,27":[0,3422,506,130,196,65.0,164.0],"26,3":[0,3554,506,130,194,65.0,162.0],"4,15":[0,3686,506,130,191,65.0,159.0],"18,2":[0,3818,506,129,190,65.0,158.0],"27,4":[0,3949,506,129,190,65.0,158.0],"6,11":[0,0,720,129,190,64.0,157.0],"4,14":[0,131,720,130,190,65.0,157.0],"8,8":[0,263,720,130,188,65.0,156.0],"25,4":[0,395,720,130,187,64.0,155.0],"13,5":[0,527,720,129,187,64.0,155.0],"15,3":[0,658,720,129,186,65.0,157.0],"23,4":[0,789,720,130,186,64.0,154.0],"29,4":[0,921,720,129,186,65.0,154.0],"6,25":[0,1052,720,130,186,65.0,154.0],"7,26":[0,1184,720,130,186,65.0,154.0],"5,24":[0,1316,720,129,185,65.0,153.0],"30,4":[0,1447,720,130,184,65.0,155.0],"5,13":[0,1579,720,130,184,65.0,151.0],"16,3":[0,1711,720,129,183,65.0,151.0],"28,4":[0,1842,720,130,182,65.0,150.0],"3,20":[0,1974,720,129,180,65.0,147.0],"5,23":[0,2105,720,130,179,65.0,147.0],"26,4":[0,2237,720,130,178,65.0,148.0],"8,9":[0,2369,720,129,178,64.0,146.0],"18,3":[0,2500,720,129,177,65.0,145.0],"30,5":[0,2631,720,130,177,65.0,145.0],"10,7":[0,2763,720,130,177,65.0,145.0],"28,20":[0,2895,720,76,177,38.0,158.0],"22,4":[0,2973,720,130,176,65.0,144.0],"8,27":[0,3105,720,130,176,65.0,144.0],"24,4":[0,3237,720,130,174,65.0,143.0],"29,5":[0,3369,720,130,174,65.0,142.0],"17,3":[0,3501,720,128,171,64.0,139.0],"7,9":[0,3631,720,129,168,65.0,138.0],"4,23":[0,3762,720,129,168,65.0,136.0],"15,4":[0,3893,720,130,167,65.0,135.0],"14,4":[0,0,912,129,165,65.0,134.0],"16,4":[0,131,912,130,165,65.0,134.0],"9,8":[0,263,912,129,164,65.0,132.0],"5,22":[0,394,912,130,164,65.0,132.0],"10,8":[0,526,912,129,162,65.0,131.0],"24,9":[0,657,912,76,162,38.0,143.0],"5,14":[0,735,912,129,161,65.0,129.0],"4,21":[0,866,912,130,161,65.0,129.0],"7,13":[0,998,912,130,160,65.0,127.0],"5,16":[0,1130,912,129,160,65.0,127.0],"7,24":[0,1261,912,128,160,65.0,127.0],"18,26":[0,1391,912,76,160,38.0,141.0],"26,5":[0,1469,912,130,159,64.0,127.0],"14,6":[0,1601,912,129,159,64.0,127.0],"8,25":[0,1732,912,130,159,65.0,127.0],"14,5":[0,1864,912,129,158,65.0,126.0],"28,5":[0,1995,912,130,158,65.0,126.0],"13,6":[0,2127,912,130,158,65.0,125.0],"11,8":[0,2259,912,129,158,64.0,125.0],"10,9":[0,2390,912,130,157,65.0,124.0],"4,20":[0,2522,912,129,157,65.0,125.0],"4,22":[0,2653,912,128,157,64.0,125.0],"12,6":[0,2783,912,129,155,65.0,123.0],"15,6":[0,2914,912,128,154,65.0,121.0],"6,12":[0,3044,912,130,154,65.0,121.0],"7,11":[0,3176,912,129,152,65.0,120.0],"6,22":[0,3307,912,130,152,65.0,119.0],"18,4":[0,3439,912,130,151,65.0,119.0],"22,5":[0,3571,912,130,151,65.0,118.0],"23,5":[0,3703,912,129,151,64.0,119.0],"6,24":[0,3834,912,130,151,65.0,119.0],"25,5":[0,3966,912,130,150,65.0,121.0],"7,12":[0,0,1079,129,150,65.0,117.0],"7,10":[0,131,1079,129,149,65.0,117.0],"5,20":[0,262,1079,129,149,64.0,117.0],"8,26":[0,393,1079,129,149,64.0,117.0],"27,26":[0,524,1079,76,149,38.0,130.0],"31,15":[0,602,1079,76,149,38.0,130.0],"8,11":[0,680,1079,129,148,65.0,116.0],"27,5":[0,811,1079,130,147,65.0,115.0],"6,13":[0,943,1079,128,147,65.0,115.0],"6,15":[0,1073,1079,129,147,65.0,114.0],"9,9":[0,1204,1079,129,146,65.0,114.0],"9,21":[0,1335,1079,76,146,38.0,127.0],"12,7":[0,1413,1079,129,145,65.0,113.0],"9,26":[0,1544,1079,129,145,65.0,113.0],"17,4":[0,1675,1079,129,144,64.0,112.0],"11,7":[0,1806,1079,130,144,65.0,112.0],"5,21":[0,1938,1079,130,142,65.0,110.0],"13,7":[0,2070,1079,129,140,64.0,108.0],"6,14":[0,2201,1079,130,140,65.0,108.0],"6,20":[0,2333,1079,128,140,64.0,108.0],"28,6":[0,2463,1079,129,139,65.0,107.0],"16,6":[0,2594,1079,128,138,64.0,106.0],"25,6":[0,2724,1079,129,137,64.0,105.0],"6,16":[0,2855,1079,129,137,64.0,107.0],"24,6":[0,2986,1079,129,136,65.0,104.0],"29,6":[0,3117,1079,129,136,65.0,104.0],"7,23":[0,3248,1079,129,134,65.0,102.0],"7,25":[0,3379,1079,130,134,65.0,102.0],"9,10":[0,3511,1079,130,132,65.0,100.0],"17,5":[0,3643,1079,128,130,65.0,98.0],"15,16":[0,3773,1079,76,130,38.0,111.0],"24,5":[0,3851,1079,128,129,64.0,97.0],"16,5":[0,0,1231,129,128,65.0,96.0],"8,10":[0,131,1231,128,128,63.0,96.0],"29,24":[0,261,1231,76,127,38.0,108.0],"26,6":[0,339,1231,130,126,65.0,95.0],"18,28":[0,471,1231,76,126,38.0,107.0],"5,15":[0,549,1231,129,125,65.0,93.0],"35,8":[0,680,1231,129,124,64.0,92.0],"6,23":[0,811,1231,129,124,64.0,92.0],"25,27":[0,942,1231,76,123,38.0,104.0],"15,5":[0,1020,1231,128,122,65.0,90.0],"10,13":[0,1150,1231,76,122,38.0,103.0],"6,21":[0,1228,1231,130,121,65.0,89.0],"27,6":[0,1360,1231,130,120,64.0,88.0],"18,5":[0,1492,1231,129,117,64.0,85.0],"34,9":[0,1623,1231,128,116,64.0,84.0],"26,10":[0,1753,1231,75,116,38.0,97.0],"31,21":[0,1830,1231,76,115,38.0,96.0],"34,7":[0,1908,1231,130,112,65.0,80.0],"33,10":[0,2040,1231,128,112,64.0,80.0],"34,8":[0,2170,1231,130,109,65.0,76.0],"22,10":[0,2302,1231,76,109,38.0,90.0],"28,7":[0,2380,1231,128,108,64.0,76.0],"8,28":[0,2510,1231,127,106,63.0,73.0],"7,30":[0,2639,1231,129,106,65.0,74.0],"27,7":[0,2770,1231,129,103,64.0,71.0],"26,32":[0,2901,1231,129,103,65.0,70.0],"32,7":[0,3032,1231,127,102,63.0,70.0],"35,16":[0,3161,1231,129,102,64.0,70.0],"38,21":[0,3292,1231,128,102,64.0,69.0],"29,30":[0,3422,1231,127,102,64.0,70.0],"30,31":[0,3551,1231,130,101,65.0,69.0],"23,33":[0,3683,1231,128,101,64.0,69.0],"32,6":[0,3813,1231,127,100,63.0,68.0],"36,13":[0,3942,1231,130,100,65.0,68.0],"38,20":[0,0,1361,128,100,64.0,68.0],"32,28":[0,130,1361,127,100,63.0,68.0],"35,28":[0,259,1361,129,100,65.0,68.0],"28,29":[0,390,1361,127,100,63.0,68.0],"24,32":[0,519,1361,128,100,64.0,70.0],"30,32":[0,649,1361,130,100,65.0,68.0],"15,30":[0,781,1361,128,99,64.0,66.0],"22,33":[0,911,1361,129,99,64.0,67.0],"33,6":[0,1042,1361,129,98,65.0,65.0],"37,12":[0,1173,1361,129,98,64.0,66.0],"37,15":[0,1304,1361,128,98,64.0,66.0],"30,29":[0,1434,1361,129,98,64.0,66.0],"25,33":[0,1565,1361,128,98,65.0,66.0],"33,9":[0,1695,1361,130,97,65.0,68.0],"37,24":[0,1827,1361,128,97,63.0,64.0],"27,29":[0,1957,1361,128,97,65.0,65.0],"33,11":[0,2087,1361,128,96,65.0,64.0],"35,21":[0,2217,1361,128,96,65.0,64.0],"28,31":[0,2347,1361,127,96,64.0,64.0],"34,15":[0,2476,1361,128,95,63.0,63.0],"36,16":[0,2606,1361,128,95,64.0,63.0],"9,28":[0,2736,1361,127,95,63.0,63.0],"33,29":[0,2865,1361,127,95,63.0,63.0],"24,30":[0,2994,1361,128,95,64.0,63.0],"15,33":[0,3124,1361,125,95,65.0,63.0],"33,7":[0,3251,1361,126,94,63.0,62.0],"35,11":[0,3379,1361,130,94,65.0,62.0],"18,31":[0,3511,1361,128,94,64.0,62.0],"12,33":[0,3641,1361,128,94,63.0,62.0],"32,10":[0,3771,1361,128,93,64.0,60.0],"37,16":[0,3901,1361,128,93,63.0,61.0],"32,25":[0,0,1463,128,92,63.0,60.0],"7,29":[0,130,1463,129,92,65.0,60.0],"17,31":[0,261,1463,128,92,64.0,60.0],"29,31":[0,391,1463,129,92,65.0,60.0],"12,32":[0,522,1463,129,92,65.0,60.0],"16,32":[0,653,1463,129,92,64.0,63.0],"24,34":[0,784,1463,127,92,63.0,60.0],"33,27":[0,913,1463,97,91,65.0,59.0],"8,30":[0,1012,1463,128,91,64.0,59.0],"15,31":[0,1142,1463,109,91,45.0,59.0],"32,9":[0,1253,1463,127,90,64.0,58.0],"35,14":[0,1382,1463,124,90,64.0,59.0],"38,16":[0,1508,1463,127,90,63.0,58.0],"37,23":[0,1637,1463,127,90,64.0,58.0],"25,30":[0,1766,1463,129,90,64.0,58.0],"31,31":[0,1897,1463,128,90,64.0,61.0],"35,9":[0,2027,1463,95,89,63.0,57.0],"35,12":[0,2124,1463,112,89,47.0,57.0],"38,15":[0,2238,1463,107,89,64.0,56.0],"24,33":[0,2347,1463,96,89,64.0,56.0],"27,33":[0,2445,1463,124,89,65.0,60.0],"18,34":[0,2571,1463,108,89,45.0,57.0],"34,29":[0,2681,1463,127,88,64.0,56.0],"37,13":[0,2810,1463,80,87,32.0,59.0],"36,21":[0,2892,1463,129,87,65.0,56.0],"34,24":[0,3023,1463,128,87,64.0,59.0],"31,27":[0,3153,1463,124,87,64.0,55.0],"29,28":[0,3279,1463,130,87,65.0,54.0],"16,33":[0,3411,1463,96,87,63.0,55.0],"30,23":[0,3509,1463,76,87,37.0,69.0],"32,11":[0,3587,1463,126,86,63.0,54.0],"36,11":[0,3715,1463,98,86,65.0,54.0],"36,12":[0,3815,1463,98,86,35.0,54.0],"34,26":[0,3915,1463,127,86,63.0,54.0],"16,30":[0,0,1557,125,86,65.0,54.0],"31,30":[0,127,1557,96,86,32.0,53.0],"33,8":[0,225,1557,129,85,64.0,53.0],"37,11":[0,356,1557,123,85,64.0,52.0],"29,29":[0,481,1557,83,85,42.0,52.0],"23,31":[0,566,1557,119,85,64.0,53.0],"15,32":[0,687,1557,128,85,63.0,53.0],"16,34":[0,817,1557,95,85,64.0,59.0],"17,34":[0,914,1557,96,85,32.0,53.0],"23,34":[0,1012,1557,129,85,65.0,53.0],"31,8":[0,1143,1557,129,84,65.0,52.0],"38,14":[0,1274,1557,107,84,43.0,52.0],"34,16":[0,1383,1557,128,84,63.0,52.0],"33,28":[0,1513,1557,129,84,64.0,52.0],"14,31":[0,1644,1557,128,84,63.0,51.0],"26,31":[0,1774,1557,127,84,63.0,51.0],"33,12":[0,1903,1557,98,83,63.0,51.0],"36,25":[0,2003,1557,69,83,31.0,51.0],"22,31":[0,2074,1557,80,83,31.0,51.0],"23,32":[0,2156,1557,105,83,64.0,51.0],"22,34":[0,2263,1557,94,83,44.0,51.0],"34,14":[0,2359,1557,108,82,44.0,50.0],"34,21":[0,2469,1557,115,82,65.0,60.0],"37,22":[0,2586,1557,129,82,64.0,49.0],"35,25":[0,2717,1557,127,82,64.0,50.0],"36,26":[0,2846,1557,129,82,65.0,50.0],"16,31":[0,2977,1557,102,82,38.0,50.0],"13,32":[0,3081,1557,101,82,36.0,50.0],"29,32":[0,3184,1557,81,82,37.0,50.0],"37,14":[0,3267,1557,129,81,64.0,49.0],"34,20":[0,3398,1557,128,81,64.0,49.0],"36,20":[0,3528,1557,130,81,65.0,51.0],"35,24":[0,3660,1557,108,81,43.0,49.0],"14,33":[0,3770,1557,107,81,43.0,49.0],"9,27":[0,3879,1557,128,80,64.0,48.0],"33,30":[0,0,1645,113,80,65.0,48.0],"32,8":[0,115,1645,127,79,64.0,47.0],"10,27":[0,244,1645,128,79,64.0,47.0],"14,32":[0,374,1645,130,79,65.0,47.0],"30,7":[0,506,1645,111,78,64.0,46.0],"34,10":[0,619,1645,116,78,64.0,47.0],"35,15":[0,737,1645,127,78,63.0,46.0],"33,23":[0,866,1645,107,78,52.0,46.0],"36,24":[0,975,1645,128,78,65.0,46.0],"30,27":[0,1105,1645,103,78,63.0,46.0],"34,27":[0,1210,1645,121,78,63.0,46.0],"35,27":[0,1333,1645,129,78,65.0,48.0],"26,30":[0,1464,1645,129,78,64.0,46.0],"13,31":[0,1595,1645,130,78,65.0,46.0],"25,23":[0,1727,1645,40,78,20.0,71.0],"31,10":[0,1769,1645,127,77,63.0,45.0],"34,11":[0,1898,1645,127,77,64.0,44.0],"35,23":[0,2027,1645,114,77,51.0,45.0],"9,30":[0,2143,1645,114,77,51.0,45.0],"18,32":[0,2259,1645,110,77,45.0,45.0],"26,33":[0,2371,1645,120,77,57.0,45.0],"15,34":[0,2493,1645,96,77,64.0,45.0],"15,23":[0,2591,1645,40,77,20.0,71.0],"36,15":[0,2633,1645,127,76,63.0,44.0],"36,22":[0,2762,1645,107,76,44.0,43.0],"11,28":[0,2871,1645,102,76,38.0,43.0],"27,31":[0,2975,1645,129,76,65.0,60.0],"17,33":[0,3106,1645,113,76,64.0,45.0],"15,13":[0,3221,1645,40,76,20.0,70.0],"34,22":[0,3263,1645,128,75,64.0,43.0],"34,25":[0,3393,1645,104,75,44.0,43.0],"11,30":[0,3499,1645,110,75,65.0,43.0],"13,30":[0,3611,1645,115,75,65.0,43.0],"27,32":[0,3728,1645,128,75,64.0,53.0],"13,33":[0,3858,1645,92,75,34.0,43.0],"29,7":[0,3952,1645,128,74,65.0,42.0],"34,23":[0,0,1727,118,74,64.0,53.0],"36,23":[0,120,1727,129,74,64.0,42.0],"31,26":[0,251,1727,118,74,54.0,56.0],"28,30":[0,371,1727,125,74,65.0,59.0],"24,31":[0,498,1727,128,74,64.0,42.0],"25,31":[0,628,1727,127,74,63.0,49.0],"25,34":[0,757,1727,127,74,63.0,41.0],"35,10":[0,886,1727,128,73,64.0,41.0],"33,25":[0,1016,1727,127,73,63.0,50.0],"32,27":[0,1145,1727,126,73,63.0,55.0],"10,32":[0,1273,1727,103,73,39.0,43.0],"29,26":[0,1378,1727,59,73,20.0,50.0],"31,5":[0,1439,1727,115,72,64.0,40.0],"37,25":[0,1556,1727,129,72,65.0,40.0],"10,28":[0,1687,1727,91,72,64.0,47.0],"30,28":[0,1780,1727,107,72,65.0,39.0],"8,29":[0,1889,1727,122,72,63.0,53.0],"10,31":[0,2013,1727,95,72,32.0,40.0],"11,22":[0,2110,1727,68,72,26.0,51.0],"25,13":[0,2180,1727,40,72,20.0,65.0],"33,24":[0,2222,1727,111,71,64.0,51.0],"31,28":[0,2335,1727,130,71,65.0,55.0],"12,20":[0,2467,1727,76,71,38.0,52.0],"37,21":[0,2545,1727,128,70,64.0,38.0],"12,30":[0,2675,1727,128,70,64.0,43.0],"18,9":[0,2805,1727,63,70,33.0,50.0],"22,6":[0,2870,1727,95,70,55.0,47.0],"30,6":[0,2967,1727,129,69,64.0,43.0],"31,29":[0,3098,1727,118,69,64.0,37.0],"33,13":[0,3218,1727,129,68,64.0,36.0],"35,20":[0,3349,1727,119,68,65.0,51.0],"30,9":[0,3470,1727,127,67,64.0,34.0],"9,29":[0,3599,1727,128,67,64.0,51.0],"22,32":[0,3729,1727,110,67,65.0,35.0],"22,13":[0,3841,1727,76,67,38.0,48.0],"31,9":[0,3919,1727,127,66,64.0,34.0],"12,29":[0,0,1803,127,66,63.0,34.0],"14,30":[0,129,1803,118,66,63.0,34.0],"32,30":[0,249,1803,128,66,63.0,39.0],"12,31":[0,379,1803,106,66,44.0,33.0],"23,28":[0,487,1803,76,66,38.0,48.0],"34,13":[0,565,1803,78,65,44.0,58.0],"37,20":[0,645,1803,128,65,65.0,33.0],"33,26":[0,775,1803,103,65,40.0,60.0],"25,32":[0,880,1803,112,65,48.0,57.0],"18,33":[0,994,1803,90,65,64.0,33.0],"30,8":[0,1086,1803,129,64,64.0,48.0],"34,12":[0,1217,1803,87,64,65.0,49.0],"27,30":[0,1306,1803,86,64,44.0,43.0],"11,31":[0,1394,1803,115,64,65.0,31.0],"17,32":[0,1511,1803,117,64,53.0,45.0],"28,33":[0,1630,1803,128,64,64.0,46.0],"30,21":[0,1760,1803,86,64,44.0,42.0],"9,25":[0,1848,1803,62,64,42.0,46.0],"36,14":[0,1912,1803,128,63,64.0,34.0],"11,29":[0,2042,1803,102,63,38.0,43.0],"12,16":[0,2146,1803,76,63,38.0,44.0],"7,16":[0,2224,1803,87,63,47.0,39.0],"31,7":[0,2313,1803,129,62,64.0,46.0],"38,22":[0,2444,1803,113,62,50.0,45.0],"35,26":[0,2559,1803,109,62,45.0,41.0],"34,28":[0,2670,1803,123,62,65.0,30.0],"31,6":[0,2795,1803,128,61,65.0,45.0],"36,10":[0,2925,1803,128,61,64.0,44.0],"17,8":[0,3055,1803,76,61,38.0,42.0],"8,15":[0,3133,1803,62,61,19.0,52.0],"27,28":[0,3197,1803,57,60,26.0,49.0],"30,30":[0,3256,1803,112,59,64.0,44.0],"11,32":[0,3370,1803,129,59,64.0,27.0],"32,29":[0,3501,1803,100,58,51.0,52.0],"27,24":[0,3603,1803,52,58,26.0,38.0],"15,9":[0,3657,1803,76,58,37.0,39.0],"24,7":[0,3735,1803,75,58,39.0,49.0],"8,13":[0,3812,1803,51,58,29.0,44.0],"13,29":[0,3865,1803,85,57,21.0,41.0],"35,13":[0,3952,1803,129,56,64.0,40.0],"10,30":[0,0,1871,129,55,65.0,29.0],"29,8":[0,131,1871,108,54,45.0,37.0],"25,10":[0,241,1871,89,54,43.0,41.0],"32,26":[0,332,1871,107,53,44.0,30.0],"10,29":[0,441,1871,95,52,36.0,36.0],"29,14":[0,538,1871,101,50,52.0,36.0],"26,26":[0,641,1871,71,49,31.0,36.0],"35,22":[0,714,1871,108,48,52.0,32.0],"21,7":[0,824,1871,79,48,40.0,31.0],"9,31":[0,905,1871,63,47,30.0,15.0],"28,32":[0,970,1871,127,47,63.0,31.0],"11,13":[0,1099,1871,62,44,25.0,36.0]},"chao":{"x0":-1152,"y0":-32,"tam":2048,"nx":2,"ny":1}};
+
+;
 // ===== js/lica.js =====
 // =====================================================================
 // A LIÇA: séries de ondas (como o Crucible do Grim Dawn), à parte da campanha
 // =====================================================================
-// De qualquer oratório (depois do fim do Ato I), Tomás pode ir à Liça que
-// Balião mandou erguer no campo de Montgisard. Lá enfrenta séries de 20 ondas
-// de mercenários, desertores e campeões pagos, cada onda mais dura; a cada
-// 5 ondas vem um campeão de nome, e ele ergue um estandarte (um bônus que vale
-// até o fim da série). Os inimigos acompanham o nível de Tomás. A experiência
-// vem a cada inimigo; no fim, a bolsa: um baú com peças e ouro, melhor quanto
-// mais longe ele chegar. Cair na Liça não leva ouro nem manda para a cidade:
-// a série acaba e ele volta ao oratório de onde saiu, com o prêmio das ondas
-// vencidas. Há três séries; a seguinte se abre vencendo a anterior.
+// De qualquer oratório (depois do fim do Ato I), Tomás pode ir à Liça que os
+// Hospitalários mantêm nas ruínas do anfiteatro romano de Bethgibelin (mapa
+// 'lica', renderizado em ferramentas/arena). Séries de 10 ondas, cada uma mais
+// dura; na 5ª vem um campeão e Tomás ergue um estandarte (um bônus que vale até
+// o fim da série); na 10ª, o campeão da Liça, bem mais forte. Os inimigos não
+// largam nada além de remédios; o prêmio é o ouro da bolsa e o que o campeão
+// final deixa (chance de lendária). Cair na Liça não leva ouro nem manda para a
+// cidade: a série acaba e ele volta ao oratório de onde saiu, com o ouro das
+// ondas vencidas. Há três séries; a seguinte se abre vencendo a anterior.
 // Entre as ondas, o armeiro da Liça conserta tudo (as séries são longas).
 // Não muda nada na história (missões, flags) e vale também na Penitência.
 
 const SERIES_LICA = [
   { id: 1, nome: 'Série do Escudeiro', vida: 1, dano: 1, nivel: 0,
     tipos: ['saqueador', 'veterano', 'beduino', 'arqueiro', 'hiena', 'infante', 'chacal'],
-    chefes: ['veterano', 'hienaVelha', 'lobo', 'sunqur'] },
+    chefes: ['veterano', 'hienaVelha', 'lobo', 'sunqur'],
+    final: { base: 'corvo', nome: 'Roger de Mirabel, o cavaleiro sem senhor', vida: 2.6, dano: 1.2 }, lendaria: 0.25 },
   { id: 2, nome: 'Série do Sargento', vida: 1.35, dano: 1.2, nivel: 3,
     tipos: ['desertor', 'besteiroDesertor', 'infante', 'batedorTurcomano', 'arqueiro', 'hiena', 'veterano'],
-    chefes: ['rato', 'sunqur', 'corvo', 'arslan'] },
+    chefes: ['rato', 'sunqur', 'corvo', 'arslan'],
+    final: { base: 'arslan', nome: 'Ilghazi, campeão turcomano', vida: 2.8, dano: 1.25 }, lendaria: 0.35 },
   { id: 3, nome: 'Série do Cavaleiro', vida: 1.8, dano: 1.45, nivel: 6,
     tipos: ['mameluco', 'lanceiroMameluco', 'arqueiroMameluco', 'guardaSultao', 'batedorTurcomano', 'hienaGruta'],
-    chefes: ['corvo', 'arslan', 'sunqur', 'guardaSultao'] }
+    chefes: ['corvo', 'arslan', 'sunqur', 'guardaSultao'],
+    final: { base: 'qutlugh', nome: 'Qaymaz, emir da halqa', vida: 3.0, dano: 1.3 }, lendaria: 0.5 }
 ];
-const ONDAS_DA_SERIE = 20;
-const CENTRO_LICA = { x: 24, y: 20 };
+const ONDAS_DA_SERIE = 10;
+const MAPA_LICA = 'lica';
+const CENTRO_LICA = { x: 20, y: 18 };
 const ESTANDARTES = [
   { id: 'templo', nome: 'Estandarte do Templo', efeitos: { danoPct: 20 }, desc: '+20% de dano' },
   { id: 'hospital', nome: 'Estandarte do Hospital', efeitos: { regenVida: 3 }, desc: '+3 de vida por segundo' },
@@ -21270,7 +22174,7 @@ function abrirMenuLica(o) {
   });
   opcoes.push({ texto: 'O que é a Liça?', acao: () => iniciarDialogo('lica_historia'), fica: false });
   opcoes.push(o ? { texto: '← Voltar', acao: () => abrirMenuOratorio(o), fica: true } : { texto: 'Sair', acao: () => {}, fica: false });
-  menuOratorio = { oratorio: { nome: 'A Liça de Montgisard' }, opcoes, sob: -1 };
+  menuOratorio = { oratorio: { nome: 'A Liça de Bethgibelin' }, opcoes, sob: -1 };
   if (!reg.viuHistoria) { reg.viuHistoria = true; menuOratorio = null; iniciarDialogo('lica_historia'); depoisDaHistoriaLica = () => abrirMenuLica(o); }
 }
 // Ao fim da história do arauto, o menu das séries volta (para quem entrou pela primeira vez)
@@ -21290,7 +22194,7 @@ function entrarNaLica(serie, o) {
   lica = { serie, onda: 0, fase: 'contagem', t: 5, estandartes: [], abates: 0,
            origem: { mapa: nomeDoMapaAtual(), x: o && o.chegada ? o.chegada.x : jogador.x, y: o && o.chegada ? o.chegada.y : jogador.y } };
   jogador.vida = jogador.vidaMax; jogador.devocao = jogador.devocaoMax;
-  iniciarTransicao({ destino: 'campo', chegada: { ...CENTRO_LICA }, lica: true });
+  iniciarTransicao({ destino: MAPA_LICA, chegada: { ...CENTRO_LICA }, lica: true });
   avisar(`A Liça · ${SERIES_LICA[serie - 1].nome}`);
 }
 
@@ -21303,7 +22207,7 @@ iniciarBatalha = function () {
 const _criarInimigosDoMapaOrigLica = criarInimigosDoMapa;
 criarInimigosDoMapa = function (nomeMapa) {
   _criarInimigosDoMapaOrigLica(nomeMapa);
-  if (emLica() && nomeMapa === 'campo') { inimigos = []; aliados = []; cruzBatalha = null; }
+  if (emLica() && (nomeMapa === MAPA_LICA || nomeMapa === 'campo')) { inimigos = []; aliados = []; cruzBatalha = null; }
 };
 // Sair do campo por uma passagem ou viajando: a série fica pela metade (sem a bolsa)
 const _iniciarTransicaoOrigLica = iniciarTransicao;
@@ -21326,7 +22230,9 @@ function tipoDaLica(id, chefe) {
   const novo = { ...t, vida: Math.round(t.vida * mv), dano: t.dano.map((d) => Math.round(d * md)), nivel: nivelEq,
                  penitencia: true,                              // a Liça tem a própria escala (não soma a da Penitência)
                  flagAoMorrer: undefined, fala: undefined, unicoChefe: undefined, chefeLica: !!chefe,
-                 chanceItem: chefe ? 1 : (t.chanceItem || 0) * 0.5, xpMult: (t.xpMult || 1) * (chefe ? 4 : 1), raridadeMinima: chefe ? 'refinado' : t.raridadeMinima };
+                 chanceItem: 0, ouro: null, loot: [], lendarioProprio: undefined, tropaDoSultao: undefined,
+                 remedios: { chance: chefe ? 1 : 0.16, tipos: chefe ? ['oximel', 'teriaga'] : ['bandagem', 'bandagem', 'oximel'] },
+                 xpMult: (t.xpMult || 1) * (chefe ? 4 : 1), raridadeMinima: null };
   return novo;
 }
 function lugarLivreNaLica() {
@@ -21341,7 +22247,8 @@ function soltarOndaDaLica() {
   lica.onda++;
   const s = SERIES_LICA[lica.serie - 1];
   const n = Math.min(22, 5 + Math.floor(lica.onda * 0.7) + lica.serie);
-  const chefe = lica.onda % 5 === 0;
+  const chefe = lica.onda === 5;
+  const final = lica.onda === ONDAS_DA_SERIE;
   inimigos = inimigos.filter((i) => !i.morto || i.tempoMorto < 8);
   const novo = (id, ehChefe) => {
     const [x, y] = lugarLivreNaLica();
@@ -21355,8 +22262,20 @@ function soltarOndaDaLica() {
     const ini = novo(escolherUm(s.tipos), false);
     if (Math.random() < Math.min(0.25, 0.015 * lica.onda) && typeof tornarElite === 'function') { tornarElite(ini, 'campeao', `${ini.tipo.nome} campeão`); ini.tipo.penitencia = true; }
   }
-  if (chefe) {
-    const id = s.chefes[Math.min(s.chefes.length - 1, lica.onda / 5 - 1)];
+  if (final) {
+    // o campeão da Liça: muito mais forte, com quatro escudeiros
+    const f = s.final;
+    const c = novo(f.base, true);
+    c.tipo = { ...c.tipo, nome: f.nome, vida: Math.round(c.tipo.vida * f.vida), dano: c.tipo.dano.map((d) => Math.round(d * f.dano)),
+               raio: (c.tipo.raio || 0.28) * 1.12, altura: (c.tipo.altura || 1.85) * 1.06, xpMult: (c.tipo.xpMult || 1) * 2, elite: 'lider', chefeLica: true };
+    c.vida = c.tipo.vida; c.chefeFinalLica = true;
+    for (let k = 0; k < 4; k++) {
+      const e = novo(escolherUm(s.tipos), false);
+      if (typeof tornarElite === 'function') { tornarElite(e, 'campeao', `${e.tipo.nome} campeão`); e.tipo.penitencia = true; }
+    }
+    avisar(`Onda ${lica.onda}: ${c.tipo.nome}!`);
+  } else if (chefe) {
+    const id = s.chefes[Math.min(s.chefes.length - 1, lica.serie - 1)];
     const c = novo(id, true);
     if (typeof tornarElite === 'function' && !TIPOS_INIMIGO[id].flagAoMorrer) { tornarElite(c, 'lider', `${c.tipo.nome}, campeão da Liça`); c.tipo.penitencia = true; c.tipo.chefeLica = true; }
     avisar(`Onda ${lica.onda}: ${c.tipo.nome}!`);
@@ -21366,7 +22285,7 @@ function soltarOndaDaLica() {
 }
 
 function atualizarLica(dt) {
-  if (!lica || transicao || nomeDoMapaAtual() !== 'campo') return;
+  if (!lica || transicao || nomeDoMapaAtual() !== MAPA_LICA) return;
   if (lica.fase === 'contagem' || lica.fase === 'pausa') {
     if (menuOratorio || dialogo) return;
     lica.t -= dt;
@@ -21406,15 +22325,38 @@ function atualizarLica(dt) {
     const reg = registroDaLica();
     reg.melhor[lica.serie] = Math.max(reg.melhor[lica.serie] || 0, lica.onda);
     avisar(`Onda ${lica.onda} vencida.`);
-    if (lica.onda % 5 === 0) escolherEstandarte();
+    if (lica.onda === 5) escolherEstandarte();
   }
 }
+let _semSaqueLica = false;
 const _matarInimigoOrigLica = matarInimigo;
 matarInimigo = function (ini) {
   const vivo = !ini.morto;
-  _matarInimigoOrigLica(ini);
-  if (vivo && ini.lica && lica) lica.abates++;
+  _semSaqueLica = !!(vivo && ini.lica);
+  try { _matarInimigoOrigLica(ini); } finally { _semSaqueLica = false; }
+  if (vivo && ini.lica && lica) {
+    lica.abates++;
+    if (ini.chefeFinalLica) { lica.recompensa = premioDoCampeao(); avisar(`${ini.tipo.nome} caiu!`); }
+  }
 };
+// Na Liça os inimigos só deixam remédios (nada de peças, gemas ou ouro)
+const _largarItemOrigLica = largarItem;
+largarItem = function (item, x, y) {
+  if (_semSaqueLica && !(item && item.tipo === 'remedio')) return;
+  return _largarItemOrigLica(item, x, y);
+};
+// O prêmio do campeão da Liça: uma peça rara ou melhor, com chance de lendária
+function premioDoCampeao() {
+  const s = SERIES_LICA[lica.serie - 1];
+  if (Math.random() < s.lendaria) {
+    const pool = LENDARIOS.filter((l) => !l.unico || (typeof LENDARIOS_DO_SULTAO !== 'undefined' && LENDARIOS_DO_SULTAO.some((x) => x.nome === l.nome)));
+    const l = escolherUm(pool);
+    if (typeof criarPecaNomeada === 'function') return criarPecaNomeada(l.base, 'lendario', l);
+    const it = criarItem(l.base, 'comum'); Object.assign(it, { raridade: 'lendario', nome: l.nome, efeitos: { ...l.efeitos }, texto: l.texto, afixos: [] }); return it;
+  }
+  nivelDoSaque = Math.max(5, Math.round(((jogador.nivel || 1) - 4) / 3 + s.nivel));
+  try { return gerarItemAleatorio('raro'); } finally { nivelDoSaque = null; }
+}
 
 // A cada 5 ondas: um estandarte entre três (vale até o fim da série)
 function escolherEstandarte() {
@@ -21444,19 +22386,9 @@ function fimDaLica(venceu) {
   reg.melhor[s] = Math.max(reg.melhor[s] || 0, vencidas);
   if (venceu) reg.vencidas[s] = true;
   lica.fase = 'fim';
-  // a bolsa: peças (mais e melhores quanto mais longe), ouro e, vencendo, uma chance de lendária
-  const pecas = Math.floor(vencidas / 4) + (venceu ? 2 : 0);
-  const minima = vencidas >= 20 ? 'raro' : vencidas >= 10 ? 'refinado' : null;
-  const ouro = Math.round(vencidas * 40 * s * (1 + (jogador.nivel || 1) / 10));
-  const premio = [];
-  for (let k = 0; k < pecas; k++) {
-    const it = gerarItemAleatorio(minima);
-    premio.push(it);
-  }
-  if (venceu && Math.random() < 0.25 * s) {
-    const lend = LENDARIOS.filter((l) => !l.unico);
-    if (lend.length) { const l = escolherUm(lend); const it = criarItem(l.base, 'comum'); Object.assign(it, { raridade: 'lendario', nome: l.nome, efeitos: { ...l.efeitos }, texto: l.texto }); premio.push(it); }
-  }
+  // a bolsa: ouro pelas ondas vencidas e, vencendo, o que o campeão da Liça deixou
+  const ouro = Math.round(vencidas * 80 * s * (1 + (jogador.nivel || 1) / 10));
+  const premio = venceu && lica.recompensa ? [lica.recompensa] : [];
   jogador.ouro += ouro;
   const volta = lica.origem;
   lica.premio = { pecas: premio, ouro, vencidas, venceu };
@@ -21468,7 +22400,7 @@ function fimDaLica(venceu) {
   const titulo = venceu ? `${SERIES_LICA[s - 1].nome} vencida!` : `A Liça acabou na onda ${lica.onda}`;
   menuOratorio = {
     oratorio: { nome: titulo }, sob: -1, pergunta: true,
-    opcoes: [{ texto: `A bolsa: ${ouro} de ouro e ${premio.length} peça(s)${premio.some((p) => p.raridade === 'lendario') ? ', uma delas lendária!' : ''} · Voltar`,
+    opcoes: [{ texto: premio.length ? `A bolsa: ${ouro} de ouro e ${premio[0].nome}${premio[0].raridade === 'lendario' ? ' (lendária!)' : ''} · Voltar` : `A bolsa: ${ouro} de ouro · Voltar`,
                acao: () => { const destinoLica = volta; lica = null; iniciarTransicao({ destino: destinoLica.mapa, chegada: { x: destinoLica.x, y: destinoLica.y }, renascer: true }); recalcularAtributos(); } }]
   };
   if (typeof tocar === 'function') tocar(venceu ? 'nivel' : 'sino', { vol: 0.8 });
@@ -21489,7 +22421,7 @@ atualizarInimigos = function (dt) { _atualizarInimigosOrigLica(dt); atualizarLic
 
 // Quadro no alto da tela
 function desenharHudDaLica() {
-  if (!lica || nomeDoMapaAtual() !== 'campo' || transicao) return;
+  if (!lica || nomeDoMapaAtual() !== MAPA_LICA || transicao) return;
   const s = SERIES_LICA[lica.serie - 1];
   const vivos = inimigosVivos().length;
   const w = Math.min(470, canvas.width - 24), x = (canvas.width - w) / 2, y = 10, h = 62;
@@ -21503,6 +22435,7 @@ function desenharHudDaLica() {
   const linha = lica.fase === 'contagem' ? `A primeira onda entra em ${Math.ceil(lica.t)}…`
     : lica.fase === 'pausa' ? `Onda ${lica.onda} vencida · a próxima em ${Math.ceil(lica.t)}…`
     : lica.fase === 'fim' ? 'A bolsa está no alforje.'
+    : lica.onda === ONDAS_DA_SERIE ? `Onda ${lica.onda} de ${ONDAS_DA_SERIE} · o campeão da Liça · inimigos de pé: ${vivos}`
     : `Onda ${lica.onda} de ${ONDAS_DA_SERIE} · inimigos de pé: ${vivos}`;
   ctx.fillText(linha, canvas.width / 2, y + 38);
   ctx.font = '12px Alegreya, Georgia, serif'; ctx.fillStyle = '#b9ad94';
@@ -21529,16 +22462,1060 @@ DIALOGOS.lica_historia = {
   },
   balian: {
     quem: 'Arauto da Liça',
-    texto: 'Depois de Montgisard, Messire Balião mandou cercar um pedaço do campo para que os que sobreviveram não perdessem a mão. Contra eles vêm mercenários, desertores e campeões turcomanos, pagos a peso de prata, em séries de vinte ondas, cada uma mais dura que a outra.',
+    texto: 'Esta liça fica em Bethgibelin, a antiga Eleuterópolis. O rei Fulco ergueu aqui um castelo e o deu aos Hospitalários; ao lado ficaram as ruínas de um anfiteatro romano, com as colunas de pé no meio da areia. Perto daqui, há quinhentos anos, os árabes venceram os bizantinos em Ajnadayn.',
+    fonte: 'Fato: o castelo de Bethgibelin (1136, Guilherme de Tiro, livro XIV) e o anfiteatro romano de Eleuterópolis (século II). A batalha de Ajnadayn (634) é posta perto dali por vários historiadores',
+    proximo: 'hospital'
+  },
+  hospital: {
+    quem: 'Arauto da Liça',
+    texto: 'Os irmãos do Hospital mantêm a areia limpa para que os homens do rei não percam a mão. Contra eles vêm mercenários, desertores e campeões turcomanos, pagos a peso de prata, em séries de dez ondas, cada uma mais dura que a outra.',
     fonte: 'Ficção',
     proximo: 'regras'
   },
   regras: {
     quem: 'Arauto da Liça',
-    texto: 'A cada cinco ondas, um campeão de nome, e tu ergues um estandarte. Quem aguenta até o fim leva a bolsa inteira; quem cai leva o que ganhou até ali, e ninguém aqui morre sem confissão. Vence uma série e a seguinte se abre.',
+    texto: 'Aqui ninguém despoja os caídos: só se recolhem as ataduras e o oximel deles. Na quinta onda vem um campeão, e tu ergues um estandarte. Na décima, o campeão da Liça; quem o derruba leva a bolsa e o que ele trouxer, às vezes uma peça lendária. Quem cai leva o ouro do que venceu, e ninguém aqui morre sem confissão.',
     fonte: 'Ficção'
   }
 };
+
+;
+// ===== js/icones_itens.js =====
+// =====================================================================
+// ÍCONES DOS ITENS: cada peça modelada e renderizada no Blender (ferramentas/icones)
+// =====================================================================
+// Uma folha só (assets/itens/icones.webp, 128 px por ícone). Algumas bases têm
+// variações (4 espadas, 2 cimitarras, 2 lanças, 3 pinturas de escudo...): a de
+// cada item sai do número dele, então a mesma peça mostra sempre o mesmo desenho.
+// Lendárias e de conjunto usam a variação mais rica. Remédios, gemas e o ouro
+// continuam desenhados no canvas.
+const ICONES_ITENS = { img: imagemDe('assets/itens/icones.webp'), tam: 128, mapa: {"acha_0":[0,0],"acha_1":[1,0],"amendoa_0":[2,0],"amendoa_1":[3,0],"amendoa_2":[4,0],"anelPrata":[5,0],"arco":[6,0],"besta":[7,0],"bestaMao":[0,1],"botasCano":[1,1],"botasCouro":[2,1],"broquel":[3,1],"capelo":[4,1],"capuz":[5,1],"cazagante":[6,1],"cimitarra_0":[7,1],"cimitarra_1":[0,2],"cintoCavaleiro":[1,2],"cintoCouro":[2,2],"cinturao":[3,2],"cota":[4,2],"cotaSemMangas":[5,2],"couracaTurca":[6,2],"couroCozido":[7,2],"cruz":[0,3],"elmoGrande":[1,3],"elmoNasal":[2,3],"elmoPontudo":[3,3],"escudoCruz":[4,3],"escudoRedondo":[5,3],"espada_0":[6,3],"espada_1":[7,3],"espada_2":[0,4],"espada_3":[1,4],"faca_0":[2,4],"faca_1":[3,4],"gambesao":[4,4],"gibao":[5,4],"habito":[6,4],"jaque":[7,4],"keffiyeh":[0,5],"lamelar":[1,5],"lanca_0":[2,5],"lanca_1":[3,5],"loriga":[4,5],"luvasCouro":[5,5],"maca_0":[6,5],"maca_1":[7,5],"machado":[0,6],"manoplas":[1,6],"martelo":[2,6],"relicario":[3,6],"sinete":[4,6],"sobreveste":[5,6],"turbante":[6,6]} };
+const VARIACOES_ICONE = { espada: 4, cimitarra: 2, faca: 2, acha: 2, maca: 2, lanca: 2, amendoa: 3 };
+const VARIACAO_RICA = { espada: 2, cimitarra: 1, faca: 1, acha: 1, maca: 1, lanca: 1, amendoa: 1 };
+function chaveDoIcone(item) {
+  const b = item.base;
+  const n = VARIACOES_ICONE[b];
+  if (!n) return ICONES_ITENS.mapa[b] ? b : null;
+  if (item.icone !== undefined) return `${b}_${item.icone}`;
+  const v = (item.raridade === 'lendario' || item.raridade === 'conjunto') ? VARIACAO_RICA[b]
+          : Math.abs(((item.id || 0) * 2654435761) | 0) % n;
+  return `${b}_${v}`;
+}
+const _desenharIconeOrigBlender = desenharIcone;
+desenharIcone = function (item, cx, cy, s) {
+  if (item && !item.tipo && imagemPronta(ICONES_ITENS.img)) {
+    const k = chaveDoIcone(item), pos = k && ICONES_ITENS.mapa[k];
+    if (pos) {
+      const T = ICONES_ITENS.tam, d = s * 1.22;
+      ctx.drawImage(ICONES_ITENS.img, pos[0] * T, pos[1] * T, T, T, cx - d / 2, cy - d / 2, d, d);
+      return;
+    }
+  }
+  return _desenharIconeOrigBlender(item, cx, cy, s);
+};
+
+;
+// ===== js/epilogo.js =====
+// =====================================================================
+// EPÍLOGO: Tomás de joelhos diante do Santo Sepulcro, e o resto da vida dele
+// =====================================================================
+// Fim da campanha: o bispo Hubert Walter, em Jerusalém. Tomás se ajoelha, a tela
+// escurece e entram as cenas pintadas (renderizadas no Blender e pintadas por cima:
+// ferramentas/epilogo). Depois, o bispo oferece a Penitência (refazer o caminho
+// desde Ascalão, mais difícil) ou deixa Tomás ficar em paz.
+// Fatos: a trégua de 1192 e a peregrinação desarmada; Balião recebeu Caymont, no
+// Carmelo, perto de Acre, e morreu em 1193. Ficção: Marta e a vida de Tomás.
+const PAGINAS_EPILOGO = [
+  { img: 'assets/epilogo/sepulcro.webp', titulo: 'Diante do túmulo vazio', data: 'Jerusalém, outubro de 1192',
+    texto: ['Tomás ficou de joelhos até as lâmpadas de azeite baixarem. Não pediu nada. Quinze anos antes, em Ascalão, era o filho de um ferreiro com uma espada emprestada; agora não tinha mais nada para defender, nenhuma ordem para cumprir, nenhum rei para seguir.',
+            'E foi ali, no silêncio da Rotunda, que entendeu que isso não era vazio. O túmulo também estava vazio, e era por isso que os homens vinham de tão longe. Lembrou do rei leproso, de Godofredo, de Onofre, dos que ficaram em Hattin. Não tinha sobrevivido por acaso.',
+            { fala: '"Senhor, não sei por que me guardaste. Mas daqui em diante a minha vida é tua."' }],
+    fonte: 'Ficção. Fato: pela trégua de 1192, os cristãos podiam visitar o Sepulcro desarmados' },
+  { img: 'assets/epilogo/caymont.webp', titulo: 'Caymont, ao pé do Carmelo', data: '1193–1194',
+    texto: ['Na trégua, Balião de Ibelin recebeu o senhorio de Caymont, nas encostas do monte Carmelo, perto de Acre. Tomás foi com ele. Balião morreu no ano seguinte, e Tomás ficou a serviço da viúva, a rainha Maria, e do filho João.',
+            'Numa aldeia do vale conheceu Marta, filha de um oleiro cristão da Síria, que cantava os salmos em siríaco na igrejinha da encosta. Casaram-se na Páscoa de 1194. Guilherme, o pai, já velho, veio de Acre para a festa com Isabel e Alice. Era a primeira vez em sete anos que a família inteira sentava à mesma mesa.'],
+    fonte: 'Fato: Balião recebeu Caymont em 1192 e morreu em 1193; o filho João seria depois senhor de Beirute. Ficção: Marta e a vida de Tomás' },
+  { img: 'assets/epilogo/forja.webp', titulo: 'A bigorna nova', data: 'Os anos de paz',
+    texto: ['O avô de Tomás tinha deixado uma bigorna em Ramla, e o pai não conseguiu trazê-la. Tomás forjou outra, à beira do rio Quisom, e voltou ao ofício da família: ferraduras, pregos, relhas de arado e, de vez em quando, uma espada para os homens de Acre.',
+            'Teve três filhos: Guilherme, como o avô; Isabel, como a avó; e Jorge, por causa de Lida. A trégua foi renovada outras vezes, e por muitos anos as caravanas e os peregrinos passaram pela estrada de Acre sem medo. Toda Páscoa, Tomás subia a Jerusalém com a família, desarmado, como tinha prometido diante do túmulo.'],
+    fonte: 'Ficção. Fato: as tréguas com os aiúbidas foram renovadas várias vezes depois de 1192' },
+  { img: 'assets/epilogo/sepulcro.webp', escuro: true, titulo: 'In hoc signo', data: '',
+    texto: ['Tomás de Ramla morreu velho, em Caymont, com os netos em volta. Na pedra do túmulo os filhos gravaram uma cruz e as palavras que ele repetia quando lhe perguntavam por Montgisard:',
+            { fala: '"Não fui eu que venci. Fui guardado."' },
+            'Fim de A Cruz de Montgisard. Obrigado por jogar.',
+            { fonte: 'Criação e direção: Rodrigo Torquato Mazzoli · In Hoc Signo Ludimus' }],
+    fonte: '' }
+];
+let epilogoAberto = false;
+function mostrarEpilogo(depois) {
+  const el = document.getElementById('epilogo');
+  let k = 0;
+  epilogoAberto = true;
+  for (const p of PAGINAS_EPILOGO) { const i = new Image(); i.src = p.img; }   // já vai baixando
+  const mostrar = () => {
+    const p = PAGINAS_EPILOGO[k];
+    const folha = document.getElementById('epilogoFolha');
+    folha.classList.add('trocando');
+    const q = document.getElementById('epilogoQuadro');
+    q.style.opacity = 0;
+    setTimeout(() => {
+      q.style.backgroundImage = `url('${p.img}')`;
+      q.style.filter = p.escuro ? 'brightness(0.35) saturate(0.6)' : '';
+      q.style.opacity = 1;
+      document.getElementById('epilogoTitulo').textContent = p.titulo;
+      document.getElementById('epilogoData').textContent = p.data;
+      const t = document.getElementById('epilogoTexto');
+      t.innerHTML = '';
+      for (const par of p.texto) {
+        const e = document.createElement('p');
+        if (typeof par === 'string') e.textContent = par;
+        else if (par.fala) { e.className = 'fala'; e.textContent = par.fala; }
+        else { e.className = 'fonte'; e.textContent = par.fonte; }
+        t.appendChild(e);
+      }
+      if (p.fonte) { const f = document.createElement('p'); f.className = 'fonte'; f.textContent = p.fonte; t.appendChild(f); }
+      t.scrollTop = 0;
+      document.getElementById('epilogoSeguir').textContent = k === PAGINAS_EPILOGO.length - 1 ? 'Fim' : 'Continuar';
+      folha.classList.remove('trocando');
+      document.getElementById('epilogoSeguir').focus();
+    }, k === 0 ? 50 : 650);
+  };
+  const seguir = () => {
+    if (k < PAGINAS_EPILOGO.length - 1) { k++; mostrar(); return; }
+    el.classList.remove('visivel');
+    setTimeout(() => { el.hidden = true; epilogoAberto = false; if (depois) depois(); }, 1200);
+    document.getElementById('epilogoSeguir').onclick = null;
+  };
+  document.getElementById('epilogoSeguir').onclick = seguir;
+  el.hidden = false;
+  requestAnimationFrame(() => el.classList.add('visivel'));
+  mostrar();
+  if (typeof tocar === 'function') tocar('sino', { vol: 0.5, rate: 0.7 });
+}
+// Enquanto o epílogo está na tela, o jogo espera e as teclas não passam
+window.addEventListener('keydown', (e) => {
+  if (!epilogoAberto) return;
+  e.stopImmediatePropagation();
+  if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); document.getElementById('epilogoSeguir').click(); }
+}, true);
+const _atualizarOrigEpilogo = atualizar;
+atualizar = function (dt) { if (epilogoAberto) return; _atualizarOrigEpilogo(dt); };
+
+// O bispo: Tomás se ajoelha → epílogo → a Penitência (ou a paz)
+Object.assign(DIALOGOS.hubert, {
+  fim: { quem: 'Tomás de Ramla', texto: '(Tomás tira o manto de peregrino e se ajoelha diante do túmulo vazio.)', fonte: 'Ficção',
+         efeito: { flag: 'fimJogo', epilogo: true } }
+});
+DIALOGOS.hubert_penitencia = {
+  inicio: { quem: 'Hubert Walter, bispo de Salisbury',
+            get texto() { return emPenitencia()
+              ? 'Mais uma vez até aqui, filho, e pelo caminho mais duro. Ainda pesa? Então volta a Ascalão: o caminho continua lá.'
+              : 'Levanta-te, Messire Tomás. Muitos dos que chegam aqui querem ainda pagar por alguma coisa. Se o peso dos que ficaram para trás não te deixa, há uma penitência: voltar a Ascalão e refazer o caminho inteiro, com tudo o que tens, contra inimigos mais duros.'; },
+            fonte: 'Ficção',
+            escolhas: [
+              { texto: 'Quero fazer a penitência. (Recomeçar desde Ascalão, mais difícil, com tudo o que tenho)', ir: 'parte' },
+              { texto: 'Ver de novo a história de Tomás.', ir: 'historia' },
+              { texto: 'Fico em paz. (Continuar em Jerusalém)', ir: 'paz' }
+            ] },
+  parte: { quem: 'Hubert Walter, bispo de Salisbury', texto: 'Vai com Deus, peregrino. O túmulo te espera aqui no fim.', fonte: 'Ficção', efeito: { penitencia: true } },
+  historia: { quem: 'Hubert Walter, bispo de Salisbury', texto: 'Senta-te, então. Há histórias que fazem bem ouvir duas vezes.', fonte: 'Ficção', efeito: { epilogoDeNovo: true } },
+  paz: { quem: 'Hubert Walter, bispo de Salisbury', texto: 'Vai em paz, peregrino. E volta sempre que precisares.', fonte: 'Ficção' }
+};
+(function () {
+  const n = NPCS.find((x) => x.nome === 'Hubert Walter, bispo de Salisbury');
+  if (n) n.conversa = () => (flags.fimJogo ? 'hubert_penitencia' : 'hubert');
+})();
+let _epilogoPendente = null;
+const _aplicarEfeitoOrigEpilogo = aplicarEfeito;
+aplicarEfeito = function (efeito) {
+  _aplicarEfeitoOrigEpilogo(efeito);
+  if (efeito && efeito.epilogo) _epilogoPendente = () => iniciarDialogo('hubert_penitencia');
+  if (efeito && efeito.epilogoDeNovo) _epilogoPendente = () => {};
+};
+// o epílogo entra quando a conversa termina
+setInterval(() => {
+  if (_epilogoPendente && !dialogo && !epilogoAberto) { const f = _epilogoPendente; _epilogoPendente = null; mostrarEpilogo(f); }
+}, 200);
+// A Penitência agora se oferece no fim da campanha (o bispo em Jerusalém), não mais pelo rei depois de Montgisard
+(function () {
+  const ini = DIALOGOS.rei3_depois && DIALOGOS.rei3_depois.inicio;
+  if (!ini) return;
+  const desc = Object.getOwnPropertyDescriptor(ini, 'escolhas');
+  const ler = desc && desc.get ? desc.get : () => desc.value;
+  Object.defineProperty(ini, 'escolhas', { configurable: true, get: () => (ler.call(ini) || []).filter((e) => e.ir !== 'pedido') });
+})();
+
+;
+// ===== js/jerusalem_grande.js =====
+// A Jerusalém grande (84 x 78): o cenário renderizado e os lugares novos de cada um.
+CENARIO_DADOS.jerusalem = {"escala":2.0,"folhas":8,"fatias":{"21,28":[0,0,0,130,1046,65.0,1013.0],"21,29":[0,132,0,127,1040,62.0,1012.0],"22,28":[0,261,0,127,1040,65.0,1012.0],"22,29":[0,390,0,124,1035,62.0,1011.0],"20,28":[0,516,0,127,1013,62.0,980.0],"21,27":[0,645,0,127,1012,65.0,980.0],"20,29":[0,774,0,124,1007,59.0,979.0],"22,27":[0,900,0,130,1007,65.0,979.0],"65,46":[0,1032,0,130,1004,65.0,972.0],"20,27":[0,1164,0,126,980,62.0,947.0],"65,45":[0,1292,0,130,975,65.0,942.0],"64,46":[0,1424,0,130,974,65.0,942.0],"64,45":[0,1556,0,130,943,65.0,911.0],"19,22":[0,1688,0,129,904,65.0,871.0],"19,23":[0,1819,0,130,904,65.0,871.0],"20,22":[0,1951,0,130,904,65.0,871.0],"20,23":[0,2083,0,130,904,65.0,871.0],"18,22":[0,2215,0,130,899,65.0,866.0],"19,21":[0,2347,0,129,899,65.0,866.0],"20,21":[0,2478,0,130,898,65.0,866.0],"18,23":[0,2610,0,129,897,64.0,865.0],"10,37":[0,2741,0,130,877,65.0,844.0],"10,38":[0,2873,0,130,877,64.0,844.0],"10,39":[0,3005,0,129,876,65.0,844.0],"65,47":[0,3136,0,129,876,65.0,844.0],"66,46":[0,3267,0,130,876,65.0,844.0],"12,37":[0,3399,0,129,872,64.0,839.0],"18,21":[0,3530,0,130,872,65.0,839.0],"11,37":[0,3662,0,130,871,65.0,838.0],"19,24":[0,3794,0,130,870,65.0,837.0],"20,24":[0,3926,0,130,870,65.0,837.0],"21,22":[0,0,1048,129,870,65.0,837.0],"21,23":[0,131,1048,130,870,65.0,837.0],"66,47":[0,263,1048,130,858,65.0,825.0],"64,47":[0,395,1048,130,857,65.0,825.0],"66,45":[0,527,1048,130,857,65.0,825.0],"12,38":[0,659,1048,129,855,64.0,822.0],"12,39":[0,790,1048,130,855,65.0,822.0],"28,22":[0,922,1048,130,855,65.0,822.0],"11,38":[0,1054,1048,128,849,64.0,817.0],"11,39":[0,1184,1048,129,848,64.0,816.0],"63,46":[0,1315,1048,128,845,64.0,812.0],"65,44":[0,1445,1048,130,845,65.0,812.0],"18,24":[0,1577,1048,128,839,64.0,806.0],"21,21":[0,1707,1048,129,839,64.0,806.0],"17,22":[0,1838,1048,129,838,65.0,806.0],"19,20":[0,1969,1048,130,838,65.0,805.0],"17,23":[0,2101,1048,130,837,65.0,804.0],"20,20":[0,2233,1048,130,837,65.0,804.0],"63,47":[0,2365,1048,130,826,65.0,793.0],"66,44":[0,2497,1048,130,826,65.0,793.0],"21,24":[0,2629,1048,130,825,65.0,792.0],"63,45":[0,2761,1048,130,825,65.0,793.0],"64,44":[0,2893,1048,129,825,65.0,793.0],"28,23":[0,3024,1048,130,818,64.0,785.0],"29,23":[0,3156,1048,130,818,65.0,785.0],"29,22":[0,3288,1048,130,817,65.0,785.0],"67,46":[0,3420,1048,130,813,65.0,780.0],"65,48":[0,3552,1048,130,812,65.0,780.0],"17,21":[0,3684,1048,129,807,65.0,774.0],"18,20":[0,3815,1048,130,807,65.0,774.0],"63,44":[0,3947,1048,130,794,65.0,761.0],"21,20":[0,0,1920,129,793,64.0,760.0],"17,24":[0,131,1920,129,792,65.0,759.0],"64,48":[0,262,1920,130,791,65.0,758.0],"67,45":[0,394,1920,130,791,65.0,758.0],"22,22":[0,526,1920,130,789,65.0,756.0],"22,23":[0,658,1920,129,789,64.0,756.0],"19,25":[0,789,1920,129,787,65.0,755.0],"20,25":[0,920,1920,130,787,65.0,755.0],"29,21":[0,1052,1920,129,787,65.0,754.0],"27,22":[0,1183,1920,130,786,64.0,753.0],"27,23":[0,1315,1920,129,786,65.0,753.0],"28,21":[0,1446,1920,130,786,65.0,753.0],"66,48":[0,1578,1920,130,782,65.0,749.0],"67,47":[0,1710,1920,130,782,65.0,749.0],"62,46":[0,1842,1920,130,780,65.0,747.0],"65,43":[0,1974,1920,128,780,64.0,747.0],"15,60":[0,2104,1920,129,772,65.0,743.0],"17,20":[0,2235,1920,129,761,64.0,728.0],"18,25":[0,2366,1920,130,761,65.0,728.0],"22,21":[0,2498,1920,130,761,65.0,728.0],"14,60":[0,2630,1920,130,759,65.0,727.0],"62,45":[0,2762,1920,129,759,64.0,726.0],"64,43":[0,2893,1920,129,759,64.0,726.0],"16,22":[0,3024,1920,129,756,65.0,723.0],"16,23":[0,3155,1920,130,756,65.0,723.0],"19,19":[0,3287,1920,130,756,65.0,723.0],"20,19":[0,3419,1920,129,756,65.0,723.0],"21,25":[0,3550,1920,130,756,65.0,724.0],"22,24":[0,3682,1920,130,756,65.0,724.0],"27,21":[0,3814,1920,129,755,65.0,722.0],"30,22":[0,3945,1920,130,752,65.0,719.0],"28,24":[0,0,2715,130,751,65.0,719.0],"63,48":[0,132,2715,130,750,64.0,717.0],"29,24":[0,264,2715,130,749,64.0,716.0],"30,23":[0,396,2715,129,749,65.0,716.0],"66,43":[0,527,2715,130,749,65.0,716.0],"67,44":[0,659,2715,130,749,65.0,717.0],"62,47":[0,791,2715,130,746,64.0,713.0],"15,59":[0,923,2715,130,740,65.0,708.0],"18,19":[0,1055,2715,129,729,64.0,696.0],"16,21":[0,1186,2715,129,728,64.0,696.0],"14,59":[0,1317,2715,130,727,65.0,694.0],"16,24":[0,1449,2715,129,725,64.0,692.0],"17,25":[0,1580,2715,130,725,65.0,692.0],"21,19":[0,1712,2715,130,725,65.0,692.0],"22,20":[0,1844,2715,130,725,65.0,692.0],"26,22":[0,1976,2715,130,720,65.0,687.0],"28,20":[0,2108,2715,130,720,65.0,687.0],"62,44":[0,2240,2715,130,718,65.0,685.0],"29,20":[0,2372,2715,128,717,64.0,684.0],"30,21":[0,2502,2715,128,717,64.0,684.0],"63,43":[0,2632,2715,129,717,64.0,685.0],"26,23":[0,2763,2715,130,716,65.0,684.0],"27,24":[0,2895,2715,130,716,65.0,684.0],"19,26":[0,3027,2715,129,705,64.0,672.0],"22,25":[0,3158,2715,130,705,65.0,672.0],"23,22":[0,3290,2715,130,705,65.0,672.0],"23,23":[0,3422,2715,130,705,65.0,672.0],"20,26":[0,3554,2715,129,703,65.0,672.0],"17,19":[0,3685,2715,130,693,65.0,660.0],"16,20":[0,3817,2715,130,692,65.0,660.0],"27,20":[0,3949,2715,129,686,64.0,653.0],"26,21":[1,0,0,128,685,63.0,653.0],"23,21":[1,130,0,130,683,65.0,650.0],"18,26":[1,262,0,130,682,65.0,650.0],"23,24":[1,394,0,130,682,65.0,649.0],"15,22":[1,526,0,130,673,65.0,640.0],"16,25":[1,658,0,121,673,56.0,640.0],"19,18":[1,781,0,130,673,65.0,640.0],"20,18":[1,913,0,130,673,65.0,640.0],"22,19":[1,1045,0,130,673,65.0,640.0],"15,23":[1,1177,0,130,672,65.0,639.0],"65,59":[1,1309,0,129,666,65.0,634.0],"21,26":[1,1440,0,130,665,65.0,649.0],"65,60":[1,1572,0,129,665,63.0,633.0],"15,21":[1,1703,0,129,651,64.0,618.0],"15,24":[1,1834,0,107,650,43.0,617.0],"18,18":[1,1943,0,129,650,64.0,617.0],"21,18":[1,2074,0,107,650,64.0,617.0],"23,20":[1,2183,0,130,650,65.0,617.0],"17,26":[1,2315,0,108,648,43.0,617.0],"24,22":[1,2425,0,130,648,65.0,615.0],"25,23":[1,2557,0,130,648,65.0,615.0],"31,22":[1,2689,0,130,648,65.0,615.0],"31,23":[1,2821,0,130,648,65.0,615.0],"32,23":[1,2953,0,130,648,65.0,615.0],"33,22":[1,3085,0,129,648,64.0,615.0],"33,23":[1,3216,0,129,648,64.0,615.0],"34,22":[1,3347,0,129,648,65.0,615.0],"24,23":[1,3478,0,130,647,65.0,615.0],"25,22":[1,3610,0,130,647,65.0,615.0],"32,22":[1,3742,0,128,647,64.0,615.0],"34,23":[1,3872,0,130,646,65.0,614.0],"64,59":[1,0,687,130,642,64.0,609.0],"16,19":[1,132,687,130,641,65.0,608.0],"64,60":[1,264,687,129,641,64.0,610.0],"23,25":[1,395,687,129,640,65.0,607.0],"66,59":[1,526,687,129,632,64.0,599.0],"66,60":[1,657,687,129,630,64.0,597.0],"63,18":[1,788,687,129,629,65.0,596.0],"66,18":[1,919,687,130,629,65.0,596.0],"68,18":[1,1051,687,130,629,65.0,596.0],"62,18":[1,1183,687,130,628,65.0,595.0],"64,18":[1,1315,687,130,628,64.0,595.0],"65,18":[1,1447,687,129,628,65.0,596.0],"69,18":[1,1578,687,130,628,65.0,595.0],"67,18":[1,1710,687,130,627,65.0,595.0],"25,21":[1,1842,687,129,621,65.0,588.0],"30,24":[1,1973,687,130,621,65.0,588.0],"31,21":[1,2105,687,128,621,64.0,588.0],"33,24":[1,2235,687,130,621,65.0,588.0],"34,21":[1,2367,687,129,621,65.0,588.0],"24,21":[1,2498,687,130,620,65.0,588.0],"24,24":[1,2630,687,129,620,65.0,587.0],"25,24":[1,2761,687,129,620,65.0,587.0],"26,24":[1,2892,687,130,620,65.0,587.0],"32,21":[1,3024,687,129,620,64.0,588.0],"32,24":[1,3155,687,130,620,65.0,587.0],"33,21":[1,3287,687,130,620,65.0,588.0],"17,18":[1,3419,687,130,619,65.0,586.0],"31,24":[1,3551,687,128,619,64.0,587.0],"15,20":[1,3681,687,130,617,65.0,585.0],"23,19":[1,3813,687,130,608,65.0,575.0],"65,58":[1,3945,687,130,608,65.0,601.0],"75,22":[1,0,1331,126,604,62.0,571.0],"27,69":[1,128,1331,124,603,62.0,570.0],"27,70":[1,254,1331,129,603,65.0,571.0],"33,69":[1,385,1331,127,603,65.0,570.0],"33,70":[1,514,1331,129,603,65.0,570.0],"34,11":[1,645,1331,126,603,64.0,570.0],"34,12":[1,773,1331,126,603,62.0,570.0],"40,11":[1,901,1331,124,603,62.0,570.0],"40,12":[1,1027,1331,129,603,65.0,570.0],"5,36":[1,1158,1331,124,603,62.0,570.0],"5,37":[1,1284,1331,127,603,62.0,570.0],"5,38":[1,1413,1331,130,603,65.0,570.0],"75,21":[1,1545,1331,124,603,62.0,570.0],"75,27":[1,1671,1331,124,603,62.0,570.0],"75,29":[1,1797,1331,130,603,64.0,570.0],"33,71":[1,1929,1331,129,602,65.0,571.0],"5,30":[1,2060,1331,129,602,64.0,570.0],"5,31":[1,2191,1331,126,602,62.0,570.0],"5,32":[1,2319,1331,124,602,59.0,571.0],"75,28":[1,2445,1331,127,602,62.0,570.0],"27,71":[1,2574,1331,130,601,65.0,570.0],"34,13":[1,2706,1331,129,601,65.0,570.0],"40,13":[1,2837,1331,130,601,65.0,570.0],"75,23":[1,2969,1331,123,601,59.0,570.0],"8,36":[1,3094,1331,130,601,64.0,568.0],"8,37":[1,3226,1331,130,601,65.0,568.0],"63,59":[1,3358,1331,128,600,64.0,567.0],"8,38":[1,3488,1331,130,600,65.0,568.0],"63,60":[1,3620,1331,129,598,65.0,565.0],"28,69":[1,3751,1331,126,597,64.0,564.0],"34,69":[1,3879,1331,126,597,64.0,564.0],"41,11":[1,0,1937,129,597,65.0,564.0],"42,11":[1,131,1937,130,597,65.0,564.0],"6,30":[1,263,1937,127,597,65.0,564.0],"6,36":[1,392,1937,129,597,64.0,564.0],"69,17":[1,523,1937,130,597,65.0,564.0],"76,21":[1,655,1937,130,597,65.0,564.0],"76,27":[1,787,1937,129,597,64.0,564.0],"77,21":[1,918,1937,129,597,65.0,564.0],"14,57":[1,1049,1937,130,596,65.0,563.0],"35,11":[1,1181,1937,126,596,64.0,564.0],"62,17":[1,1309,1937,130,596,65.0,563.0],"63,17":[1,1441,1937,128,596,63.0,563.0],"64,17":[1,1571,1937,130,596,65.0,563.0],"65,17":[1,1703,1937,129,596,65.0,563.0],"66,17":[1,1834,1937,128,596,64.0,564.0],"67,17":[1,1964,1937,129,596,64.0,563.0],"68,17":[1,2095,1937,130,596,65.0,563.0],"7,36":[1,2227,1937,129,596,64.0,564.0],"15,57":[1,2358,1937,129,595,64.0,562.0],"16,57":[1,2489,1937,130,595,65.0,562.0],"17,57":[1,2621,1937,129,595,64.0,562.0],"18,57":[1,2752,1937,130,595,65.0,563.0],"19,57":[1,2884,1937,130,595,65.0,562.0],"20,57":[1,3016,1937,130,595,65.0,562.0],"29,69":[1,3148,1937,124,595,65.0,564.0],"35,69":[1,3274,1937,124,595,65.0,564.0],"36,11":[1,3400,1937,124,595,64.0,564.0],"7,30":[1,3526,1937,130,595,64.0,564.0],"77,27":[1,3658,1937,130,595,65.0,564.0],"31,20":[1,3790,1937,130,594,65.0,561.0],"24,20":[1,3922,1937,129,593,65.0,560.0],"24,25":[1,0,2536,130,593,65.0,560.0],"25,20":[1,132,2536,130,593,64.0,560.0],"25,25":[1,264,2536,130,593,65.0,560.0],"26,20":[1,396,2536,129,593,65.0,560.0],"26,25":[1,527,2536,129,593,64.0,560.0],"27,25":[1,658,2536,129,593,65.0,560.0],"28,25":[1,789,2536,129,593,65.0,560.0],"29,25":[1,920,2536,129,593,64.0,560.0],"30,20":[1,1051,2536,129,593,64.0,560.0],"30,25":[1,1182,2536,129,593,63.0,560.0],"31,25":[1,1313,2536,130,593,65.0,560.0],"32,20":[1,1445,2536,129,593,64.0,560.0],"32,25":[1,1576,2536,130,593,65.0,560.0],"33,20":[1,1708,2536,129,593,64.0,560.0],"33,25":[1,1839,2536,130,593,65.0,560.0],"34,20":[1,1971,2536,73,593,65.0,560.0],"28,17":[1,2046,2536,129,591,65.0,558.0],"28,19":[1,2177,2536,130,591,65.0,558.0],"19,58":[1,2309,2536,130,590,65.0,557.0],"20,58":[1,2441,2536,129,590,65.0,558.0],"28,16":[1,2572,2536,130,590,65.0,557.0],"28,18":[1,2704,2536,130,590,65.0,557.0],"14,58":[1,2836,2536,130,589,65.0,556.0],"16,58":[1,2968,2536,130,589,65.0,556.0],"17,58":[1,3100,2536,130,589,65.0,557.0],"18,58":[1,3232,2536,129,589,64.0,556.0],"34,24":[1,3363,2536,131,589,66.0,587.0],"15,58":[1,3496,2536,130,588,65.0,556.0],"29,16":[1,3628,2536,130,586,65.0,553.0],"29,18":[1,3760,2536,130,586,65.0,553.0],"29,17":[1,3892,2536,129,585,65.0,552.0],"29,19":[1,0,3131,130,585,65.0,552.0],"63,19":[1,132,3131,130,585,65.0,552.0],"67,19":[1,264,3131,129,585,65.0,552.0],"68,19":[1,395,3131,130,585,65.0,552.0],"64,19":[1,527,3131,129,584,65.0,553.0],"66,19":[1,658,3131,130,584,65.0,551.0],"62,19":[1,790,3131,130,583,65.0,551.0],"65,19":[1,922,3131,129,583,63.0,551.0],"29,70":[1,1053,3131,129,581,64.0,548.0],"35,71":[1,1184,3131,127,581,62.0,548.0],"36,12":[1,1313,3131,129,581,64.0,548.0],"7,32":[1,1444,3131,127,581,65.0,548.0],"7,37":[1,1573,3131,130,581,65.0,548.0],"7,38":[1,1705,3131,130,581,65.0,548.0],"77,23":[1,1837,3131,127,581,65.0,548.0],"77,29":[1,1966,3131,124,581,62.0,548.0],"29,71":[1,2092,3131,127,580,62.0,548.0],"35,70":[1,2221,3131,129,580,64.0,548.0],"36,13":[1,2352,3131,127,580,62.0,548.0],"42,13":[1,2481,3131,127,580,62.0,548.0],"42,12":[1,2610,3131,129,579,64.0,548.0],"7,31":[1,2741,3131,126,579,64.0,548.0],"77,22":[1,2869,3131,129,579,64.0,548.0],"77,28":[1,3000,3131,127,579,65.0,548.0],"66,58":[1,3129,3131,130,577,65.0,566.0],"6,31":[1,3261,3131,129,576,64.0,543.0],"28,70":[1,3392,3131,128,575,64.0,542.0],"35,12":[1,3522,3131,128,575,64.0,542.0],"41,12":[1,3652,3131,129,575,65.0,542.0],"6,32":[1,3783,3131,129,575,65.0,542.0],"76,22":[1,3914,3131,130,575,65.0,542.0],"76,23":[2,0,0,129,575,65.0,542.0],"76,28":[2,131,0,129,575,64.0,542.0],"34,70":[2,262,0,130,574,65.0,542.0],"6,37":[2,394,0,129,574,64.0,542.0],"76,29":[2,525,0,129,574,65.0,542.0],"28,71":[2,656,0,127,573,62.0,542.0],"34,71":[2,785,0,126,573,62.0,542.0],"35,13":[2,913,0,126,573,62.0,542.0],"41,13":[2,1041,0,127,573,62.0,542.0],"6,38":[2,1170,0,129,573,64.0,542.0],"64,58":[2,1301,0,130,572,65.0,578.0],"69,19":[2,1433,0,130,571,65.0,551.0],"23,26":[2,1565,0,129,566,65.0,533.0],"24,26":[2,1696,0,130,566,65.0,533.0],"25,19":[2,1828,0,129,566,64.0,533.0],"25,26":[2,1959,0,130,566,65.0,533.0],"26,19":[2,2091,0,130,566,65.0,533.0],"26,26":[2,2223,0,129,566,65.0,533.0],"27,26":[2,2354,0,130,566,65.0,533.0],"28,26":[2,2486,0,129,566,65.0,533.0],"29,26":[2,2617,0,130,566,65.0,533.0],"30,19":[2,2749,0,130,566,65.0,533.0],"30,26":[2,2881,0,130,566,65.0,533.0],"31,19":[2,3013,0,128,566,64.0,533.0],"31,26":[2,3143,0,130,566,64.0,533.0],"32,19":[2,3275,0,129,566,65.0,533.0],"33,19":[2,3406,0,130,566,65.0,533.0],"33,26":[2,3538,0,130,566,65.0,533.0],"24,19":[2,3670,0,129,565,63.0,533.0],"27,19":[2,3801,0,130,565,65.0,533.0],"32,26":[2,3933,0,130,565,65.0,532.0],"13,37":[2,0,577,130,564,65.0,531.0],"13,38":[2,132,577,130,564,65.0,531.0],"13,42":[2,264,577,130,564,65.0,531.0],"8,39":[2,396,577,130,564,65.0,531.0],"8,41":[2,528,577,130,564,65.0,531.0],"8,42":[2,660,577,130,564,65.0,531.0],"8,43":[2,792,577,130,564,65.0,531.0],"10,40":[2,924,577,130,563,65.0,530.0],"11,40":[2,1056,577,130,563,65.0,530.0],"12,40":[2,1188,577,130,563,64.0,530.0],"13,36":[2,1320,577,130,563,64.0,530.0],"13,39":[2,1452,577,130,563,65.0,531.0],"13,41":[2,1584,577,130,563,64.0,531.0],"13,43":[2,1716,577,130,563,65.0,531.0],"8,40":[2,1848,577,130,563,65.0,531.0],"11,36":[2,1980,577,130,562,65.0,530.0],"12,36":[2,2112,577,130,562,65.0,529.0],"14,36":[2,2244,577,130,562,65.0,529.0],"9,36":[2,2376,577,130,562,65.0,529.0],"10,36":[2,2508,577,130,561,65.0,529.0],"14,56":[2,2640,577,129,557,65.0,525.0],"15,56":[2,2771,577,128,557,64.0,524.0],"17,56":[2,2901,577,129,557,65.0,524.0],"18,56":[2,3032,577,130,557,65.0,524.0],"19,56":[2,3164,577,130,557,65.0,525.0],"20,56":[2,3296,577,129,557,65.0,524.0],"16,56":[2,3427,577,128,556,64.0,524.0],"65,61":[2,3557,577,129,556,64.0,523.0],"65,62":[2,3688,577,130,556,65.0,523.0],"65,63":[2,3820,577,128,556,64.0,523.0],"65,65":[2,3950,577,130,555,65.0,522.0],"65,64":[2,0,1143,129,554,65.0,522.0],"27,17":[2,131,1143,130,553,65.0,520.0],"66,16":[2,263,1143,130,553,65.0,520.0],"67,16":[2,395,1143,128,553,64.0,521.0],"27,16":[2,525,1143,129,552,64.0,520.0],"27,18":[2,656,1143,130,552,65.0,520.0],"62,16":[2,788,1143,129,552,64.0,520.0],"65,16":[2,919,1143,130,552,65.0,519.0],"68,16":[2,1051,1143,129,552,65.0,519.0],"69,16":[2,1182,1143,105,552,65.0,519.0],"63,16":[2,1289,1143,129,551,64.0,519.0],"64,16":[2,1420,1143,129,551,65.0,519.0],"42,40":[2,1551,1143,128,550,64.0,517.0],"43,40":[2,1681,1143,130,550,65.0,518.0],"44,40":[2,1813,1143,130,550,65.0,517.0],"45,40":[2,1945,1143,130,550,64.0,517.0],"41,40":[2,2077,1143,130,549,65.0,517.0],"16,59":[2,2209,1143,129,545,64.0,513.0],"17,59":[2,2340,1143,130,545,65.0,512.0],"18,59":[2,2472,1143,129,545,64.0,512.0],"30,16":[2,2603,1143,130,543,65.0,510.0],"30,17":[2,2735,1143,130,543,65.0,510.0],"30,18":[2,2867,1143,130,543,65.0,510.0],"19,59":[2,2999,1143,130,542,65.0,514.0],"14,61":[2,3131,1143,126,539,61.0,506.0],"15,61":[2,3259,1143,125,539,64.0,506.0],"24,18":[2,3386,1143,130,539,65.0,506.0],"26,18":[2,3518,1143,130,539,65.0,506.0],"31,18":[2,3650,1143,130,539,65.0,506.0],"32,18":[2,3782,1143,129,539,64.0,506.0],"33,18":[2,3913,1143,130,539,64.0,506.0],"41,14":[2,0,1699,126,539,61.0,506.0],"23,18":[2,128,1699,130,538,64.0,506.0],"25,18":[2,260,1699,129,538,64.0,506.0],"42,14":[2,391,1699,130,538,65.0,506.0],"62,20":[2,523,1699,130,538,65.0,508.0],"14,37":[2,655,1699,130,537,64.0,504.0],"14,38":[2,787,1699,130,537,65.0,504.0],"14,39":[2,919,1699,130,537,65.0,504.0],"14,41":[2,1051,1699,130,537,65.0,504.0],"14,43":[2,1183,1699,130,537,65.0,504.0],"63,20":[2,1315,1699,130,537,65.0,508.0],"64,20":[2,1447,1699,130,537,65.0,508.0],"66,20":[2,1579,1699,129,537,64.0,507.0],"66,63":[2,1710,1699,130,537,65.0,504.0],"67,20":[2,1842,1699,128,537,64.0,508.0],"68,20":[2,1972,1699,128,537,64.0,508.0],"9,37":[2,2102,1699,130,537,64.0,504.0],"9,38":[2,2234,1699,130,537,65.0,504.0],"9,41":[2,2366,1699,130,537,65.0,504.0],"9,42":[2,2498,1699,130,537,65.0,504.0],"9,43":[2,2630,1699,130,537,65.0,504.0],"13,40":[2,2762,1699,130,536,65.0,503.0],"14,40":[2,2894,1699,130,536,65.0,504.0],"14,42":[2,3026,1699,130,536,64.0,504.0],"64,61":[2,3158,1699,129,536,65.0,503.0],"64,62":[2,3289,1699,130,536,65.0,503.0],"64,63":[2,3421,1699,130,536,65.0,503.0],"64,64":[2,3553,1699,128,536,64.0,503.0],"64,65":[2,3683,1699,129,536,65.0,503.0],"65,20":[2,3814,1699,128,536,64.0,507.0],"66,61":[2,3944,1699,130,536,64.0,503.0],"66,62":[2,0,2240,128,536,64.0,503.0],"66,65":[2,130,2240,130,536,65.0,503.0],"9,39":[2,262,2240,130,536,65.0,504.0],"9,40":[2,394,2240,130,536,65.0,503.0],"66,64":[2,526,2240,130,535,65.0,503.0],"8,29":[2,658,2240,129,531,65.0,501.0],"14,10":[2,789,2240,124,525,62.0,492.0],"14,11":[2,915,2240,126,525,62.0,492.0],"14,12":[2,1043,2240,130,525,65.0,492.0],"14,71":[2,1175,2240,130,525,65.0,492.0],"14,72":[2,1307,2240,126,525,62.0,492.0],"23,10":[2,1435,2240,124,525,62.0,492.0],"23,11":[2,1561,2240,127,525,62.0,492.0],"23,12":[2,1690,2240,129,525,65.0,492.0],"23,71":[2,1821,2240,130,525,65.0,492.0],"23,72":[2,1953,2240,127,525,62.0,492.0],"32,10":[2,2082,2240,124,525,62.0,492.0],"32,11":[2,2208,2240,126,525,62.0,492.0],"32,12":[2,2336,2240,129,525,65.0,492.0],"32,72":[2,2467,2240,127,525,62.0,492.0],"4,20":[2,2596,2240,124,525,62.0,492.0],"4,30":[2,2722,2240,127,525,62.0,492.0],"4,38":[2,2851,2240,124,525,62.0,492.0],"4,39":[2,2977,2240,127,525,62.0,492.0],"4,47":[2,3106,2240,124,525,62.0,492.0],"4,48":[2,3232,2240,127,525,62.0,492.0],"4,56":[2,3361,2240,124,525,62.0,492.0],"4,65":[2,3487,2240,124,525,62.0,492.0],"4,66":[2,3613,2240,126,525,61.0,492.0],"41,71":[2,3741,2240,130,525,65.0,492.0],"41,72":[2,3873,2240,127,525,62.0,492.0],"5,10":[2,0,2778,124,525,62.0,492.0],"5,11":[2,126,2778,126,525,62.0,492.0],"5,71":[2,254,2778,124,525,62.0,492.0],"5,72":[2,380,2778,126,525,62.0,492.0],"50,10":[2,508,2778,124,525,62.0,492.0],"50,11":[2,634,2778,127,525,62.0,493.0],"50,71":[2,763,2778,130,525,65.0,492.0],"50,72":[2,895,2778,126,525,62.0,492.0],"59,10":[2,1023,2778,124,525,62.0,492.0],"59,11":[2,1149,2778,127,525,62.0,492.0],"59,71":[2,1278,2778,130,525,65.0,492.0],"59,72":[2,1410,2778,126,525,62.0,492.0],"68,10":[2,1538,2778,124,525,62.0,492.0],"68,71":[2,1664,2778,130,525,65.0,492.0],"68,72":[2,1796,2778,127,525,62.0,492.0],"77,20":[2,1925,2778,130,525,65.0,492.0],"77,30":[2,2057,2778,130,525,65.0,492.0],"77,38":[2,2189,2778,130,525,65.0,492.0],"77,39":[2,2321,2778,129,525,65.0,492.0],"77,40":[2,2452,2778,129,525,65.0,492.0],"77,48":[2,2583,2778,130,525,65.0,492.0],"77,56":[2,2715,2778,130,525,65.0,492.0],"77,57":[2,2847,2778,129,525,65.0,492.0],"77,58":[2,2978,2778,130,525,65.0,492.0],"77,65":[2,3110,2778,130,525,65.0,492.0],"77,66":[2,3242,2778,129,525,65.0,492.0],"4,21":[2,3373,2778,126,524,62.0,492.0],"4,29":[2,3501,2778,124,524,62.0,492.0],"4,57":[2,3627,2778,127,524,62.0,493.0],"41,10":[2,3756,2778,124,524,62.0,492.0],"50,12":[2,3882,2778,130,524,66.0,492.0],"68,11":[2,0,3305,127,524,62.0,493.0],"68,12":[2,129,3305,130,524,65.0,492.0],"77,31":[2,261,3305,129,524,64.0,492.0],"77,47":[2,392,3305,130,524,65.0,492.0],"77,49":[2,524,3305,130,524,65.0,492.0],"77,67":[2,656,3305,130,524,66.0,492.0],"14,73":[2,788,3305,124,523,59.0,492.0],"23,73":[2,914,3305,123,523,59.0,492.0],"32,73":[2,1039,3305,123,523,59.0,492.0],"4,22":[2,1164,3305,123,523,58.0,492.0],"4,31":[2,1289,3305,124,523,59.0,492.0],"4,40":[2,1415,3305,123,523,59.0,492.0],"4,49":[2,1540,3305,123,523,59.0,492.0],"4,58":[2,1665,3305,123,523,59.0,492.0],"4,67":[2,1790,3305,124,523,59.0,492.0],"41,73":[2,1916,3305,123,523,59.0,492.0],"5,12":[2,2041,3305,123,523,59.0,492.0],"5,73":[2,2166,3305,123,523,59.0,492.0],"50,73":[2,2291,3305,123,523,58.0,493.0],"59,73":[2,2416,3305,123,523,59.0,492.0],"68,73":[2,2541,3305,123,523,59.0,492.0],"20,59":[2,2666,3305,130,522,65.0,512.0],"67,43":[2,2798,3305,98,521,65.0,488.0],"62,48":[2,2898,3305,96,520,32.0,487.0],"15,10":[2,2996,3305,126,519,63.0,486.0],"24,10":[2,3124,3305,127,519,65.0,486.0],"25,71":[2,3253,3305,129,519,64.0,486.0],"33,72":[2,3384,3305,126,519,64.0,486.0],"42,10":[2,3512,3305,127,519,65.0,486.0],"5,20":[2,3641,3305,126,519,64.0,486.0],"5,65":[2,3769,3305,126,519,64.0,486.0],"6,65":[2,3897,3305,129,519,64.0,486.0],"61,71":[3,0,0,129,519,64.0,486.0],"69,71":[3,131,0,129,519,64.0,486.0],"7,71":[3,262,0,129,519,64.0,486.0],"15,71":[3,393,0,129,518,64.0,485.0],"24,71":[3,524,0,130,518,65.0,485.0],"33,10":[3,656,0,126,518,64.0,485.0],"41,39":[3,784,0,130,518,65.0,485.0],"43,39":[3,916,0,130,518,65.0,485.0],"43,71":[3,1048,0,129,518,63.0,485.0],"44,39":[3,1179,0,129,518,63.0,486.0],"45,39":[3,1310,0,129,518,65.0,485.0],"5,29":[3,1441,0,126,518,64.0,485.0],"5,47":[3,1569,0,126,518,64.0,485.0],"51,10":[3,1697,0,126,518,64.0,487.0],"51,71":[3,1825,0,129,518,64.0,485.0],"6,10":[3,1956,0,126,518,64.0,485.0],"6,20":[3,2084,0,129,518,64.0,486.0],"6,29":[3,2215,0,129,518,63.0,486.0],"6,47":[3,2346,0,130,518,65.0,485.0],"6,56":[3,2478,0,129,518,64.0,485.0],"6,71":[3,2609,0,130,518,65.0,485.0],"78,20":[3,2741,0,126,518,64.0,485.0],"78,29":[3,2869,0,127,518,65.0,486.0],"78,47":[3,2998,0,126,518,64.0,485.0],"78,56":[3,3126,0,127,518,65.0,485.0],"16,71":[3,3255,0,129,517,63.0,485.0],"25,10":[3,3386,0,124,517,64.0,486.0],"34,10":[3,3512,0,124,517,65.0,486.0],"42,39":[3,3638,0,128,517,64.0,485.0],"42,71":[3,3768,0,130,517,65.0,485.0],"43,10":[3,3900,0,123,517,64.0,486.0],"5,56":[3,0,521,127,517,65.0,486.0],"52,71":[3,129,521,129,517,64.0,486.0],"60,10":[3,260,521,127,517,65.0,485.0],"60,71":[3,389,521,130,517,65.0,485.0],"61,45":[3,521,521,123,517,58.0,484.0],"63,61":[3,646,521,128,517,64.0,485.0],"63,62":[3,776,521,130,517,65.0,484.0],"63,63":[3,908,521,128,517,64.0,484.0],"63,64":[3,1038,521,129,517,64.0,484.0],"63,65":[3,1169,521,129,517,65.0,484.0],"64,42":[3,1300,521,123,517,65.0,484.0],"64,49":[3,1425,521,122,517,56.0,488.0],"65,42":[3,1549,521,122,517,65.0,484.0],"66,42":[3,1673,521,98,517,65.0,484.0],"67,60":[3,1773,521,130,517,65.0,484.0],"67,61":[3,1905,521,130,517,65.0,484.0],"67,62":[3,2037,521,130,517,64.0,484.0],"67,64":[3,2169,521,129,517,64.0,484.0],"67,65":[3,2300,521,130,517,65.0,484.0],"69,10":[3,2432,521,127,517,65.0,486.0],"7,10":[3,2561,521,124,517,65.0,486.0],"70,10":[3,2687,521,123,517,64.0,486.0],"70,71":[3,2812,521,129,517,64.0,485.0],"78,38":[3,2943,521,127,517,65.0,485.0],"78,65":[3,3072,521,126,517,64.0,485.0],"79,29":[3,3200,521,124,517,65.0,486.0],"79,47":[3,3326,521,123,517,64.0,486.0],"79,56":[3,3451,521,123,517,64.0,486.0],"16,10":[3,3576,521,124,516,65.0,485.0],"34,72":[3,3702,521,124,516,65.0,485.0],"52,10":[3,3828,521,123,516,64.0,485.0],"61,10":[3,3953,521,124,516,65.0,485.0],"61,46":[3,0,1040,122,516,56.0,483.0],"61,47":[3,124,1040,97,516,32.0,483.0],"67,63":[3,223,1040,128,516,64.0,484.0],"68,45":[3,353,1040,121,516,64.0,487.0],"79,20":[3,476,1040,124,516,65.0,485.0],"79,38":[3,602,1040,124,516,65.0,485.0],"79,65":[3,728,1040,124,516,65.0,485.0],"17,55":[3,854,1040,129,514,65.0,481.0],"63,58":[3,985,1040,130,514,64.0,534.0],"68,44":[3,1117,1040,97,514,64.0,488.0],"15,55":[3,1216,1040,129,513,64.0,481.0],"18,55":[3,1347,1040,129,513,64.0,480.0],"20,55":[3,1478,1040,84,513,65.0,481.0],"63,49":[3,1564,1040,98,513,33.0,487.0],"65,49":[3,1664,1040,123,513,58.0,487.0],"67,59":[3,1789,1040,128,513,64.0,480.0],"68,46":[3,1919,1040,123,513,65.0,487.0],"14,55":[3,2044,1040,129,512,65.0,480.0],"16,55":[3,2175,1040,130,512,65.0,480.0],"19,55":[3,2307,1040,130,512,65.0,480.0],"26,16":[3,2439,1040,130,511,65.0,478.0],"69,20":[3,2571,1040,85,511,65.0,507.0],"26,17":[3,2658,1040,130,510,65.0,478.0],"63,15":[3,2790,1040,128,509,64.0,477.0],"64,15":[3,2920,1040,128,509,64.0,476.0],"65,15":[3,3050,1040,129,509,64.0,476.0],"66,15":[3,3181,1040,128,509,64.0,476.0],"68,15":[3,3311,1040,128,509,64.0,477.0],"67,15":[3,3441,1040,129,508,65.0,476.0],"62,15":[3,3572,1040,129,507,65.0,475.0],"42,41":[3,3703,1040,129,506,64.0,474.0],"43,41":[3,3834,1040,130,506,65.0,473.0],"44,41":[3,3966,1040,130,506,65.0,473.0],"41,41":[3,0,1558,129,505,65.0,473.0],"62,43":[3,131,1558,128,505,64.0,472.0],"63,42":[3,261,1558,123,505,65.0,472.0],"25,12":[3,386,1558,130,503,65.0,470.0],"43,12":[3,518,1558,130,503,65.0,470.0],"6,22":[3,650,1558,130,503,65.0,470.0],"6,40":[3,782,1558,130,503,65.0,470.0],"61,44":[3,914,1558,122,503,58.0,471.0],"7,12":[3,1038,1558,130,503,65.0,470.0],"16,12":[3,1170,1558,130,502,65.0,469.0],"25,11":[3,1302,1558,127,502,65.0,470.0],"6,21":[3,1431,1558,129,502,64.0,470.0],"6,39":[3,1562,1558,130,502,65.0,470.0],"6,48":[3,1694,1558,130,502,65.0,469.0],"6,49":[3,1826,1558,130,502,65.0,469.0],"6,57":[3,1958,1558,129,502,64.0,470.0],"6,58":[3,2089,1558,130,502,65.0,469.0],"6,66":[3,2221,1558,130,502,65.0,470.0],"6,67":[3,2353,1558,130,502,65.0,470.0],"61,12":[3,2485,1558,130,502,65.0,469.0],"16,11":[3,2617,1558,126,501,63.0,470.0],"25,72":[3,2745,1558,127,501,65.0,470.0],"52,11":[3,2874,1558,127,501,65.0,470.0],"52,12":[3,3003,1558,130,501,65.0,469.0],"52,72":[3,3135,1558,126,501,64.0,470.0],"61,72":[3,3263,1558,126,501,64.0,470.0],"70,12":[3,3391,1558,130,501,65.0,469.0],"79,21":[3,3523,1558,126,501,64.0,470.0],"79,48":[3,3651,1558,126,501,64.0,471.0],"79,57":[3,3779,1558,126,501,64.0,470.0],"16,72":[3,3907,1558,126,500,64.0,469.0],"32,70":[3,0,2065,129,500,64.0,467.0],"32,71":[3,131,2065,130,500,65.0,467.0],"34,73":[3,263,2065,127,500,62.0,470.0],"39,13":[3,392,2065,130,500,65.0,467.0],"43,11":[3,524,2065,126,500,64.0,469.0],"43,72":[3,652,2065,127,500,65.0,469.0],"6,35":[3,781,2065,130,500,65.0,467.0],"61,11":[3,913,2065,126,500,64.0,469.0],"66,49":[3,1041,2065,121,500,57.0,487.0],"67,48":[3,1164,2065,129,500,65.0,487.0],"68,47":[3,1295,2065,122,500,65.0,487.0],"7,11":[3,1419,2065,126,500,64.0,469.0],"7,35":[3,1547,2065,130,500,64.0,467.0],"7,72":[3,1679,2065,126,500,64.0,470.0],"70,11":[3,1807,2065,126,500,64.0,469.0],"70,72":[3,1935,2065,129,500,65.0,469.0],"70,73":[3,2066,2065,124,500,62.0,470.0],"76,26":[3,2192,2065,130,500,65.0,467.0],"77,26":[3,2324,2065,130,500,65.0,467.0],"79,30":[3,2456,2065,127,500,65.0,469.0],"79,39":[3,2585,2065,127,500,65.0,469.0],"79,66":[3,2714,2065,127,500,65.0,469.0],"16,60":[3,2843,2065,128,499,64.0,469.0],"25,73":[3,2973,2065,124,499,62.0,469.0],"39,12":[3,3099,2065,129,499,64.0,467.0],"43,73":[3,3230,2065,124,499,62.0,470.0],"52,73":[3,3356,2065,124,499,62.0,469.0],"61,73":[3,3482,2065,124,499,62.0,470.0],"7,73":[3,3608,2065,124,499,62.0,469.0],"79,22":[3,3734,2065,124,499,62.0,470.0],"79,49":[3,3860,2065,124,499,62.0,470.0],"79,58":[3,0,2567,124,499,62.0,470.0],"16,73":[3,126,2567,124,498,62.0,469.0],"18,60":[3,252,2567,129,498,64.0,469.0],"62,60":[3,383,2567,130,498,65.0,465.0],"62,61":[3,515,2567,130,498,65.0,465.0],"62,62":[3,647,2567,129,498,64.0,466.0],"62,63":[3,778,2567,128,498,64.0,465.0],"62,64":[3,908,2567,128,498,64.0,465.0],"62,65":[3,1038,2567,129,498,65.0,465.0],"68,61":[3,1169,2567,129,498,64.0,465.0],"68,63":[3,1300,2567,129,498,64.0,465.0],"68,64":[3,1431,2567,129,498,65.0,465.0],"68,65":[3,1562,2567,129,498,65.0,466.0],"79,31":[3,1693,2567,124,498,62.0,469.0],"79,40":[3,1819,2567,124,498,62.0,469.0],"79,67":[3,1945,2567,124,498,62.0,469.0],"15,11":[3,2071,2567,129,497,64.0,464.0],"17,60":[3,2202,2567,129,497,65.0,468.0],"24,11":[3,2333,2567,129,497,64.0,464.0],"24,12":[3,2464,2567,130,497,65.0,464.0],"24,72":[3,2596,2567,130,497,65.0,464.0],"42,72":[3,2728,2567,130,497,65.0,464.0],"5,21":[3,2860,2567,129,497,65.0,464.0],"5,39":[3,2991,2567,128,497,64.0,464.0],"5,48":[3,3121,2567,129,497,64.0,464.0],"5,57":[3,3252,2567,128,497,64.0,464.0],"5,66":[3,3382,2567,130,497,65.0,464.0],"51,12":[3,3514,2567,129,497,65.0,464.0],"51,72":[3,3645,2567,130,497,65.0,465.0],"6,12":[3,3777,2567,129,497,65.0,464.0],"6,72":[3,3908,2567,129,497,64.0,464.0],"60,11":[3,0,3068,129,497,65.0,464.0],"60,72":[3,131,3068,128,497,64.0,464.0],"68,60":[3,261,3068,130,497,65.0,465.0],"68,62":[3,393,3068,129,497,64.0,465.0],"69,11":[3,524,3068,129,497,65.0,464.0],"69,12":[3,655,3068,130,497,65.0,464.0],"69,72":[3,787,3068,129,497,64.0,464.0],"78,21":[3,918,3068,129,497,64.0,464.0],"78,30":[3,1049,3068,129,497,64.0,464.0],"78,39":[3,1180,3068,129,497,64.0,464.0],"78,57":[3,1311,3068,129,497,65.0,464.0],"78,66":[3,1442,3068,129,497,65.0,464.0],"15,12":[3,1573,3068,129,496,65.0,464.0],"15,72":[3,1704,3068,129,496,65.0,464.0],"33,11":[3,1835,3068,128,496,64.0,464.0],"33,12":[3,1965,3068,130,496,65.0,464.0],"5,22":[3,2097,3068,126,496,62.0,464.0],"51,11":[3,2225,3068,130,496,65.0,464.0],"51,73":[3,2357,3068,126,496,62.0,464.0],"6,11":[3,2485,3068,129,496,64.0,464.0],"60,12":[3,2616,3068,130,496,65.0,464.0],"78,48":[3,2748,3068,129,496,64.0,464.0],"15,73":[3,2879,3068,127,495,62.0,464.0],"24,73":[3,3008,3068,127,495,62.0,464.0],"33,73":[3,3137,3068,127,495,62.0,464.0],"42,73":[3,3266,3068,126,495,62.0,464.0],"5,40":[3,3394,3068,127,495,62.0,464.0],"5,49":[3,3523,3068,127,495,62.0,464.0],"5,58":[3,3652,3068,127,495,62.0,464.0],"5,67":[3,3781,3068,127,495,61.0,464.0],"6,73":[3,3910,3068,127,495,62.0,465.0],"60,73":[3,0,3567,127,495,62.0,464.0],"69,73":[3,129,3567,127,495,62.0,464.0],"78,22":[3,258,3567,126,495,62.0,464.0],"78,31":[3,386,3567,126,495,62.0,464.0],"78,40":[3,514,3567,130,495,65.0,464.0],"78,49":[3,646,3567,129,495,65.0,465.0],"78,58":[3,777,3567,127,495,62.0,464.0],"78,67":[3,906,3567,128,495,64.0,464.0],"19,60":[3,1036,3567,130,494,65.0,468.0],"45,41":[3,1168,3567,130,493,65.0,473.0],"62,59":[3,1300,3567,129,493,64.0,460.0],"68,59":[3,1431,3567,130,492,65.0,460.0],"47,27":[3,1563,3567,122,489,61.0,458.0],"11,24":[3,1687,3567,129,488,65.0,455.0],"10,24":[3,1818,3567,129,487,65.0,455.0],"47,60":[3,1949,3567,126,484,65.0,454.0],"69,15":[3,2077,3567,84,484,65.0,476.0],"61,48":[3,2163,3567,33,483,-31.0,471.0],"62,49":[3,2198,3567,34,483,-31.0,471.0],"67,42":[3,2234,3567,33,483,63.0,471.0],"68,43":[3,2269,3567,34,482,64.0,470.0],"61,60":[3,2305,3567,130,479,65.0,446.0],"61,61":[3,2437,3567,129,479,65.0,446.0],"61,62":[3,2568,3567,130,479,65.0,446.0],"61,63":[3,2700,3567,129,479,65.0,447.0],"61,64":[3,2831,3567,129,479,64.0,446.0],"61,65":[3,2962,3567,129,479,65.0,446.0],"69,60":[3,3093,3567,129,479,64.0,446.0],"69,61":[3,3224,3567,130,479,65.0,446.0],"69,62":[3,3356,3567,130,479,65.0,446.0],"69,63":[3,3488,3567,130,479,65.0,446.0],"69,64":[3,3620,3567,129,479,63.0,447.0],"69,65":[3,3751,3567,130,479,65.0,446.0],"10,25":[3,3883,3567,127,478,62.0,448.0],"46,60":[4,0,0,129,477,64.0,445.0],"70,18":[4,131,0,130,476,65.0,453.0],"11,25":[4,263,0,125,475,61.0,445.0],"42,38":[4,390,0,129,474,64.0,441.0],"44,38":[4,521,0,129,474,64.0,441.0],"45,38":[4,652,0,105,474,65.0,442.0],"61,59":[4,759,0,128,474,64.0,442.0],"41,38":[4,889,0,129,473,65.0,441.0],"43,38":[4,1020,0,130,473,64.0,441.0],"6,33":[4,1152,0,130,473,65.0,440.0],"62,42":[4,1284,0,65,473,33.0,440.0],"69,59":[4,1351,0,129,473,64.0,441.0],"30,70":[4,1482,0,130,472,65.0,439.0],"37,12":[4,1614,0,130,472,64.0,439.0],"61,43":[4,1746,0,65,472,32.0,439.0],"20,44":[4,1813,0,130,471,65.0,438.0],"76,24":[4,1945,0,130,471,65.0,439.0],"70,17":[4,2077,0,110,470,64.0,437.0],"14,54":[4,2189,0,130,469,65.0,436.0],"17,54":[4,2321,0,129,469,65.0,436.0],"18,54":[4,2452,0,130,469,65.0,436.0],"19,44":[4,2584,0,129,469,65.0,436.0],"15,54":[4,2715,0,129,468,65.0,436.0],"16,54":[4,2846,0,129,468,65.0,437.0],"67,49":[4,2977,0,65,468,33.0,487.0],"68,48":[4,3044,0,64,468,32.0,487.0],"19,45":[4,3110,0,125,467,61.0,437.0],"20,45":[4,3237,0,125,467,61.0,437.0],"19,54":[4,3364,0,128,466,64.0,436.0],"35,22":[4,3494,0,115,465,64.0,440.0],"13,12":[4,3611,0,130,461,65.0,428.0],"13,71":[4,3743,0,130,461,65.0,428.0],"14,13":[4,3875,0,130,461,65.0,428.0],"14,70":[4,0,479,130,461,65.0,428.0],"15,70":[4,132,479,130,461,64.0,428.0],"16,70":[4,264,479,130,461,65.0,428.0],"17,12":[4,396,479,130,461,64.0,428.0],"17,71":[4,528,479,130,461,65.0,428.0],"23,13":[4,660,479,130,461,65.0,428.0],"23,70":[4,792,479,130,461,65.0,428.0],"24,13":[4,924,479,130,461,65.0,428.0],"24,70":[4,1056,479,130,461,65.0,428.0],"25,13":[4,1188,479,130,461,65.0,428.0],"25,70":[4,1320,479,130,461,65.0,428.0],"26,12":[4,1452,479,130,461,65.0,428.0],"26,71":[4,1584,479,130,461,65.0,428.0],"31,12":[4,1716,479,130,461,65.0,428.0],"32,13":[4,1848,479,130,461,65.0,428.0],"33,13":[4,1980,479,130,461,65.0,428.0],"36,70":[4,2112,479,130,461,65.0,428.0],"40,71":[4,2244,479,130,461,65.0,428.0],"41,70":[4,2376,479,130,461,65.0,428.0],"42,70":[4,2508,479,130,461,64.0,428.0],"43,13":[4,2640,479,130,461,65.0,428.0],"43,70":[4,2772,479,130,461,65.0,428.0],"44,12":[4,2904,479,130,461,65.0,428.0],"49,12":[4,3036,479,131,461,66.0,428.0],"51,13":[4,3169,479,131,461,66.0,428.0],"51,70":[4,3302,479,130,461,65.0,428.0],"52,13":[4,3434,479,130,461,65.0,428.0],"59,70":[4,3566,479,130,461,65.0,428.0],"6,13":[4,3698,479,130,461,65.0,428.0],"6,19":[4,3830,479,130,461,65.0,428.0],"6,23":[4,3962,479,130,461,65.0,428.0],"6,41":[4,0,942,130,461,65.0,428.0],"6,46":[4,132,942,130,461,65.0,428.0],"6,50":[4,264,942,130,461,65.0,428.0],"6,55":[4,396,942,130,461,65.0,428.0],"6,59":[4,528,942,130,461,65.0,428.0],"6,64":[4,660,942,130,461,65.0,428.0],"6,70":[4,792,942,130,461,65.0,428.0],"60,13":[4,924,942,130,461,65.0,428.0],"60,70":[4,1056,942,130,461,65.0,428.0],"61,70":[4,1188,942,130,461,65.0,428.0],"67,12":[4,1320,942,130,461,65.0,428.0],"68,13":[4,1452,942,130,461,65.0,428.0],"68,70":[4,1584,942,130,461,65.0,428.0],"69,13":[4,1716,942,130,461,65.0,428.0],"69,70":[4,1848,942,130,461,65.0,428.0],"7,13":[4,1980,942,130,461,65.0,428.0],"7,20":[4,2112,942,130,461,65.0,428.0],"7,21":[4,2244,942,130,461,65.0,428.0],"7,39":[4,2376,942,130,461,65.0,428.0],"7,40":[4,2508,942,130,461,65.0,428.0],"7,41":[4,2640,942,130,461,65.0,428.0],"7,42":[4,2772,942,130,461,65.0,428.0],"7,48":[4,2904,942,130,461,65.0,428.0],"7,49":[4,3036,942,130,461,65.0,428.0],"7,56":[4,3168,942,130,461,65.0,428.0],"7,57":[4,3300,942,130,461,65.0,428.0],"7,58":[4,3432,942,130,461,65.0,428.0],"7,67":[4,3564,942,130,461,65.0,428.0],"7,70":[4,3696,942,130,461,65.0,428.0],"70,13":[4,3828,942,130,461,65.0,428.0],"71,12":[4,3960,942,130,461,65.0,428.0],"71,71":[4,0,1405,130,461,65.0,428.0],"76,20":[4,132,1405,130,461,65.0,428.0],"76,30":[4,264,1405,130,461,64.0,428.0],"76,31":[4,396,1405,130,461,65.0,428.0],"76,39":[4,528,1405,130,461,65.0,428.0],"76,47":[4,660,1405,130,461,65.0,428.0],"76,49":[4,792,1405,130,461,65.0,428.0],"76,56":[4,924,1405,130,461,65.0,428.0],"76,57":[4,1056,1405,130,461,65.0,428.0],"76,58":[4,1188,1405,130,461,65.0,428.0],"76,65":[4,1320,1405,130,461,65.0,428.0],"76,66":[4,1452,1405,130,461,65.0,428.0],"76,67":[4,1584,1405,130,461,65.0,428.0],"77,32":[4,1716,1405,130,461,65.0,428.0],"77,37":[4,1848,1405,130,461,65.0,428.0],"77,41":[4,1980,1405,130,461,64.0,428.0],"77,50":[4,2112,1405,130,461,65.0,428.0],"77,55":[4,2244,1405,130,461,65.0,428.0],"77,59":[4,2376,1405,130,461,65.0,428.0],"77,68":[4,2508,1405,130,461,65.0,428.0],"8,12":[4,2640,1405,130,461,65.0,428.0],"8,71":[4,2772,1405,130,461,65.0,428.0],"15,13":[4,2904,1405,130,460,65.0,428.0],"16,13":[4,3036,1405,130,460,65.0,428.0],"22,71":[4,3168,1405,130,460,65.0,428.0],"44,71":[4,3300,1405,130,460,65.0,428.0],"47,59":[4,3432,1405,126,460,65.0,430.0],"49,71":[4,3560,1405,130,460,65.0,428.0],"50,13":[4,3692,1405,131,460,66.0,428.0],"50,70":[4,3825,1405,130,460,65.0,428.0],"52,70":[4,3957,1405,130,460,64.0,428.0],"53,12":[4,0,1868,130,460,65.0,428.0],"53,71":[4,132,1868,130,460,64.0,428.0],"58,71":[4,264,1868,130,460,65.0,428.0],"6,28":[4,396,1868,130,460,65.0,428.0],"6,68":[4,528,1868,130,460,64.0,428.0],"60,60":[4,660,1868,129,460,65.0,428.0],"60,61":[4,791,1868,130,460,65.0,427.0],"60,65":[4,923,1868,129,460,65.0,427.0],"61,13":[4,1054,1868,130,460,65.0,428.0],"62,12":[4,1186,1868,130,460,65.0,428.0],"62,71":[4,1318,1868,130,460,65.0,428.0],"67,71":[4,1450,1868,130,460,65.0,428.0],"7,22":[4,1582,1868,130,460,65.0,428.0],"7,29":[4,1714,1868,130,460,65.0,428.0],"7,43":[4,1846,1868,130,460,65.0,428.0],"7,47":[4,1978,1868,130,460,65.0,428.0],"7,65":[4,2110,1868,130,460,65.0,428.0],"7,66":[4,2242,1868,130,460,65.0,428.0],"70,70":[4,2374,1868,130,460,65.0,428.0],"76,38":[4,2506,1868,130,460,65.0,428.0],"76,40":[4,2638,1868,130,460,64.0,428.0],"77,19":[4,2770,1868,130,460,65.0,428.0],"77,46":[4,2902,1868,130,460,65.0,428.0],"77,64":[4,3034,1868,131,460,66.0,428.0],"41,42":[4,3167,1868,128,459,64.0,430.0],"44,42":[4,3297,1868,129,459,64.0,429.0],"60,62":[4,3428,1868,129,459,65.0,426.0],"60,63":[4,3559,1868,129,459,65.0,426.0],"60,64":[4,3690,1868,130,459,66.0,427.0],"76,48":[4,3822,1868,130,459,65.0,428.0],"26,47":[4,3954,1868,126,458,61.0,425.0],"42,42":[4,0,2330,128,458,64.0,429.0],"43,42":[4,130,2330,129,458,64.0,429.0],"21,57":[4,261,2330,125,457,64.0,428.0],"41,66":[4,388,2330,121,457,60.0,425.0],"13,13":[4,511,2330,130,456,65.0,423.0],"31,13":[4,643,2330,130,456,65.0,423.0],"49,13":[4,775,2330,130,456,64.0,423.0],"60,15":[4,907,2330,123,456,61.0,426.0],"7,64":[4,1032,2330,130,456,65.0,423.0],"71,70":[4,1164,2330,130,456,65.0,423.0],"76,50":[4,1296,2330,130,456,65.0,423.0],"76,68":[4,1428,2330,130,456,65.0,423.0],"17,70":[4,1560,2330,130,455,65.0,422.0],"26,70":[4,1692,2330,130,455,65.0,422.0],"47,48":[4,1824,2330,126,455,62.0,424.0],"62,70":[4,1952,2330,130,455,65.0,422.0],"67,13":[4,2084,2330,130,455,65.0,422.0],"7,19":[4,2216,2330,130,455,65.0,422.0],"7,55":[4,2348,2330,130,455,65.0,422.0],"76,32":[4,2480,2330,130,455,65.0,422.0],"76,41":[4,2612,2330,130,455,65.0,422.0],"8,70":[4,2744,2330,130,455,64.0,422.0],"10,23":[4,2876,2330,126,454,65.0,421.0],"10,51":[4,3004,2330,130,454,65.0,422.0],"44,70":[4,3136,2330,131,454,66.0,422.0],"46,59":[4,3269,2330,130,454,65.0,421.0],"53,70":[4,3401,2330,130,454,65.0,422.0],"60,16":[4,3533,2330,120,454,59.0,426.0],"60,59":[4,3655,2330,129,454,65.0,422.0],"7,28":[4,3786,2330,130,454,65.0,422.0],"7,46":[4,3918,2330,130,454,65.0,422.0],"76,59":[4,0,2790,130,454,65.0,422.0],"60,14":[4,132,2790,126,453,60.0,424.0],"11,23":[4,260,2790,126,451,65.0,419.0],"9,24":[4,388,2790,130,450,65.0,418.0],"37,13":[4,520,2790,129,447,65.0,414.0],"43,14":[4,651,2790,130,447,65.0,414.0],"41,15":[4,783,2790,126,446,61.0,415.0],"41,54":[4,911,2790,122,446,61.0,413.0],"6,34":[4,1035,2790,129,446,64.0,413.0],"76,25":[4,1166,2790,129,446,65.0,413.0],"30,71":[4,1297,2790,129,445,65.0,413.0],"31,70":[4,1428,2790,130,445,65.0,412.0],"34,66":[4,1560,2790,122,445,61.0,413.0],"35,23":[4,1684,2790,116,445,65.0,440.0],"38,12":[4,1802,2790,130,445,65.0,412.0],"44,14":[4,1934,2790,130,445,65.0,414.0],"7,33":[4,2066,2790,130,445,65.0,412.0],"41,16":[4,2198,2790,120,444,55.0,414.0],"47,28":[4,2320,2790,125,444,61.0,411.0],"77,24":[4,2447,2790,129,444,64.0,412.0],"9,23":[4,2578,2790,126,444,65.0,411.0],"41,31":[4,2706,2790,117,443,56.0,413.0],"8,24":[4,2825,2790,129,443,65.0,410.0],"8,46":[4,2956,2790,126,443,65.0,410.0],"47,29":[4,3084,2790,121,441,56.0,410.0],"8,25":[4,3207,2790,129,441,65.0,410.0],"12,23":[4,3338,2790,120,440,64.0,410.0],"21,58":[4,3460,2790,125,440,64.0,427.0],"48,27":[4,3587,2790,120,440,64.0,410.0],"8,23":[4,3709,2790,125,440,65.0,408.0],"35,64":[4,3836,2790,117,439,56.0,411.0],"48,45":[4,3955,2790,127,439,62.0,409.0],"35,63":[4,0,3246,117,438,60.0,408.0],"35,21":[4,119,3246,74,437,65.0,411.0],"45,60":[4,195,3246,126,436,61.0,403.0],"9,25":[4,323,3246,126,436,61.0,406.0],"8,15":[4,451,3246,126,434,65.0,402.0],"20,61":[4,579,3246,122,433,61.0,400.0],"20,62":[4,703,3246,120,433,56.0,402.0],"21,61":[4,825,3246,121,433,65.0,403.0],"45,42":[4,948,3246,84,433,64.0,429.0],"18,44":[4,1034,3246,130,432,65.0,399.0],"19,43":[4,1166,3246,126,432,65.0,400.0],"47,47":[4,1294,3246,125,432,64.0,400.0],"44,37":[4,1421,3246,128,431,64.0,398.0],"20,43":[4,1551,3246,126,430,64.0,398.0],"21,56":[4,1679,3246,90,430,65.0,400.0],"41,37":[4,1771,3246,129,430,65.0,398.0],"42,37":[4,1902,3246,129,430,63.0,397.0],"10,50":[4,2033,3246,129,429,65.0,396.0],"43,37":[4,2164,3246,128,429,64.0,397.0],"70,19":[4,2294,3246,86,429,40.0,436.0],"9,51":[4,2382,3246,130,429,65.0,396.0],"17,44":[4,2514,3246,126,428,61.0,396.0],"18,43":[4,2642,3246,126,428,65.0,396.0],"45,59":[4,2770,3246,126,428,61.0,395.0],"46,58":[4,2898,3246,126,428,65.0,395.0],"70,16":[4,3026,3246,50,428,65.0,405.0],"18,45":[4,3078,3246,125,427,61.0,396.0],"21,43":[4,3205,3246,130,427,65.0,395.0],"48,50":[4,3337,3246,122,427,61.0,394.0],"13,70":[4,3461,3246,130,426,65.0,393.0],"40,70":[4,3593,3246,130,426,65.0,393.0],"43,15":[4,3725,3246,129,426,65.0,393.0],"46,48":[4,3856,3246,126,426,61.0,395.0],"67,70":[5,0,0,130,426,65.0,393.0],"76,19":[5,132,0,130,426,65.0,393.0],"76,37":[5,264,0,130,426,65.0,393.0],"76,46":[5,396,0,130,426,65.0,393.0],"76,55":[5,528,0,130,426,65.0,393.0],"76,64":[5,660,0,130,426,65.0,393.0],"17,45":[5,792,0,120,425,55.0,395.0],"22,70":[5,914,0,130,425,65.0,393.0],"31,71":[5,1046,0,129,425,65.0,393.0],"42,15":[5,1177,0,128,425,64.0,393.0],"45,58":[5,1307,0,122,425,61.0,392.0],"45,61":[5,1431,0,120,425,56.0,395.0],"47,58":[5,1553,0,121,425,65.0,395.0],"49,70":[5,1676,0,130,425,65.0,393.0],"58,70":[5,1808,0,130,425,65.0,393.0],"17,43":[5,1940,0,122,424,61.0,392.0],"32,59":[5,2064,0,125,424,60.0,391.0],"32,60":[5,2191,0,125,424,60.0,391.0],"33,58":[5,2318,0,125,424,64.0,391.0],"42,16":[5,2445,0,126,424,61.0,393.0],"43,16":[5,2573,0,127,424,63.0,393.0],"44,15":[5,2702,0,126,423,64.0,393.0],"52,44":[5,2830,0,117,423,61.0,393.0],"52,45":[5,2949,0,117,423,56.0,395.0],"32,61":[5,3068,0,120,422,56.0,392.0],"33,49":[5,3190,0,130,422,65.0,389.0],"44,67":[5,3322,0,121,422,55.0,391.0],"52,29":[5,3445,0,122,422,61.0,394.0],"32,58":[5,3569,0,122,421,61.0,389.0],"34,58":[5,3693,0,120,421,64.0,391.0],"44,16":[5,3815,0,122,421,61.0,393.0],"45,66":[5,3939,0,121,421,65.0,391.0],"44,66":[5,0,428,122,420,61.0,388.0],"48,28":[5,124,428,127,420,65.0,390.0],"48,44":[5,253,428,126,420,65.0,387.0],"12,24":[5,381,428,125,419,64.0,389.0],"46,21":[5,508,428,117,419,60.0,389.0],"46,22":[5,627,428,117,419,56.0,391.0],"7,34":[5,746,428,130,419,65.0,386.0],"12,25":[5,878,428,122,418,61.0,390.0],"38,13":[5,1002,428,129,418,64.0,386.0],"77,25":[5,1133,428,129,418,64.0,386.0],"48,29":[5,1264,428,123,417,62.0,390.0],"46,47":[5,1389,428,125,416,64.0,383.0],"52,28":[5,1516,428,127,415,65.0,385.0],"45,47":[5,1645,428,122,414,61.0,381.0],"26,48":[5,1769,428,125,413,61.0,381.0],"45,48":[5,1896,428,121,413,56.0,383.0],"46,40":[5,2019,428,130,413,65.0,390.0],"48,47":[5,2151,428,121,413,65.0,383.0],"51,29":[5,2274,428,126,413,61.0,383.0],"26,49":[5,2402,428,126,412,60.0,379.0],"27,47":[5,2530,428,130,412,65.0,380.0],"28,47":[5,2662,428,129,412,64.0,379.0],"47,44":[5,2793,428,125,412,64.0,379.0],"47,55":[5,2920,428,126,412,61.0,379.0],"49,44":[5,3048,428,125,412,63.0,379.0],"21,62":[5,3175,428,123,410,62.0,382.0],"26,50":[5,3300,428,120,410,56.0,380.0],"31,67":[5,3422,428,127,410,62.0,380.0],"41,67":[5,3551,428,120,410,56.0,379.0],"46,44":[5,3673,428,122,410,61.0,377.0],"47,54":[5,3797,428,122,410,61.0,377.0],"47,56":[5,3921,428,120,410,56.0,379.0],"10,52":[5,0,850,126,409,62.0,379.0],"29,47":[5,128,850,129,409,63.0,379.0],"42,66":[5,259,850,120,409,64.0,379.0],"46,45":[5,381,850,120,409,56.0,379.0],"48,54":[5,503,850,120,409,64.0,379.0],"50,44":[5,625,850,120,409,64.0,379.0],"6,52":[5,747,850,130,408,65.0,375.0],"6,63":[5,879,850,130,408,65.0,375.0],"21,45":[5,1011,850,126,407,61.0,374.0],"46,39":[5,1139,850,111,407,65.0,374.0],"6,14":[5,1252,850,130,407,65.0,374.0],"6,15":[5,1384,850,130,407,65.0,374.0],"6,16":[5,1516,850,130,407,65.0,374.0],"6,17":[5,1648,850,130,407,65.0,374.0],"6,18":[5,1780,850,130,407,65.0,374.0],"6,24":[5,1912,850,130,407,64.0,374.0],"6,25":[5,2044,850,130,407,65.0,374.0],"6,26":[5,2176,850,130,407,65.0,374.0],"6,27":[5,2308,850,130,407,65.0,374.0],"6,42":[5,2440,850,130,407,65.0,374.0],"6,43":[5,2572,850,130,407,65.0,374.0],"6,44":[5,2704,850,130,407,65.0,374.0],"6,45":[5,2836,850,130,407,65.0,375.0],"6,51":[5,2968,850,130,407,65.0,374.0],"6,54":[5,3100,850,130,407,65.0,374.0],"6,61":[5,3232,850,130,407,64.0,375.0],"6,62":[5,3364,850,130,407,65.0,374.0],"6,69":[5,3496,850,130,407,65.0,374.0],"10,12":[5,3628,850,130,406,65.0,373.0],"11,51":[5,3760,850,126,406,64.0,375.0],"12,12":[5,3888,850,130,406,65.0,373.0],"18,12":[5,0,1261,130,406,65.0,373.0],"19,12":[5,132,1261,130,406,65.0,373.0],"21,44":[5,264,1261,129,406,63.0,374.0],"27,12":[5,395,1261,130,406,64.0,373.0],"36,71":[5,527,1261,130,406,65.0,374.0],"45,12":[5,659,1261,130,406,65.0,373.0],"46,12":[5,791,1261,130,406,65.0,373.0],"47,12":[5,923,1261,130,406,65.0,374.0],"51,28":[5,1055,1261,129,406,64.0,373.0],"54,12":[5,1186,1261,130,406,65.0,373.0],"6,53":[5,1318,1261,130,406,65.0,375.0],"6,60":[5,1450,1261,130,406,65.0,374.0],"64,12":[5,1582,1261,130,406,65.0,373.0],"65,12":[5,1714,1261,130,406,65.0,373.0],"66,12":[5,1846,1261,130,406,65.0,373.0],"73,12":[5,1978,1261,130,406,65.0,373.0],"74,12":[5,2110,1261,130,406,65.0,373.0],"75,12":[5,2242,1261,130,406,65.0,373.0],"76,12":[5,2374,1261,130,406,65.0,373.0],"9,12":[5,2506,1261,130,406,65.0,373.0],"11,12":[5,2638,1261,130,405,65.0,373.0],"48,12":[5,2770,1261,130,405,64.0,372.0],"55,12":[5,2902,1261,130,405,65.0,374.0],"56,12":[5,3034,1261,130,405,65.0,373.0],"63,12":[5,3166,1261,130,405,65.0,372.0],"72,12":[5,3298,1261,130,405,65.0,373.0],"77,12":[5,3430,1261,130,405,65.0,372.0],"45,37":[5,3562,1261,84,404,64.0,397.0],"46,61":[5,3648,1261,126,404,61.0,374.0],"33,59":[5,3776,1261,130,402,65.0,369.0],"33,60":[5,3908,1261,130,402,65.0,369.0],"47,61":[5,0,1669,122,402,61.0,374.0],"9,50":[5,124,1669,130,402,65.0,370.0],"33,61":[5,256,1669,126,401,60.0,370.0],"41,55":[5,384,1669,125,400,61.0,367.0],"33,48":[5,511,1669,129,399,65.0,366.0],"34,59":[5,642,1669,125,399,64.0,369.0],"34,60":[5,769,1669,127,399,65.0,369.0],"47,45":[5,898,1669,126,399,61.0,369.0],"34,61":[5,1026,1669,123,398,62.0,370.0],"34,67":[5,1151,1669,120,398,56.0,367.0],"45,67":[5,1273,1669,123,398,62.0,370.0],"35,66":[5,1398,1669,121,397,65.0,367.0],"41,56":[5,1521,1669,120,397,56.0,367.0],"42,31":[5,1643,1669,122,397,61.0,367.0],"42,54":[5,1767,1669,120,397,64.0,367.0],"43,31":[5,1889,1669,123,397,62.0,368.0],"43,45":[5,2014,1669,128,397,63.0,367.0],"44,31":[5,2144,1669,122,397,61.0,367.0],"32,49":[5,2268,1669,129,396,65.0,363.0],"45,31":[5,2399,1669,117,395,61.0,367.0],"8,47":[5,2518,1669,129,394,65.0,363.0],"9,46":[5,2649,1669,120,394,64.0,364.0],"73,15":[5,2771,1669,125,393,64.0,360.0],"74,15":[5,2898,1669,125,393,64.0,360.0],"59,22":[5,3025,1669,127,392,63.0,362.0],"72,16":[5,3154,1669,125,392,61.0,359.0],"72,17":[5,3281,1669,124,392,60.0,359.0],"27,48":[5,3407,1669,129,391,65.0,358.0],"27,49":[5,3538,1669,130,391,65.0,358.0],"28,48":[5,3670,1669,129,391,64.0,358.0],"28,49":[5,3801,1669,129,391,64.0,359.0],"75,15":[5,3932,1669,129,391,64.0,359.0],"8,27":[5,0,2073,126,391,65.0,358.0],"48,48":[5,128,2073,122,390,61.0,362.0],"72,15":[5,252,2073,122,390,61.0,357.0],"72,18":[5,376,2073,120,390,56.0,359.0],"31,66":[5,498,2073,126,389,65.0,357.0],"8,16":[5,626,2073,129,389,65.0,356.0],"10,15":[5,757,2073,126,388,65.0,355.0],"23,66":[5,885,2073,122,388,61.0,355.0],"27,50":[5,1009,2073,125,388,60.0,359.0],"28,50":[5,1136,2073,126,388,62.0,358.0],"29,48":[5,1264,2073,125,388,64.0,359.0],"29,49":[5,1391,2073,126,388,64.0,358.0],"48,55":[5,1519,2073,127,388,65.0,358.0],"49,45":[5,1648,2073,126,388,61.0,358.0],"8,17":[5,1776,2073,130,388,65.0,355.0],"8,18":[5,1908,2073,130,387,65.0,356.0],"9,15":[5,2040,2073,126,387,65.0,355.0],"29,50":[5,2168,2073,121,386,60.0,358.0],"42,67":[5,2291,2073,123,386,62.0,358.0],"48,56":[5,2416,2073,123,386,62.0,358.0],"48,64":[5,2541,2073,127,386,62.0,356.0],"50,45":[5,2670,2073,122,386,60.0,358.0],"8,64":[5,2794,2073,126,386,65.0,354.0],"11,15":[5,2922,2073,120,385,64.0,355.0],"42,50":[5,3044,2073,125,385,64.0,352.0],"41,51":[5,3171,2073,130,384,65.0,351.0],"8,21":[5,3303,2073,130,383,65.0,352.0],"34,49":[5,3435,2073,127,382,65.0,352.0],"41,52":[5,3564,2073,120,382,56.0,352.0],"43,50":[5,3686,2073,121,382,65.0,352.0],"9,20":[5,3809,2073,120,382,64.0,352.0],"30,67":[5,3931,2073,126,381,61.0,350.0],"32,54":[5,0,2466,126,381,61.0,348.0],"32,55":[5,128,2466,125,381,60.0,348.0],"34,53":[5,255,2466,126,381,65.0,348.0],"41,50":[5,383,2466,122,381,61.0,349.0],"49,50":[5,507,2466,125,381,64.0,348.0],"50,50":[5,634,2466,126,381,65.0,348.0],"8,20":[5,762,2466,126,381,65.0,349.0],"9,52":[5,890,2466,126,381,61.0,351.0],"11,71":[5,1018,2466,130,380,65.0,347.0],"23,47":[5,1150,2466,126,380,61.0,347.0],"33,53":[5,1278,2466,126,380,65.0,348.0],"34,43":[5,1406,2466,130,380,65.0,347.0],"37,71":[5,1538,2466,130,380,65.0,347.0],"48,51":[5,1670,2466,126,380,61.0,348.0],"56,13":[5,1798,2466,130,380,65.0,347.0],"66,13":[5,1930,2466,130,380,65.0,347.0],"7,50":[5,2062,2466,130,380,65.0,347.0],"76,35":[5,2194,2466,130,380,65.0,347.0],"77,13":[5,2326,2466,130,380,65.0,347.0],"77,14":[5,2458,2466,130,380,65.0,347.0],"77,15":[5,2590,2466,130,380,65.0,347.0],"77,16":[5,2722,2466,130,380,65.0,347.0],"77,17":[5,2854,2466,130,380,65.0,347.0],"77,18":[5,2986,2466,130,380,65.0,347.0],"77,33":[5,3118,2466,130,380,65.0,347.0],"77,34":[5,3250,2466,130,380,65.0,347.0],"77,35":[5,3382,2466,130,380,65.0,347.0],"77,42":[5,3514,2466,130,380,65.0,347.0],"77,43":[5,3646,2466,130,380,65.0,348.0],"77,44":[5,3778,2466,130,380,65.0,347.0],"77,45":[5,3910,2466,130,380,65.0,347.0],"77,51":[5,0,2849,130,380,65.0,347.0],"77,52":[5,132,2849,130,380,64.0,347.0],"77,53":[5,264,2849,130,380,65.0,347.0],"77,54":[5,396,2849,130,380,65.0,347.0],"77,60":[5,528,2849,130,380,65.0,347.0],"77,61":[5,660,2849,131,380,66.0,347.0],"77,63":[5,793,2849,130,380,65.0,347.0],"77,69":[5,925,2849,130,380,65.0,347.0],"77,70":[5,1057,2849,130,380,65.0,347.0],"77,71":[5,1189,2849,130,380,65.0,347.0],"10,13":[5,1321,2849,130,379,65.0,346.0],"10,70":[5,1453,2849,130,379,65.0,346.0],"11,20":[5,1585,2849,122,379,61.0,346.0],"11,21":[5,1709,2849,121,379,56.0,348.0],"11,70":[5,1832,2849,130,379,65.0,346.0],"12,70":[5,1964,2849,130,379,65.0,346.0],"12,71":[5,2096,2849,130,379,65.0,347.0],"17,13":[5,2228,2849,130,379,65.0,346.0],"18,70":[5,2360,2849,130,379,65.0,346.0],"18,71":[5,2492,2849,130,379,65.0,346.0],"19,13":[5,2624,2849,130,379,65.0,346.0],"19,70":[5,2756,2849,130,379,65.0,346.0],"19,71":[5,2888,2849,130,379,65.0,346.0],"20,70":[5,3020,2849,130,379,65.0,346.0],"20,71":[5,3152,2849,130,379,65.0,346.0],"21,70":[5,3284,2849,130,379,65.0,346.0],"21,71":[5,3416,2849,130,379,65.0,346.0],"22,37":[5,3548,2849,130,379,65.0,346.0],"22,38":[5,3680,2849,130,379,65.0,346.0],"22,39":[5,3812,2849,130,379,65.0,346.0],"22,40":[5,3944,2849,130,379,64.0,347.0],"22,41":[5,0,3231,130,379,65.0,346.0],"22,42":[5,132,3231,130,379,65.0,346.0],"22,43":[5,264,3231,130,379,65.0,346.0],"22,44":[5,396,3231,130,379,65.0,346.0],"22,45":[5,528,3231,130,379,64.0,347.0],"22,46":[5,660,3231,130,379,65.0,346.0],"23,37":[5,792,3231,130,379,65.0,346.0],"23,38":[5,924,3231,130,379,65.0,346.0],"23,39":[5,1056,3231,130,379,65.0,347.0],"23,41":[5,1188,3231,130,379,64.0,346.0],"23,42":[5,1320,3231,130,379,65.0,346.0],"23,44":[5,1452,3231,130,379,65.0,347.0],"23,45":[5,1584,3231,130,379,65.0,346.0],"23,46":[5,1716,3231,130,379,64.0,346.0],"24,37":[5,1848,3231,130,379,65.0,346.0],"24,38":[5,1980,3231,130,379,65.0,347.0],"24,40":[5,2112,3231,130,379,65.0,346.0],"24,41":[5,2244,3231,130,379,65.0,346.0],"24,42":[5,2376,3231,130,379,64.0,346.0],"24,43":[5,2508,3231,130,379,65.0,347.0],"24,45":[5,2640,3231,130,379,65.0,346.0],"25,37":[5,2772,3231,130,379,65.0,347.0],"25,39":[5,2904,3231,130,379,65.0,346.0],"25,40":[5,3036,3231,130,379,65.0,346.0],"25,41":[5,3168,3231,130,379,65.0,346.0],"25,42":[5,3300,3231,130,379,65.0,347.0],"25,43":[5,3432,3231,130,379,64.0,346.0],"25,44":[5,3564,3231,130,379,65.0,346.0],"25,45":[5,3696,3231,130,379,65.0,346.0],"25,46":[5,3828,3231,130,379,65.0,346.0],"26,13":[5,3960,3231,130,379,65.0,346.0],"26,37":[5,0,3612,130,379,65.0,346.0],"26,38":[5,132,3612,130,379,65.0,346.0],"26,39":[5,264,3612,130,379,65.0,346.0],"26,44":[5,396,3612,130,379,64.0,346.0],"26,45":[5,528,3612,130,379,65.0,346.0],"26,46":[5,660,3612,130,379,65.0,346.0],"27,13":[5,792,3612,130,379,65.0,346.0],"27,37":[5,924,3612,130,379,65.0,346.0],"27,38":[5,1056,3612,130,379,65.0,346.0],"27,39":[5,1188,3612,130,379,65.0,346.0],"27,45":[5,1320,3612,130,379,64.0,346.0],"27,46":[5,1452,3612,130,379,65.0,346.0],"28,37":[5,1584,3612,130,379,65.0,346.0],"28,38":[5,1716,3612,130,379,65.0,346.0],"28,39":[5,1848,3612,130,379,65.0,347.0],"28,44":[5,1980,3612,130,379,65.0,346.0],"28,45":[5,2112,3612,130,379,65.0,346.0],"28,46":[5,2244,3612,130,379,64.0,346.0],"29,38":[5,2376,3612,130,379,65.0,347.0],"29,39":[5,2508,3612,130,379,65.0,346.0],"29,45":[5,2640,3612,130,379,65.0,346.0],"29,46":[5,2772,3612,130,379,65.0,346.0],"30,38":[5,2904,3612,130,379,65.0,346.0],"30,39":[5,3036,3612,130,379,65.0,346.0],"30,44":[5,3168,3612,130,379,65.0,346.0],"30,45":[5,3300,3612,130,379,65.0,346.0],"30,46":[5,3432,3612,130,379,65.0,346.0],"31,37":[5,3564,3612,130,379,65.0,346.0],"31,38":[5,3696,3612,130,379,65.0,346.0],"31,39":[5,3828,3612,130,379,65.0,346.0],"31,44":[5,3960,3612,130,379,65.0,346.0],"31,45":[6,0,0,130,379,65.0,346.0],"31,46":[6,132,0,130,379,65.0,346.0],"31,47":[6,264,0,126,379,61.0,346.0],"32,37":[6,392,0,130,379,65.0,346.0],"32,38":[6,524,0,130,379,65.0,346.0],"32,40":[6,656,0,130,379,65.0,346.0],"32,41":[6,788,0,130,379,65.0,346.0],"32,42":[6,920,0,130,379,65.0,346.0],"32,43":[6,1052,0,130,379,65.0,346.0],"32,45":[6,1184,0,130,379,65.0,346.0],"32,46":[6,1316,0,130,379,65.0,346.0],"33,37":[6,1448,0,130,379,65.0,346.0],"33,38":[6,1580,0,130,379,65.0,346.0],"33,39":[6,1712,0,130,379,65.0,346.0],"33,40":[6,1844,0,130,379,65.0,346.0],"33,41":[6,1976,0,130,379,65.0,347.0],"33,42":[6,2108,0,130,379,65.0,346.0],"33,43":[6,2240,0,130,379,65.0,346.0],"33,44":[6,2372,0,130,379,65.0,346.0],"33,45":[6,2504,0,130,379,65.0,346.0],"34,37":[6,2636,0,130,379,65.0,346.0],"34,40":[6,2768,0,130,379,65.0,346.0],"34,44":[6,2900,0,130,379,65.0,346.0],"34,45":[6,3032,0,130,379,65.0,346.0],"35,37":[6,3164,0,130,379,65.0,346.0],"35,38":[6,3296,0,130,379,65.0,346.0],"35,39":[6,3428,0,130,379,65.0,346.0],"35,40":[6,3560,0,130,379,65.0,346.0],"35,44":[6,3692,0,130,379,65.0,346.0],"35,46":[6,3824,0,130,379,65.0,346.0],"35,53":[6,3956,0,121,379,64.0,348.0],"37,70":[6,0,381,130,379,65.0,346.0],"38,70":[6,132,381,130,379,65.0,346.0],"39,70":[6,264,381,130,379,65.0,346.0],"39,71":[6,396,381,130,379,65.0,346.0],"44,13":[6,528,381,130,379,65.0,346.0],"45,13":[6,660,381,130,379,65.0,346.0],"45,71":[6,792,381,131,379,66.0,347.0],"46,13":[6,925,381,130,379,65.0,347.0],"46,71":[6,1057,381,130,379,65.0,346.0],"47,13":[6,1189,381,130,379,65.0,346.0],"47,71":[6,1321,381,130,379,65.0,346.0],"48,71":[6,1453,381,130,379,64.0,346.0],"51,50":[6,1585,381,121,379,65.0,348.0],"53,13":[6,1708,381,130,379,65.0,346.0],"54,13":[6,1840,381,130,379,65.0,347.0],"54,70":[6,1972,381,130,379,65.0,347.0],"55,13":[6,2104,381,130,379,65.0,346.0],"55,70":[6,2236,381,130,379,65.0,346.0],"55,71":[6,2368,381,130,379,65.0,346.0],"56,70":[6,2500,381,130,379,65.0,346.0],"56,71":[6,2632,381,130,379,65.0,346.0],"57,70":[6,2764,381,130,379,65.0,346.0],"57,71":[6,2896,381,130,379,65.0,346.0],"62,13":[6,3028,381,130,379,65.0,346.0],"63,70":[6,3160,381,130,379,65.0,346.0],"63,71":[6,3292,381,130,379,65.0,346.0],"64,70":[6,3424,381,130,379,65.0,346.0],"64,71":[6,3556,381,130,379,65.0,346.0],"65,13":[6,3688,381,130,379,65.0,346.0],"65,70":[6,3820,381,130,379,65.0,346.0],"65,71":[6,3952,381,130,379,65.0,346.0],"7,14":[6,0,762,130,379,65.0,346.0],"7,16":[6,132,762,130,379,65.0,347.0],"7,18":[6,264,762,130,379,65.0,346.0],"7,23":[6,396,762,130,379,65.0,346.0],"7,25":[6,528,762,130,379,64.0,346.0],"7,27":[6,660,762,130,379,65.0,346.0],"7,45":[6,792,762,130,379,65.0,346.0],"7,51":[6,924,762,130,379,65.0,346.0],"7,53":[6,1056,762,130,379,65.0,346.0],"7,54":[6,1188,762,130,379,65.0,346.0],"7,59":[6,1320,762,130,379,65.0,346.0],"7,60":[6,1452,762,130,379,65.0,347.0],"7,62":[6,1584,762,130,379,64.0,346.0],"7,63":[6,1716,762,130,379,65.0,346.0],"7,68":[6,1848,762,130,379,65.0,346.0],"7,69":[6,1980,762,130,379,64.0,346.0],"71,13":[6,2112,762,130,379,65.0,346.0],"72,13":[6,2244,762,130,379,65.0,346.0],"72,71":[6,2376,762,130,379,65.0,346.0],"73,13":[6,2508,762,130,379,65.0,346.0],"73,70":[6,2640,762,130,379,65.0,346.0],"73,71":[6,2772,762,131,379,66.0,346.0],"74,13":[6,2905,762,130,379,65.0,346.0],"74,70":[6,3037,762,130,379,65.0,346.0],"74,71":[6,3169,762,130,379,65.0,346.0],"75,13":[6,3301,762,130,379,65.0,346.0],"75,70":[6,3433,762,130,379,64.0,346.0],"75,71":[6,3565,762,130,379,65.0,346.0],"76,13":[6,3697,762,130,379,65.0,346.0],"76,14":[6,3829,762,130,379,65.0,346.0],"76,15":[6,3961,762,130,379,65.0,346.0],"76,16":[6,0,1143,130,379,65.0,346.0],"76,17":[6,132,1143,130,379,65.0,346.0],"76,18":[6,264,1143,130,379,65.0,346.0],"76,34":[6,396,1143,130,379,65.0,346.0],"76,36":[6,528,1143,130,379,65.0,346.0],"76,42":[6,660,1143,130,379,65.0,346.0],"76,43":[6,792,1143,130,379,65.0,346.0],"76,44":[6,924,1143,130,379,65.0,347.0],"76,51":[6,1056,1143,130,379,64.0,346.0],"76,53":[6,1188,1143,130,379,65.0,346.0],"76,60":[6,1320,1143,131,379,66.0,346.0],"76,61":[6,1453,1143,130,379,64.0,346.0],"76,62":[6,1585,1143,130,379,65.0,346.0],"76,63":[6,1717,1143,130,379,65.0,346.0],"76,70":[6,1849,1143,130,379,65.0,346.0],"76,71":[6,1981,1143,130,379,64.0,346.0],"77,36":[6,2113,1143,130,379,65.0,347.0],"77,62":[6,2245,1143,130,379,64.0,347.0],"8,13":[6,2377,1143,130,379,65.0,346.0],"8,28":[6,2509,1143,130,379,65.0,346.0],"8,49":[6,2641,1143,126,379,65.0,346.0],"8,50":[6,2769,1143,129,379,65.0,347.0],"8,51":[6,2900,1143,130,379,65.0,346.0],"8,61":[6,3032,1143,126,379,65.0,347.0],"8,65":[6,3160,1143,129,379,65.0,346.0],"9,70":[6,3291,1143,130,379,65.0,346.0],"9,71":[6,3423,1143,130,379,64.0,346.0],"10,71":[6,3555,1143,130,378,65.0,346.0],"11,13":[6,3687,1143,130,378,65.0,346.0],"12,13":[6,3819,1143,130,378,65.0,346.0],"12,20":[6,3951,1143,121,378,65.0,348.0],"18,13":[6,0,1524,130,378,64.0,346.0],"23,40":[6,132,1524,130,378,65.0,346.0],"23,43":[6,264,1524,130,378,65.0,346.0],"24,39":[6,396,1524,130,378,65.0,346.0],"24,44":[6,528,1524,130,378,65.0,346.0],"24,46":[6,660,1524,130,378,65.0,346.0],"25,38":[6,792,1524,130,378,65.0,346.0],"27,44":[6,924,1524,130,378,65.0,346.0],"29,37":[6,1056,1524,130,378,65.0,346.0],"29,44":[6,1188,1524,130,378,65.0,346.0],"30,37":[6,1320,1524,130,378,65.0,347.0],"32,39":[6,1452,1524,130,378,65.0,346.0],"32,44":[6,1584,1524,130,378,65.0,346.0],"32,47":[6,1716,1524,130,378,65.0,346.0],"32,53":[6,1848,1524,122,378,61.0,345.0],"32,56":[6,1972,1524,120,378,56.0,348.0],"33,46":[6,2094,1524,130,378,65.0,346.0],"33,47":[6,2226,1524,130,378,65.0,346.0],"34,38":[6,2358,1524,130,378,65.0,346.0],"34,39":[6,2490,1524,130,378,65.0,346.0],"34,41":[6,2622,1524,130,378,65.0,346.0],"34,42":[6,2754,1524,130,378,65.0,346.0],"34,46":[6,2886,1524,130,378,65.0,346.0],"35,41":[6,3018,1524,130,378,65.0,346.0],"35,42":[6,3150,1524,130,378,65.0,346.0],"35,43":[6,3282,1524,130,378,65.0,346.0],"35,45":[6,3414,1524,130,378,65.0,346.0],"38,71":[6,3546,1524,130,378,65.0,346.0],"45,70":[6,3678,1524,130,378,65.0,346.0],"46,70":[6,3810,1524,130,378,65.0,347.0],"47,70":[6,3942,1524,130,378,64.0,346.0],"48,13":[6,0,1904,130,378,65.0,346.0],"48,52":[6,132,1904,120,378,56.0,348.0],"48,70":[6,254,1904,130,378,65.0,346.0],"54,71":[6,386,1904,130,378,65.0,346.0],"63,13":[6,518,1904,130,378,65.0,346.0],"64,13":[6,650,1904,130,378,65.0,346.0],"66,70":[6,782,1904,130,378,65.0,346.0],"66,71":[6,914,1904,130,378,65.0,346.0],"7,15":[6,1046,1904,130,378,65.0,346.0],"7,17":[6,1178,1904,130,378,65.0,346.0],"7,24":[6,1310,1904,130,378,65.0,346.0],"7,26":[6,1442,1904,130,378,65.0,346.0],"7,44":[6,1574,1904,130,378,65.0,347.0],"7,52":[6,1706,1904,130,378,65.0,347.0],"7,61":[6,1838,1904,130,378,65.0,346.0],"72,70":[6,1970,1904,131,378,66.0,346.0],"76,33":[6,2103,1904,130,378,65.0,346.0],"76,45":[6,2235,1904,130,378,65.0,346.0],"76,52":[6,2367,1904,130,378,65.0,346.0],"76,54":[6,2499,1904,130,378,65.0,346.0],"76,69":[6,2631,1904,130,378,65.0,346.0],"8,66":[6,2763,1904,129,378,65.0,347.0],"8,67":[6,2894,1904,130,378,65.0,347.0],"9,13":[6,3026,1904,130,378,65.0,346.0],"11,50":[6,3158,1904,126,376,65.0,347.0],"24,47":[6,3286,1904,129,376,63.0,346.0],"34,47":[6,3417,1904,130,376,65.0,346.0],"42,55":[6,3549,1904,126,376,64.0,346.0],"46,14":[6,3677,1904,126,376,61.0,346.0],"8,52":[6,3805,1904,130,376,65.0,346.0],"8,62":[6,3937,1904,130,376,65.0,346.0],"35,67":[6,0,2284,123,374,62.0,346.0],"42,56":[6,125,2284,123,374,62.0,346.0],"30,66":[6,250,2284,125,373,64.0,340.0],"50,28":[6,377,2284,125,373,61.0,340.0],"50,55":[6,504,2284,126,373,61.0,340.0],"51,27":[6,632,2284,125,373,64.0,340.0],"51,54":[6,759,2284,126,373,65.0,340.0],"10,49":[6,887,2284,125,372,64.0,339.0],"27,58":[6,1014,2284,122,372,61.0,339.0],"73,16":[6,1138,2284,129,372,64.0,339.0],"75,17":[6,1269,2284,129,372,64.0,339.0],"21,59":[6,1400,2284,44,371,19.0,390.0],"29,66":[6,1446,2284,122,371,61.0,338.0],"73,17":[6,1570,2284,129,371,64.0,338.0],"74,16":[6,1701,2284,129,371,64.0,338.0],"74,17":[6,1832,2284,129,371,65.0,338.0],"21,55":[6,1963,2284,25,370,64.0,358.0],"29,67":[6,1990,2284,120,370,56.0,340.0],"32,48":[6,2112,2284,130,370,65.0,338.0],"32,66":[6,2244,2284,120,370,64.0,340.0],"50,29":[6,2366,2284,121,370,56.0,340.0],"50,54":[6,2489,2284,122,370,61.0,337.0],"50,56":[6,2613,2284,121,370,56.0,340.0],"52,27":[6,2736,2284,120,370,63.0,340.0],"52,54":[6,2858,2284,121,370,65.0,340.0],"75,16":[6,2981,2284,129,370,64.0,338.0],"75,18":[6,3112,2284,126,370,61.0,338.0],"9,47":[6,3240,2284,123,370,62.0,343.0],"33,50":[6,3365,2284,127,369,62.0,339.0],"50,27":[6,3494,2284,122,369,61.0,338.0],"73,18":[6,3618,2284,125,369,61.0,338.0],"10,17":[6,3745,2284,130,368,65.0,335.0],"43,44":[6,3877,2284,125,368,64.0,335.0],"74,18":[6,0,2660,127,368,62.0,338.0],"9,17":[6,129,2660,129,368,65.0,335.0],"42,45":[6,260,2660,126,367,61.0,336.0],"46,41":[6,388,2660,86,367,39.0,374.0],"58,22":[6,476,2660,126,367,60.0,335.0],"59,21":[6,604,2660,125,367,64.0,334.0],"10,16":[6,731,2660,129,366,64.0,334.0],"10,18":[6,862,2660,128,366,63.0,335.0],"9,16":[6,992,2660,129,366,64.0,334.0],"11,16":[6,1123,2660,126,365,65.0,335.0],"46,38":[6,1251,2660,50,365,65.0,342.0],"9,18":[6,1303,2660,126,365,61.0,334.0],"9,49":[6,1431,2660,125,365,64.0,332.0],"11,17":[6,1558,2660,126,364,64.0,334.0],"45,29":[6,1686,2660,123,364,62.0,337.0],"42,51":[6,1811,2660,130,363,65.0,330.0],"11,18":[6,1943,2660,122,362,61.0,334.0],"11,49":[6,2067,2660,121,362,65.0,332.0],"42,52":[6,2190,2660,125,361,61.0,331.0],"33,55":[6,2317,2660,128,360,64.0,327.0],"42,44":[6,2447,2660,126,360,65.0,328.0],"43,51":[6,2575,2660,127,360,65.0,330.0],"49,51":[6,2704,2660,129,360,64.0,327.0],"50,51":[6,2835,2660,128,360,64.0,327.0],"33,54":[6,2965,2660,129,359,65.0,326.0],"34,54":[6,3096,2660,129,359,64.0,327.0],"34,55":[6,3227,2660,128,359,64.0,327.0],"41,44":[6,3357,2660,122,359,61.0,326.0],"42,28":[6,3481,2660,126,359,64.0,329.0],"45,28":[6,3609,2660,127,359,65.0,329.0],"48,63":[6,3738,2660,125,359,64.0,326.0],"33,56":[6,3865,2660,126,358,60.0,327.0],"41,45":[6,0,3030,130,358,65.0,328.0],"43,52":[6,132,3030,122,358,61.0,330.0],"44,44":[6,256,3030,120,358,64.0,328.0],"49,52":[6,378,3030,126,358,61.0,327.0],"9,21":[6,506,3030,123,358,62.0,330.0],"23,59":[6,631,3030,125,357,61.0,324.0],"23,60":[6,758,3030,124,357,60.0,324.0],"24,58":[6,884,3030,125,357,65.0,324.0],"35,20":[6,1011,3030,7,357,63.0,354.0],"35,24":[6,1020,3030,12,357,5.0,386.0],"35,54":[6,1034,3030,126,357,65.0,327.0],"35,55":[6,1162,3030,126,357,64.0,327.0],"50,52":[6,1290,3030,128,357,63.0,327.0],"51,51":[6,1420,3030,126,357,64.0,327.0],"34,48":[6,1548,3030,126,356,65.0,326.0],"34,56":[6,1676,3030,127,356,62.0,326.0],"47,64":[6,1805,3030,126,356,61.0,325.0],"11,46":[6,1933,3030,122,355,61.0,322.0],"11,47":[6,2057,3030,120,355,56.0,324.0],"12,21":[6,2179,3030,124,355,63.0,327.0],"23,58":[6,2305,3030,121,355,61.0,322.0],"12,46":[6,2428,3030,120,354,64.0,324.0],"23,61":[6,2550,3030,121,354,56.0,324.0],"25,58":[6,2673,3030,120,354,64.0,324.0],"35,56":[6,2795,3030,122,354,61.0,326.0],"51,52":[6,2919,3030,122,354,61.0,326.0],"58,21":[6,3043,3030,126,353,65.0,320.0],"51,55":[6,3171,3030,130,352,65.0,319.0],"20,65":[6,3303,3030,125,350,61.0,317.0],"42,58":[6,3430,3030,124,350,64.0,317.0],"46,15":[6,3556,3030,123,350,61.0,321.0],"57,21":[6,3681,3030,122,350,60.0,318.0],"57,22":[6,3805,3030,120,350,56.0,320.0],"60,21":[6,3927,3030,120,350,64.0,320.0],"10,61":[6,0,3390,126,349,65.0,316.0],"11,61":[6,128,3390,126,349,65.0,316.0],"20,66":[6,256,3390,125,349,61.0,316.0],"21,64":[6,383,3390,126,349,65.0,316.0],"41,59":[6,511,3390,124,349,59.0,316.0],"41,60":[6,637,3390,124,349,60.0,316.0],"46,16":[6,763,3390,117,349,56.0,321.0],"47,31":[6,882,3390,117,349,56.0,319.0],"47,63":[6,1001,3390,125,349,64.0,316.0],"51,56":[6,1128,3390,126,349,61.0,319.0],"52,55":[6,1256,3390,127,349,65.0,319.0],"41,63":[6,1385,3390,122,348,61.0,315.0],"9,61":[6,1509,3390,125,348,64.0,316.0],"15,64":[6,1636,3390,122,347,61.0,315.0],"20,64":[6,1760,3390,122,347,61.0,314.0],"20,67":[6,1884,3390,120,347,56.0,316.0],"32,67":[6,2006,3390,122,347,61.0,319.0],"41,58":[6,2130,3390,122,347,61.0,314.0],"43,58":[6,2254,3390,120,347,64.0,316.0],"46,63":[6,2376,3390,121,347,61.0,314.0],"51,64":[6,2499,3390,121,347,56.0,316.0],"52,56":[6,2622,3390,123,347,62.0,319.0],"11,27":[6,2747,3390,126,346,65.0,313.0],"12,61":[6,2875,3390,121,346,65.0,316.0],"22,64":[6,2998,3390,120,346,64.0,316.0],"41,61":[6,3120,3390,120,346,56.0,316.0],"46,64":[6,3242,3390,120,346,55.0,316.0],"49,63":[6,3364,3390,121,346,65.0,316.0],"51,63":[6,3487,3390,122,346,61.0,314.0],"52,63":[6,3611,3390,120,346,64.0,316.0],"10,27":[6,3733,3390,125,345,64.0,312.0],"9,27":[6,3860,3390,125,345,63.0,312.0],"12,27":[6,0,3741,120,343,64.0,313.0],"25,53":[6,122,3741,126,342,64.0,309.0],"26,66":[6,250,3741,126,342,65.0,309.0],"23,54":[6,378,3741,125,341,61.0,310.0],"23,55":[6,505,3741,125,341,61.0,309.0],"24,53":[6,632,3741,126,341,65.0,309.0],"25,66":[6,760,3741,126,341,65.0,308.0],"26,53":[6,888,3741,126,341,65.0,308.0],"41,28":[6,1016,3741,125,341,61.0,309.0],"46,19":[6,1143,3741,117,341,56.0,313.0],"24,66":[6,1262,3741,125,340,64.0,308.0],"32,50":[6,1389,3741,126,340,60.0,309.0],"46,18":[6,1517,3741,116,340,60.0,310.0],"11,52":[6,1635,3741,122,339,61.0,311.0],"23,53":[6,1759,3741,122,339,61.0,306.0],"23,56":[6,1883,3741,121,339,56.0,308.0],"27,53":[6,2006,3741,121,339,65.0,309.0],"23,67":[6,2129,3741,120,338,56.0,308.0],"27,66":[6,2251,3741,121,338,65.0,308.0],"44,28":[6,2374,3741,125,338,61.0,305.0],"9,64":[6,2501,3741,120,338,63.0,308.0],"44,29":[6,2623,3741,120,337,55.0,306.0],"24,59":[6,2745,3741,128,336,64.0,303.0],"24,60":[6,2875,3741,128,336,64.0,303.0],"43,19":[6,3005,3741,126,336,62.0,306.0],"44,27":[6,3133,3741,121,335,61.0,302.0],"44,45":[6,3256,3741,122,335,61.0,307.0],"23,49":[6,3380,3741,125,334,61.0,301.0],"25,59":[6,3507,3741,124,334,64.0,304.0],"25,60":[6,3633,3741,126,334,64.0,303.0],"31,49":[6,3761,3741,126,334,60.0,301.0],"45,27":[6,3889,3741,120,334,64.0,304.0],"24,61":[7,0,0,124,333,60.0,303.0],"31,48":[7,126,0,125,333,61.0,301.0],"23,48":[7,253,0,126,332,61.0,300.0],"23,50":[7,381,0,121,332,56.0,301.0],"41,29":[7,504,0,121,332,56.0,301.0],"12,47":[7,627,0,123,331,62.0,303.0],"25,61":[7,752,0,122,331,61.0,303.0],"41,27":[7,876,0,122,331,61.0,298.0],"42,27":[7,1000,0,120,331,63.0,302.0],"31,50":[7,1122,0,120,330,56.0,300.0],"21,66":[7,1244,0,130,328,65.0,295.0],"42,59":[7,1376,0,129,328,64.0,295.0],"42,60":[7,1507,0,129,328,63.0,295.0],"60,22":[7,1638,0,122,328,61.0,300.0],"21,65":[7,1762,0,129,327,64.0,295.0],"31,64":[7,1893,0,126,327,61.0,297.0],"42,29":[7,2021,0,123,327,62.0,299.0],"22,65":[7,2146,0,125,326,64.0,295.0],"27,59":[7,2273,0,126,326,61.0,293.0],"27,60":[7,2401,0,125,326,61.0,293.0],"28,58":[7,2528,0,126,326,65.0,293.0],"29,58":[7,2656,0,125,326,64.0,293.0],"43,60":[7,2783,0,126,326,64.0,295.0],"10,62":[7,2911,0,126,325,61.0,295.0],"11,28":[7,3039,0,128,325,64.0,292.0],"11,62":[7,3169,0,125,325,61.0,295.0],"21,67":[7,3296,0,125,325,61.0,295.0],"22,66":[7,3423,0,126,325,65.0,295.0],"42,61":[7,3551,0,125,325,60.0,295.0],"43,59":[7,3678,0,125,325,65.0,295.0],"9,28":[7,3805,0,130,325,65.0,292.0],"9,62":[7,3937,0,126,325,61.0,295.0],"10,28":[7,0,335,129,324,64.0,292.0],"72,21":[7,131,335,121,324,56.0,293.0],"73,20":[7,254,335,120,324,64.0,293.0],"12,62":[7,376,335,122,323,61.0,296.0],"22,67":[7,500,335,123,323,62.0,295.0],"27,61":[7,625,335,121,323,56.0,293.0],"30,58":[7,748,335,120,323,63.0,293.0],"43,61":[7,870,335,122,323,60.0,295.0],"46,51":[7,994,335,126,323,65.0,293.0],"49,64":[7,1122,335,122,323,61.0,295.0],"52,64":[7,1246,335,123,323,62.0,295.0],"72,20":[7,1371,335,122,323,61.0,290.0],"29,55":[7,1495,335,126,322,61.0,289.0],"10,29":[7,1623,335,126,321,61.0,291.0],"11,29":[7,1751,335,126,321,60.0,291.0],"12,28":[7,1879,335,127,321,65.0,291.0],"29,54":[7,2008,335,125,321,61.0,289.0],"9,29":[7,2135,335,126,321,61.0,291.0],"24,54":[7,2263,335,130,320,65.0,287.0],"24,55":[7,2395,335,129,320,65.0,287.0],"25,54":[7,2526,335,130,320,65.0,287.0],"25,55":[7,2658,335,128,320,64.0,287.0],"26,54":[7,2788,335,129,320,64.0,287.0],"26,55":[7,2919,335,129,320,65.0,287.0],"29,53":[7,3050,335,122,320,61.0,287.0],"29,56":[7,3174,335,120,320,56.0,289.0],"12,29":[7,3296,335,122,319,61.0,291.0],"30,53":[7,3420,335,121,319,64.0,289.0],"43,18":[7,3543,335,125,319,63.0,287.0],"17,39":[7,3670,335,126,318,61.0,286.0],"17,40":[7,3798,335,125,318,60.0,285.0],"18,38":[7,3925,335,126,318,65.0,286.0],"19,38":[7,0,661,126,318,65.0,285.0],"26,67":[7,128,661,125,318,61.0,288.0],"27,54":[7,255,661,126,318,65.0,288.0],"45,55":[7,383,661,126,318,64.0,288.0],"9,65":[7,511,661,126,318,65.0,288.0],"9,66":[7,639,661,126,318,65.0,287.0],"24,56":[7,767,661,125,317,61.0,287.0],"24,67":[7,894,661,126,317,61.0,287.0],"25,56":[7,1022,661,126,317,61.0,287.0],"25,67":[7,1150,661,127,317,62.0,287.0],"26,56":[7,1279,661,125,317,61.0,287.0],"27,55":[7,1406,661,126,317,63.0,287.0],"42,19":[7,1534,661,126,317,61.0,287.0],"17,38":[7,1662,661,122,316,61.0,283.0],"17,41":[7,1786,661,121,315,56.0,285.0],"20,38":[7,1909,661,120,315,63.0,285.0],"27,56":[7,2031,661,122,315,61.0,287.0],"27,67":[7,2155,661,121,315,60.0,287.0],"9,67":[7,2278,661,124,315,63.0,287.0],"16,61":[7,2404,661,126,310,65.0,278.0],"17,61":[7,2532,661,125,310,65.0,277.0],"24,48":[7,2659,661,125,310,64.0,280.0],"24,49":[7,2786,661,124,310,64.0,280.0],"31,63":[7,2912,661,126,309,65.0,276.0],"34,50":[7,3040,661,122,308,61.0,280.0],"14,62":[7,3164,661,120,307,56.0,277.0],"18,61":[7,3286,661,121,307,65.0,277.0],"24,50":[7,3409,661,124,307,63.0,280.0],"28,60":[7,3535,661,129,305,64.0,272.0],"29,60":[7,3666,661,128,305,64.0,272.0],"28,59":[7,3796,661,130,304,65.0,272.0],"28,61":[7,3928,661,125,304,61.0,272.0],"29,59":[7,0,981,128,304,64.0,271.0],"75,32":[7,130,981,130,304,65.0,271.0],"75,33":[7,262,981,130,304,65.0,271.0],"75,35":[7,394,981,130,304,65.0,271.0],"75,36":[7,526,981,130,304,65.0,271.0],"75,39":[7,658,981,130,304,64.0,271.0],"75,41":[7,790,981,130,304,65.0,271.0],"75,43":[7,922,981,130,304,65.0,271.0],"75,44":[7,1054,981,130,304,65.0,271.0],"75,47":[7,1186,981,130,304,65.0,271.0],"75,48":[7,1318,981,130,304,65.0,271.0],"75,49":[7,1450,981,130,304,65.0,271.0],"75,50":[7,1582,981,130,304,64.0,271.0],"75,51":[7,1714,981,130,304,65.0,271.0],"75,52":[7,1846,981,130,304,65.0,271.0],"75,54":[7,1978,981,130,304,65.0,271.0],"75,55":[7,2110,981,130,304,65.0,271.0],"75,56":[7,2242,981,130,304,65.0,271.0],"75,57":[7,2374,981,130,304,65.0,271.0],"75,58":[7,2506,981,130,304,65.0,271.0],"75,59":[7,2638,981,130,304,65.0,271.0],"75,60":[7,2770,981,130,304,64.0,271.0],"75,61":[7,2902,981,130,304,65.0,271.0],"75,62":[7,3034,981,130,304,65.0,271.0],"75,63":[7,3166,981,130,304,65.0,271.0],"75,66":[7,3298,981,130,304,65.0,271.0],"15,65":[7,3430,981,125,303,61.0,270.0],"30,60":[7,3557,981,127,303,65.0,272.0],"48,31":[7,3686,981,122,303,61.0,273.0],"49,31":[7,3810,981,123,303,62.0,273.0],"50,31":[7,3935,981,122,303,61.0,273.0],"75,30":[7,0,1287,130,303,65.0,271.0],"75,31":[7,132,1287,130,303,65.0,271.0],"75,34":[7,264,1287,130,303,65.0,271.0],"75,37":[7,396,1287,130,303,65.0,271.0],"75,38":[7,528,1287,130,303,65.0,271.0],"75,40":[7,660,1287,130,303,65.0,271.0],"75,45":[7,792,1287,130,303,65.0,271.0],"75,46":[7,924,1287,130,303,65.0,271.0],"75,53":[7,1056,1287,130,303,65.0,271.0],"75,64":[7,1188,1287,130,303,65.0,271.0],"75,65":[7,1320,1287,130,303,65.0,271.0],"15,66":[7,1452,1287,125,302,61.0,269.0],"16,64":[7,1579,1287,126,302,65.0,269.0],"17,48":[7,1707,1287,126,302,61.0,269.0],"17,49":[7,1835,1287,126,302,61.0,269.0],"18,47":[7,1963,1287,125,302,64.0,269.0],"19,47":[7,2090,1287,125,302,64.0,269.0],"29,61":[7,2217,1287,127,302,62.0,272.0],"42,18":[7,2346,1287,125,302,64.0,269.0],"42,63":[7,2473,1287,126,302,65.0,269.0],"43,63":[7,2601,1287,125,302,64.0,269.0],"75,42":[7,2728,1287,130,302,65.0,271.0],"17,64":[7,2860,1287,126,301,65.0,269.0],"20,47":[7,2988,1287,125,301,64.0,269.0],"30,59":[7,3115,1287,125,301,64.0,271.0],"51,31":[7,3242,1287,117,301,61.0,273.0],"30,61":[7,3361,1287,122,300,61.0,272.0],"41,18":[7,3485,1287,122,300,61.0,267.0],"73,21":[7,3609,1287,123,300,62.0,272.0],"15,67":[7,3734,1287,120,299,56.0,269.0],"17,47":[7,3856,1287,122,299,61.0,267.0],"17,50":[7,0,1592,121,299,56.0,269.0],"18,64":[7,123,1592,120,299,64.0,269.0],"21,47":[7,245,1592,121,299,65.0,269.0],"41,19":[7,368,1592,121,299,56.0,269.0],"41,64":[7,491,1592,121,299,55.0,269.0],"44,18":[7,614,1592,120,299,64.0,269.0],"44,63":[7,736,1592,121,299,65.0,269.0],"45,51":[7,859,1592,125,299,61.0,266.0],"30,54":[7,986,1592,125,298,64.0,268.0],"30,55":[7,1113,1592,125,298,64.0,268.0],"30,63":[7,1240,1592,124,298,64.0,265.0],"18,39":[7,1366,1592,128,297,64.0,264.0],"18,40":[7,1496,1592,130,297,65.0,264.0],"19,39":[7,1628,1592,129,297,65.0,264.0],"32,63":[7,1759,1592,125,297,64.0,265.0],"19,40":[7,1886,1592,128,296,64.0,264.0],"29,63":[7,2016,1592,121,296,61.0,263.0],"29,64":[7,2139,1592,120,296,56.0,266.0],"30,56":[7,2261,1592,123,296,62.0,268.0],"18,41":[7,2386,1592,125,295,60.0,264.0],"33,63":[7,2513,1592,121,295,65.0,265.0],"42,47":[7,2636,1592,125,295,64.0,262.0],"19,41":[7,2763,1592,127,294,62.0,264.0],"20,39":[7,2892,1592,126,294,65.0,264.0],"20,40":[7,3020,1592,126,294,65.0,264.0],"44,55":[7,3148,1592,125,293,61.0,260.0],"20,41":[7,3275,1592,122,292,61.0,265.0],"41,47":[7,3399,1592,126,292,65.0,259.0],"41,48":[7,3527,1592,120,292,56.0,261.0],"43,47":[7,3649,1592,120,292,64.0,262.0],"11,65":[7,3771,1592,125,291,61.0,258.0],"11,66":[7,3898,1592,126,291,60.0,259.0],"12,64":[7,0,1893,126,291,65.0,258.0],"30,64":[7,128,1893,125,291,61.0,261.0],"11,64":[7,255,1893,122,288,61.0,255.0],"45,52":[7,379,1893,120,288,56.0,257.0],"46,50":[7,501,1893,121,288,65.0,258.0],"11,67":[7,624,1893,121,287,56.0,257.0],"13,64":[7,747,1893,120,287,64.0,258.0],"45,50":[7,869,1893,122,287,61.0,255.0],"15,62":[7,993,1893,125,286,61.0,257.0],"16,62":[7,1120,1893,127,286,62.0,256.0],"17,62":[7,1249,1893,126,286,61.0,256.0],"44,56":[7,1377,1893,121,285,56.0,254.0],"18,62":[7,1500,1893,122,284,61.0,256.0],"44,54":[7,1624,1893,120,284,60.0,251.0],"45,54":[7,1746,1893,121,283,65.0,253.0],"16,65":[7,1869,1893,129,281,64.0,248.0],"16,66":[7,2000,1893,130,281,65.0,248.0],"17,65":[7,2132,1893,128,281,64.0,248.0],"17,66":[7,2262,1893,130,281,65.0,248.0],"18,49":[7,2394,1893,128,281,64.0,248.0],"19,48":[7,2524,1893,128,281,64.0,248.0],"19,49":[7,2654,1893,128,281,64.0,248.0],"20,48":[7,2784,1893,130,281,64.0,248.0],"18,48":[7,2916,1893,129,280,65.0,248.0],"20,49":[7,3047,1893,128,280,64.0,249.0],"62,58":[7,3177,1893,130,280,65.0,269.0],"69,58":[7,3309,1893,130,280,65.0,268.0],"16,67":[7,3441,1893,125,279,61.0,248.0],"42,64":[7,3568,1893,126,279,61.0,248.0],"17,67":[7,3696,1893,128,278,63.0,248.0],"18,50":[7,3826,1893,126,278,61.0,248.0],"18,65":[7,3954,1893,126,278,65.0,248.0],"18,66":[7,0,2186,126,278,64.0,248.0],"19,50":[7,128,2186,127,278,62.0,249.0],"20,50":[7,257,2186,126,278,61.0,248.0],"21,48":[7,385,2186,126,278,65.0,249.0],"21,49":[7,513,2186,127,278,64.0,248.0],"43,64":[7,642,2186,126,278,62.0,248.0],"18,67":[7,770,2186,122,276,61.0,248.0],"21,50":[7,894,2186,122,276,61.0,248.0],"44,19":[7,1018,2186,122,276,60.0,248.0],"44,64":[7,1142,2186,121,276,61.0,248.0],"32,64":[7,1265,2186,125,274,60.0,244.0],"33,64":[7,1392,2186,122,272,61.0,244.0],"42,48":[7,1516,2186,126,272,61.0,241.0],"68,58":[7,1644,2186,130,271,65.0,268.0],"12,65":[7,1776,2186,130,270,65.0,238.0],"12,66":[7,1908,2186,130,268,65.0,236.0],"43,48":[7,2040,2186,123,268,62.0,240.0],"12,67":[7,2165,2186,126,267,60.0,237.0],"13,66":[7,2293,2186,127,267,65.0,237.0],"13,65":[7,2422,2186,125,266,64.0,236.0],"61,58":[7,2549,2186,129,266,64.0,268.0],"13,67":[7,2680,2186,123,264,62.0,236.0],"46,52":[7,2805,2186,123,264,62.0,236.0],"45,56":[7,2930,2186,123,261,62.0,233.0],"72,51":[7,3055,2186,83,261,42.0,256.0],"12,15":[7,3140,2186,83,260,42.0,256.0],"51,5":[7,3225,2186,82,260,40.0,256.0],"55,7":[7,3309,2186,83,260,42.0,257.0],"66,6":[7,3394,2186,82,260,41.0,256.0],"71,6":[7,3478,2186,82,260,41.0,256.0],"73,55":[7,3562,2186,82,260,41.0,256.0],"76,4":[7,3646,2186,82,260,41.0,256.0],"76,9":[7,3730,2186,82,260,41.0,256.0],"79,8":[7,3814,2186,82,260,41.0,256.0],"9,6":[7,3898,2186,82,260,41.0,256.0],"67,58":[7,0,2466,129,257,64.0,268.0],"60,58":[7,131,2466,130,253,65.0,268.0],"54,32":[7,263,2466,131,251,66.0,218.0],"54,37":[7,396,2466,130,251,65.0,218.0],"54,40":[7,528,2466,130,251,65.0,218.0],"54,43":[7,660,2466,130,251,65.0,218.0],"54,44":[7,792,2466,130,251,65.0,218.0],"54,45":[7,924,2466,130,251,65.0,218.0],"54,55":[7,1056,2466,130,251,65.0,219.0],"54,56":[7,1188,2466,130,251,65.0,218.0],"54,60":[7,1320,2466,130,251,65.0,218.0],"54,61":[7,1452,2466,130,251,65.0,218.0],"54,63":[7,1584,2466,130,251,65.0,219.0],"72,30":[7,1716,2466,130,251,65.0,218.0],"54,30":[7,1848,2466,130,250,65.0,218.0],"54,31":[7,1980,2466,130,250,65.0,217.0],"54,36":[7,2112,2466,130,250,65.0,217.0],"54,38":[7,2244,2466,130,250,65.0,217.0],"54,39":[7,2376,2466,130,250,64.0,217.0],"54,41":[7,2508,2466,130,250,65.0,217.0],"54,42":[7,2640,2466,130,250,65.0,217.0],"54,48":[7,2772,2466,130,250,65.0,217.0],"54,49":[7,2904,2466,130,250,64.0,217.0],"54,50":[7,3036,2466,130,250,65.0,218.0],"54,52":[7,3168,2466,130,250,65.0,217.0],"54,53":[7,3300,2466,130,250,65.0,217.0],"54,54":[7,3432,2466,130,250,65.0,217.0],"54,57":[7,3564,2466,130,250,65.0,217.0],"54,59":[7,3696,2466,130,250,65.0,218.0],"54,62":[7,3828,2466,130,250,65.0,217.0],"54,64":[7,3960,2466,130,250,65.0,217.0],"54,65":[7,0,2725,130,250,65.0,217.0],"54,66":[7,132,2725,130,250,65.0,217.0],"54,51":[7,264,2725,130,249,65.0,217.0],"55,30":[7,396,2725,130,249,64.0,216.0],"56,30":[7,528,2725,130,249,65.0,216.0],"57,30":[7,660,2725,130,249,65.0,216.0],"58,30":[7,792,2725,130,249,65.0,216.0],"59,30":[7,924,2725,130,249,65.0,216.0],"62,30":[7,1056,2725,130,249,65.0,217.0],"63,30":[7,1188,2725,130,249,65.0,216.0],"64,30":[7,1320,2725,130,249,65.0,216.0],"65,30":[7,1452,2725,130,249,65.0,216.0],"66,30":[7,1584,2725,130,249,64.0,216.0],"67,30":[7,1716,2725,130,249,65.0,216.0],"69,30":[7,1848,2725,130,249,65.0,216.0],"73,30":[7,1980,2725,130,249,65.0,216.0],"68,30":[7,2112,2725,130,248,65.0,216.0],"74,30":[7,2244,2725,130,248,65.0,216.0],"71,46":[7,2376,2725,105,219,54.0,218.0],"71,45":[7,2483,2725,76,214,65.0,189.0],"70,46":[7,2561,2725,77,201,12.0,189.0],"40,41":[7,2640,2725,130,187,65.0,154.0],"36,43":[7,2772,2725,130,182,65.0,154.0],"36,41":[7,2904,2725,130,181,65.0,154.0],"36,45":[7,3036,2725,130,181,65.0,154.0],"70,45":[7,3168,2725,105,173,49.0,161.0],"57,54":[7,3275,2725,114,168,59.0,161.0],"50,25":[7,3391,2725,128,161,63.0,155.0],"36,47":[7,3521,2725,130,158,65.0,130.0],"40,45":[7,3653,2725,130,158,65.0,130.0],"40,51":[7,3785,2725,130,158,65.0,130.0],"36,49":[7,3917,2725,130,157,65.0,130.0],"36,51":[7,0,2977,130,157,65.0,130.0],"40,43":[7,132,2977,130,157,65.0,130.0],"40,47":[7,264,2977,130,157,65.0,130.0],"40,49":[7,396,2977,130,157,65.0,130.0],"57,34":[7,528,2977,114,157,50.0,151.0],"60,52":[7,644,2977,111,155,54.0,148.0],"28,5":[7,757,2977,123,152,65.0,146.0],"23,16":[7,882,2977,101,151,51.0,145.0],"73,36":[7,985,2977,93,151,35.0,145.0],"23,9":[7,1080,2977,129,150,64.0,144.0],"4,8":[7,1211,2977,129,149,64.0,142.0],"27,8":[7,1342,2977,129,148,65.0,142.0],"63,4":[7,1473,2977,110,148,65.0,141.0],"21,5":[7,1585,2977,120,147,56.0,141.0],"66,34":[7,1707,2977,119,146,57.0,139.0],"49,66":[7,1828,2977,122,144,64.0,138.0],"66,9":[7,1952,2977,104,140,55.0,133.0],"51,17":[7,2058,2977,105,139,52.0,113.0],"71,7":[7,2165,2977,120,138,57.0,132.0],"58,40":[7,2287,2977,94,137,65.0,130.0],"48,17":[7,2383,2977,104,102,52.0,76.0],"50,17":[7,2489,2977,105,80,52.0,53.0],"20,60":[7,2596,2977,65,77,64.0,468.0],"49,17":[7,2663,2977,106,68,53.0,43.0],"52,17":[7,2771,2977,104,68,52.0,42.0],"53,17":[7,2877,2977,104,68,51.0,42.0],"60,5":[7,2983,2977,79,50,36.0,51.0],"17,9":[7,3064,2977,70,47,28.0,56.0],"16,4":[7,3136,2977,68,46,32.0,47.0],"81,7":[7,3206,2977,89,46,44.0,54.0],"20,54":[7,3297,2977,65,45,65.0,436.0]},"chao":{"x0":-2496,"y0":-32,"tam":2048,"nx":3,"ny":2}};
+(function () {
+  const lugares = {
+    'Balião de Ibelin': [30.5, 29.6], 'Patriarca Heráclio': [25.5, 28.3], 'Hethum, o boticário': [36.5, 34.4],
+    'Rogério, armeiro': [42.5, 34.4], 'Hubert Walter, bispo de Salisbury': [27.6, 28.3]
+  };
+  for (const n of NPCS) {
+    if (n.mapa === 'jerusalem' && lugares[n.nome]) { n.x = lugares[n.nome][0]; n.y = lugares[n.nome][1]; }
+  }
+  const o = ORATORIOS.find((x) => x.id === 'jerusalem');
+  if (o) Object.assign(o, { nome: 'Cruz do adro do Sepulcro', x: 32.5, y: 28.2, chegada: { x: 32.5, y: 29.6 }, forma: 'cruz' });
+  ARCAS.jerusalem = { x: 34.5, y: 30.5 };
+  const CHEGADA = { x: 28.5, y: 30.6 };
+  for (const m of Object.values(MAPAS)) {
+    for (const pt of Object.values(m.portais || {})) if (pt.destino === 'jerusalem') pt.chegada = { ...CHEGADA };
+  }
+  const visitar = (o, fundo) => {
+    if (!o || typeof o !== 'object' || fundo > 8) return;
+    if (o.viajar && o.viajar.destino === 'jerusalem') o.viajar.chegada = { ...CHEGADA };
+    for (const k of Object.keys(o)) {
+      const d = Object.getOwnPropertyDescriptor(o, k);
+      if (d && 'value' in d) visitar(d.value, fundo + 1);
+    }
+  };
+  visitar(DIALOGOS, 0);
+  if (typeof QUANTOS_ACHADOS !== 'undefined') QUANTOS_ACHADOS.jerusalem = [26, 12];
+})();
+
+;
+// ===== js/cerco_jerusalem.js =====
+// =====================================================================
+// O CERCO DE JERUSALÉM (20 de setembro a 2 de outubro de 1187)
+// =====================================================================
+// A defesa de Jerusalém deixa de ser três pontos de defesa e vira uma batalha
+// em três fases, como Montgisard (js/batalha.js), com os defensores que Balião
+// armou lutando junto de Tomás:
+//
+//   I.   As escadas do oeste (20-25 de setembro): Saladino ataca a muralha
+//        oeste, junto à Torre de Davi. As escadas sobem sem parar e chovem
+//        flechas; quando metade dos que subiram caiu, vem a segunda leva.
+//   II.  As brechas do norte (26-28 de setembro): o sultão muda o acampamento
+//        para o norte. Os manganelos abrem duas brechas e as pedras caem na
+//        cidade; os mamelucos entram pela brecha do oeste e, logo depois, pela
+//        do leste.
+//   III. A mina (29 de setembro): os sapadores de Alepo põem fogo nos esteios
+//        e um pedaço da muralha junto ao portão de Santo Estêvão desaba. Husam,
+//        o chefe dos sapadores, entra pela brecha com a guarda.
+//
+// A fase alcançada fica em flags.cercoFase; quem cai volta ao oratório e
+// recomeça a fase em que estava. O fim marca def_muro1..3 (a missão e a fala
+// de Balião continuam as mesmas) e flags.cercoVencido.
+
+Object.assign(TIPOS_ALIADO, {
+  jovem:   { nome: 'Cavaleiro novo', visual: 'sargento', vida: 300, dano: [11, 17], alcance: 1.3, preparo: 0.45,
+             recarga: 1.2, vel: 2.4, defesa: 0.35, altura: 1.8 },
+  burgues: { nome: 'Burguês de Jerusalém', visual: 'aldeao1', vida: 200, dano: [8, 13], alcance: 2.0, preparo: 0.5,
+             recarga: 1.4, vel: 2.2, defesa: 0.2, altura: 1.75 },
+  burgues2: { nome: 'Burguês de Jerusalém', visual: 'aldeao2', vida: 200, dano: [8, 13], alcance: 2.0, preparo: 0.5,
+              recarga: 1.4, vel: 2.2, defesa: 0.2, altura: 1.75 }
+});
+
+Object.assign(TIPOS_INIMIGO, {
+  husam: chefeDoAto5({ nome: 'Husam, mestre dos sapadores de Alepo', vida: 2300, dano: [21, 32], nivel: 14, vel: 2.2, alcance: 1.5,
+    preparo: 0.42, recarga: 0.95, aggro: 14, raio: 0.3, largura: 0.85, altura: 1.95, cores: ['#4a3a1a', '#2e240f', '#3c2f15'],
+    visual: 'mameluco', escudo: 0.35, flagAoMorrer: 'husamMorto',
+    fala: 'Três dias debaixo da tua muralha, franco. Agora ela é poeira, e tu também.' })
+});
+
+const CERCO = {
+  1: {
+    nome: 'I · As escadas do oeste', foco: [11, 52],
+    data: '20 de setembro de 1187: Saladino ataca a muralha do oeste, junto à Torre de Davi.',
+    defensores: [['jovem', 10, 47], ['jovem', 10, 53], ['jovem', 10, 58], ['burgues', 12, 49], ['burgues2', 12, 55],
+                 ['burgues', 12, 60], ['jovem', 11, 51], ['burgues2', 11, 57]],
+    // as escadas: [x, y] dentro da muralha, onde os de fora pulam do adarve
+    escadas: [[8.6, 44.6], [8.6, 48.5], [8.6, 52.5], [8.6, 57.5], [8.6, 60.5]],
+    levas: [10, 10], intervalo: 2.6,
+    tipos: ['mameluco6', 'infante6', 'lanceiro6', 'mameluco6', 'infante6'],
+    flechas: { x: [8.5, 15], y: [43, 62], cada: 2.2 }
+  },
+  2: {
+    nome: 'II · As brechas do norte', foco: [40, 15],
+    data: '26 de setembro: o sultão leva o exército para o norte. Os manganelos batem a muralha dia e noite.',
+    defensores: [['jovem', 20, 16], ['jovem', 22, 16], ['burgues', 19, 17], ['burgues2', 23, 17],
+                 ['jovem', 57, 16], ['jovem', 59, 16], ['burgues', 56, 17], ['burgues2', 60, 17]],
+    brechas: [[21.5, 7.5], [58.5, 7.5]], levas: [9, 9], intervalo: 1.4,
+    tipos: ['mameluco6', 'lanceiro6', 'infante6', 'arqueiro6', 'mameluco6', 'guardaTaqi'],
+    pedras: { x: [14, 64], y: [14, 24], cada: 2.4 }
+  },
+  3: {
+    nome: 'III · A mina', foco: [29.5, 16],
+    data: '29 de setembro: os sapadores põem fogo na mina. A muralha junto ao portão de Santo Estêvão desaba.',
+    defensores: [['jovem', 27, 17], ['jovem', 29, 17], ['jovem', 31, 17], ['burgues', 26, 18], ['burgues2', 28, 18],
+                 ['burgues', 30, 18], ['burgues2', 32, 18], ['jovem', 30, 19]],
+    onda: [['guardaTaqi', 27.5, 9], ['guardaTaqi', 31.5, 9], ['mameluco6', 26, 8], ['mameluco6', 33, 8], ['lanceiro6', 28, 7],
+           ['lanceiro6', 31, 7], ['infante6', 25, 9], ['infante6', 34, 9], ['arqueiro6', 27, 5], ['arqueiro6', 32, 5],
+           ['husam', 29.5, 6.5, 'chefe']],
+    reforco: [['mameluco6', 24, 7], ['mameluco6', 35, 7], ['guardaTaqi', 29.5, 5], ['lanceiro6', 26, 5], ['lanceiro6', 33, 5]],
+    pedras: { x: [22, 38], y: [14, 22], cada: 3.6 }
+  }
+};
+const FALAS_CERCO = {
+  escadas:  ['jovem', 'As escadas! Eles sobem pela muralha do oeste!'],
+  leva2:    ['burgues', 'Mais escadas! Jogai as pedras, jogai o óleo!'],
+  norte:    ['jovem', 'Os manganelos abriram a muralha do norte! Às brechas!'],
+  leste:    ['jovem', 'A brecha do leste! Eles entram pela brecha do leste!'],
+  mina:     ['jovem', 'A mina! A muralha caiu junto ao portão!'],
+  reforco:  ['burgues', 'Vêm mais pela brecha! Por Cristo e pelo Sepulcro!'],
+  vitoria:  ['jovem', 'Recuam! Seguramos a brecha... mas quantos de nós sobraram?']
+};
+
+let cerco = null;      // { fase, soltos, leva, tempo, timers... } enquanto a batalha corre
+let quedasCerco = [];       // pedras e flechas caindo: { x, y, raio, t, dur, tipo, dano }
+
+const cercoDeveria = () => nomeDoMapaAtual() === 'jerusalem' && !!flags.pedidoJerusalem && !flags.cercoVencido && !flags.fimJerusalem;
+const cercoAtivo = () => !!cerco && cercoDeveria();
+const faseDoCerco = () => flags.cercoFase || 1;
+
+function iniciarCerco() {
+  aliados = []; quedasCerco = [];
+  const fase = faseDoCerco(), F = CERCO[fase];
+  cerco = { fase, soltos: 0, leva: 0, espera: 0, ativo: false, tempoQueda: 0, chefeSolto: false, reforco: false, aviso: 0 };
+  for (const [tipo, x, y] of F.defensores) {
+    const a = criarAliado(tipo, x, y);
+    a.posto = { x: a.x, y: a.y };
+  }
+  inimigos = [];
+  avisar(F.data);
+}
+
+function falarNoCerco(id) {
+  const [quem, texto] = FALAS_CERCO[id];
+  const vivos = aliados.filter((a) => !a.morto);
+  const alvo = vivos.find((a) => a.id === quem) || vivos[0];
+  if (!alvo) { avisar(texto); return; }
+  falasNoAr.push({ ini: alvo, texto, tempo: 5 });
+  if (typeof tocar === 'function') tocar('brado', { vol: 0.5 });
+}
+
+// Um inimigo da fase, nascendo onde for possível perto de (x, y)
+function soltarNoCerco(tipo, x, y, papel) {
+  const t = TIPOS_INIMIGO[tipo];
+  const [lx, ly] = livreMaisPerto(x, y, t.raio);
+  const ini = { tipo: t, x: lx, y: ly, casaX: lx, casaY: ly, vida: t.vida, estado: 'perseguindo', preparo: 0,
+                recarga: Math.random(), morto: false, tempoMorto: 0, flash: 0, onda: 'cerco' + cerco.fase, aggroBatalha: true };
+  if (papel === 'chefe') { ini.comandante = true; cerco.chefeSolto = true; }
+  inimigos.push(ini);
+  poeiraNosPes(lx, ly, 8, 1.4);
+  return ini;
+}
+
+function atualizarCerco(dt) {
+  if (!cercoDeveria()) { if (cerco) { cerco = null; aliados = []; quedasCerco = []; } return; }
+  if (!cerco) iniciarCerco();
+  const fase = cerco.fase, F = CERCO[fase];
+  for (const a of aliados) atualizarDefensor(a, dt);
+  atualizarQuedas(dt);
+
+  // a fase começa quando Tomás chega perto (até lá, os defensores esperam)
+  if (!cerco.ativo) {
+    if (Math.hypot(jogador.x - F.foco[0], jogador.y - F.foco[1]) < (fase === 2 ? 22 : 15)) {
+      cerco.ativo = true;
+      if (fase === 1) falarNoCerco('escadas');
+      if (fase === 2) falarNoCerco('norte');
+      if (fase === 3) desabarMuralha();
+    }
+    return;
+  }
+
+  // chuva de flechas e pedras dos manganelos
+  const chuva = F.flechas || F.pedras;
+  if (chuva) {
+    cerco.tempoQueda -= dt;
+    if (cerco.tempoQueda <= 0) {
+      cerco.tempoQueda = chuva.cada * (0.7 + Math.random() * 0.6);
+      const perto = Math.random() < 0.55;
+      const x = perto ? jogador.x + acaso(-3, 3) : acaso(...chuva.x), y = perto ? jogador.y + acaso(-3, 3) : acaso(...chuva.y);
+      if (x >= chuva.x[0] - 3 && x <= chuva.x[1] + 3 && y >= chuva.y[0] - 3 && y <= chuva.y[1] + 3 && !colide(x, y, 0.1)) {
+        quedasCerco.push(F.flechas ? { x, y, raio: 1.3, t: 0, dur: 1.3, tipo: 'flechas', dano: 18 }
+                              : { x, y, raio: 1.1, t: 0, dur: 1.6, tipo: 'pedra', dano: 34 });
+      }
+    }
+  }
+
+  const daFase = inimigos.filter((i) => i.onda === 'cerco' + fase);
+  const vivos = daFase.filter((i) => !i.morto);
+
+  if (fase === 1 || fase === 2) {
+    const total = F.levas[0] + F.levas[1];
+    // solta os que sobem/entram, um de cada vez; a segunda leva espera metade da primeira cair
+    if (cerco.soltos < total) {
+      const naLeva2 = cerco.soltos >= F.levas[0];
+      const podeLeva2 = daFase.filter((i) => i.morto).length >= F.levas[0] / 2;
+      if (!naLeva2 || podeLeva2) {
+        if (naLeva2 && cerco.leva === 0) { cerco.leva = 1; falarNoCerco(fase === 1 ? 'leva2' : 'leste'); }
+        cerco.espera -= dt;
+        if (cerco.espera <= 0 && vivos.length < 8) {
+          cerco.espera = F.intervalo * (0.7 + Math.random() * 0.6);
+          const tipo = F.tipos[cerco.soltos % F.tipos.length];
+          if (fase === 1) {
+            const [ex, ey] = F.escadas[Math.floor(Math.random() * F.escadas.length)];
+            soltarNoCerco(tipo, ex, ey);
+            if (typeof tocar === 'function') tocar('escada', { vol: 0.35 });
+          } else {
+            const [bx, by] = F.brechas[naLeva2 ? 1 : 0];
+            soltarNoCerco(tipo, bx + acaso(-2, 2), by + acaso(-1.5, 1.5));
+          }
+          cerco.soltos++;
+        }
+      }
+      return;
+    }
+    if (!vivos.length) passarDeFase();
+    return;
+  }
+
+  // fase 3: o chefe e a guarda; com metade caída, mais um grupo
+  if (!cerco.reforco && daFase.length && vivos.length <= daFase.length / 2) {
+    cerco.reforco = true;
+    for (const [tipo, x, y] of F.reforco) soltarNoCerco(tipo, x, y);
+    falarNoCerco('reforco');
+  }
+  if (flags.husamMorto && !flags.cercoVencido) vencerCerco();
+}
+
+function passarDeFase() {
+  const fase = cerco.fase;
+  flags['def_muro' + fase] = true;
+  flags.cercoFase = fase + 1;
+  if (typeof tocar === 'function') tocar('sino', { vol: 0.5 });
+  // os que sobraram ficam; os novos defensores vêm de Balião
+  const vivos = aliados.filter((a) => !a.morto).length;
+  avisar(fase === 1 ? `O assalto do oeste foi repelido. ${vivos} defensores de pé.` : `As brechas do norte aguentam. ${vivos} defensores de pé.`);
+  setTimeout(() => {
+    if (!cercoDeveria()) return;
+    iniciarCerco();
+    if (typeof salvarJogo === 'function') try { salvarJogo(true); } catch (e) {}
+  }, 4500);
+  cerco.ativo = false; cerco.soltos = 1e9;
+}
+
+function desabarMuralha() {
+  const F = CERCO[3];
+  tremerTela(1.2, 9);
+  if (typeof tocar === 'function') { tocar('tremor', { vol: 0.9 }); setTimeout(() => tocar('pesado', { vol: 0.8 }), 300); }
+  const [bx, by] = [29.5, 12.5];
+  emitir(80, () => {
+    const a = acaso(0, Math.PI * 2), v = acaso(0.5, 3.2);
+    return { tipo: 'poeira', x: bx + acaso(-1.5, 1.5), y: by + acaso(-1, 1), z: acaso(0.2, 5), vx: Math.cos(a) * v, vy: Math.sin(a) * v,
+             vz: acaso(0.3, 1.6), vida: 0, dur: acaso(1.4, 2.6), cor: '214, 196, 160', tam: acaso(10, 22), freio: 1.5 };
+  });
+  falarNoCerco('mina');
+  setTimeout(() => {
+    if (!cercoAtivo()) return;
+    for (const [tipo, x, y, papel] of F.onda) soltarNoCerco(tipo, x, y, papel);
+  }, 900);
+}
+
+function vencerCerco() {
+  flags.cercoVencido = true;
+  flags.def_muro1 = flags.def_muro2 = flags.def_muro3 = true;
+  falarNoCerco('vitoria');
+  for (const ini of inimigos) if (!ini.morto) { ini.controlado = true; ini.fugaCerco = true; }
+  setTimeout(() => avisar('Saladino não entrou pela força. Balião vai ao acampamento do sultão. Volte a ele.'), 2500);
+}
+
+// --- Os defensores --------------------------------------------------------------
+function atualizarDefensor(a, dt) {
+  if (a.morto) { a.tempoMorto += dt; return; }
+  const t = a.t;
+  a.flash = Math.max(0, (a.flash || 0) - dt);
+  a.recarga = Math.max(0, a.recarga - dt);
+  a.andando = false;
+  if (a.preparo > 0) {
+    a.preparo -= dt;
+    if (a.preparo <= 0 && a.alvo && !a.alvo.morto) {
+      const alcance = t.alcance / METROS_POR_TILE + RAIO_ALIADO + a.alvo.tipo.raio + 0.15;
+      if (Math.hypot(a.alvo.x - a.x, a.alvo.y - a.y) <= alcance) ferirInimigoPorAliado(a.alvo, t.dano);
+      a.recarga = t.recarga;
+    }
+    return;
+  }
+  // só sai do posto para quem chega perto (não persegue pela cidade toda)
+  let alvo = a.alvo && !a.alvo.morto && !a.alvo.fugaCerco && Math.hypot(a.alvo.x - a.posto.x, a.alvo.y - a.posto.y) < 9 ? a.alvo : null;
+  if (!alvo) {
+    let md = 7;
+    for (const ini of inimigosVivos()) {
+      if (ini.fugaCerco) continue;
+      const d = Math.hypot(ini.x - a.x, ini.y - a.y) - (ini.alvo === a ? 2 : 0);
+      if (d < md && Math.hypot(ini.x - a.posto.x, ini.y - a.posto.y) < 9) { md = d; alvo = ini; }
+    }
+  }
+  a.alvo = alvo;
+  if (alvo) {
+    const d = Math.hypot(alvo.x - a.x, alvo.y - a.y);
+    const alcance = t.alcance / METROS_POR_TILE + RAIO_ALIADO + alvo.tipo.raio;
+    a.angulo = Math.atan2(alvo.y - a.y, alvo.x - a.x);
+    if (d > alcance) a.andando = moverAliado(a, alvo.x, alvo.y, dt, t.vel);
+    else if (a.recarga <= 0) a.preparo = t.preparo;
+    return;
+  }
+  if (Math.hypot(a.posto.x - a.x, a.posto.y - a.y) > 0.5) a.andando = moverAliado(a, a.posto.x, a.posto.y, dt, t.vel * 0.8);
+}
+
+// Os que fogem no fim voltam pela brecha para o norte e somem
+function atualizarFugaDoCerco(dt) {
+  for (const ini of inimigos) {
+    if (!ini.fugaCerco || ini.morto) continue;
+    ini.estado = 'perseguindo'; ini.fugindo = true;
+    const p = passoNoCaminho(ini, 29.5, 4, ini.tipo.raio) || { x: 29.5, y: 4 };
+    const dx = p.x - ini.x, dy = p.y - ini.y, d = Math.hypot(dx, dy) || 1;
+    ini.angulo = Math.atan2(dy, dx);
+    ini.x += dx / d * ini.tipo.vel * 1.2 * dt; ini.y += dy / d * ini.tipo.vel * 1.2 * dt;
+    if (ini.y < 9) { ini.morto = true; ini.tempoMorto = 99; ini.fugaCerco = false; }
+  }
+}
+
+// --- Pedras e flechas -------------------------------------------------------------
+function atualizarQuedas(dt) {
+  for (const q of quedasCerco) {
+    q.t += dt;
+    if (q.t < q.dur || q.feito) continue;
+    q.feito = true;
+    if (Math.hypot(jogador.x - q.x, jogador.y - q.y) < q.raio) ferirJogador(q.dano, null);
+    if (companheiroNoMapa() && !companheiro.morto && Math.hypot(companheiro.x - q.x, companheiro.y - q.y) < q.raio && typeof ferirCompanheiro === 'function')
+      ferirCompanheiro(q.dano * 0.6);
+    for (const a of aliados) if (!a.morto && Math.hypot(a.x - q.x, a.y - q.y) < q.raio) ferirAliado(a, q.dano * 0.6);
+    if (q.tipo === 'pedra') {
+      tremerTela(0.18, 4);
+      emitir(18, () => {
+        const a = acaso(0, Math.PI * 2), v = acaso(0.6, 2.4);
+        return { tipo: 'poeira', x: q.x, y: q.y, z: 0.1, vx: Math.cos(a) * v, vy: Math.sin(a) * v, vz: acaso(0.3, 1.2),
+                 vida: 0, dur: acaso(0.7, 1.3), cor: '214, 198, 166', tam: acaso(7, 14), freio: 2 };
+      });
+      if (typeof tocar === 'function') tocar('pesado', { vol: 0.45 });
+    } else {
+      emitir(8, () => ({ tipo: 'poeira', x: q.x + acaso(-1, 1), y: q.y + acaso(-1, 1), z: 0.05, vx: 0, vy: 0, vz: 0.3,
+                         vida: 0, dur: acaso(0.4, 0.7), cor: '220, 206, 176', tam: acaso(3, 6) }));
+      if (typeof tocar === 'function') tocar('virote', { vol: 0.3 });
+    }
+  }
+  quedasCerco = quedasCerco.filter((q) => q.t < q.dur + 1.2);
+}
+
+// No chão (dentro do zoom): a sombra do que vai cair e, para as pedras, a pedra no ar
+function desenharQuedas() {
+  if (nomeDoMapaAtual() !== 'jerusalem') return;
+  for (const q of quedasCerco) {
+    const p = mundoParaTela(q.x, q.y), cx = p.x + camera.x, cy = p.y + camera.y;
+    if (q.t < q.dur) {
+      const f = q.t / q.dur;
+      ctx.save();
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, q.raio * 32 * (1.15 - 0.15 * f), q.raio * 16 * (1.15 - 0.15 * f), 0, 0, Math.PI * 2);
+      ctx.fillStyle = q.tipo === 'pedra' ? `rgba(60, 40, 25, ${0.12 + 0.3 * f})` : `rgba(140, 30, 20, ${0.1 + 0.25 * f})`;
+      ctx.fill();
+      ctx.strokeStyle = q.tipo === 'pedra' ? `rgba(230, 200, 150, ${0.3 + 0.5 * f})` : `rgba(255, 120, 90, ${0.3 + 0.5 * f})`;
+      ctx.lineWidth = 1.4; ctx.stroke();
+      if (q.tipo === 'pedra' && f > 0.45) {   // a pedra descendo
+        const alt = (1 - f) / 0.55 * 260;
+        ctx.beginPath(); ctx.arc(cx, cy - alt, 6, 0, Math.PI * 2);
+        ctx.fillStyle = '#8a7a62'; ctx.fill(); ctx.strokeStyle = '#4a3e30'; ctx.stroke();
+      }
+      ctx.restore();
+    } else if (q.tipo === 'flechas' && q.t < q.dur + 1.0) {   // as flechas cravadas no chão
+      ctx.save(); ctx.globalAlpha = 1 - (q.t - q.dur);
+      ctx.strokeStyle = '#3a2a1a'; ctx.lineWidth = 1;
+      for (let k = 0; k < 7; k++) {
+        const ax = cx + Math.sin(k * 2.7 + q.x) * q.raio * 22, ay = cy + Math.cos(k * 1.9 + q.y) * q.raio * 10;
+        ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(ax - 3, ay - 9); ctx.stroke();
+      }
+      ctx.restore();
+    }
+  }
+}
+
+// --- Ligações com o resto do jogo (batalha.js decide pelo "campo"; aqui, Jerusalém) ---
+const _alvoNaBatalhaOrigCerco = alvoNaBatalha;
+alvoNaBatalha = function (ini) {
+  if (!cercoAtivo()) return _alvoNaBatalhaOrigCerco(ini);
+  const candidatos = [jogador];
+  if (companheiroNoMapa() && !companheiro.morto) candidatos.push(companheiro);
+  for (const a of aliados) if (!a.morto) candidatos.push(a);
+  let melhor = null, md = 1e9;
+  for (const c of candidatos) {
+    const d = Math.hypot(c.x - ini.x, c.y - ini.y) - (c === jogador ? 0.6 : 0);
+    if (d < md) { md = d; melhor = c; }
+  }
+  return melhor;
+};
+const _alvosDaBatalhaOrigCerco = alvosDaBatalha;
+alvosDaBatalha = function () {
+  if (!cercoAtivo()) return _alvosDaBatalhaOrigCerco();
+  return aliados.filter((a) => !a.morto);
+};
+const _colideComAliadoOrigCerco = colideComAliado;
+colideComAliado = function (x, y, raio) {
+  if (!cercoAtivo()) return _colideComAliadoOrigCerco(x, y, raio);
+  return aliados.some((a) => !a.morto && Math.hypot(a.x - x, a.y - y) < raio + RAIO_ALIADO);
+};
+const _objetosDaBatalhaOrigCerco = objetosDaBatalha;
+objetosDaBatalha = function () {
+  if (nomeDoMapaAtual() !== 'jerusalem' || !aliados.length) return _objetosDaBatalhaOrigCerco();
+  return aliados.map((a) => {
+    const p = mundoParaTela(a.x, a.y);
+    return { profundidade: a.morto ? -1 : a.x + a.y, desenhar: () => desenharAliado(a, p.x + camera.x, p.y + camera.y) };
+  });
+};
+
+// O quadro da fase no alto da tela, e uma seta para onde está a luta
+const _desenharHudDaBatalhaOrigCerco = desenharHudDaBatalha;
+desenharHudDaBatalha = function () {
+  _desenharHudDaBatalhaOrigCerco();
+  if (nomeDoMapaAtual() !== 'jerusalem' || !cerco) return;
+  for (const a of aliados) {
+    if (a.morto || a.vida >= a.t.vida) continue;
+    const p = mundoParaTela(a.x, a.y);
+    const larg = 30, x = (p.x + camera.x) * zoom - larg / 2, y = (p.y + camera.y - altPx(a.t.altura)) * zoom - 14;
+    ctx.fillStyle = 'rgba(0,0,0,0.6)'; ctx.fillRect(x - 1, y - 1, larg + 2, 6);
+    ctx.fillStyle = '#5aa04a'; ctx.fillRect(x, y, larg * a.vida / a.t.vida, 4);
+  }
+  const fase = cerco.fase, F = CERCO[fase];
+  const daFase = inimigos.filter((i) => i.onda === 'cerco' + fase);
+  const caidos = daFase.filter((i) => i.morto).length;
+  let objetivo;
+  if (flags.cercoVencido) objetivo = 'O assalto foi repelido. Volte a Balião, no adro do Sepulcro.';
+  else if (!cerco.ativo && cerco.soltos > 1e8) objetivo = 'Os defensores se reagrupam...';
+  else if (fase === 1) objetivo = cerco.ativo ? `Repila as escadas na muralha do oeste · ${caidos}/${F.levas[0] + F.levas[1]}` : 'Vá à muralha do oeste, junto à Torre de Davi';
+  else if (fase === 2) objetivo = cerco.ativo ? `Segure as brechas do norte · ${caidos}/${F.levas[0] + F.levas[1]}` : 'Vá às brechas da muralha do norte';
+  else objetivo = cerco.ativo ? 'A muralha caiu junto ao portão: derrube Husam e a guarda' : 'Vá ao portão de Santo Estêvão, ao norte';
+  const dePe = aliados.filter((a) => !a.morto).length;
+  const w = Math.min(500, canvas.width - 24), x = (canvas.width - w) / 2, y = 10, h = 62;
+  ctx.save();
+  ctx.fillStyle = 'rgba(18, 13, 9, 0.82)'; ctx.fillRect(x, y, w, h);
+  ctx.strokeStyle = 'rgba(201, 162, 90, 0.8)'; ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+  ctx.textAlign = 'center';
+  ctx.font = 'bold 15px Alegreya, Georgia, serif'; ctx.fillStyle = '#e8b931';
+  ctx.fillText(flags.cercoVencido ? 'Jerusalém · a brecha aguenta' : `Jerusalém · ${F.nome}`, canvas.width / 2, y + 20);
+  ctx.font = '13px Alegreya, Georgia, serif'; ctx.fillStyle = '#efe7d6';
+  ctx.fillText(objetivo, canvas.width / 2, y + 38);
+  ctx.font = '12px Alegreya, Georgia, serif'; ctx.fillStyle = '#b9ad94';
+  ctx.fillText(`Defensores de pé · ${dePe}/${aliados.length}`, canvas.width / 2, y + 54);
+  // a seta na borda da tela, quando a luta está longe
+  const alvo = flags.cercoVencido ? [30.5, 29.6] : F.foco;
+  if (Math.hypot(jogador.x - alvo[0], jogador.y - alvo[1]) > 9) {
+    const pj = mundoParaTela(jogador.x, jogador.y), pa = mundoParaTela(alvo[0], alvo[1]);
+    const ang = Math.atan2(pa.y - pj.y, pa.x - pj.x);
+    const cx = canvas.width / 2 + Math.cos(ang) * Math.min(canvas.width, canvas.height) * 0.36;
+    const cy = canvas.height / 2 + Math.sin(ang) * Math.min(canvas.width, canvas.height) * 0.3;
+    ctx.translate(cx, cy); ctx.rotate(ang);
+    ctx.beginPath(); ctx.moveTo(16, 0); ctx.lineTo(-8, -10); ctx.lineTo(-3, 0); ctx.lineTo(-8, 10); ctx.closePath();
+    ctx.fillStyle = 'rgba(232, 185, 49, 0.85)'; ctx.fill(); ctx.strokeStyle = 'rgba(40, 25, 10, 0.9)'; ctx.stroke();
+  }
+  ctx.restore();
+};
+
+const _criarInimigosDoMapaOrigCerco = criarInimigosDoMapa;
+criarInimigosDoMapa = function (nomeMapa) {
+  _criarInimigosDoMapaOrigCerco(nomeMapa);
+  cerco = null; quedasCerco = [];
+  if (nomeMapa === 'jerusalem' && cercoDeveria()) iniciarCerco();
+};
+const _atualizarInimigosOrigCerco = atualizarInimigos;
+atualizarInimigos = function (dt) {
+  _atualizarInimigosOrigCerco(dt);
+  if (nomeDoMapaAtual() === 'jerusalem') { atualizarCerco(dt); atualizarFugaDoCerco(dt); }
+};
+const _desenharGolpeOrigCerco = desenharGolpe;
+desenharGolpe = function () {
+  desenharQuedas();
+  _desenharGolpeOrigCerco();
+};
+
+// A missão conta as fases do cerco
+(function () {
+  const m = MISSOES.find((x) => x.id === 'jerusalem');
+  if (!m) return;
+  Object.defineProperty(m.passos[1], 'texto', { configurable: true, get() {
+    const n = { 1: 'as escadas do oeste', 2: 'as brechas do norte', 3: 'a mina junto ao portão' }[faseDoCerco()] || '';
+    return flags.cercoVencido ? 'O assalto foi repelido.' : `Saladino cerca a cidade. Lute com os defensores de Balião (${murosSeguros()}/3): ${n}.`;
+  } });
+})();
+// Jerusalém não tem mais as três defesas soltas: a batalha é o cerco
+MAPAS.jerusalem.defesas = [];
+
+Object.assign(TRADUCAO_EN, {
+  'Cavaleiro novo': 'Young knight', 'Burguês de Jerusalém': 'Burgher of Jerusalem',
+  'Husam, mestre dos sapadores de Alepo': 'Husam, master of the Aleppo sappers',
+  'Três dias debaixo da tua muralha, franco. Agora ela é poeira, e tu também.': 'Three days under your wall, Frank. Now it is dust, and so are you.',
+  'I · As escadas do oeste': 'I · The western ladders', 'II · As brechas do norte': 'II · The northern breaches', 'III · A mina': 'III · The mine',
+  '20 de setembro de 1187: Saladino ataca a muralha do oeste, junto à Torre de Davi.': '20 September 1187: Saladin assaults the western wall, by the Tower of David.',
+  '26 de setembro: o sultão leva o exército para o norte. Os manganelos batem a muralha dia e noite.': '26 September: the sultan moves his army to the north. The mangonels pound the wall day and night.',
+  '29 de setembro: os sapadores põem fogo na mina. A muralha junto ao portão de Santo Estêvão desaba.': '29 September: the sappers fire the mine. The wall by St Stephen\'s Gate collapses.',
+  'As escadas! Eles sobem pela muralha do oeste!': 'Ladders! They are climbing the western wall!',
+  'Mais escadas! Jogai as pedras, jogai o óleo!': 'More ladders! Throw the stones, pour the oil!',
+  'Os manganelos abriram a muralha do norte! Às brechas!': 'The mangonels have broken the northern wall! To the breaches!',
+  'A brecha do leste! Eles entram pela brecha do leste!': 'The eastern breach! They are coming through the eastern breach!',
+  'A mina! A muralha caiu junto ao portão!': 'The mine! The wall has fallen by the gate!',
+  'Vêm mais pela brecha! Por Cristo e pelo Sepulcro!': 'More through the breach! For Christ and the Sepulchre!',
+  'Recuam! Seguramos a brecha... mas quantos de nós sobraram?': 'They fall back! We held the breach... but how many of us are left?',
+  'Saladino não entrou pela força. Balião vai ao acampamento do sultão. Volte a ele.': 'Saladin did not take the city by force. Balian goes to the sultan\'s camp. Return to him.',
+  'O assalto foi repelido. Volte a Balião, no adro do Sepulcro.': 'The assault was repelled. Return to Balian, in the Sepulchre square.',
+  'Os defensores se reagrupam...': 'The defenders regroup...',
+  'Repila as escadas na muralha do oeste': 'Repel the ladders on the western wall',
+  'Vá à muralha do oeste, junto à Torre de Davi': 'Go to the western wall, by the Tower of David',
+  'Segure as brechas do norte': 'Hold the northern breaches', 'Vá às brechas da muralha do norte': 'Go to the breaches in the northern wall',
+  'A muralha caiu junto ao portão: derrube Husam e a guarda': 'The wall has fallen by the gate: bring down Husam and his guard',
+  'Vá ao portão de Santo Estêvão, ao norte': "Go to St Stephen's Gate, to the north",
+  'Jerusalém · a brecha aguenta': 'Jerusalem · the breach holds', 'Defensores de pé': 'Defenders standing',
+  'O assalto foi repelido.': 'The assault was repelled.',
+  'Cruz do adro do Sepulcro': 'Cross of the Sepulchre square', 'Brecha junto ao portão': 'Breach by the gate',
+  'Templum Domini': 'Templum Domini', 'Templum Salomonis': 'Templum Salomonis', 'Hospital de São João': 'Hospital of St John',
+  'Torre de Davi': 'Tower of David', 'Santa Ana': "St Anne's", 'Piscina de Betesda': 'Pool of Bethesda',
+  'São Tiago dos Armênios': 'St James of the Armenians', 'Santa Maria Latina': 'St Mary of the Latins', 'Mercado': 'Market',
+  'Porta de Davi': "David's Gate", 'Porta de Josafá': "Jehoshaphat's Gate", 'Porta de Sião': "Zion Gate"
+});
+PADROES_EN.unshift(
+  [/^O assalto do oeste foi repelido\. (\d+) defensores de pé\.$/, 'The western assault was repelled. $1 defenders standing.'],
+  [/^As brechas do norte aguentam\. (\d+) defensores de pé\.$/, 'The northern breaches hold. $1 defenders standing.'],
+  [/^Saladino cerca a cidade\. Lute com os defensores de Balião \((\d)\/3\): (.*)\.$/, (n, f) => `Saladin besieges the city. Fight alongside Balian's defenders (${n}/3): ${f}.`],
+  [/^as escadas do oeste$/, 'the western ladders'], [/^as brechas do norte$/, 'the northern breaches'], [/^a mina junto ao portão$/, 'the mine by the gate']
+);
+
+;
+// Balião manda Tomás para onde a luta começa
+DIALOGOS.baliao5_jerusalem.armar.texto = 'Armei cavaleiros todos os rapazes nobres com mais de dezesseis anos, e trinta burgueses. É o que temos. Saladino começou pelo oeste, junto à Torre de Davi: vai com eles.';
+Object.defineProperty(DIALOGOS.baliao5_muros.inicio, 'texto', { configurable: true, get() {
+  return `Os meus estão na muralha, Tomás. Vai com eles! (${murosSeguros()}/3)`;
+} });
+Object.assign(TRADUCAO_EN, {
+  'Armei cavaleiros todos os rapazes nobres com mais de dezesseis anos, e trinta burgueses. É o que temos. Saladino começou pelo oeste, junto à Torre de Davi: vai com eles.':
+    'I have knighted every noble boy over sixteen, and thirty burghers. That is all we have. Saladin has begun in the west, by the Tower of David: go with them.'
+});
+PADROES_EN.unshift([/^Os meus estão na muralha, Tomás\. Vai com eles! \((\d)\/3\)$/, 'My men are on the wall, Tomás. Go with them! ($1/3)']);
+
+;
+// ===== js/santo_sepulcro.js =====
+// =====================================================================
+// MAPA: a igreja do Santo Sepulcro (interior), como os cruzados a deixaram em 1149
+// =====================================================================
+// Gerado por ferramentas/sepulcro_int/gen.py e renderizado no Blender (interior.py).
+// Oeste: a Rotunda (Anástasis) e o Edículo sobre o túmulo. Leste: o coro dos cônegos,
+// o cruzeiro (o "Compás", o umbigo do mundo) e o altar-mor. Sul: a entrada, a Pedra da
+// Unção, o Calvário e, ao pé dele, os túmulos dos reis latinos de Jerusalém.
+MAPAS.santoSepulcro = {
+  nome: 'Igreja do Santo Sepulcro',
+  noite: 0.22,
+  linhas: [
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrWWWWWrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrWWWWMMMWWWWWWWWWWWWWWWWWWWWWWWWWrrrrrrr',
+    'rrrrrrWWMMMMMMMMMXWMMMMMMMMMMMMMMMMMMMWWWWrrrr',
+    'rrrrrWWMMMMMMMMMVMXMMMMMMMMMMMMMMMMMMMMMMXWrrr',
+    'rrrrWWMMMCMCMCMCMMMMMMMMMMMMMMMCMMCMMMMMMMXXrr',
+    'rrrrWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMCMMMXXr',
+    'rrrrWMMMCMMMMMMMCMMMMMCMMMMMCMMMMMMMMMMMMMMMXr',
+    'rrrWWMMCMMMMMMMMMCMMMMMMMMMMMQQQQQQMMVMMMCMMXr',
+    'rrrWMMMMMMMWWWMMMMMMMMMKKKKKKKKKKKKKKMMMMMMMXr',
+    'rrrWMMMCMMMWWWMMMCMMMMMKKKKKKKKKKKKKKMLMMMCMXr',
+    'rrrWMMMMMMMWWWMMMMMMMMMKKKKKKKKKKKKKKMMMMMMMXr',
+    'rrrWWMMCMMMMMMMMMCMMMMMMMMMMMQQQQQQMMVMMMCMMXr',
+    'rrrrWMMMCMMMMMMMCMMMMMCMMMMMCMMMMMMMMMMMMMMMXr',
+    'rrrrWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMCMMMXXr',
+    'rrrrWXMMMCMCMCMCMMMMMMMMMMMMMMMCMMCMMMMMMMXXrr',
+    'rrrrrWXMMMMMMMMMVMXMMMMMMMMMMMMMMMMMMMMMMXXrrr',
+    'rrrrrrXXMMMMMMMMMXXMMMMMMMMMMMMMMMMMMMXXXXrrrr',
+    'rrrrrrrXXXXMMMXXXXXXXMMMMMMMMMMXXXXXXXXrrrrrrr',
+    'rrrrrrrrrrXXXXXrrrrrXMVMMMMMMVMMLRRLMXrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrXMMMQQMMMMMMMMMMMXrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrXMMMMMMMMMMCMMMMCXrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrWMMMMMMMMMMMMMMMMXrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrWMMMMMMMMMMQQQQQQXrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrWMMMMMMMMMMMMMMMMXrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrWWXXXMMMXXXXXXXXXXrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrX1Xrrrrrrrrrrrrrrrrrr'
+  ],
+  portais: {
+    1: { destino: 'jerusalem', chegada: { x: 26.5, y: 28.6 }, rotulo: 'Sair ao adro' }
+  },
+  rotulos: [
+    { x: 7, y: 9.5, texto: 'Rotunda · Anástasis', altura: 9 },
+    { x: 12, y: 15, texto: 'Edículo do Santo Sepulcro', altura: 8 },
+    { x: 31.5, y: 15, texto: 'Coro dos cônegos', altura: 4 },
+    { x: 33.5, y: 24, texto: 'Calvário', altura: 5 },
+    { x: 24.5, y: 25, texto: 'Pedra da Unção', altura: 3 },
+    { x: 33.5, y: 28, texto: 'Túmulos dos reis de Jerusalém', altura: 2 }
+  ],
+  pontos: [
+    { id: 'ss_ediculo', nome: 'O túmulo vazio', x: 15.0, y: 15.5, texto: 'O Edículo guarda a pedra onde puseram o corpo de Cristo. Os peregrinos entram de joelhos, um de cada vez.' },
+    { id: 'ss_compas', nome: 'O Compás', x: 25, y: 15.5, texto: 'O Compás: um círculo no chão do coro. Os peregrinos diziam que ali era o meio do mundo.' },
+    { id: 'ss_calvario', nome: 'O Calvário', x: 33.5, y: 25.6, texto: 'O Gólgota: a rocha onde Cristo foi crucificado, sob os dois altares. Os peregrinos sobem descalços.' },
+    { id: 'ss_reis', nome: 'Os túmulos dos reis', x: 33.5, y: 27, texto: 'Godofredo de Bulhão, Balduíno I... e Balduíno IV, o rei leproso de Montgisard, sepultado aqui em 1185, aos 24 anos.' },
+    { id: 'ss_uncao', nome: 'A Pedra da Unção', x: 24.5, y: 26.8, texto: 'A Pedra da Unção, onde ungiram o corpo de Cristo antes do sepulcro. As lâmpadas nunca se apagam.' }
+  ]
+};
+CENARIO_DADOS.santoSepulcro = {"escala":2.0,"folhas":1,"fatias":{"28,12":[0,0,0,124,459,62.0,429.0],"28,18":[0,126,0,124,459,62.0,429.0],"22,12":[0,252,0,124,458,62.0,429.0],"22,18":[0,378,0,124,458,62.0,429.0],"10,6":[0,504,0,130,432,65.0,399.0],"10,7":[0,636,0,130,432,65.0,399.0],"11,6":[0,768,0,130,432,65.0,399.0],"12,6":[0,900,0,130,432,65.0,399.0],"13,6":[0,1032,0,130,432,65.0,399.0],"14,6":[0,1164,0,130,432,65.0,399.0],"14,7":[0,1296,0,130,432,65.0,399.0],"15,7":[0,1428,0,130,432,65.0,399.0],"16,7":[0,1560,0,130,432,65.0,399.0],"17,7":[0,1692,0,130,432,65.0,399.0],"17,8":[0,1824,0,130,432,65.0,399.0],"18,7":[0,1956,0,130,432,65.0,399.0],"18,8":[0,2088,0,130,432,65.0,399.0],"18,9":[0,2220,0,130,432,65.0,399.0],"19,7":[0,2352,0,130,432,65.0,399.0],"20,27":[0,2484,0,130,432,65.0,399.0],"20,28":[0,2616,0,130,432,65.0,399.0],"20,29":[0,2748,0,130,432,65.0,399.0],"20,30":[0,2880,0,130,432,65.0,399.0],"20,7":[0,3012,0,130,432,65.0,399.0],"21,30":[0,3144,0,130,432,65.0,399.0],"21,7":[0,3276,0,130,432,65.0,399.0],"22,30":[0,3408,0,130,432,65.0,399.0],"22,7":[0,3540,0,130,432,65.0,399.0],"23,7":[0,3672,0,130,432,65.0,399.0],"24,7":[0,3804,0,130,432,65.0,399.0],"25,7":[0,3936,0,130,432,65.0,400.0],"26,7":[0,0,461,130,432,65.0,399.0],"27,7":[0,132,461,130,432,65.0,399.0],"28,7":[0,264,461,130,432,65.0,399.0],"29,7":[0,396,461,130,432,65.0,399.0],"3,13":[0,528,461,130,432,65.0,399.0],"3,14":[0,660,461,130,432,65.0,399.0],"3,15":[0,792,461,130,432,65.0,399.0],"3,16":[0,924,461,130,432,65.0,399.0],"3,17":[0,1056,461,130,432,65.0,399.0],"30,7":[0,1188,461,130,432,65.0,399.0],"31,7":[0,1320,461,131,432,66.0,399.0],"32,7":[0,1453,461,130,432,65.0,399.0],"33,7":[0,1585,461,130,432,65.0,399.0],"34,7":[0,1717,461,130,432,65.0,399.0],"35,7":[0,1849,461,130,432,65.0,399.0],"36,7":[0,1981,461,130,432,65.0,399.0],"38,7":[0,2113,461,130,432,65.0,399.0],"38,8":[0,2245,461,130,432,65.0,399.0],"39,8":[0,2377,461,130,432,65.0,399.0],"4,10":[0,2509,461,131,432,66.0,399.0],"4,11":[0,2642,461,130,432,65.0,399.0],"4,12":[0,2774,461,130,432,65.0,399.0],"4,13":[0,2906,461,130,432,65.0,399.0],"4,17":[0,3038,461,130,432,65.0,399.0],"4,18":[0,3170,461,130,432,65.0,399.0],"4,19":[0,3302,461,130,432,65.0,399.0],"4,20":[0,3434,461,130,432,65.0,399.0],"40,8":[0,3566,461,130,432,65.0,399.0],"41,8":[0,3698,461,130,432,65.0,399.0],"41,9":[0,3830,461,130,432,65.0,399.0],"42,10":[0,3962,461,130,432,65.0,399.0],"42,9":[0,0,895,130,432,65.0,399.0],"43,10":[0,132,895,130,432,65.0,399.0],"5,10":[0,264,895,130,432,65.0,399.0],"5,20":[0,396,895,130,432,65.0,399.0],"5,21":[0,528,895,130,432,65.0,399.0],"5,9":[0,660,895,130,432,65.0,399.0],"6,21":[0,792,895,130,432,65.0,399.0],"6,22":[0,924,895,130,432,65.0,399.0],"6,8":[0,1056,895,130,432,65.0,399.0],"6,9":[0,1188,895,130,432,65.0,399.0],"7,7":[0,1320,895,130,432,65.0,399.0],"7,8":[0,1452,895,130,432,65.0,399.0],"8,7":[0,1584,895,130,432,65.0,399.0],"9,7":[0,1716,895,130,432,65.0,399.0],"37,7":[0,1848,895,130,431,65.0,399.0],"20,26":[0,1980,895,130,401,65.0,368.0],"15,20":[0,2112,895,106,371,53.0,346.0],"17,15":[0,2220,895,105,371,53.0,347.0],"7,15":[0,2327,895,104,371,52.0,346.0],"9,10":[0,2433,895,105,371,53.0,346.0],"9,20":[0,2540,895,105,371,53.0,346.0],"15,10":[0,2647,895,105,370,53.0,345.0],"8,12":[0,2754,895,72,351,36.0,334.0],"11,10":[0,2828,895,72,350,36.0,334.0],"11,20":[0,2902,895,72,350,36.0,334.0],"12,15":[0,2976,895,130,350,65.0,317.0],"13,10":[0,3108,895,73,350,36.0,334.0],"13,20":[0,3183,895,72,350,36.0,334.0],"16,12":[0,3257,895,74,350,37.0,334.0],"16,18":[0,3333,895,72,350,36.0,334.0],"17,13":[0,3407,895,72,350,36.0,334.0],"17,17":[0,3481,895,72,350,36.0,334.0],"31,10":[0,3555,895,73,350,37.0,334.0],"31,20":[0,3630,895,72,350,36.0,334.0],"34,10":[0,3704,895,72,350,36.0,334.0],"34,20":[0,3778,895,72,350,36.0,334.0],"7,13":[0,3852,895,72,350,36.0,334.0],"7,17":[0,3926,895,72,350,36.0,334.0],"8,18":[0,4000,895,72,350,36.0,334.0],"13,15":[0,0,1329,130,327,65.0,294.0],"12,16":[0,132,1329,125,319,60.0,289.0],"39,11":[0,259,1329,72,311,36.0,295.0],"39,19":[0,333,1329,73,311,36.0,295.0],"41,13":[0,408,1329,72,311,36.0,295.0],"41,17":[0,482,1329,72,311,36.0,295.0],"42,15":[0,556,1329,73,311,36.0,295.0],"12,14":[0,631,1329,125,299,65.0,266.0],"13,14":[0,758,1329,125,299,65.0,266.0],"11,16":[0,885,1329,124,289,59.0,259.0],"36,26":[0,1011,1329,101,288,36.0,255.0],"11,15":[0,1114,1329,129,286,64.0,253.0],"13,16":[0,1245,1329,125,281,60.0,251.0],"11,14":[0,1372,1329,124,277,64.0,244.0],"31,26":[0,1498,1329,72,271,36.0,255.0],"34,24":[0,1572,1329,130,222,65.0,214.0],"33,24":[0,1704,1329,104,209,39.0,184.0],"24,25":[0,1810,1329,92,207,38.0,180.0],"25,25":[0,1904,1329,92,203,54.0,184.0],"38,15":[0,1998,1329,114,198,57.0,169.0],"34,23":[0,2114,1329,130,197,65.0,164.0],"33,23":[0,2246,1329,130,166,65.0,133.0],"30,13":[0,2378,1329,115,159,52.0,132.0],"29,13":[0,2495,1329,115,158,52.0,132.0],"31,13":[0,2612,1329,116,158,52.0,132.0],"32,13":[0,2730,1329,115,158,52.0,132.0],"33,13":[0,2847,1329,116,158,53.0,132.0],"34,13":[0,2965,1329,116,158,53.0,132.0],"29,17":[0,3083,1329,116,140,64.0,111.0],"30,17":[0,3201,1329,115,140,63.0,111.0],"31,17":[0,3318,1329,116,140,64.0,111.0],"32,17":[0,3436,1329,115,140,63.0,111.0],"33,17":[0,3553,1329,117,140,64.0,111.0],"34,17":[0,3672,1329,116,140,64.0,111.0],"32,24":[0,3790,1329,122,129,57.0,100.0],"35,24":[0,3914,1329,122,128,57.0,99.0],"10,23":[0,0,1658,130,114,65.0,81.0],"10,24":[0,132,1658,130,114,65.0,81.0],"12,24":[0,264,1658,130,114,65.0,81.0],"16,23":[0,396,1658,130,114,65.0,81.0],"20,23":[0,528,1658,130,114,65.0,81.0],"20,24":[0,660,1658,130,114,65.0,81.0],"24,30":[0,792,1658,130,114,65.0,81.0],"30,30":[0,924,1658,130,114,65.0,81.0],"31,23":[0,1056,1658,130,114,65.0,81.0],"32,23":[0,1188,1658,130,114,65.0,81.0],"32,30":[0,1320,1658,130,114,65.0,81.0],"34,30":[0,1452,1658,130,114,65.0,81.0],"35,23":[0,1584,1658,130,114,65.0,81.0],"35,30":[0,1716,1658,130,114,65.0,81.0],"36,30":[0,1848,1658,130,114,65.0,81.0],"37,23":[0,1980,1658,130,114,65.0,81.0],"37,24":[0,2112,1658,130,114,65.0,81.0],"37,26":[0,2244,1658,130,114,65.0,81.0],"37,27":[0,2376,1658,130,114,65.0,81.0],"37,28":[0,2508,1658,130,114,65.0,81.0],"37,29":[0,2640,1658,130,114,65.0,81.0],"38,23":[0,2772,1658,130,114,65.0,81.0],"39,22":[0,2904,1658,130,114,65.0,81.0],"40,22":[0,3036,1658,130,114,65.0,81.0],"41,21":[0,3168,1658,130,114,65.0,81.0],"41,22":[0,3300,1658,130,114,65.0,81.0],"42,20":[0,3432,1658,130,114,65.0,81.0],"42,21":[0,3564,1658,130,114,65.0,81.0],"43,11":[0,3696,1658,130,114,65.0,81.0],"43,19":[0,3828,1658,130,114,65.0,81.0],"44,13":[0,3960,1658,130,114,65.0,81.0],"44,16":[0,0,1774,130,114,65.0,81.0],"44,17":[0,132,1774,130,114,65.0,81.0],"44,19":[0,264,1774,130,114,65.0,81.0],"7,22":[0,396,1774,130,114,65.0,81.0],"8,23":[0,528,1774,130,114,65.0,81.0],"11,24":[0,660,1774,130,113,65.0,80.0],"13,24":[0,792,1774,130,113,65.0,80.0],"14,23":[0,924,1774,130,113,65.0,80.0],"14,24":[0,1056,1774,130,113,65.0,80.0],"15,23":[0,1188,1774,130,113,65.0,80.0],"17,22":[0,1320,1774,130,113,65.0,80.0],"17,23":[0,1452,1774,130,113,65.0,80.0],"18,21":[0,1584,1774,130,113,65.0,81.0],"18,22":[0,1716,1774,130,113,65.0,80.0],"19,23":[0,1848,1774,130,113,65.0,81.0],"20,25":[0,1980,1774,130,113,65.0,80.0],"23,30":[0,2112,1774,130,113,65.0,80.0],"25,31":[0,2244,1774,130,113,65.0,80.0],"27,31":[0,2376,1774,130,113,65.0,80.0],"28,30":[0,2508,1774,130,113,65.0,80.0],"29,30":[0,2640,1774,130,113,65.0,80.0],"31,30":[0,2772,1774,130,113,65.0,80.0],"33,30":[0,2904,1774,130,113,65.0,80.0],"36,23":[0,3036,1774,130,113,65.0,80.0],"37,25":[0,3168,1774,130,113,65.0,80.0],"37,30":[0,3300,1774,130,113,65.0,80.0],"38,22":[0,3432,1774,130,113,65.0,80.0],"43,20":[0,3564,1774,130,113,65.0,80.0],"44,11":[0,3696,1774,130,113,65.0,80.0],"44,12":[0,3828,1774,130,113,65.0,80.0],"44,14":[0,3960,1774,130,113,65.0,80.0],"44,15":[0,0,1890,130,113,65.0,80.0],"44,18":[0,132,1890,130,113,65.0,80.0],"7,23":[0,264,1890,130,113,65.0,80.0],"9,23":[0,396,1890,130,113,65.0,81.0],"18,23":[0,528,1890,130,112,65.0,80.0],"16,21":[0,660,1890,37,104,18.0,95.0],"16,9":[0,699,1890,84,104,19.0,95.0],"22,24":[0,785,1890,38,104,19.0,95.0],"29,24":[0,825,1890,37,104,18.0,96.0],"36,28":[0,864,1890,112,104,47.0,71.0],"37,13":[0,978,1890,38,104,19.0,95.0],"37,17":[0,1018,1890,36,104,18.0,95.0],"31,28":[0,1056,1890,94,95,47.0,71.0],"33,28":[0,1152,1890,94,95,47.0,71.0],"34,28":[0,1248,1890,94,95,47.0,71.0],"32,28":[0,1344,1890,94,94,47.0,71.0],"35,28":[0,1440,1890,94,94,47.0,71.0]},"chao":{"x0":-1024,"y0":-32,"tam":2048,"nx":2,"ny":1}};
+MAPAS_SEM_NEVOA.add('santoSepulcro');
+MAPAS_COM_ECO.add('santoSepulcro');
+MUSICA_DO_MAPA.santoSepulcro = 'safe_room';
+AMBIENTE_DO_MAPA.santoSepulcro = AMBIENTE_DO_MAPA.catedral || ['vento', 0.1];
+QUANTOS_ACHADOS.santoSepulcro = [0, 0];
+LUGAR_DO_MAPA.santoSepulcro = 'jerusalem';
+MAPAS_ATO5.push('santoSepulcro');
+SPAWNS.santoSepulcro = [];
+// a porta da igreja, no adro (as duas portas dão no transepto sul)
+MAPAS.jerusalem.linhas[27] = MAPAS.jerusalem.linhas[27].slice(0, 26) + '2' + MAPAS.jerusalem.linhas[27].slice(27);
+MAPAS.jerusalem.portais[2] = { destino: 'santoSepulcro', chegada: { x: 26.5, y: 29.2 }, rotulo: 'Igreja do Santo Sepulcro' };
+ORATORIOS.push({ id: 'santoSepulcro', nome: 'Edículo do Santo Sepulcro', mapa: 'santoSepulcro', x: 14.6, y: 15.5, chegada: { x: 15.799999999999999, y: 15.5 }, forma: 'altar' });
+(function () {
+  const hubert = NPCS.find((n) => n.nome.startsWith('Hubert'));
+  if (hubert) Object.assign(hubert, { mapa: 'santoSepulcro', x: 16.2, y: 16.6 });
+  const her = NPCS.find((n) => n.nome === 'Patriarca Heráclio');
+  if (her) Object.assign(her, { mapa: 'santoSepulcro', x: 36.2, y: 15.5 });
+  const m = MISSOES.find((x) => x.id === 'sepulcro');
+  if (m) m.passos[0].texto = 'Em Jerusalém, como peregrino, desarmado. Entre na igreja do Santo Sepulcro e fale com o bispo Hubert Walter, diante do Edículo.';
+})();
+Object.assign(TRADUCAO_EN, {
+  'Igreja do Santo Sepulcro': 'Church of the Holy Sepulchre', 'IGREJA DO SANTO SEPULCRO': 'CHURCH OF THE HOLY SEPULCHRE', 'Sair ao adro': 'Out to the square', 'Rotunda · Anástasis': 'Rotunda · Anastasis',
+  'Edículo do Santo Sepulcro': 'Aedicule of the Holy Sepulchre', 'Coro dos cônegos': "Canons' choir", 'Calvário': 'Calvary',
+  'Pedra da Unção': 'Stone of Unction', 'Túmulos dos reis de Jerusalém': 'Tombs of the kings of Jerusalem',
+  'O túmulo vazio': 'The empty tomb', 'O Compás': 'The Compass', 'O Calvário': 'Calvary', 'Os túmulos dos reis': 'The tombs of the kings',
+  'A Pedra da Unção': 'The Stone of Unction',
+  'O Edículo guarda a pedra onde puseram o corpo de Cristo. Os peregrinos entram de joelhos, um de cada vez.': 'The Aedicule holds the stone on which the body of Christ was laid. Pilgrims go in on their knees, one at a time.',
+  'O Compás: um círculo no chão do coro. Os peregrinos diziam que ali era o meio do mundo.': 'The Compass: a circle on the floor of the choir. Pilgrims said it marked the centre of the world.',
+  'O Gólgota: a rocha onde Cristo foi crucificado, sob os dois altares. Os peregrinos sobem descalços.': 'Golgotha: the rock where Christ was crucified, beneath the two altars. Pilgrims climb up barefoot.',
+  'Godofredo de Bulhão, Balduíno I... e Balduíno IV, o rei leproso de Montgisard, sepultado aqui em 1185, aos 24 anos.': 'Godfrey of Bouillon, Baldwin I... and Baldwin IV, the leper king of Montgisard, buried here in 1185, aged 24.',
+  'A Pedra da Unção, onde ungiram o corpo de Cristo antes do sepulcro. As lâmpadas nunca se apagam.': 'The Stone of Unction, where the body of Christ was anointed before the burial. The lamps are never put out.',
+  'Em Jerusalém, como peregrino, desarmado. Entre na igreja do Santo Sepulcro e fale com o bispo Hubert Walter, diante do Edículo.': 'In Jerusalem, as an unarmed pilgrim. Enter the Church of the Holy Sepulchre and speak with Bishop Hubert Walter, before the Aedicule.'
+});
+
+;
+// ===== js/igrejas_jerusalem.js =====
+// As outras igrejas de Jerusalém, por dentro (ferramentas/sepulcro_int/igrejas.py + interior.py).
+// Cada uma tem a sua porta na cidade (um dígito no mapa de Jerusalém).
+MAPAS.santaAna = {
+  nome: "Igreja de Santa Ana",
+  noite: 0.22,
+  linhas: [
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrWWWWWWWWWWWWWWWWWWWWrrrrrrrr',
+    'rrWMMMMMMMMMMMMMMMMMMLWrrrrrrr',
+    'rrWMMMMMMMMMMMMMMQMMMMXXXrrrrr',
+    'rrWMMMMMMMMMMMMMMMMMMMMMXXrrrr',
+    'rrWMMMCMMCMMCMMCMMCMMVMMMXXrrr',
+    'rrWMMMMMMMMMMMMMMMMMMMMMMMXrrr',
+    'rrWMKKKKKKKKKKKKKKKKKKLMMMXrrr',
+    'rr1MKKKKKKKKKKKKKKKKKKMMMMXrrr',
+    'rrWMMMMMMMMMMMMMMMMMMVMMMMXrrr',
+    'rrWMMMMMMMMMMMMMMMMMMMMMMMXrrr',
+    'rrWMMMCMMCMMCMMCMMCMMMMMMXXrrr',
+    'rrWMMMMMMMMMMMMMMMMMMLMMXXrrrr',
+    'rrWMMMMMMQMMMMMMMMMMMMXXXrrrrr',
+    'rrWMMMMMMMMMMMMMMMMMMMXrrrrrrr',
+    'rrWWXXXXXXXXXXXXXXXXXXXrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrr'
+  ],
+  portais: { 1: { destino: 'jerusalem', chegada: { x: 60.3, y: 17.0 }, rotulo: 'Sair à cidade' } },
+  rotulos: [{ x: 11, y: 9, texto: "Santa Ana", altura: 9 }, { x: 24, y: 8.5, texto: "Altar-mor", altura: 3 }, { x: 9, y: 14, texto: "Gruta da Natividade de Maria", altura: 2 }],
+  pontos: [{ id: 'sa_gruta', nome: "A gruta", x: 9.5, y: 13.2, texto: "Embaixo de Santa Ana, a gruta onde, diz a tradição, nasceu a Virgem Maria, filha de Joaquim e Ana." }, { id: 'sa_ioveta', nome: "As monjas", x: 16.5, y: 5.2, texto: "Ioveta, filha do rei Balduíno II, foi monja aqui antes de ser abadessa de Betânia. As beneditinas cantam as horas noite e dia." }, { id: 'sa_altar', nome: "O altar-mor", x: 22.5, y: 9.0, texto: "A igreja tem paredes grossas e janelas pequenas: aguenta terremotos e cercos. Ainda vai estar de pé daqui a oitocentos anos." }]
+};
+CENARIO_DADOS.santaAna = {"escala":2.0,"folhas":1,"fatias":{"2,4":[0,0,0,130,433,65.0,401.0],"21,2":[0,132,0,130,433,65.0,400.0],"6,2":[0,264,0,130,433,65.0,400.0],"10,2":[0,396,0,130,432,65.0,399.0],"13,2":[0,528,0,130,432,64.0,399.0],"14,2":[0,660,0,130,432,65.0,399.0],"15,2":[0,792,0,130,432,65.0,399.0],"16,2":[0,924,0,130,432,65.0,399.0],"17,2":[0,1056,0,130,432,65.0,399.0],"18,2":[0,1188,0,130,432,65.0,399.0],"19,2":[0,1320,0,130,432,65.0,399.0],"2,10":[0,1452,0,130,432,65.0,399.0],"2,12":[0,1584,0,130,432,65.0,399.0],"2,13":[0,1716,0,130,432,65.0,399.0],"2,14":[0,1848,0,130,432,65.0,399.0],"2,15":[0,1980,0,130,432,65.0,399.0],"2,16":[0,2112,0,130,432,65.0,399.0],"2,2":[0,2244,0,130,432,65.0,399.0],"2,3":[0,2376,0,130,432,65.0,399.0],"2,7":[0,2508,0,130,432,65.0,399.0],"2,8":[0,2640,0,130,432,65.0,399.0],"20,2":[0,2772,0,130,432,65.0,399.0],"22,3":[0,2904,0,130,432,65.0,399.0],"22,4":[0,3036,0,130,432,65.0,399.0],"23,4":[0,3168,0,130,432,65.0,399.0],"3,2":[0,3300,0,130,432,65.0,399.0],"4,16":[0,3432,0,130,432,65.0,399.0],"7,2":[0,3564,0,130,432,65.0,399.0],"8,2":[0,3696,0,130,432,65.0,399.0],"9,2":[0,3828,0,130,432,64.0,399.0],"11,2":[0,3960,0,130,431,65.0,399.0],"12,2":[0,0,435,130,431,65.0,399.0],"2,11":[0,132,435,130,431,65.0,399.0],"2,5":[0,264,435,130,431,65.0,400.0],"2,6":[0,396,435,130,431,65.0,399.0],"3,16":[0,528,435,130,431,65.0,399.0],"4,2":[0,660,435,130,431,65.0,400.0],"5,2":[0,792,435,130,431,65.0,400.0],"12,6":[0,924,435,104,390,52.0,365.0],"15,12":[0,1030,435,105,390,52.0,365.0],"18,12":[0,1137,435,105,390,52.0,365.0],"18,6":[0,1244,435,105,390,53.0,365.0],"6,12":[0,1351,435,104,390,52.0,365.0],"6,6":[0,1457,435,105,390,52.0,365.0],"9,12":[0,1564,435,104,390,52.0,365.0],"9,6":[0,1670,435,105,390,53.0,365.0],"12,12":[0,1777,435,106,389,53.0,365.0],"15,6":[0,1885,435,104,389,52.0,365.0],"21,3":[0,1991,435,122,202,57.0,169.0],"22,8":[0,2115,435,114,198,57.0,169.0],"21,13":[0,2231,435,114,129,57.0,100.0],"12,16":[0,2347,435,130,114,65.0,81.0],"13,16":[0,2479,435,130,114,65.0,81.0],"21,16":[0,2611,435,130,114,65.0,81.0],"22,16":[0,2743,435,130,114,65.0,82.0],"24,13":[0,2875,435,130,114,64.0,81.0],"24,14":[0,3007,435,130,114,65.0,82.0],"24,4":[0,3139,435,130,114,65.0,81.0],"25,5":[0,3271,435,130,114,65.0,81.0],"6,16":[0,3403,435,130,114,65.0,81.0],"9,16":[0,3535,435,130,114,65.0,81.0],"10,16":[0,3667,435,130,113,65.0,80.0],"11,16":[0,3799,435,130,113,65.0,81.0],"14,16":[0,3931,435,130,113,65.0,80.0],"15,16":[0,0,868,130,113,65.0,80.0],"17,16":[0,132,868,130,113,65.0,80.0],"18,16":[0,264,868,130,113,65.0,81.0],"19,16":[0,396,868,130,113,65.0,80.0],"20,16":[0,528,868,130,113,65.0,80.0],"22,14":[0,660,868,130,113,65.0,80.0],"22,15":[0,792,868,130,113,64.0,80.0],"23,14":[0,924,868,130,113,65.0,81.0],"24,5":[0,1056,868,130,113,65.0,80.0],"25,12":[0,1188,868,130,113,65.0,80.0],"25,13":[0,1320,868,130,113,65.0,81.0],"26,10":[0,1452,868,130,113,65.0,80.0],"26,12":[0,1584,868,130,113,65.0,81.0],"26,6":[0,1716,868,130,113,65.0,80.0],"26,7":[0,1848,868,130,113,65.0,80.0],"26,8":[0,1980,868,130,113,65.0,80.0],"26,9":[0,2112,868,130,113,65.0,80.0],"5,16":[0,2244,868,130,113,65.0,80.0],"7,16":[0,2376,868,130,113,65.0,81.0],"16,16":[0,2508,868,130,112,65.0,80.0],"25,6":[0,2640,868,130,112,65.0,80.0],"26,11":[0,2772,868,130,112,65.0,80.0],"8,16":[0,2904,868,130,112,65.0,80.0],"21,10":[0,3036,868,37,104,17.0,95.0],"21,6":[0,3075,868,36,104,18.0,95.0],"9,14":[0,3113,868,130,101,65.0,68.0],"17,4":[0,3245,868,94,94,47.0,71.0]},"chao":{"x0":-640,"y0":-32,"tam":2048,"nx":1,"ny":1}};
+MAPAS_SEM_NEVOA.add('santaAna'); MAPAS_COM_ECO.add('santaAna'); MUSICA_DO_MAPA.santaAna = 'safe_room';
+AMBIENTE_DO_MAPA.santaAna = AMBIENTE_DO_MAPA.catedral || ['vento', 0.1]; QUANTOS_ACHADOS.santaAna = [0, 0];
+LUGAR_DO_MAPA.santaAna = 'jerusalem'; MAPAS_ATO5.push('santaAna'); SPAWNS.santaAna = [];
+MAPAS.jerusalem.linhas[17] = MAPAS.jerusalem.linhas[17].slice(0, 61) + '3' + MAPAS.jerusalem.linhas[17].slice(62);
+MAPAS.jerusalem.portais[3] = { destino: 'santaAna', chegada: { x: 3.6, y: 9 }, rotulo: "Igreja de Santa Ana" };
+MAPAS.saoTiago = {
+  nome: "São Tiago dos Armênios",
+  noite: 0.22,
+  linhas: [
+    'rrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrWWWWWWWWWWWWWWWWWWrrrr',
+    'rrWMMMMMMMMMMMMMMMMWrrrr',
+    'rrWMLMMMMMKKMMMMVMMXrrrr',
+    'rrWMMMMMMMKKMMMMMMMXrrrr',
+    'rrWMMMMMMMKKMMMMMMMXXXrr',
+    'rrWMMMMCMMKKMMCMMMMMMXrr',
+    'rrWMMMMMMMKKMMMMMMMVMXrr',
+    'rrWMMMMMMMKKMMMMMMMMMXrr',
+    'rrWMKVKKKKKKKKKKKKKMLXrr',
+    'rrWMKKKKKKKKKKKKKKKMMXrr',
+    'rrWMMMMMMMKKMMMMMMMMMXrr',
+    'rrWMMMMMMMKKMMMMMMMVMXrr',
+    'rrWMMMMCMMKKMMCMMMMMMXrr',
+    'rrWMMMMMMMKKMMMMMMMXXXrr',
+    'rrWMMMMMMMKKMMMMMMMXrrrr',
+    'rrWMQMMMMMKKMMMMVMMXrrrr',
+    'rrWMMMMMMMMMMMMMMMMXrrrr',
+    'rrWWXXXXXX1XXXXXXXXXrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrr'
+  ],
+  portais: { 1: { destino: 'jerusalem', chegada: { x: 12.3, y: 57.0 }, rotulo: 'Sair à cidade' } },
+  rotulos: [{ x: 10.5, y: 10.5, texto: "São Tiago dos Armênios", altura: 10 }, { x: 20, y: 10, texto: "Santuário", altura: 3 }, { x: 4, y: 17, texto: "Capela do martírio", altura: 2 }],
+  pontos: [{ id: 'st_martirio', nome: "O martírio", x: 4.6, y: 16.2, texto: "Aqui, dizem os armênios, Herodes mandou degolar São Tiago Maior. A cabeça do apóstolo é guardada na capela." }, { id: 'st_rainha', nome: "A rainha armênia", x: 10.5, y: 13.5, texto: "A rainha Morfia, mulher de Balduíno II, era armênia de Melitene. Os reis latinos deram terras e ouro a esta igreja." }]
+};
+CENARIO_DADOS.saoTiago = {"escala":2.0,"folhas":1,"fatias":{"14,7":[0,0,0,124,439,62.0,409.0],"14,14":[0,126,0,124,438,62.0,409.0],"7,14":[0,252,0,124,438,62.0,409.0],"7,7":[0,378,0,124,438,62.0,409.0],"4,2":[0,504,0,130,433,65.0,400.0],"11,2":[0,636,0,130,432,65.0,400.0],"13,2":[0,768,0,130,432,65.0,399.0],"14,2":[0,900,0,130,432,65.0,399.0],"15,2":[0,1032,0,130,432,65.0,400.0],"16,2":[0,1164,0,130,432,65.0,399.0],"17,2":[0,1296,0,130,432,65.0,399.0],"18,2":[0,1428,0,130,432,65.0,399.0],"19,2":[0,1560,0,130,432,65.0,399.0],"19,3":[0,1692,0,130,432,65.0,399.0],"2,10":[0,1824,0,130,432,65.0,399.0],"2,11":[0,1956,0,130,432,65.0,400.0],"2,12":[0,2088,0,130,432,65.0,399.0],"2,13":[0,2220,0,130,432,65.0,399.0],"2,14":[0,2352,0,130,432,65.0,399.0],"2,15":[0,2484,0,130,432,65.0,400.0],"2,16":[0,2616,0,130,432,65.0,399.0],"2,17":[0,2748,0,130,432,65.0,399.0],"2,18":[0,2880,0,130,432,65.0,399.0],"2,2":[0,3012,0,130,432,65.0,399.0],"2,3":[0,3144,0,130,432,65.0,400.0],"2,4":[0,3276,0,130,432,65.0,399.0],"2,5":[0,3408,0,130,432,65.0,399.0],"2,6":[0,3540,0,130,432,65.0,399.0],"2,7":[0,3672,0,130,432,65.0,400.0],"2,9":[0,3804,0,130,432,65.0,399.0],"3,19":[0,3936,0,130,432,65.0,399.0],"4,19":[0,0,441,130,432,65.0,399.0],"7,2":[0,132,441,130,432,65.0,400.0],"9,2":[0,264,441,130,432,65.0,399.0],"10,2":[0,396,441,130,431,65.0,399.0],"12,2":[0,528,441,130,431,65.0,399.0],"19,4":[0,660,441,130,431,65.0,399.0],"2,19":[0,792,441,130,431,65.0,399.0],"2,8":[0,924,441,130,431,65.0,399.0],"3,2":[0,1056,441,130,431,65.0,400.0],"5,2":[0,1188,441,130,431,65.0,399.0],"6,2":[0,1320,441,130,431,65.0,399.0],"8,2":[0,1452,441,130,431,65.0,399.0],"20,10":[0,1584,441,122,202,57.0,169.0],"4,4":[0,1708,441,114,129,57.0,100.0],"14,19":[0,1824,441,130,114,65.0,81.0],"18,19":[0,1956,441,130,114,65.0,81.0],"19,15":[0,2088,441,130,114,65.0,82.0],"19,18":[0,2220,441,130,114,65.0,81.0],"19,19":[0,2352,441,130,114,65.0,82.0],"19,5":[0,2484,441,130,114,65.0,81.0],"19,6":[0,2616,441,130,114,65.0,81.0],"20,6":[0,2748,441,130,114,65.0,81.0],"21,12":[0,2880,441,130,114,65.0,81.0],"21,13":[0,3012,441,130,114,65.0,82.0],"21,6":[0,3144,441,130,114,65.0,81.0],"21,7":[0,3276,441,130,114,65.0,81.0],"21,8":[0,3408,441,130,114,65.0,81.0],"21,9":[0,3540,441,130,114,65.0,82.0],"5,19":[0,3672,441,130,114,65.0,81.0],"6,19":[0,3804,441,130,114,65.0,81.0],"9,19":[0,3936,441,130,114,65.0,81.0],"12,19":[0,0,875,130,113,65.0,80.0],"13,19":[0,132,875,130,113,65.0,81.0],"17,19":[0,264,875,130,113,65.0,81.0],"19,16":[0,396,875,130,113,65.0,81.0],"19,17":[0,528,875,130,113,65.0,82.0],"20,15":[0,660,875,130,113,65.0,80.0],"21,11":[0,792,875,130,113,65.0,81.0],"21,14":[0,924,875,130,113,65.0,80.0],"21,15":[0,1056,875,130,113,65.0,81.0],"7,19":[0,1188,875,130,113,65.0,80.0],"8,19":[0,1320,875,130,113,65.0,80.0],"11,19":[0,1452,875,130,112,65.0,81.0],"15,19":[0,1584,875,130,112,65.0,81.0],"16,19":[0,1716,875,130,112,65.0,80.0],"21,10":[0,1848,875,130,112,65.0,80.0],"16,17":[0,1980,875,36,104,18.0,95.0],"16,4":[0,2018,875,37,104,18.0,95.0],"19,13":[0,2057,875,36,104,18.0,95.0],"19,8":[0,2095,875,38,104,19.0,95.0],"5,10":[0,2135,875,37,104,19.0,95.0],"4,17":[0,2174,875,94,95,47.0,71.0]},"chao":{"x0":-704,"y0":-32,"tam":2048,"nx":1,"ny":1}};
+MAPAS_SEM_NEVOA.add('saoTiago'); MAPAS_COM_ECO.add('saoTiago'); MUSICA_DO_MAPA.saoTiago = 'safe_room';
+AMBIENTE_DO_MAPA.saoTiago = AMBIENTE_DO_MAPA.catedral || ['vento', 0.1]; QUANTOS_ACHADOS.saoTiago = [0, 0];
+LUGAR_DO_MAPA.saoTiago = 'jerusalem'; MAPAS_ATO5.push('saoTiago'); SPAWNS.saoTiago = [];
+MAPAS.jerusalem.linhas[57] = MAPAS.jerusalem.linhas[57].slice(0, 13) + '4' + MAPAS.jerusalem.linhas[57].slice(14);
+MAPAS.jerusalem.portais[4] = { destino: 'saoTiago', chegada: { x: 10.5, y: 18 }, rotulo: "São Tiago dos Armênios" };
+MAPAS.santaMariaLatina = {
+  nome: "Santa Maria Latina",
+  noite: 0.22,
+  linhas: [
+    'rrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrWWWWWWWWWWWWWWWWWrrrrrrr',
+    'rrWMMMMMMMMMMMMMMMLWWrrrrr',
+    'rrWMMMMMMQQQQQQMMMMMXXWrrr',
+    'rrWMMMCMMCMMCMMCMMVMMMXrrr',
+    'rrWMMMMMMMMMMMMMMMMMMMXrrr',
+    'rrWMKKKKKKKKKKKKKKKLMMXrrr',
+    'rrWMKKKKKKKKKKKKKKKMMMXrrr',
+    'rrWMMMCMMCMMCMMCMMVMMMXrrr',
+    'rrWMMMMMMQQQQQQMMMMMMMXrrr',
+    'rrWMMMMMMMMMMMMMMMLMXXXrrr',
+    'rrWWXXXXXX1XXXXXXXXXXrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrr'
+  ],
+  portais: { 1: { destino: 'jerusalem', chegada: { x: 39.2, y: 40.0 }, rotulo: 'Sair à cidade' } },
+  rotulos: [{ x: 10, y: 7.5, texto: "Santa Maria Latina", altura: 9 }, { x: 20, y: 7, texto: "Altar", altura: 3 }],
+  pontos: [{ id: 'sml_hospital', nome: "Os monges e o Hospital", x: 10.5, y: 9.4, texto: "Os beneditinos de Amalfi tinham aqui o seu mosteiro. Do albergue deles para os peregrinos nasceu o Hospital de São João." }]
+};
+CENARIO_DADOS.santaMariaLatina = {"escala":2.0,"folhas":1,"fatias":{"10,2":[0,0,0,130,432,65.0,399.0],"11,2":[0,132,0,130,432,65.0,400.0],"13,2":[0,264,0,130,432,65.0,399.0],"15,2":[0,396,0,130,432,65.0,399.0],"16,2":[0,528,0,130,432,65.0,399.0],"17,2":[0,660,0,130,432,65.0,399.0],"2,10":[0,792,0,130,432,65.0,399.0],"2,11":[0,924,0,130,432,65.0,400.0],"2,12":[0,1056,0,130,432,65.0,399.0],"2,2":[0,1188,0,130,432,65.0,399.0],"2,3":[0,1320,0,130,432,65.0,399.0],"2,4":[0,1452,0,130,432,65.0,399.0],"2,5":[0,1584,0,130,432,65.0,399.0],"2,6":[0,1716,0,130,432,65.0,399.0],"2,7":[0,1848,0,130,432,65.0,399.0],"2,8":[0,1980,0,130,432,65.0,399.0],"20,3":[0,2112,0,130,432,65.0,399.0],"20,4":[0,2244,0,130,432,65.0,399.0],"21,4":[0,2376,0,130,432,65.0,399.0],"22,4":[0,2508,0,130,432,65.0,399.0],"3,12":[0,2640,0,130,432,65.0,399.0],"3,2":[0,2772,0,130,432,65.0,399.0],"4,12":[0,2904,0,130,432,65.0,399.0],"4,2":[0,3036,0,130,432,65.0,399.0],"5,2":[0,3168,0,130,432,65.0,399.0],"6,2":[0,3300,0,130,432,65.0,399.0],"7,2":[0,3432,0,130,432,65.0,399.0],"9,2":[0,3564,0,130,432,64.0,399.0],"12,2":[0,3696,0,130,431,65.0,399.0],"14,2":[0,3828,0,130,431,65.0,399.0],"18,2":[0,3960,0,130,431,65.0,399.0],"19,3":[0,0,434,130,431,65.0,399.0],"2,9":[0,132,434,130,431,65.0,399.0],"22,5":[0,264,434,130,431,65.0,400.0],"8,2":[0,396,434,130,431,65.0,399.0],"12,5":[0,528,434,105,351,51.0,326.0],"12,9":[0,635,434,105,351,52.0,326.0],"15,5":[0,742,434,105,351,53.0,326.0],"15,9":[0,849,434,104,351,52.0,326.0],"6,9":[0,955,434,105,351,52.0,327.0],"9,5":[0,1062,434,104,351,52.0,326.0],"6,5":[0,1168,434,105,350,53.0,326.0],"9,9":[0,1275,434,104,350,52.0,326.0],"18,3":[0,1381,434,122,202,57.0,169.0],"19,7":[0,1505,434,114,198,57.0,169.0],"13,4":[0,1621,434,116,159,53.0,132.0],"10,4":[0,1739,434,115,158,52.0,132.0],"11,4":[0,1856,434,115,158,51.0,132.0],"12,4":[0,1973,434,115,158,52.0,132.0],"14,4":[0,2090,434,116,158,53.0,132.0],"9,4":[0,2208,434,116,158,52.0,132.0],"10,10":[0,2326,434,115,140,63.0,111.0],"11,10":[0,2443,434,115,140,63.0,112.0],"12,10":[0,2560,434,116,140,64.0,111.0],"13,10":[0,2678,434,116,140,64.0,111.0],"14,10":[0,2796,434,115,140,63.0,111.0],"9,10":[0,2913,434,115,140,63.0,111.0],"18,11":[0,3030,434,122,133,64.0,100.0],"15,12":[0,3154,434,130,114,65.0,82.0],"19,12":[0,3286,434,130,114,64.0,81.0],"22,7":[0,3418,434,130,114,65.0,81.0],"22,8":[0,3550,434,130,114,65.0,81.0],"11,12":[0,3682,434,130,113,65.0,80.0],"12,12":[0,3814,434,130,113,65.0,80.0],"13,12":[0,3946,434,130,113,65.0,81.0],"16,12":[0,0,867,130,113,65.0,80.0],"17,12":[0,132,867,130,113,65.0,80.0],"18,12":[0,264,867,130,113,65.0,81.0],"20,11":[0,396,867,130,113,65.0,81.0],"20,12":[0,528,867,130,113,65.0,81.0],"21,11":[0,660,867,130,113,65.0,81.0],"22,10":[0,792,867,130,113,65.0,80.0],"22,6":[0,924,867,130,113,65.0,80.0],"22,9":[0,1056,867,130,113,65.0,80.0],"5,12":[0,1188,867,130,113,65.0,80.0],"6,12":[0,1320,867,130,113,65.0,80.0],"7,12":[0,1452,867,130,113,65.0,80.0],"8,12":[0,1584,867,130,113,65.0,80.0],"14,12":[0,1716,867,130,112,65.0,80.0],"22,11":[0,1848,867,130,112,65.0,81.0],"9,12":[0,1980,867,130,112,65.0,80.0],"18,5":[0,2112,867,36,104,18.0,95.0],"18,9":[0,2150,867,37,104,18.0,96.0]},"chao":{"x0":-512,"y0":-32,"tam":2048,"nx":1,"ny":1}};
+MAPAS_SEM_NEVOA.add('santaMariaLatina'); MAPAS_COM_ECO.add('santaMariaLatina'); MUSICA_DO_MAPA.santaMariaLatina = 'safe_room';
+AMBIENTE_DO_MAPA.santaMariaLatina = AMBIENTE_DO_MAPA.catedral || ['vento', 0.1]; QUANTOS_ACHADOS.santaMariaLatina = [0, 0];
+LUGAR_DO_MAPA.santaMariaLatina = 'jerusalem'; MAPAS_ATO5.push('santaMariaLatina'); SPAWNS.santaMariaLatina = [];
+MAPAS.jerusalem.linhas[40] = MAPAS.jerusalem.linhas[40].slice(0, 40) + '5' + MAPAS.jerusalem.linhas[40].slice(41);
+MAPAS.jerusalem.portais[5] = { destino: 'santaMariaLatina', chegada: { x: 10.5, y: 11 }, rotulo: "Santa Maria Latina" };
+MAPAS.templumDomini = {
+  nome: "Templum Domini",
+  noite: 0.22,
+  linhas: [
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrWWWWWWWWWWWWWWrrrrrrrrr',
+    'rrrrrrrrWWMMMMMMMMMMMMWWrrrrrrrr',
+    'rrrrrrrWWMMMMMMMMMMMMMMXXrrrrrrr',
+    'rrrrrrWWMMMMMMMMMMMMMMMMXXrrrrrr',
+    'rrrrrWWMMMMMMMMMMMMMMMMMMXXrrrrr',
+    'rrrrWWMMMMMMMMCMMCMMMMMMMMXXrrrr',
+    'rrrWWMMMMMMMCMMMVMMCMMMMMMMXXrrr',
+    'rrWWMMMMMMCMMMMMMMMMMCMMMMMMXXrr',
+    'rrWMMMMMMCMMMMMCMMMMMMCMMMMMMXrr',
+    'rrWMMMMMMMMMMCMMMMCMMMMMMMMMMXrr',
+    'rrWMMMMMCMMMCMMMMMMCMMMCMMMMMXrr',
+    'rrWMMMMMMMMCMMRRRRMMCMMMMMMMMXrr',
+    'rrWMMMMCMMMMMRRRRRRMMMMMCMMMMXrr',
+    'rrWMMMMMMMMMMRRRRRRMMMMMMMMMMXrr',
+    'rrWMMMMMVMCMMRRRRRRMMCVMMMMMMXrr',
+    'rrWMMMMCMMMMMRRRRRRMMMMMCMMMMXrr',
+    'rrWMMMMMMMMCMMRRRRMMCMMMMMMMMXrr',
+    'rrWMMMMMCMMMCMMMMMMCMMMCMMMMMXrr',
+    'rrWMMMMMMMMMMCMMMMCMMMMMMMMMMXrr',
+    'rrWMMMMMMCMMMMMMCMMMMMCMMMMMMXrr',
+    'rrWWMMMMMMCMMMMMVMMMMCMMMMMMXXrr',
+    'rrrWXMMMMMMMCMMMMMMCMMMMMMMXXrrr',
+    'rrrrXXMMMMMMMMCMMCMMMMMMMMXXrrrr',
+    'rrrrrXXMMMMMMMMMMMMMMMMMMXXrrrrr',
+    'rrrrrrXXMMMMMMMMMMMMMMMMXXrrrrrr',
+    'rrrrrrrXXMMMMMMMMMMMMMMXXrrrrrrr',
+    'rrrrrrrrXXMMMMMMMMMMMMXXrrrrrrrr',
+    'rrrrrrrrrXXXXXXX1XXXXXXrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+    'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr'
+  ],
+  portais: { 1: { destino: 'jerusalem', chegada: { x: 64.0, y: 52.4 }, rotulo: 'Sair à cidade' } },
+  rotulos: [{ x: 15.5, y: 15.5, texto: "A Rocha", altura: 6 }, { x: 6, y: 6, texto: "Templum Domini", altura: 10 }],
+  pontos: [{ id: 'td_rocha', nome: "A Rocha", x: 15.5, y: 19.6, texto: "A Rocha: aqui, diziam, Abraão ia sacrificar Isaque. Os cônegos cobriram-na de mármore e puseram em cima um altar e um coro." }, { id: 'td_grade', nome: "A grade", x: 19.6, y: 15.5, texto: "A grade de ferro dos cruzados, para os peregrinos não levarem pedaços da Rocha como relíquia." }, { id: 'td_cruz', nome: "A cruz da cúpula", x: 9.0, y: 21.0, texto: "No alto da cúpula, uma grande cruz dourada. Os cruzados chamam isto de Templo do Senhor: para eles, aqui Cristo foi apresentado no Templo." }]
+};
+CENARIO_DADOS.templumDomini = {"escala":2.0,"folhas":1,"fatias":{"15,10":[0,0,0,124,439,62.0,409.0],"16,21":[0,126,0,124,439,62.0,410.0],"10,16":[0,252,0,124,438,62.0,409.0],"21,16":[0,378,0,124,438,62.0,409.0],"22,3":[0,504,0,130,433,65.0,401.0],"9,2":[0,636,0,130,433,65.0,400.0],"10,2":[0,768,0,130,432,65.0,399.0],"12,2":[0,900,0,130,432,65.0,399.0],"13,2":[0,1032,0,130,432,65.0,400.0],"14,2":[0,1164,0,130,432,65.0,399.0],"15,2":[0,1296,0,130,432,65.0,399.0],"16,2":[0,1428,0,130,432,65.0,400.0],"19,2":[0,1560,0,130,432,65.0,399.0],"2,10":[0,1692,0,130,432,65.0,399.0],"2,12":[0,1824,0,130,432,65.0,399.0],"2,13":[0,1956,0,130,432,65.0,400.0],"2,14":[0,2088,0,130,432,65.0,399.0],"2,15":[0,2220,0,130,432,65.0,399.0],"2,18":[0,2352,0,130,432,65.0,399.0],"2,19":[0,2484,0,130,432,65.0,399.0],"2,20":[0,2616,0,130,432,65.0,399.0],"2,21":[0,2748,0,130,432,65.0,399.0],"2,9":[0,2880,0,130,432,65.0,399.0],"20,2":[0,3012,0,130,432,65.0,399.0],"21,2":[0,3144,0,130,432,65.0,399.0],"22,2":[0,3276,0,130,432,65.0,399.0],"23,3":[0,3408,0,130,432,65.0,399.0],"23,4":[0,3540,0,131,432,66.0,399.0],"24,4":[0,3673,0,130,432,65.0,399.0],"3,22":[0,3805,0,130,432,65.0,400.0],"3,23":[0,3937,0,130,432,65.0,399.0],"3,9":[0,0,441,130,432,65.0,399.0],"4,23":[0,132,441,130,432,65.0,399.0],"4,24":[0,264,441,130,432,65.0,399.0],"4,7":[0,396,441,130,432,65.0,399.0],"5,6":[0,528,441,130,432,65.0,399.0],"5,7":[0,660,441,130,432,65.0,399.0],"6,5":[0,792,441,130,432,65.0,399.0],"6,6":[0,924,441,130,432,65.0,399.0],"7,5":[0,1056,441,130,432,65.0,399.0],"8,3":[0,1188,441,130,432,65.0,399.0],"8,4":[0,1320,441,130,432,65.0,399.0],"9,3":[0,1452,441,130,432,65.0,399.0],"11,2":[0,1584,441,130,431,65.0,399.0],"17,2":[0,1716,441,130,431,65.0,399.0],"18,2":[0,1848,441,130,431,65.0,399.0],"2,11":[0,1980,441,130,431,65.0,399.0],"2,16":[0,2112,441,130,431,65.0,400.0],"2,17":[0,2244,441,130,431,65.0,399.0],"2,22":[0,2376,441,130,431,65.0,399.0],"3,8":[0,2508,441,130,431,65.0,399.0],"4,8":[0,2640,441,130,431,65.0,399.0],"7,4":[0,2772,441,130,431,65.0,399.0],"11,18":[0,2904,441,72,409,36.0,393.0],"12,19":[0,2978,441,72,409,36.0,393.0],"19,12":[0,3052,441,72,409,36.0,393.0],"20,13":[0,3126,441,73,409,37.0,393.0],"11,13":[0,3201,441,72,408,36.0,393.0],"12,12":[0,3275,441,73,408,37.0,393.0],"13,11":[0,3350,441,72,408,36.0,393.0],"13,20":[0,3424,441,72,408,36.0,392.0],"18,11":[0,3498,441,73,408,37.0,392.0],"18,20":[0,3573,441,72,408,36.0,392.0],"19,19":[0,3647,441,72,408,36.0,392.0],"20,18":[0,3721,441,72,408,36.0,392.0],"19,8":[0,3795,441,105,371,53.0,346.0],"23,12":[0,3902,441,104,371,52.0,346.0],"8,12":[0,0,875,105,371,52.0,346.0],"8,19":[0,107,875,104,371,52.0,346.0],"12,23":[0,213,875,104,370,52.0,346.0],"12,8":[0,319,875,104,370,52.0,346.0],"19,23":[0,425,875,104,370,52.0,346.0],"23,19":[0,531,875,104,369,52.0,345.0],"10,22":[0,637,875,72,350,36.0,334.0],"10,9":[0,711,875,72,350,36.0,335.0],"14,24":[0,785,875,72,350,36.0,334.0],"14,7":[0,859,875,72,350,36.0,334.0],"17,24":[0,933,875,72,350,36.0,334.0],"17,7":[0,1007,875,72,350,36.0,334.0],"21,22":[0,1081,875,73,350,37.0,334.0],"21,9":[0,1156,875,73,350,37.0,334.0],"22,10":[0,1231,875,72,350,36.0,334.0],"22,21":[0,1305,875,72,350,36.0,334.0],"24,14":[0,1379,875,72,350,36.0,334.0],"24,17":[0,1453,875,72,350,36.0,334.0],"7,14":[0,1527,875,72,350,36.0,334.0],"7,17":[0,1601,875,72,350,36.0,334.0],"9,10":[0,1675,875,72,350,36.0,335.0],"9,21":[0,1749,875,72,350,36.0,334.0],"16,16":[0,1823,875,130,188,65.0,161.0],"16,15":[0,1955,875,130,161,65.0,129.0],"13,15":[0,2087,875,105,135,60.0,99.0],"13,16":[0,2194,875,112,129,48.0,104.0],"17,13":[0,2308,875,73,127,65.0,99.0],"14,18":[0,2383,875,29,124,9.0,104.0],"18,14":[0,2414,875,45,124,37.0,104.0],"13,17":[0,2461,875,27,119,8.0,99.0],"16,13":[0,2490,875,57,119,9.0,104.0],"15,18":[0,2549,875,57,115,48.0,85.0],"18,15":[0,2608,875,56,115,8.0,85.0],"10,29":[0,2666,875,130,114,65.0,81.0],"13,29":[0,2798,875,130,114,65.0,81.0],"14,29":[0,2930,875,130,114,65.0,81.0],"22,29":[0,3062,875,130,114,65.0,81.0],"25,26":[0,3194,875,130,114,65.0,81.0],"25,5":[0,3326,875,130,114,65.0,81.0],"25,6":[0,3458,875,130,114,65.0,81.0],"26,24":[0,3590,875,130,114,65.0,81.0],"26,7":[0,3722,875,130,114,65.0,81.0],"28,23":[0,3854,875,130,114,65.0,81.0],"29,10":[0,0,1248,130,114,65.0,81.0],"29,16":[0,132,1248,130,114,65.0,81.0],"29,17":[0,264,1248,130,114,65.0,81.0],"6,25":[0,396,1248,130,114,65.0,81.0],"6,26":[0,528,1248,130,114,65.0,81.0],"7,26":[0,660,1248,130,114,65.0,81.0],"7,27":[0,792,1248,130,114,65.0,81.0],"8,27":[0,924,1248,130,114,65.0,81.0],"11,29":[0,1056,1248,130,113,65.0,80.0],"12,29":[0,1188,1248,130,113,65.0,81.0],"15,29":[0,1320,1248,130,113,65.0,80.0],"18,29":[0,1452,1248,130,113,65.0,80.0],"20,29":[0,1584,1248,130,113,65.0,80.0],"21,29":[0,1716,1248,130,113,65.0,80.0],"22,28":[0,1848,1248,130,113,65.0,80.0],"23,27":[0,1980,1248,130,113,65.0,80.0],"23,28":[0,2112,1248,130,113,65.0,80.0],"24,26":[0,2244,1248,130,113,65.0,80.0],"24,27":[0,2376,1248,130,113,65.0,81.0],"24,5":[0,2508,1248,130,113,65.0,80.0],"25,25":[0,2640,1248,130,113,65.0,80.0],"26,25":[0,2772,1248,130,113,65.0,80.0],"26,6":[0,2904,1248,130,113,65.0,80.0],"27,23":[0,3036,1248,130,113,65.0,80.0],"27,7":[0,3168,1248,130,113,65.0,80.0],"27,8":[0,3300,1248,130,113,65.0,81.0],"28,22":[0,3432,1248,130,113,65.0,80.0],"28,8":[0,3564,1248,130,113,65.0,80.0],"28,9":[0,3696,1248,130,113,65.0,80.0],"29,11":[0,3828,1248,130,113,65.0,80.0],"29,12":[0,3960,1248,130,113,65.0,80.0],"29,14":[0,0,1364,130,113,65.0,80.0],"29,15":[0,132,1364,130,113,65.0,80.0],"29,19":[0,264,1364,130,113,65.0,81.0],"29,20":[0,396,1364,130,113,65.0,80.0],"29,21":[0,528,1364,130,113,65.0,80.0],"29,22":[0,660,1364,130,113,65.0,80.0],"5,24":[0,792,1364,130,113,65.0,80.0],"5,25":[0,924,1364,130,113,65.0,80.0],"8,28":[0,1056,1364,130,113,65.0,80.0],"9,28":[0,1188,1364,130,113,65.0,80.0],"17,29":[0,1320,1364,130,112,65.0,80.0],"19,29":[0,1452,1364,130,112,65.0,81.0],"27,24":[0,1584,1364,130,112,65.0,80.0],"29,13":[0,1716,1364,130,112,65.0,80.0],"29,18":[0,1848,1364,130,112,65.0,80.0],"29,9":[0,1980,1364,130,112,65.0,80.0],"9,29":[0,2112,1364,130,112,65.0,80.0],"16,22":[0,2244,1364,36,104,18.0,95.0],"16,8":[0,2282,1364,36,104,18.0,95.0],"22,16":[0,2320,1364,36,104,18.0,95.0],"15,13":[0,2358,1364,80,103,20.0,99.0],"15,16":[0,2440,1364,106,103,41.0,72.0],"8,16":[0,2548,1364,37,103,19.0,95.0],"18,16":[0,2587,1364,84,100,24.0,79.0],"16,18":[0,2673,1364,79,99,60.0,78.0],"17,16":[0,2754,1364,119,98,65.0,78.0],"16,17":[0,2875,1364,115,96,50.0,79.0],"15,15":[0,2992,1364,130,94,65.0,58.0],"17,14":[0,3124,1364,123,92,65.0,73.0],"14,13":[0,3249,1364,108,89,60.0,79.0],"17,18":[0,3359,1364,107,89,48.0,85.0],"18,17":[0,3468,1364,108,88,60.0,84.0],"13,14":[0,3578,1364,108,87,48.0,79.0],"17,17":[0,3688,1364,101,84,50.0,75.0],"17,15":[0,3791,1364,117,78,65.0,76.0],"14,15":[0,3910,1364,119,77,65.0,50.0],"16,14":[0,0,1479,130,76,65.0,42.0],"14,14":[0,132,1479,95,67,33.0,48.0],"15,14":[0,229,1479,60,67,51.0,66.0],"15,17":[0,291,1479,54,67,-11.0,48.0],"14,16":[0,347,1479,110,54,45.0,52.0]},"chao":{"x0":-1024,"y0":-32,"tam":2048,"nx":1,"ny":1}};
+MAPAS_SEM_NEVOA.add('templumDomini'); MAPAS_COM_ECO.add('templumDomini'); MUSICA_DO_MAPA.templumDomini = 'safe_room';
+AMBIENTE_DO_MAPA.templumDomini = AMBIENTE_DO_MAPA.catedral || ['vento', 0.1]; QUANTOS_ACHADOS.templumDomini = [0, 0];
+LUGAR_DO_MAPA.templumDomini = 'jerusalem'; MAPAS_ATO5.push('templumDomini'); SPAWNS.templumDomini = [];
+MAPAS.jerusalem.linhas[51] = MAPAS.jerusalem.linhas[51].slice(0, 64) + '6' + MAPAS.jerusalem.linhas[51].slice(65);
+MAPAS.jerusalem.portais[6] = { destino: 'templumDomini', chegada: { x: 16, y: 27.6 }, rotulo: "Templum Domini" };
+// Depois da rendição (outubro de 1187), Saladino devolveu o Templum Domini ao culto muçulmano (a cruz da
+// cúpula foi derrubada) e, em 1192, fez de Santa Ana uma madraça: o peregrino de 1192 já não entra.
+MAPAS.jerusalem.portais[3].trava = 'igrejasLatinas';
+MAPAS.jerusalem.portais[3].aviso = 'Santa Ana agora é uma madraça: Saladino deu-a aos sábios do Islã em 1192. Na porta, uma inscrição em árabe.';
+MAPAS.jerusalem.portais[6].trava = 'igrejasLatinas';
+MAPAS.jerusalem.portais[6].aviso = 'Desde outubro de 1187 o Templum Domini voltou a ser a Cúpula da Rocha. A cruz dourada foi derrubada da cúpula.';
+const _aoEntrarNoMapaOrigIgrejas = aoEntrarNoMapa;
+aoEntrarNoMapa = function () {
+  flags.igrejasLatinas = !flags.fimJerusalem;
+  return _aoEntrarNoMapaOrigIgrejas.apply(this, arguments);
+};
+Object.assign(TRADUCAO_EN, {
+"Santa Ana": "St Anne's",
+"Altar-mor": "High altar",
+"Gruta da Natividade de Maria": "Grotto of the Nativity of Mary",
+"A gruta": "The grotto",
+"As monjas": "The nuns",
+"O altar-mor": "The high altar",
+"Santuário": "Sanctuary",
+"Capela do martírio": "Chapel of the martyrdom",
+"O martírio": "The martyrdom",
+"A rainha armênia": "The Armenian queen",
+"Altar": "Altar",
+"Os monges e o Hospital": "The monks and the Hospital",
+"A Rocha": "The Rock",
+"A grade": "The grille",
+"A cruz da cúpula": "The cross on the dome",
+"Sair à cidade": "Out to the city",
+"Embaixo de Santa Ana, a gruta onde, diz a tradição, nasceu a Virgem Maria, filha de Joaquim e Ana.": "Beneath St Anne's, the grotto where, tradition says, the Virgin Mary was born, daughter of Joachim and Anne.",
+"Ioveta, filha do rei Balduíno II, foi monja aqui antes de ser abadessa de Betânia. As beneditinas cantam as horas noite e dia.": "Ioveta, daughter of King Baldwin II, was a nun here before she became abbess of Bethany. The Benedictine nuns sing the hours night and day.",
+"A igreja tem paredes grossas e janelas pequenas: aguenta terremotos e cercos. Ainda vai estar de pé daqui a oitocentos anos.": "The church has thick walls and small windows: it withstands earthquakes and sieges. It will still be standing eight hundred years from now.",
+"Aqui, dizem os armênios, Herodes mandou degolar São Tiago Maior. A cabeça do apóstolo é guardada na capela.": "Here, the Armenians say, Herod had St James the Great beheaded. The apostle's head is kept in the chapel.",
+"A rainha Morfia, mulher de Balduíno II, era armênia de Melitene. Os reis latinos deram terras e ouro a esta igreja.": "Queen Morphia, wife of Baldwin II, was an Armenian from Melitene. The Latin kings gave lands and gold to this church.",
+"Os beneditinos de Amalfi tinham aqui o seu mosteiro. Do albergue deles para os peregrinos nasceu o Hospital de São João.": "The Benedictines of Amalfi had their monastery here. From their hostel for pilgrims grew the Hospital of St John.",
+"A Rocha: aqui, diziam, Abraão ia sacrificar Isaque. Os cônegos cobriram-na de mármore e puseram em cima um altar e um coro.": "The Rock: here, they said, Abraham was to sacrifice Isaac. The canons covered it with marble and set an altar and a choir on top.",
+"A grade de ferro dos cruzados, para os peregrinos não levarem pedaços da Rocha como relíquia.": "The crusaders' iron grille, so that pilgrims would not carry off pieces of the Rock as relics.",
+"No alto da cúpula, uma grande cruz dourada. Os cruzados chamam isto de Templo do Senhor: para eles, aqui Cristo foi apresentado no Templo.": "On top of the dome, a great golden cross. The crusaders call this the Temple of the Lord: for them, this is where Christ was presented in the Temple.",
+"Igreja de Santa Ana": "St Anne's Church",
+"IGREJA DE SANTA ANA": "ST ANNE'S CHURCH",
+"São Tiago dos Armênios": "St James of the Armenians",
+"SÃO TIAGO DOS ARMÊNIOS": "ST JAMES OF THE ARMENIANS",
+"Santa Maria Latina": "St Mary of the Latins",
+"SANTA MARIA LATINA": "ST MARY OF THE LATINS",
+"Templum Domini": "Templum Domini",
+"TEMPLUM DOMINI": "TEMPLUM DOMINI",
+"Santa Ana agora é uma madraça: Saladino deu-a aos sábios do Islã em 1192. Na porta, uma inscrição em árabe.": "St Anne's is now a madrasa: Saladin gave it to the scholars of Islam in 1192. Above the door, an Arabic inscription.",
+"Desde outubro de 1187 o Templum Domini voltou a ser a Cúpula da Rocha. A cruz dourada foi derrubada da cúpula.": "Since October 1187 the Templum Domini has been the Dome of the Rock again. The golden cross was thrown down from the dome."
+});
+
+;
+// ===== js/tela.js =====
+// =====================================================================
+// TELA CHEIA e ESCALA DOS CONTROLES DE TOQUE
+// =====================================================================
+// Botão de tela cheia no PC (ao lado da pausa) e no celular (coluna da direita).
+// No iPhone o Safari não deixa uma página entrar em tela cheia: avisa como pôr o
+// jogo na tela de início. Em telas baixas (celular deitado com a barra do
+// navegador), os controles encolhem para não ficarem uns sobre os outros.
+function telaCheiaAtiva() { return !!(document.fullscreenElement || document.webkitFullscreenElement); }
+function alternarTelaCheia() {
+  const el = document.documentElement;
+  try {
+    if (telaCheiaAtiva()) { (document.exitFullscreen || document.webkitExitFullscreen).call(document); return; }
+    const pedir = el.requestFullscreen || el.webkitRequestFullscreen;
+    if (!pedir) { avisar('Neste aparelho, use Compartilhar → Adicionar à Tela de Início para jogar em tela cheia.'); return; }
+    const r = pedir.call(el);
+    if (r && r.then) r.then(() => { try { screen.orientation?.lock?.('landscape').catch(() => {}); } catch (e) {} })
+                      .catch(() => avisar('O navegador não deixou entrar em tela cheia aqui. Abra o jogo numa aba própria e tente de novo.'));
+  } catch (e) { avisar('O navegador não deixou entrar em tela cheia aqui.'); }
+}
+function ajustarControles() {
+  const h = window.innerHeight, w = window.innerWidth;
+  const k = Math.max(0.55, Math.min(1, h / 410, (h - 100) / 306, w / 760));
+  document.body.style.setProperty('--k', k.toFixed(3));
+}
+document.getElementById('btnTela').addEventListener('click', alternarTelaCheia);
+window.addEventListener('resize', ajustarControles);
+document.addEventListener('fullscreenchange', ajustarControles);
+ajustarControles();
 
 ;
 // ===== js/main.js =====
